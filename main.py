@@ -3,11 +3,10 @@ from operator import itemgetter
 import json
 import math
 
-fileList = ["kaiku-14-15", "kaiku-15-16", "kaiku-16-17", "kaiku-17-18", "kaiku-18-19"]
 
-previous = []
+def parseCourses(fileName):
+    print(fileName)
 
-for fileName in fileList:
     with open((fileName + '.html'), 'rb') as file:
         soup = BeautifulSoup(file, features="lxml")
     soup = soup.find("table", {"class": "common"})
@@ -64,61 +63,87 @@ for fileName in fileList:
     for item in duplicateList:
         courseList[:] = [d for d in courseList if d.get('code') != item]
 
-    courseList = sorted(courseList, key=itemgetter('grade'), reverse=True)  # sort list for grading
+    return sorted(courseList, key=itemgetter('grade'), reverse=True)  # sort list for grading
 
-    totalItems = len(courseList)
 
-    gradeableItems = 0
+def gradeCourses(courseList):
+    # only contains the items that will be graded
+    gradeableItems = []
+
     for item in courseList:
         if item["sampleSize"] >= 21:
-            gradeableItems += 1
+            gradeableItems.append(item)
 
-    letterWeights = [math.ceil(gradeableItems*0.05),
-                      math.ceil(gradeableItems*0.15),
-                      math.ceil(gradeableItems*0.20),
-                      math.floor(gradeableItems * 0.24),
-                      math.floor(gradeableItems * 0.20),
-                      math.floor(gradeableItems * 0.11)]
+    gradeableCount = len(gradeableItems)
 
-    letterWeights.append(gradeableItems - sum(letterWeights))
+    letterWeights = [
+        math.ceil(gradeableCount*0.05),
+        math.ceil(gradeableCount*0.15),
+        math.ceil(gradeableCount*0.20),
+        math.floor(gradeableCount * 0.24),
+        math.floor(gradeableCount * 0.20),
+        math.floor(gradeableCount * 0.11)
+    ]
+
+    sumOfLetterWeights = sum(letterWeights)
+
+    # assign improbaturs
+    letterWeights.append(gradeableCount - sumOfLetterWeights)
 
     letters = ["L", "E", "M", "C", "B", "A", "I"]
 
-    weightCounter = 0
+    # tells which letter you are on
     letterCounter = 0
-    totalCounter = 0
+
+    # count courses that have received a "too good" grade due to rounding
+    done = [0, 0]
+
+    totalCounter = 1
+
     print(letterWeights)
 
-    for i in range(totalItems):
-        if courseList[i]["sampleSize"] >= 21:
+    gradeableItems[0]["letter"] = letters[0]
+
+    for i in range(1, len(gradeableItems)):
+        if totalCounter >= letterWeights[letterCounter] and gradeableItems[i]["grade"] == gradeableItems[i - 1]["grade"]:
+            gradeableItems[i]["letter"] = gradeableItems[i - 1]["letter"]
+            done[1] += 1
+            totalCounter += 1
+
+        elif totalCounter >= letterWeights[letterCounter]:
             try:
-                if totalCounter < letterWeights[weightCounter]:
-                    courseList[i]["letter"] = letters[letterCounter]
-                    totalCounter += 1
-                if totalCounter == letterWeights[weightCounter]:
-                    weightCounter += 1
-                    letterCounter += 1
-                    totalCounter = 0
+                gradeableItems[i]["letter"] = letters[letterCounter+1]
+                letterWeights[letterCounter+1] -= sum(done)
+                letterCounter += 1
             except IndexError:
-                break
+                gradeableItems[i]["letter"] = letters[letterCounter]
+            done[0] = done[1]
+            done[1] = 0
+            totalCounter = 0
+        else:
+            gradeableItems[i]["letter"] = gradeableItems[i - 1]["letter"]
+            totalCounter += 1
 
-    gradeSum = 0
-    for stuff in courseList:
-        gradeSum += stuff["grade"]
+    print("List length", len(gradeableItems), len(courseList))
 
-    print("List length", len(courseList))
-    print("Average", gradeSum/len(courseList))
+    return courseList
 
-    if previous:
-        for course in courseList:
-            for previousCourse in previous:
-                if previousCourse["code"] == course["code"]:
-                    delta = course["grade"] - previousCourse["grade"]
-                    course["gradeDelta"] = round(delta, 3)
-                    delta = course["work"] - previousCourse["work"]
-                    course["workDelta"] = round(delta, 3)
 
-    previous = courseList
+def analyze():
+    fileList = ["kaiku-14-15", "kaiku-15-16", "kaiku-16-17", "kaiku-17-18"]
 
-    with open((fileName + '.json'), 'w', encoding="utf-8") as outfile:
-        json.dump(courseList, outfile, indent=2, ensure_ascii=False)
+    for fileName in fileList:
+        courseList = parseCourses(fileName)
+        with open((fileName + '.json'), 'w', encoding="utf-8") as outfile:
+            json.dump(gradeCourses(courseList), outfile, indent=2, ensure_ascii=False)
+
+    courses = []
+
+    for i in range(10):
+        courseList = parseCourses("kaiku-18-19-" + str(i))
+        courses = courses + courseList
+
+    print(courses)
+    courses = gradeCourses(sorted(courses, key=itemgetter('grade'), reverse=True))
+    with open('kaiku-18-19.json', 'w', encoding="utf-8") as outfile:
+        json.dump(courses, outfile, indent=2, ensure_ascii=False)

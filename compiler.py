@@ -1,6 +1,11 @@
+from main import analyze
 import json
+import hashlib
+
+analyze()
 
 fileList = ["kaiku-14-15", "kaiku-15-16", "kaiku-16-17", "kaiku-17-18", "kaiku-18-19"]
+
 newSon = []
 
 for fileName in fileList:
@@ -9,7 +14,7 @@ for fileName in fileList:
     for course in courses:
         instance = {
                         "code": course["code"],
-                        "year": fileName[-5:],
+                        "year": fileName[6:11],
                         "grade": course["grade"],
                         "work": course["work"],
                         "sampleSize": course["sampleSize"]
@@ -19,6 +24,7 @@ for fileName in fileList:
         if not any(d["name"] == course["name"] for d in newSon):
             newCourse = {
                 "name": course["name"],
+                "id": hashlib.md5(course["name"].encode('utf-8')).hexdigest(),
                 "instances": [
                     instance
                 ]
