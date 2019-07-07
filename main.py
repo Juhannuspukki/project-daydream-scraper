@@ -5,7 +5,7 @@ import math
 
 
 def parseCourses(fileName):
-    print(fileName)
+    print("Processing " + fileName)
 
     with open((fileName + '.html'), 'rb') as file:
         soup = BeautifulSoup(file, features="lxml")
@@ -98,6 +98,7 @@ def gradeCourses(courseList):
     # count courses that have received a "too good" grade due to rounding
     done = [0, 0]
 
+    # tells how many courses of this letter have been graded
     totalCounter = 1
 
     print(letterWeights)
@@ -143,7 +144,6 @@ def analyze():
         courseList = parseCourses("kaiku-18-19-" + str(i))
         courses = courses + courseList
 
-    print(courses)
     courses = gradeCourses(sorted(courses, key=itemgetter('grade'), reverse=True))
     with open('kaiku-18-19.json', 'w', encoding="utf-8") as outfile:
         json.dump(courses, outfile, indent=2, ensure_ascii=False)

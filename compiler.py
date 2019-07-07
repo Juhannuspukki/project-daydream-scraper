@@ -1,6 +1,6 @@
 from main import analyze
+from slugify import slugify
 import json
-import hashlib
 
 analyze()
 
@@ -24,7 +24,7 @@ for fileName in fileList:
         if not any(d["name"] == course["name"] for d in newSon):
             newCourse = {
                 "name": course["name"],
-                "id": hashlib.md5(course["name"].encode('utf-8')).hexdigest(),
+                "id": slugify(course["name"]),
                 "instances": [
                     instance
                 ]
