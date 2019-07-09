@@ -1,4 +1,4 @@
-from main import analyze
+from courseparser import analyze
 from slugify import slugify
 import json
 
@@ -34,6 +34,16 @@ for fileName in fileList:
             for newCourse in newSon:
                 if newCourse["name"] == course["name"]:
                     newCourse["instances"].append(instance)
+
+
+with open('pop-master.json', 'rb') as file:
+    courses = json.load(file)
+
+for course in courses:
+    for item in newSon:
+        if item["name"] == course["name"]:
+            item["link"] = course["link"]
+
 
 with open(('kaiku.json'), 'w', encoding="utf-8") as outfile:
     json.dump(newSon, outfile, indent=2, ensure_ascii=False)
