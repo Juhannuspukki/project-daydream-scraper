@@ -19,6 +19,9 @@ def parseCourses(fileName):
 
         try:
             name = single[0].a.string.strip().split()  # split course name to code and name
+            source = single[0].a['href'][78:]
+            print(source)
+            courseData["source"] = source
             courseData["code"] = name[0]
             courseData["name"] = " ".join(name[1:])  # save them separately
 
@@ -39,7 +42,7 @@ def parseCourses(fileName):
         except (AttributeError, ValueError, IndexError) as e:
             pass
 
-        if len(courseData) > 2 and courseData["sampleSize"] >= 5:
+        if len(courseData) > 3 and courseData["sampleSize"] >= 5:
             courseList.append(courseData)
 
     # filter out KIE courses :D
