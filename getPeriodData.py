@@ -2,8 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from operator import itemgetter
 import json
-from courseparser import gradeCourses
-
+import datetime
 
 def getPeriodData(fileName):
     with open((fileName + '.json'), 'rb') as file:
@@ -15,14 +14,15 @@ def getPeriodData(fileName):
     x = 0
     for course in courses:
         url = "https://www.tut.fi/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=" + course["source"]
-        cookies = {"JSESSION_KAIKU_ID": "ööö",
+        cookies = {"JSESSION_KAIKU_ID": "öö",
                    "GUEST_LANGUAGE_ID": "fi_FI",
                    "lb_selection": "öö",
-                   "_shibsession_öö": "ööö"}
+                   "_shibsession_öööö": "öö"}
 
         r = requests.get(url, cookies=cookies)
         html = " ".join(r.text.split())
 
+        print(datetime.datetime.now())
         parsedHTML = BeautifulSoup(html, 'html.parser').prettify()
 
         soup = BeautifulSoup(html, features="lxml")
@@ -66,12 +66,3 @@ def getPeriodData(fileName):
         print("Processing " + str(x) + "/" + str(length) + " of " + fileName)
 
     return sorted(newCourses, key=itemgetter('grade'), reverse=True)
-
-
-fileList = ["kaiku-14-15", "kaiku-15-16", "kaiku-16-17", "kaiku-17-18"]
-
-for fileName in fileList:
-    print("\n\n\n" + fileName + "\n\n\n")
-    courseList = getPeriodData(fileName)
-    with open((fileName + '-new.json'), 'w', encoding="utf-8") as outfile:
-        json.dump(gradeCourses(courseList), outfile, indent=2, ensure_ascii=False)

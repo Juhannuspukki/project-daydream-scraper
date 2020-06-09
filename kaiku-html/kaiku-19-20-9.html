@@ -1,0 +1,4414 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fi" xml:lang="fi">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
+
+		<title>Kaiku</title>
+		
+
+
+
+
+
+
+
+
+
+		
+
+		<link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="/kaiku/javascript/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js"></script>
+		<script type="text/javascript" src="/kaiku/javascript/kaiku.js"></script>
+
+
+
+		<link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css" />
+		
+		<link href="/kaiku/style/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="pop-up" class="hidden"><img src="/kaiku/images/hourglass_small.png" alt="hourclass" /><br />
+		
+			Raportti latautuu...
+		
+		</div>
+		<div id="outer">
+		<div id="page">
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="banner">
+	<img src="/kaiku/images/Logo_TAU_FI.png" alt="Kaiku" style="height: 50px;"/><span class="page_name">Kaiku<br /></span>
+	<div id="banner_inner_right">   
+		 <nobr>
+		     
+        	<a href="https://www.tut.fi/pop">POP</a> |
+          
+            <a href="https://www.tut.fi/tutka">TUTKA</a>
+        </nobr>
+        <span class="user_name">Jere Laine<br /></span><br />
+        <a href="/kaiku/logOut/logOut">Kirjaudu ulos</a>
+    </div>
+</div>
+
+<div id="menu" style="min-height: 15px;">
+<nobr>
+<a href="/kaiku/kaiku/mainpage" >Etusivu</a><a href="/kaiku/studentMainPageSearch/feedback" >Anna Palautetta</a><a href="/kaiku/examineFeedbackPage/feedback"  class="selected">Palautteet</a><a style="font-size: 12px;" href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf">?</a><a style="font-size: 10px;" href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&PREVIOUS_VIEW=feedbackSummaryLandingPage">in English</a>
+
+</nobr>
+</div>
+
+
+
+
+
+
+		
+		
+		<div id="content">
+		<div id="inner_content">
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/kaiku/javascript/query.js"></script>
+
+<h1>Opintojaksojen palautteet</h1>
+
+
+<form id="pageInformation" action="/kaiku/examineFeedbackPage/feedback" method="post">
+
+	
+
+
+
+	
+<div class="line" ></div>
+
+	<table>
+		
+			<tr>
+				<td>
+					Omat opintojaksot
+				</td>
+				<td>
+					<select id="searchForm.enrolledCourseId" name="searchForm.enrolledCourseId">
+						<option value="" selected="selected"></option>
+						<option value="BMT-2130">BMT-2130 Anturifysiikka ja signaalit</option><option value="TIE-02402">TIE-02402 Ohjelmointi 3: Tekniikat</option><option value="TIE-40107">TIE-40107 Psychology in Human-Technology Interaction</option><option value="TTA-52021">TTA-52021 B2B-Markkinointi</option><option value="TTA-62011">TTA-62011 Teknologia- ja innovaatiojohtaminen</option>
+					</select>
+				</td>
+				<td>
+				</td>
+			</tr>
+		
+		
+			<tr>
+				<td>
+					Lukuvuosi
+				</td>
+				<td>
+					<select id="searchForm.chosenAcademicYear" name="searchForm.chosenAcademicYear">
+						<option value="2019" selected="selected">2019-2020</option><option value="2018">2018-2019</option><option value="2017">2017-2018</option><option value="2016">2016-2017</option><option value="2015">2015-2016</option><option value="2014">2014-2015</option><option value="2013">2013-2014</option><option value="2012">2012-2013</option><option value="2011">2011-2012</option><option value="0">Kaikki/All</option>
+					</select>
+				</td>
+				<td>
+			    </td>
+			</tr>
+		
+		
+			<tr>
+				<td>
+					Alkupäivä
+				</td>
+				<td>
+					<input id="searchForm.timeHorizonStart" name="searchForm.timeHorizonStart" type="text" value=""/>
+				</td>
+				<td>
+					
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Loppupäivä
+				</td>
+				<td>
+					<input id="searchForm.timeHorizonEnd" name="searchForm.timeHorizonEnd" type="text" value=""/>
+				</td>
+				<td>
+					
+				</td>
+			</tr>
+		
+		
+			<tr>
+				<td>
+					Opintojakson tunnus
+				</td>
+				<td>
+					<input id="searchForm.courseId" name="searchForm.courseId" type="text" value="-9" size="12"/>
+				</td>
+				<td>
+					
+				</td>
+			</tr>
+		
+		
+			<tr>
+				<td>
+					Opintojakson nimi
+				</td>
+				<td>
+					<input id="searchForm.courseName" name="searchForm.courseName" type="text" value="" size="30"/>
+				</td>
+				<td>
+			    </td>
+			</tr>
+		
+		<tr>
+			<td></td>
+			<td><input type="submit" name="BUTTON_SEARCH" value="Hae" /></td>
+			<td></td>
+		</tr>
+	</table>
+	
+	<br>
+	<div class="line" ></div>
+	<br>
+	
+	
+		
+		
+			<p>Kyselyn tulokset eivät ole automaattisesti kaikkien nähtävillä, vaan toteutuskertavastaavan tulee julkaista tulokset.</p>
+			
+			
+				<p>
+					
+					
+						Yleisarvosana:&nbsp;0% / 1% / 2% / 3% / 4% / 5% / En osaa sanoa%<br />
+						Yleisarvosana opintojaksolle ja sen toteutukselle. (Yleisarvosanan antaminen perustuu omaan henkilökohtaiseen kokemukseesi opintojaksosta (sis. opetus, tilat, oppimateriaalit, viestintä, opetusajankohdat sekä muut opetusjärjestelyt). Onnistuiko tämä opintojakso sinulle tärkeissä asioissa? ) 
+					
+				</p>
+			
+				<p>
+					
+					
+						Osaamistavoitteet:&nbsp;0% / 1% / 2% / 3% / 4% / 5% / En osaa sanoa%<br />
+						Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista? (Opintojakson osaamistavoitteet näkyvät &#039;osaamistavoitteiden&#039; -linkistä. Arvioi, kuinka hyvin opintojakso mielestäsi tuki osaamistavoitteiden saavuttamista.) 
+					
+				</p>
+			
+				<p>
+					
+					
+						Arvioitu työmäärä:&nbsp;Työmäärä vähäinen opintopisteisiin nähden.% / Työmäärä sopiva opintopisteisiin nähden.% / Työmäärä liian suuri opintopisteisiin nähden.%<br />
+						Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin. () 
+					
+				</p>
+			
+			
+			<p>Opintojaksojen muuta palautetta ei ole huomioitu allaolevissa tilastoissa.</p>
+		
+			<table class="common">
+				<tr>
+					<th>
+						Opintojakso
+					</th>
+					
+						<th>
+							
+								Yleisarvosana
+							
+							
+						</th>
+					
+						<th>
+							
+								Osaamistavoitteet
+							
+							
+						</th>
+					
+						<th>
+							
+								Arvioitu työmäärä
+							
+							
+						</th>
+					
+					<th>
+						Vastaajia (N)
+					</th>
+					<th>
+						En anna palautetta vastanneet (N)
+					</th>
+					<th style="width: 125px;">Opettaja vastannut</th>
+				</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							ARK-99901&nbsp;
+							
+											
+								Kirjallisuus
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							ARK-99902&nbsp;
+							
+											
+								Seminaari
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							ARK-99903&nbsp;
+							
+											
+								Muut suoritukset
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							ARK-99906&nbsp;
+							
+											
+								Literature
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							ARK-99907&nbsp;
+							
+											
+								Seminar
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							ARK-99908&nbsp;
+							
+											
+								Other Studies
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=ASE-9317&courseName=Industrial+Informatics&courseNameEng=Industrial+Informatics&year=2019">
+							
+							
+							ASE-9317&nbsp;
+							
+											
+								Industrial Informatics
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 11 / 4 / 11 / 39 / 36 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 4 / 4 / 18 / 43 / 32 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 67 / 33&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							28&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=ASE-9407&courseName=Robot+Manipulators%3a+Modeling%2c+Control+and+Programming&courseNameEng=Robot+Manipulators%3a+Modeling%2c+Control+and+Programming&year=2019">
+							
+							
+							ASE-9407&nbsp;
+							
+											
+								Robot Manipulators: Modeling, Control and Programming
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 2 / 9 / 24 / 46 / 19 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 4 / 4 / 25 / 37 / 27 / 2&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										4 / 90 / 6&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							54&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=ASE-9427&courseName=Distributed+and+Intelligent+Automation+Systems&courseNameEng=Distributed+and+Intelligent+Automation+Systems&year=2019">
+							
+							
+							ASE-9427&nbsp;
+							
+											
+								Distributed and Intelligent Automation Systems
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 4 / 17 / 43 / 35 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 4 / 13 / 43 / 35 / 4&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 80 / 20&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							23&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=ASE-9457&courseName=Industrial+Communication+Systems&courseNameEng=Industrial+Communication+Systems&year=2019">
+							
+							
+							ASE-9457&nbsp;
+							
+											
+								Industrial Communication Systems
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 8 / 21 / 4 / 42 / 25 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 4 / 13 / 13 / 39 / 30 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 86 / 14&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							24&nbsp;
+						</td>
+						<td>
+							2&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=ASE-9517&courseName=Special+Assignment+in+Factory+Automation&courseNameEng=Special+Assignment+in+Factory+Automation&year=2019">
+							
+							
+							ASE-9517&nbsp;
+							
+											
+								Special Assignment in Factory Automation
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=ASE-9557&courseName=Special+Assignment+in+Industrial+Informatics&courseNameEng=Special+Assignment+in+Industrial+Informatics&year=2019">
+							
+							
+							ASE-9557&nbsp;
+							
+											
+								Special Assignment in Industrial Informatics
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							ASE-99901&nbsp;
+							
+											
+								Kirjallisuus
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							ASE-99906&nbsp;
+							
+											
+								Literature
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							BMT-90006&nbsp;
+							
+											
+								Orientation to Doctoral Studies
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=BMT-99901&courseName=Kirjallisuus&courseNameEng=Literature&year=2019">
+							
+							
+							BMT-99901&nbsp;
+							
+											
+								Kirjallisuus
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=BMT-99902&courseName=Seminaarit&courseNameEng=Seminars&year=2019">
+							
+							
+							BMT-99902&nbsp;
+							
+											
+								Seminaarit
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=BMT-99903&courseName=Muut+suoritukset&courseNameEng=Other+Studies&year=2019">
+							
+							
+							BMT-99903&nbsp;
+							
+											
+								Muut suoritukset
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=BMT-99906&courseName=Literature&courseNameEng=Literature&year=2019">
+							
+							
+							BMT-99906&nbsp;
+							
+											
+								Literature
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=BMT-99907&courseName=Seminars&courseNameEng=Seminars&year=2019">
+							
+							
+							BMT-99907&nbsp;
+							
+											
+								Seminars
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=BMT-99908&courseName=Other+Studies&courseNameEng=Other+Studies&year=2019">
+							
+							
+							BMT-99908&nbsp;
+							
+											
+								Other Studies
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							FYS-92016&nbsp;
+							
+											
+								Postgraduate Studies in Aerosol Physics
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=FYS-93016&courseName=Postgraduate+Studies+in+Computational+Physics&courseNameEng=Postgraduate+Studies+in+Computational+Physics&year=2019">
+							
+							
+							FYS-93016&nbsp;
+							
+											
+								Postgraduate Studies in Computational Physics
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=FYS-94016&courseName=Postgraduate+Studies+in+Optics&courseNameEng=Postgraduate+Studies+in+Optics&year=2019">
+							
+							
+							FYS-94016&nbsp;
+							
+											
+								Postgraduate Studies in Optics
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=FYS-95016&courseName=Postgraduate+Studies+in+Optoelectronics&courseNameEng=Postgraduate+Studies+in+Optoelectronics&year=2019">
+							
+							
+							FYS-95016&nbsp;
+							
+											
+								Postgraduate Studies in Optoelectronics
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							KIE-99903&nbsp;
+							
+											
+								Muut suoritukset
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							KIE-99908&nbsp;
+							
+											
+								Other Studies
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=LTT-90006&courseName=Orientation+to+Doctoral+Studies&courseNameEng=Orientation+to+Doctoral+Studies&year=2019">
+							
+							
+							LTT-90006&nbsp;
+							
+											
+								Orientation to Doctoral Studies
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=LTT-90100&courseName=Siirrett%e4v%e4t+taidot+k%e4yt%e4nn%f6ss%e4&courseNameEng=Transferable+Skills+in+Practice&year=2019">
+							
+							
+							LTT-90100&nbsp;
+							
+											
+								Siirrettävät taidot käytännössä
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=LTT-90106&courseName=Transferable+Skills+in+Practice&courseNameEng=Transferable+Skills+in+Practice&year=2019">
+							
+							
+							LTT-90106&nbsp;
+							
+											
+								Transferable Skills in Practice
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							LTT-99903&nbsp;
+							
+											
+								Muut suoritukset
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							LTT-99908&nbsp;
+							
+											
+								Other Studies
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=MOL-92020&courseName=Materiaaliopin+erityisty%f6&courseNameEng=Special+Treatise+on+Materials+Science&year=2019">
+							
+							
+							MOL-92020&nbsp;
+							
+											
+								Materiaaliopin erityistyö
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=MOL-92236&courseName=Special+Treatise+on+Materials+Science&courseNameEng=Special+Treatise+on+Materials+Science&year=2019">
+							
+							
+							MOL-92236&nbsp;
+							
+											
+								Special Treatise on Materials Science
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							MOL-93206&nbsp;
+							
+											
+								Advanced Topics in Materials Science and Engineering
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							MOL-99911&nbsp;
+							
+											
+								Kirjallisuus
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							MOL-99912&nbsp;
+							
+											
+								Seminaarit
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							MOL-99913&nbsp;
+							
+											
+								Muut suoritukset
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							MOL-99916&nbsp;
+							
+											
+								Literature
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							MOL-99917&nbsp;
+							
+											
+								Seminars
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							MOL-99918&nbsp;
+							
+											
+								Other Studies
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							OPN-9000&nbsp;
+							
+											
+								Diplomityö
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							OPN-9006&nbsp;
+							
+											
+								Diplomityö
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							OPN-9020&nbsp;
+							
+											
+								Syventävien opintojen opinnäytetyö
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							OPN-9100&nbsp;
+							
+											
+								Lisensiaatintutkimus
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							OPN-9151&nbsp;
+							
+											
+								Kandidaatintyö
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							OPN-9156&nbsp;
+							
+											
+								Bachelor&#039;s Thesis
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							OPN-9161&nbsp;
+							
+											
+								Kandidaatintyö
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							OPN-9200&nbsp;
+							
+											
+								Väitöskirja
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							RAK-99901&nbsp;
+							
+											
+								Kirjallisuus
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							RAK-99902&nbsp;
+							
+											
+								Seminaari
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							RAK-99903&nbsp;
+							
+											
+								Muut suoritukset
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							RAK-99906&nbsp;
+							
+											
+								Literature
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							RAK-99907&nbsp;
+							
+											
+								Seminar
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							RAK-99908&nbsp;
+							
+											
+								Other Studies
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=SGN-90666&courseName=Signal+Processing+Colloquium&courseNameEng=Signal+Processing+Colloquium&year=2019">
+							
+							
+							SGN-90666&nbsp;
+							
+											
+								Signal Processing Colloquium
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TRT-90006&courseName=Orientation+to+Doctoral+Studies&courseNameEng=Orientation+to+Doctoral+Studies&year=2019">
+							
+							
+							TRT-90006&nbsp;
+							
+											
+								Orientation to Doctoral Studies
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TST-90007&courseName=Orientation+to+Doctoral+Studies&courseNameEng=Orientation+to+Doctoral+Studies&year=2019">
+							
+							
+							TST-90007&nbsp;
+							
+											
+								Orientation to Doctoral Studies
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 17 / 17 / 50 / 17 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 67 / 33 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										17 / 50 / 33&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							6&nbsp;
+						</td>
+						<td>
+							2&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							TST-99906&nbsp;
+							
+											
+								Literature
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							TST-99907&nbsp;
+							
+											
+								Seminars
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							TST-99908&nbsp;
+							
+											
+								Other Studies
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							TTA-99901&nbsp;
+							
+											
+								Kirjallisuus
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							TTA-99902&nbsp;
+							
+											
+								Seminaari
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							TTA-99903&nbsp;
+							
+											
+								Muut suoritukset
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							TTA-99906&nbsp;
+							
+											
+								Literature
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							TTA-99907&nbsp;
+							
+											
+								Seminar
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							TTA-99908&nbsp;
+							
+											
+								Other Studies
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TTI-90006&courseName=Orientation+to+Doctoral+Studies&courseNameEng=Orientation+to+Doctoral+Studies&year=2019">
+							
+							
+							TTI-90006&nbsp;
+							
+											
+								Orientation to Doctoral Studies
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 20 / 60 / 20 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 80 / 20 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							5&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+				
+				<tr>
+					<td>
+						Yhteensä
+					</td>
+					
+					<td>
+						
+							
+							
+								0 / 4 / 9 / 16 / 44 / 26 / 0&nbsp;
+							
+						
+					</td>
+					
+					<td>
+						
+							
+							
+								0 / 3 / 5 / 18 / 42 / 31 / 1&nbsp;
+							
+						
+					</td>
+					
+					<td>
+						
+							
+							
+								2 / 81 / 16&nbsp;
+							
+						
+					</td>
+					
+					<td>
+						141&nbsp;
+					</td>
+					<td>
+						5&nbsp;
+					</td>
+					<td></td>
+				</tr>
+				
+			</table>
+		
+	
+</form>
+
+
+
+<br>
+<br>
+
+
+
+		</div>
+
+		<div id="footerInfobox">
+			Kaiku - Tampereen yliopisto
+			Sovelluksen versio: 1.15.0 (10.3.2020)
+		</div>
+				
+		<div id="footer"><span id="footerInfoLink" class="about">Tietoa sovelluksesta</span></div>
+
+		</div>
+		</div>
+		</div>
+	</body>
+</html>

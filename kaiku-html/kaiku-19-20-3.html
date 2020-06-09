@@ -1,0 +1,9902 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fi" xml:lang="fi">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
+
+		<title>Kaiku</title>
+		
+
+
+
+
+
+
+
+
+
+		
+
+		<link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="/kaiku/javascript/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js"></script>
+		<script type="text/javascript" src="/kaiku/javascript/kaiku.js"></script>
+
+
+
+		<link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css" />
+		
+		<link href="/kaiku/style/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="pop-up" class="hidden"><img src="/kaiku/images/hourglass_small.png" alt="hourclass" /><br />
+		
+			Raportti latautuu...
+		
+		</div>
+		<div id="outer">
+		<div id="page">
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="banner">
+	<img src="/kaiku/images/Logo_TAU_FI.png" alt="Kaiku" style="height: 50px;"/><span class="page_name">Kaiku<br /></span>
+	<div id="banner_inner_right">   
+		 <nobr>
+		     
+        	<a href="https://www.tut.fi/pop">POP</a> |
+          
+            <a href="https://www.tut.fi/tutka">TUTKA</a>
+        </nobr>
+        <span class="user_name">Jere Laine<br /></span><br />
+        <a href="/kaiku/logOut/logOut">Kirjaudu ulos</a>
+    </div>
+</div>
+
+<div id="menu" style="min-height: 15px;">
+<nobr>
+<a href="/kaiku/kaiku/mainpage" >Etusivu</a><a href="/kaiku/studentMainPageSearch/feedback" >Anna Palautetta</a><a href="/kaiku/examineFeedbackPage/feedback"  class="selected">Palautteet</a><a style="font-size: 12px;" href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf">?</a><a style="font-size: 10px;" href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&PREVIOUS_VIEW=feedbackSummaryLandingPage">in English</a>
+
+</nobr>
+</div>
+
+
+
+
+
+
+		
+		
+		<div id="content">
+		<div id="inner_content">
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/kaiku/javascript/query.js"></script>
+
+<h1>Opintojaksojen palautteet</h1>
+
+
+<form id="pageInformation" action="/kaiku/examineFeedbackPage/feedback" method="post">
+
+	
+
+
+
+	
+<div class="line" ></div>
+
+	<table>
+		
+			<tr>
+				<td>
+					Omat opintojaksot
+				</td>
+				<td>
+					<select id="searchForm.enrolledCourseId" name="searchForm.enrolledCourseId">
+						<option value="" selected="selected"></option>
+						<option value="BMT-2130">BMT-2130 Anturifysiikka ja signaalit</option><option value="TIE-02402">TIE-02402 Ohjelmointi 3: Tekniikat</option><option value="TIE-40107">TIE-40107 Psychology in Human-Technology Interaction</option><option value="TTA-52021">TTA-52021 B2B-Markkinointi</option><option value="TTA-62011">TTA-62011 Teknologia- ja innovaatiojohtaminen</option>
+					</select>
+				</td>
+				<td>
+				</td>
+			</tr>
+		
+		
+			<tr>
+				<td>
+					Lukuvuosi
+				</td>
+				<td>
+					<select id="searchForm.chosenAcademicYear" name="searchForm.chosenAcademicYear">
+						<option value="2019" selected="selected">2019-2020</option><option value="2018">2018-2019</option><option value="2017">2017-2018</option><option value="2016">2016-2017</option><option value="2015">2015-2016</option><option value="2014">2014-2015</option><option value="2013">2013-2014</option><option value="2012">2012-2013</option><option value="2011">2011-2012</option><option value="0">Kaikki/All</option>
+					</select>
+				</td>
+				<td>
+			    </td>
+			</tr>
+		
+		
+			<tr>
+				<td>
+					Alkupäivä
+				</td>
+				<td>
+					<input id="searchForm.timeHorizonStart" name="searchForm.timeHorizonStart" type="text" value=""/>
+				</td>
+				<td>
+					
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Loppupäivä
+				</td>
+				<td>
+					<input id="searchForm.timeHorizonEnd" name="searchForm.timeHorizonEnd" type="text" value=""/>
+				</td>
+				<td>
+					
+				</td>
+			</tr>
+		
+		
+			<tr>
+				<td>
+					Opintojakson tunnus
+				</td>
+				<td>
+					<input id="searchForm.courseId" name="searchForm.courseId" type="text" value="-3" size="12"/>
+				</td>
+				<td>
+					
+				</td>
+			</tr>
+		
+		
+			<tr>
+				<td>
+					Opintojakson nimi
+				</td>
+				<td>
+					<input id="searchForm.courseName" name="searchForm.courseName" type="text" value="" size="30"/>
+				</td>
+				<td>
+			    </td>
+			</tr>
+		
+		<tr>
+			<td></td>
+			<td><input type="submit" name="BUTTON_SEARCH" value="Hae" /></td>
+			<td></td>
+		</tr>
+	</table>
+	
+	<br>
+	<div class="line" ></div>
+	<br>
+	
+	
+		
+		
+			<p>Kyselyn tulokset eivät ole automaattisesti kaikkien nähtävillä, vaan toteutuskertavastaavan tulee julkaista tulokset.</p>
+			
+			
+				<p>
+					
+					
+						Yleisarvosana:&nbsp;0% / 1% / 2% / 3% / 4% / 5% / En osaa sanoa%<br />
+						Yleisarvosana opintojaksolle ja sen toteutukselle. (Yleisarvosanan antaminen perustuu omaan henkilökohtaiseen kokemukseesi opintojaksosta (sis. opetus, tilat, oppimateriaalit, viestintä, opetusajankohdat sekä muut opetusjärjestelyt). Onnistuiko tämä opintojakso sinulle tärkeissä asioissa? ) 
+					
+				</p>
+			
+				<p>
+					
+					
+						Osaamistavoitteet:&nbsp;0% / 1% / 2% / 3% / 4% / 5% / En osaa sanoa%<br />
+						Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista? (Opintojakson osaamistavoitteet näkyvät &#039;osaamistavoitteiden&#039; -linkistä. Arvioi, kuinka hyvin opintojakso mielestäsi tuki osaamistavoitteiden saavuttamista.) 
+					
+				</p>
+			
+				<p>
+					
+					
+						Arvioitu työmäärä:&nbsp;Työmäärä vähäinen opintopisteisiin nähden.% / Työmäärä sopiva opintopisteisiin nähden.% / Työmäärä liian suuri opintopisteisiin nähden.%<br />
+						Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin. () 
+					
+				</p>
+			
+			
+			<p>Opintojaksojen muuta palautetta ei ole huomioitu allaolevissa tilastoissa.</p>
+		
+			<table class="common">
+				<tr>
+					<th>
+						Opintojakso
+					</th>
+					
+						<th>
+							
+								Yleisarvosana
+							
+							
+						</th>
+					
+						<th>
+							
+								Osaamistavoitteet
+							
+							
+						</th>
+					
+						<th>
+							
+								Arvioitu työmäärä
+							
+							
+						</th>
+					
+					<th>
+						Vastaajia (N)
+					</th>
+					<th>
+						En anna palautetta vastanneet (N)
+					</th>
+					<th style="width: 125px;">Opettaja vastannut</th>
+				</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=BMT-3016&courseName=Microactuators+and+Active+Actuator+Materials&courseNameEng=Microactuators+and+Active+Actuator+Materials&year=2019">
+							
+							
+							BMT-3016&nbsp;
+							
+											
+								Microactuators and Active Actuator Materials
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 11 / 44 / 44 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 44 / 56 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 78 / 22&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							9&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							BMT-3030&nbsp;
+							
+											
+								Mikroanturit
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=BMT-3036&courseName=Microsensors&courseNameEng=Microsensors&year=2019">
+							
+							
+							BMT-3036&nbsp;
+							
+											
+								Microsensors
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 44 / 38 / 19 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 13 / 19 / 38 / 31 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 88 / 13&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							16&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=BMT-3056&courseName=Design+of+Microsensors&courseNameEng=Design+of+Microsensors&year=2019">
+							
+							
+							BMT-3056&nbsp;
+							
+											
+								Design of Microsensors
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=BMT-3076&courseName=Microfluidics&courseNameEng=Microfluidics&year=2019">
+							
+							
+							BMT-3076&nbsp;
+							
+											
+								Microfluidics
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 25 / 75 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 25 / 75 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 50 / 50&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							4&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=DEE-33010&courseName=S%e4hk%f6koneet&courseNameEng=Electrical+Machines&year=2019">
+							
+							
+							DEE-33010&nbsp;
+							
+											
+								Sähkökoneet
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 26 / 52 / 15 / 7&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 4 / 25 / 50 / 17 / 4&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 91 / 9&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							27&nbsp;
+						</td>
+						<td>
+							3&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=DEE-33036&courseName=Electric+Drives&courseNameEng=Electric+Drives&year=2019">
+							
+							
+							DEE-33036&nbsp;
+							
+											
+								Electric Drives
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										11 / 22 / 44 / 0 / 22 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										50 / 13 / 0 / 13 / 25 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 88 / 13&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							9&nbsp;
+						</td>
+						<td>
+							2&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=DEE-33106&courseName=Switched-Mode+Converters&courseNameEng=Switched-Mode+Converters&year=2019">
+							
+							
+							DEE-33106&nbsp;
+							
+											
+								Switched-Mode Converters
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										10 / 10 / 30 / 30 / 10 / 5 / 5&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										5 / 0 / 37 / 37 / 5 / 5 / 11&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 78 / 22&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							20&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=DEE-33116&courseName=Power+Electronics+Converters&courseNameEng=Power+Electronics+Converters&year=2019">
+							
+							
+							DEE-33116&nbsp;
+							
+											
+								Power Electronics Converters
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										4 / 8 / 12 / 23 / 38 / 8 / 8&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										4 / 4 / 8 / 35 / 15 / 27 / 8&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 80 / 20&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							26&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=DEE-34017&courseName=Control+of+Electrical+Drive+Systems&courseNameEng=Control+of+Electrical+Drive+Systems&year=2019">
+							
+							
+							DEE-34017&nbsp;
+							
+											
+								Control of Electrical Drive Systems
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 14 / 0 / 14 / 71 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 14 / 0 / 0 / 71 / 14 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 71 / 29&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							7&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=DEE-34026&courseName=Power+Electronic+Applications+for+Power+Quality&courseNameEng=Power+Electronic+Applications+for+Power+Quality&year=2019">
+							
+							
+							DEE-34026&nbsp;
+							
+											
+								Power Electronic Applications for Power Quality
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 78 / 11 / 11&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 11 / 89 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 89 / 11&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							9&nbsp;
+						</td>
+						<td>
+							3&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=DEE-34037&courseName=Design+Project+in+Power+Electronics&courseNameEng=Design+Project+in+Power+Electronics&year=2019">
+							
+							
+							DEE-34037&nbsp;
+							
+											
+								Design Project in Power Electronics
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 67 / 33 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 75 / 25 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							6&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=DEE-34107&courseName=Modeling+and+Analysis+in+Power+Electronics&courseNameEng=Modeling+and+Analysis+in+Power+Electronics&year=2019">
+							
+							
+							DEE-34107&nbsp;
+							
+											
+								Modeling and Analysis in Power Electronics
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 38 / 50 / 13 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 29 / 71 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 86 / 14&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							8&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							DEE-34206&nbsp;
+							
+											
+								Dynamics and Control of Grid-Connected Converters
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=DEE-34306&courseName=Modeling+of+Electrical+Machines+and+Magnetic+Materials&courseNameEng=Modeling+of+Electrical+Machines+and+Magnetic+Materials&year=2019">
+							
+							
+							DEE-34306&nbsp;
+							
+											
+								Modeling of Electrical Machines and Magnetic Materials
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 9 / 18 / 18 / 45 / 9 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 10 / 10 / 30 / 50 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 80 / 20&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							11&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=DEE-34406&courseName=Model+Predictive+Control+of+Power+Electronic+Systems&courseNameEng=Model+Predictive+Control+of+Power+Electronic+Systems&year=2019">
+							
+							
+							DEE-34406&nbsp;
+							
+											
+								Model Predictive Control of Power Electronic Systems
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 100 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 100 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 67 / 33&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							3&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=DEE-36006&courseName=Post-Graduate+Course+in+Power+Electronics&courseNameEng=Post-Graduate+Course+in+Power+Electronics&year=2019">
+							
+							
+							DEE-36006&nbsp;
+							
+											
+								Post-Graduate Course in Power Electronics
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=FYS-3106&courseName=Aerosol+Physics&courseNameEng=Aerosol+Physics&year=2019">
+							
+							
+							FYS-3106&nbsp;
+							
+											
+								Aerosol Physics
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 17 / 25 / 33 / 17 / 8&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 8 / 17 / 58 / 17 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 83 / 17&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							12&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=FYS-3206&courseName=Aerosol+Measurement+Techniques&courseNameEng=Aerosol+Measurement+Techniques&year=2019">
+							
+							
+							FYS-3206&nbsp;
+							
+											
+								Aerosol Measurement Techniques
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 50 / 50 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 100 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										50 / 50 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							2&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=FYS-3300&courseName=Ilmasto.nyt&courseNameEng=Climate.now&year=2019">
+							
+							
+							FYS-3300&nbsp;
+							
+											
+								Ilmasto.nyt
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 6 / 12 / 48 / 30 / 3 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 6 / 9 / 33 / 33 / 15 / 3&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										6 / 82 / 12&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							33&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=IHA-3110&courseName=Ohjaus-+ja+automaatioj%e4rjestelm%e4t&courseNameEng=Control+and+Automation+Systems&year=2019">
+							
+							
+							IHA-3110&nbsp;
+							
+											
+								Ohjaus- ja automaatiojärjestelmät
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										3 / 8 / 16 / 35 / 35 / 1 / 3&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										3 / 5 / 19 / 36 / 30 / 3 / 4&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										3 / 92 / 5&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							80&nbsp;
+						</td>
+						<td>
+							3&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=IHA-3316&courseName=Automaatio+ty%f6koneissa&courseNameEng=Automation+in+Heavy+Machines&year=2019">
+							
+							
+							IHA-3316&nbsp;
+							
+											
+								Automaatio työkoneissa
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 7 / 21 / 57 / 7 / 7&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 8 / 0 / 31 / 46 / 8 / 8&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 62 / 38&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							14&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=IHA-3326&courseName=Model-based+design+and+Rapid+Prototyping&courseNameEng=Model-based+design+and+Rapid+Prototyping&year=2019">
+							
+							
+							IHA-3326&nbsp;
+							
+											
+								Model-based design and Rapid Prototyping
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 33 / 50 / 17 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 60 / 20 / 20 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							6&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							IHA-3607&nbsp;
+							
+											
+								Doctor course in Fluid Power Automation
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							KIE-32007&nbsp;
+							
+											
+								Professional Interactions in English
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=KIE-32017&courseName=Professional+Interactions+in+English%2fTTI&courseNameEng=Professional+Interactions+in+English%2fTTI&year=2019">
+							
+							
+							KIE-32017&nbsp;
+							
+											
+								Professional Interactions in English/TTI
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 1 / 16 / 54 / 26 / 3&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 17 / 46 / 33 / 3&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										5 / 85 / 11&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							74&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=KIE-32027&courseName=Professional+Interactions+in+English%2fTUTA+%26+TIJO&courseNameEng=Professional+Interactions+in+English%2fTUTA+%26+TIJO&year=2019">
+							
+							
+							KIE-32027&nbsp;
+							
+											
+								Professional Interactions in English/TUTA &amp; TIJO
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 3 / 26 / 55 / 16 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 4 / 29 / 51 / 14 / 1&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										9 / 90 / 1&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							73&nbsp;
+						</td>
+						<td>
+							3&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=KIE-32047&courseName=Professional+Interactions+in+English%2fRAK&courseNameEng=Professional+Interactions+in+English%2fRAK&year=2019">
+							
+							
+							KIE-32047&nbsp;
+							
+											
+								Professional Interactions in English/RAK
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 1 / 4 / 21 / 63 / 11 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 1 / 3 / 28 / 59 / 8 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										6 / 89 / 6&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							72&nbsp;
+						</td>
+						<td>
+							6&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=KIE-32057&courseName=Professional+Interactions+in+English%2fLTT&courseNameEng=Professional+Interactions+in+English%2fLTT&year=2019">
+							
+							
+							KIE-32057&nbsp;
+							
+											
+								Professional Interactions in English/LTT
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										1 / 0 / 3 / 15 / 56 / 25 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 1 / 3 / 15 / 54 / 25 / 2&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										3 / 91 / 6&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							122&nbsp;
+						</td>
+						<td>
+							2&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=KIE-32067&courseName=Professional+Interactions+in+English%2fTST&courseNameEng=Professional+Interactions+in+English%2fTST&year=2019">
+							
+							
+							KIE-32067&nbsp;
+							
+											
+								Professional Interactions in English/TST
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										1 / 0 / 2 / 24 / 46 / 27 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										2 / 4 / 5 / 22 / 41 / 26 / 1&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										13 / 79 / 8&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							135&nbsp;
+						</td>
+						<td>
+							22&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=KIE-32106&courseName=English+for+Architects&courseNameEng=English+for+Architects&year=2019">
+							
+							
+							KIE-32106&nbsp;
+							
+											
+								English for Architects
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 5 / 43 / 38 / 14 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 5 / 13 / 34 / 39 / 9 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										3 / 84 / 13&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							65&nbsp;
+						</td>
+						<td>
+							4&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							KIE-32706&nbsp;
+							
+											
+								Englannin kielikoe / arkkitehtuuri
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=KIE-32907&courseName=Englannin+kielikoe+%2f+suullinen+osuus&courseNameEng=English+Language+Exam+%2f+Spoken&year=2019">
+							
+							
+							KIE-32907&nbsp;
+							
+											
+								Englannin kielikoe / suullinen osuus
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=KIE-33007&courseName=Written+Communication+in+English&courseNameEng=Written+Communication+in+English&year=2019">
+							
+							
+							KIE-33007&nbsp;
+							
+											
+								Written Communication in English
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 1 / 14 / 54 / 30 / 1&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 1 / 0 / 12 / 53 / 33 / 2&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										2 / 94 / 5&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							146&nbsp;
+						</td>
+						<td>
+							17&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=KIE-33907&courseName=Englannin+kielikoe+%2f+kirjallinen+osuus&courseNameEng=English+Language+Exam+%2f+Written&year=2019">
+							
+							
+							KIE-33907&nbsp;
+							
+											
+								Englannin kielikoe / kirjallinen osuus
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 50 / 50 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 50 / 50 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							2&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=KIE-34107&courseName=Academic+Writing+in+English&courseNameEng=Academic+Writing+in+English&year=2019">
+							
+							
+							KIE-34107&nbsp;
+							
+											
+								Academic Writing in English
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 4 / 12 / 35 / 40 / 7 / 1&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 4 / 9 / 31 / 45 / 10 / 1&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 82 / 18&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							82&nbsp;
+						</td>
+						<td>
+							8&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=KIE-34157&courseName=Thesis+Writing+in+English&courseNameEng=Thesis+Writing+in+English&year=2019">
+							
+							
+							KIE-34157&nbsp;
+							
+											
+								Thesis Writing in English
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										4 / 0 / 0 / 0 / 46 / 50 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										4 / 0 / 0 / 4 / 32 / 60 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										8 / 92 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							26&nbsp;
+						</td>
+						<td>
+							3&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							KIE-34207&nbsp;
+							
+											
+								Business English
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							KIE-34606&nbsp;
+							
+											
+								International Negotiations
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=KIE-34906&courseName=Directed+Study+in+English&courseNameEng=Directed+Study+in+English&year=2019">
+							
+							
+							KIE-34906&nbsp;
+							
+											
+								Directed Study in English
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 100 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 100 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=KIE-39006&courseName=Research+Presentation&courseNameEng=Research+Presentation&year=2019">
+							
+							
+							KIE-39006&nbsp;
+							
+											
+								Research Presentation
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 50 / 50 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 60 / 40 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							10&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=KIE-39106&courseName=Research+Writing&courseNameEng=Research+Writing&year=2019">
+							
+							
+							KIE-39106&nbsp;
+							
+											
+								Research Writing
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 29 / 71 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 26 / 74 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										10 / 90 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							24&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=LTT-31006&courseName=Introduction+to+Graduate+Studies&courseNameEng=Introduction+to+Graduate+Studies&year=2019">
+							
+							
+							LTT-31006&nbsp;
+							
+											
+								Introduction to Graduate Studies
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 50 / 50 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 50 / 50&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							2&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=LTT-32006&courseName=Demola+Project+Work&courseNameEng=Demola+Project+Work&year=2019">
+							
+							
+							LTT-32006&nbsp;
+							
+											
+								Demola Project Work
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							2&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=LTT-33006&courseName=Challenge+Based+Innovation+Project+Course&courseNameEng=Challenge+Based+Innovation+Project+Course&year=2019">
+							
+							
+							LTT-33006&nbsp;
+							
+											
+								Challenge Based Innovation Project Course
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=LTT-34000&courseName=Luonnontieteiden+ja+matematiikan+historia&courseNameEng=History+of+Science+and+Mathemathics&year=2019">
+							
+							
+							LTT-34000&nbsp;
+							
+											
+								Luonnontieteiden ja matematiikan historia
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 41 / 59 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 5 / 5 / 52 / 33 / 5&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										5 / 95 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							22&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=MEI-30001&courseName=Dynamiikka&courseNameEng=Dynamics+of+Rigid+Bodies&year=2019">
+							
+							
+							MEI-30001&nbsp;
+							
+											
+								Dynamiikka
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										3 / 8 / 26 / 35 / 20 / 5 / 3&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										4 / 14 / 30 / 32 / 15 / 3 / 4&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										28 / 70 / 2&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							182&nbsp;
+						</td>
+						<td>
+							13&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							MEI-36010&nbsp;
+							
+											
+								Virtaustekniikan perusteet
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=MOL-32228&courseName=Electron+Microscopy&courseNameEng=Electron+Microscopy&year=2019">
+							
+							
+							MOL-32228&nbsp;
+							
+											
+								Electron Microscopy
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 2 / 15 / 50 / 33 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 2 / 9 / 45 / 43 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 98 / 2&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							46&nbsp;
+						</td>
+						<td>
+							3&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=MOL-32307&courseName=Materials+Performance&courseNameEng=Materials+Performance&year=2019">
+							
+							
+							MOL-32307&nbsp;
+							
+											
+								Materials Performance
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 5 / 12 / 41 / 33 / 9 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 2 / 9 / 39 / 39 / 11 / 2&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										2 / 91 / 7&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							58&nbsp;
+						</td>
+						<td>
+							3&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=MOL-32327&courseName=Analysis+of+Materials+Performance&courseNameEng=Analysis+of+Materials+Performance&year=2019">
+							
+							
+							MOL-32327&nbsp;
+							
+											
+								Analysis of Materials Performance
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 18 / 63 / 18 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 3 / 21 / 55 / 21 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 97 / 3&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							38&nbsp;
+						</td>
+						<td>
+							2&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=MOL-32366&courseName=Advanced+Materials+Characterization&courseNameEng=Advanced+Materials+Characterization&year=2019">
+							
+							
+							MOL-32366&nbsp;
+							
+											
+								Advanced Materials Characterization
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 22 / 56 / 22 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 11 / 50 / 39 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 83 / 17&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							18&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=PLA-31102&courseName=Ohjelmointitekniikka&courseNameEng=Programming+Techniques&year=2019">
+							
+							
+							PLA-31102&nbsp;
+							
+											
+								Ohjelmointitekniikka
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 5 / 0 / 20 / 35 / 35 / 5&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 5 / 5 / 35 / 45 / 10&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 84 / 16&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							20&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=PLA-32101&courseName=Olio-ohjelmointi&courseNameEng=Object+Programming&year=2019">
+							
+							
+							PLA-32101&nbsp;
+							
+											
+								Olio-ohjelmointi
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 18 / 27 / 55 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 11 / 44 / 44 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							11&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=PLA-32201&courseName=Tietorakenteet&courseNameEng=Data+Structures&year=2019">
+							
+							
+							PLA-32201&nbsp;
+							
+											
+								Tietorakenteet
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=PLA-32311&courseName=Sulautetut+j%e4rjestelm%e4t&courseNameEng=Embedded+Systems&year=2019">
+							
+							
+							PLA-32311&nbsp;
+							
+											
+								Sulautetut järjestelmät
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 100 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 75 / 25 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							4&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=PLA-32603&courseName=Tiedonhallinta+ja+tietokannat&courseNameEng=Data+Management+and+Databases&year=2019">
+							
+							
+							PLA-32603&nbsp;
+							
+											
+								Tiedonhallinta ja tietokannat
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 11 / 63 / 24 / 3&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 13 / 39 / 45 / 3&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										5 / 95 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							38&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=PLA-32611&courseName=Tietokantaj%e4rjestelm%e4t&courseNameEng=Database+Systems&year=2019">
+							
+							
+							PLA-32611&nbsp;
+							
+											
+								Tietokantajärjestelmät
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 71 / 29 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 14 / 29 / 43 / 14&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 71 / 29&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							7&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=PLA-32812&courseName=Johdatus+web-ohjelmointiin&courseNameEng=Introduction+to+Web+Development&year=2019">
+							
+							
+							PLA-32812&nbsp;
+							
+											
+								Johdatus web-ohjelmointiin
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 15 / 23 / 38 / 23 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 8 / 8 / 23 / 23 / 38 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 62 / 38&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							13&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=PLA-32820&courseName=Mobiiliohjelmointi&courseNameEng=Mobile+Programming&year=2019">
+							
+							
+							PLA-32820&nbsp;
+							
+											
+								Mobiiliohjelmointi
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 20 / 60 / 20 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 40 / 40 / 20 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 80 / 20&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							5&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=PLA-32832&courseName=Web-j%e4rjestelm%e4t&courseNameEng=Web-Based+Systems&year=2019">
+							
+							
+							PLA-32832&nbsp;
+							
+											
+								Web-järjestelmät
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							PLA-32842&nbsp;
+							
+											
+								Web-palvelinohjelmointi
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=PLA-33120&courseName=Tietoj%e4rjestelm%e4n+mallintaminen&courseNameEng=Information+System+Modelling&year=2019">
+							
+							
+							PLA-33120&nbsp;
+							
+											
+								Tietojärjestelmän mallintaminen
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 8 / 15 / 54 / 23 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 15 / 46 / 38 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							13&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=PLA-33416&courseName=Software+Engineering+Management&courseNameEng=Software+Engineering+Management&year=2019">
+							
+							
+							PLA-33416&nbsp;
+							
+											
+								Software Engineering Management
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 100 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 33 / 67 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							3&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=PLA-33500&courseName=Teollinen+ohjelmistoliiketoiminta&courseNameEng=Industrial+Software+Business&year=2019">
+							
+							
+							PLA-33500&nbsp;
+							
+											
+								Teollinen ohjelmistoliiketoiminta
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 13 / 13 / 45 / 29 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 6 / 26 / 55 / 13 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 93 / 7&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							31&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=PLA-33601&courseName=Ohjelmistoprojekti&courseNameEng=Software+Project&year=2019">
+							
+							
+							PLA-33601&nbsp;
+							
+											
+								Ohjelmistoprojekti
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 62 / 38 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 8 / 50 / 42 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 62 / 38&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							13&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-31011&courseName=Lujuusoppi&courseNameEng=Strength+of+Materials&year=2019">
+							
+							
+							RAK-31011&nbsp;
+							
+											
+								Lujuusoppi
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 10 / 46 / 40 / 4&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 1 / 8 / 46 / 42 / 3&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										1 / 93 / 6&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							207&nbsp;
+						</td>
+						<td>
+							19&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-31021&courseName=Rakenteiden+mekaniikan+perusteet&courseNameEng=Introduction+to+Structural+Mechanics&year=2019">
+							
+							
+							RAK-31021&nbsp;
+							
+											
+								Rakenteiden mekaniikan perusteet
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 13 / 14 / 27 / 38 / 9 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 11 / 9 / 29 / 36 / 13 / 4&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 49 / 51&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							56&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-31040&courseName=Statiikan+ja+dynamiikan+perusteet&courseNameEng=Introduction+to+Statics+and+Dynamics&year=2019">
+							
+							
+							RAK-31040&nbsp;
+							
+											
+								Statiikan ja dynamiikan perusteet
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 1 / 3 / 28 / 49 / 16 / 2&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 2 / 4 / 29 / 47 / 15 / 2&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										2 / 91 / 7&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							267&nbsp;
+						</td>
+						<td>
+							19&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-31101&courseName=Rakennetekniikan+perusteet&courseNameEng=Introduction+to+Structural+Engineering&year=2019">
+							
+							
+							RAK-31101&nbsp;
+							
+											
+								Rakennetekniikan perusteet
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 1 / 7 / 42 / 42 / 5 / 3&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 7 / 37 / 40 / 12 / 4&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 85 / 15&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							74&nbsp;
+						</td>
+						<td>
+							3&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-32111&courseName=Betonirakenteiden+perusteet&courseNameEng=Introduction+to+Concrete+Structures&year=2019">
+							
+							
+							RAK-32111&nbsp;
+							
+											
+								Betonirakenteiden perusteet
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 5 / 24 / 37 / 32 / 0 / 3&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 3 / 13 / 20 / 50 / 13 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 33 / 67&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							38&nbsp;
+						</td>
+						<td>
+							4&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-32121&courseName=Puu-+ja+ter%e4srakenteiden+perusteet&courseNameEng=Introduction+to+Timber+and+Steel+Structures&year=2019">
+							
+							
+							RAK-32121&nbsp;
+							
+											
+								Puu- ja teräsrakenteiden perusteet
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 2 / 0 / 7 / 55 / 35 / 2&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 2 / 2 / 8 / 46 / 42 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										2 / 88 / 10&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							60&nbsp;
+						</td>
+						<td>
+							14&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-32200&courseName=Betonitekniikka&courseNameEng=Concrete+Technology&year=2019">
+							
+							
+							RAK-32200&nbsp;
+							
+											
+								Betonitekniikka
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 3 / 0 / 32 / 55 / 10 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 4 / 0 / 32 / 60 / 4 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 72 / 28&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							31&nbsp;
+						</td>
+						<td>
+							7&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-32201&courseName=Betonitekniikka&courseNameEng=Concrete+Technology&year=2019">
+							
+							
+							RAK-32201&nbsp;
+							
+											
+								Betonitekniikka
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 2 / 14 / 39 / 31 / 14 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 3 / 13 / 35 / 30 / 17 / 2&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										3 / 82 / 15&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							64&nbsp;
+						</td>
+						<td>
+							3&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-32301&courseName=Elementtimenetelm%e4n+perusteet&courseNameEng=Finite+Element+Method&year=2019">
+							
+							
+							RAK-32301&nbsp;
+							
+											
+								Elementtimenetelmän perusteet
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										1 / 3 / 7 / 20 / 52 / 16 / 1&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 13 / 19 / 42 / 24 / 2&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										2 / 92 / 6&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							91&nbsp;
+						</td>
+						<td>
+							10&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							RAK-32320&nbsp;
+							
+											
+								Johdatus materiaalimalleihin
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-32501&courseName=Rakennusfysiikan+perusteet&courseNameEng=Introduction+to+Building+Physics&year=2019">
+							
+							
+							RAK-32501&nbsp;
+							
+											
+								Rakennusfysiikan perusteet
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 11 / 17 / 39 / 24 / 7 / 2&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 13 / 13 / 26 / 41 / 8 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 49 / 51&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							46&nbsp;
+						</td>
+						<td>
+							7&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-32560&courseName=Rakennusten+akustiikan+ja+paloturvallisuuden+perusteet&courseNameEng=Introduction+to+Acoustics+and+Fire+Safety+in+Buildings&year=2019">
+							
+							
+							RAK-32560&nbsp;
+							
+											
+								Rakennusten akustiikan ja paloturvallisuuden perusteet
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 1 / 8 / 25 / 51 / 12 / 3&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 2 / 0 / 29 / 53 / 15 / 2&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										2 / 90 / 8&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							73&nbsp;
+						</td>
+						<td>
+							15&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-32701&courseName=Rakennusten+elinkaaritekniikka&courseNameEng=Life+Cycle+Engineering+of+Buildings&year=2019">
+							
+							
+							RAK-32701&nbsp;
+							
+											
+								Rakennusten elinkaaritekniikka
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 18 / 61 / 21 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 3 / 18 / 59 / 21 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										3 / 94 / 3&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							38&nbsp;
+						</td>
+						<td>
+							7&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33001&courseName=Rakenteiden+plastisuusmallit&courseNameEng=Plasticity+Models+of+Structures&year=2019">
+							
+							
+							RAK-33001&nbsp;
+							
+											
+								Rakenteiden plastisuusmallit
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 8 / 0 / 13 / 58 / 21 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 5 / 11 / 0 / 32 / 53 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										6 / 56 / 39&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							24&nbsp;
+						</td>
+						<td>
+							3&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33010&courseName=Rakenteiden+mekaniikan+jatkokurssi&courseNameEng=Advanced+Course+of+Structural+Mechanics&year=2019">
+							
+							
+							RAK-33010&nbsp;
+							
+											
+								Rakenteiden mekaniikan jatkokurssi
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 5 / 5 / 42 / 42 / 5 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 7 / 7 / 47 / 27 / 7 / 7&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										7 / 80 / 13&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							19&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							RAK-33031&nbsp;
+							
+											
+								Rakenteiden stabiilius
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33046&courseName=Dynamics+of+Structures&courseNameEng=Dynamics+of+Structures&year=2019">
+							
+							
+							RAK-33046&nbsp;
+							
+											
+								Dynamics of Structures
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 22 / 22 / 33 / 22 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 11 / 11 / 22 / 33 / 22 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										11 / 67 / 22&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							9&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33056&courseName=Continuum+Mechanics&courseNameEng=Continuum+Mechanics&year=2019">
+							
+							
+							RAK-33056&nbsp;
+							
+											
+								Continuum Mechanics
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33060&courseName=Murtumismekaniikka+ja+v%e4syminen&courseNameEng=Fracture+Mechanics+and+Fatigue&year=2019">
+							
+							
+							RAK-33060&nbsp;
+							
+											
+								Murtumismekaniikka ja väsyminen
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 11 / 22 / 56 / 11 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 29 / 43 / 29 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							9&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33070&courseName=Elementtimenetelm%e4n+jatkokurssi&courseNameEng=Advanced+Course+on+Finite+Element+Method&year=2019">
+							
+							
+							RAK-33070&nbsp;
+							
+											
+								Elementtimenetelmän jatkokurssi
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 30 / 30 / 20 / 20 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 44 / 33 / 11 / 11 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							10&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33081&courseName=Kantavien+rakenteiden+optimointi&courseNameEng=Structural+Optimization&year=2019">
+							
+							
+							RAK-33081&nbsp;
+							
+											
+								Kantavien rakenteiden optimointi
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 12 / 12 / 29 / 41 / 6 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 9 / 18 / 18 / 45 / 9 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 83 / 17&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							17&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33201&courseName=Betonirakenteet&courseNameEng=Concrete+Structures&year=2019">
+							
+							
+							RAK-33201&nbsp;
+							
+											
+								Betonirakenteet
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										2 / 18 / 12 / 40 / 26 / 2 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 8 / 8 / 39 / 21 / 24 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 14 / 86&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							50&nbsp;
+						</td>
+						<td>
+							6&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33210&courseName=J%e4nnitetyt+betonirakenteet&courseNameEng=Prestressed+Concrete+Structures&year=2019">
+							
+							
+							RAK-33210&nbsp;
+							
+											
+								Jännitetyt betonirakenteet
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 24 / 53 / 24 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 8 / 63 / 29 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 91 / 9&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							34&nbsp;
+						</td>
+						<td>
+							3&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33226&courseName=Reinforced+Concrete+Structures&courseNameEng=Reinforced+Concrete+Structures&year=2019">
+							
+							
+							RAK-33226&nbsp;
+							
+											
+								Reinforced Concrete Structures
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 33 / 11 / 33 / 22 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 11 / 33 / 22 / 22 / 11&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										22 / 67 / 11&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							9&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33301&courseName=Ter%e4srakenteet&courseNameEng=Steel+Structures&year=2019">
+							
+							
+							RAK-33301&nbsp;
+							
+											
+								Teräsrakenteet
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 33 / 67 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 43 / 50 / 7 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 14 / 86&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							15&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33310&courseName=Ter%e4srakenteiden+jatkokurssi&courseNameEng=Advanced+Course+in+Steel+Structures&year=2019">
+							
+							
+							RAK-33310&nbsp;
+							
+											
+								Teräsrakenteiden jatkokurssi
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 7 / 57 / 34 / 2&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 3 / 50 / 47 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 91 / 9&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							44&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33400&courseName=Puurakenteet&courseNameEng=Timber+Structures&year=2019">
+							
+							
+							RAK-33400&nbsp;
+							
+											
+								Puurakenteet
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 21 / 48 / 31 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 15 / 45 / 40 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 86 / 14&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							29&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33410&courseName=Puurakenteiden+jatkokurssi&courseNameEng=Advanced+Course+on+Timber+Structures&year=2019">
+							
+							
+							RAK-33410&nbsp;
+							
+											
+								Puurakenteiden jatkokurssi
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 18 / 57 / 25 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 6 / 61 / 32 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										3 / 97 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							44&nbsp;
+						</td>
+						<td>
+							2&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							RAK-33501&nbsp;
+							
+											
+								Rakennusfysiikka
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33521&courseName=Rakennusten+energiatehokkuus&courseNameEng=Energy+Efficiency+of+Buildings&year=2019">
+							
+							
+							RAK-33521&nbsp;
+							
+											
+								Rakennusten energiatehokkuus
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 33 / 67 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 100 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 50 / 50&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							3&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33550&courseName=Rakennusterveys+ja+sis%e4ymp%e4rist%f6&courseNameEng=Building+Health+and+Indoor+Environment&year=2019">
+							
+							
+							RAK-33550&nbsp;
+							
+											
+								Rakennusterveys ja sisäympäristö
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 50 / 50 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 60 / 40 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 80 / 20&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							6&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33560&courseName=Rakennusten+akustinen+suunnittelu&courseNameEng=Acoustical+Design+of+Buildings&year=2019">
+							
+							
+							RAK-33560&nbsp;
+							
+											
+								Rakennusten akustinen suunnittelu
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 20 / 53 / 27 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 15 / 38 / 46 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							15&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33571&courseName=Rakenteiden+palomitoitus&courseNameEng=Structural+Fire+Design&year=2019">
+							
+							
+							RAK-33571&nbsp;
+							
+											
+								Rakenteiden palomitoitus
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 6 / 0 / 16 / 59 / 19 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 4 / 4 / 4 / 67 / 21 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 95 / 5&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							32&nbsp;
+						</td>
+						<td>
+							4&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33590&courseName=Rakennusakustiikka+ja+meluntorjunta&courseNameEng=Building+Acoustics+and+Noise+Control&year=2019">
+							
+							
+							RAK-33590&nbsp;
+							
+											
+								Rakennusakustiikka ja meluntorjunta
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 86 / 14 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 14 / 57 / 29 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 86 / 14&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							7&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33600&courseName=Sillanrakennuksen+perusteet&courseNameEng=Introduction+to+Bridge+Engineering&year=2019">
+							
+							
+							RAK-33600&nbsp;
+							
+											
+								Sillanrakennuksen perusteet
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 67 / 33 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 67 / 33 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							3&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33610&courseName=Betonisillat&courseNameEng=Concrete+Bridges&year=2019">
+							
+							
+							RAK-33610&nbsp;
+							
+											
+								Betonisillat
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 20 / 40 / 40 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 20 / 20 / 60 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 80 / 20&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							5&nbsp;
+						</td>
+						<td>
+							2&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							RAK-33620&nbsp;
+							
+											
+								Teräs- ja puusillat
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33711&courseName=Rakenteiden+korjaustekniikka&courseNameEng=Repair+Techniques&year=2019">
+							
+							
+							RAK-33711&nbsp;
+							
+											
+								Rakenteiden korjaustekniikka
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 13 / 67 / 20 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 3 / 18 / 55 / 25 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										8 / 92 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							54&nbsp;
+						</td>
+						<td>
+							4&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33721&courseName=Rakenteiden+historia&courseNameEng=History+of+Structures&year=2019">
+							
+							
+							RAK-33721&nbsp;
+							
+											
+								Rakenteiden historia
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33730&courseName=Kuntotutkimukset&courseNameEng=Condition+Investigation+of+Structures&year=2019">
+							
+							
+							RAK-33730&nbsp;
+							
+											
+								Kuntotutkimukset
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=RAK-33800&courseName=Kiertotalous+talonrakentamisessa&courseNameEng=Circular+Economy+in+Building+Construction&year=2019">
+							
+							
+							RAK-33800&nbsp;
+							
+											
+								Kiertotalous talonrakentamisessa
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 17 / 78 / 6 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 7 / 36 / 29 / 29 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										15 / 85 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							18&nbsp;
+						</td>
+						<td>
+							2&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							RAK-39331&nbsp;
+							
+											
+								Metallirakenteiden erikoistyö jatko-opiskelijoille
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							ROCK-3000&nbsp;
+							
+											
+								Mallikurssi 3
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=SGN-31007&courseName=Advanced+Image+Processing&courseNameEng=Advanced+Image+Processing&year=2019">
+							
+							
+							SGN-31007&nbsp;
+							
+											
+								Advanced Image Processing
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 13 / 13 / 42 / 32 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 3 / 17 / 34 / 45 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 86 / 14&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							31&nbsp;
+						</td>
+						<td>
+							4&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=SGN-33007&courseName=Media+Analysis&courseNameEng=Media+Analysis&year=2019">
+							
+							
+							SGN-33007&nbsp;
+							
+											
+								Media Analysis
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 7 / 33 / 59 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 8 / 40 / 52 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 88 / 13&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							27&nbsp;
+						</td>
+						<td>
+							6&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=SGN-34006&courseName=3D+and+Virtual+Reality&courseNameEng=3D+and+Virtual+Reality&year=2019">
+							
+							
+							SGN-34006&nbsp;
+							
+											
+								3D and Virtual Reality
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 6 / 18 / 24 / 29 / 24 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 31 / 44 / 25 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 80 / 20&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							17&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TIE-30151&courseName=Kyberturvallisuus+I%3a+perusteet&courseNameEng=Cyber+Security+I%3a+Fundamentals&year=2019">
+							
+							
+							TIE-30151&nbsp;
+							
+											
+								Kyberturvallisuus I: perusteet
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										5 / 11 / 19 / 31 / 29 / 4 / 2&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										3 / 10 / 15 / 31 / 32 / 6 / 4&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										2 / 70 / 28&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							209&nbsp;
+						</td>
+						<td>
+							25&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TIE-30201&courseName=Tietoturva-arki&courseNameEng=Daily+Information+Security&year=2019">
+							
+							
+							TIE-30201&nbsp;
+							
+											
+								Tietoturva-arki
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 9 / 13 / 17 / 48 / 13 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 9 / 22 / 35 / 35 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 59 / 41&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							23&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TIE-30302&courseName=Kyberturvallisuus+II%3a+syvent%e4v%e4&courseNameEng=Cyber+Security+II%3a+Specialisation&year=2019">
+							
+							
+							TIE-30302&nbsp;
+							
+											
+								Kyberturvallisuus II: syventävä
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 8 / 0 / 25 / 42 / 25 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 36 / 27 / 36 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 64 / 36&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							12&nbsp;
+						</td>
+						<td>
+							3&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TIE-30406&courseName=Network+Security&courseNameEng=Network+Security&year=2019">
+							
+							
+							TIE-30406&nbsp;
+							
+											
+								Network Security
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 7 / 22 / 41 / 26 / 4&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 4 / 26 / 37 / 30 / 4&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										8 / 92 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							27&nbsp;
+						</td>
+						<td>
+							4&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							TIE-30501&nbsp;
+							
+											
+								Identiteetin ja pääsynhallinta
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TIE-30601&courseName=Turvallinen+ohjelmointi&courseNameEng=Secure+Programming&year=2019">
+							
+							
+							TIE-30601&nbsp;
+							
+											
+								Turvallinen ohjelmointi
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 13 / 75 / 13 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 14 / 71 / 14 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							8&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TIE-31106&courseName=Cryptography+Engineering&courseNameEng=Cryptography+Engineering&year=2019">
+							
+							
+							TIE-31106&nbsp;
+							
+											
+								Cryptography Engineering
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 21 / 47 / 32 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 53 / 47 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 88 / 13&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							19&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-32000&courseName=Organisaation+oppiminen+ja+uudistuminen&courseNameEng=Organizational+Learning+and+Renewal&year=2019">
+							
+							
+							TLO-32000&nbsp;
+							
+											
+								Organisaation oppiminen ja uudistuminen
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 10 / 51 / 35 / 4 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 2 / 52 / 39 / 7 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										2 / 91 / 7&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							49&nbsp;
+						</td>
+						<td>
+							4&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-32011&courseName=Tietointensiivinen+palvelutoiminta&courseNameEng=Knowledge-Intensive+Services&year=2019">
+							
+							
+							TLO-32011&nbsp;
+							
+											
+								Tietointensiivinen palvelutoiminta
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 3 / 9 / 26 / 43 / 18 / 1&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 3 / 29 / 45 / 22 / 2&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										2 / 82 / 16&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							68&nbsp;
+						</td>
+						<td>
+							4&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-32021&courseName=Liiketoimintatiedon+hallinta&courseNameEng=Business+and+Competitive+Intelligence&year=2019">
+							
+							
+							TLO-32021&nbsp;
+							
+											
+								Liiketoimintatiedon hallinta
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										2 / 8 / 25 / 42 / 19 / 3 / 1&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										2 / 8 / 22 / 34 / 27 / 4 / 3&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										2 / 74 / 23&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							124&nbsp;
+						</td>
+						<td>
+							9&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-32201&courseName=Tietohallinto+ja+sen+johtaminen&courseNameEng=Information+Systems+Management&year=2019">
+							
+							
+							TLO-32201&nbsp;
+							
+											
+								Tietohallinto ja sen johtaminen
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 10 / 29 / 48 / 14 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 11 / 28 / 39 / 22 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 88 / 12&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							21&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-32400&courseName=Ohjelmallinen+sis%e4ll%f6nhallinta&courseNameEng=Programmatic+Content+Management&year=2019">
+							
+							
+							TLO-32400&nbsp;
+							
+											
+								Ohjelmallinen sisällönhallinta
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 22 / 41 / 27 / 8 / 3&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 15 / 32 / 44 / 3 / 6&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 79 / 21&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							37&nbsp;
+						</td>
+						<td>
+							13&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-32410&courseName=Johdanto+datatieteeseen&courseNameEng=Introduction+to+Data+Science&year=2019">
+							
+							
+							TLO-32410&nbsp;
+							
+											
+								Johdanto datatieteeseen
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 36 / 50 / 14 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 15 / 31 / 46 / 8 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 92 / 8&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							14&nbsp;
+						</td>
+						<td>
+							3&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-32426&courseName=Basics+for+Business+Data+Analytics&courseNameEng=Basics+for+Business+Data+Analytics&year=2019">
+							
+							
+							TLO-32426&nbsp;
+							
+											
+								Basics for Business Data Analytics
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 3 / 13 / 36 / 37 / 10 / 1&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 3 / 11 / 30 / 38 / 15 / 3&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										2 / 84 / 13&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							98&nbsp;
+						</td>
+						<td>
+							8&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-32601&courseName=Tietojohtamisen+kandidaatinty%f6seminaari&courseNameEng=Bachelor's+Thesis+Seminar+in+Information+and+Knowledge+Management&year=2019">
+							
+							
+							TLO-32601&nbsp;
+							
+											
+								Tietojohtamisen kandidaatintyöseminaari
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 20 / 47 / 27 / 7&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 7 / 50 / 43 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 93 / 7&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							15&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-35021&courseName=Uuden+tiedon+luominen+ja+sen+ty%f6kalut&courseNameEng=New+Knowledge+-+Creation+and+Tools&year=2019">
+							
+							
+							TLO-35021&nbsp;
+							
+											
+								Uuden tiedon luominen ja sen työkalut
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 9 / 27 / 45 / 18 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 45 / 18 / 36 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 90 / 10&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							11&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-35041&courseName=Liiketoimintatiedon+analyysi&courseNameEng=Business+analysis&year=2019">
+							
+							
+							TLO-35041&nbsp;
+							
+											
+								Liiketoimintatiedon analyysi
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 10 / 20 / 30 / 30 / 10 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 10 / 40 / 20 / 10 / 20 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 90 / 10&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							10&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-35061&courseName=Tietointensiivisen+palvelutoiminnan+johtaminen&courseNameEng=Managing+Knowledge-Intensive+Services&year=2019">
+							
+							
+							TLO-35061&nbsp;
+							
+											
+								Tietointensiivisen palvelutoiminnan johtaminen
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 7 / 7 / 18 / 57 / 11 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 14 / 21 / 54 / 11 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 92 / 8&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							28&nbsp;
+						</td>
+						<td>
+							2&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							TLO-35071&nbsp;
+							
+											
+								Tietoperustainen arvonluonti
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-35111&courseName=Informaatioanalytiikan+ty%f6kurssi&courseNameEng=Information+Analytics+Workshop&year=2019">
+							
+							
+							TLO-35111&nbsp;
+							
+											
+								Informaatioanalytiikan työkurssi
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-35120&courseName=Informaatioanalytiikan+seminaari&courseNameEng=Information+Analytics+Seminar&year=2019">
+							
+							
+							TLO-35120&nbsp;
+							
+											
+								Informaatioanalytiikan seminaari
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 6 / 13 / 44 / 38 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 6 / 25 / 25 / 38 / 6 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										25 / 75 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							16&nbsp;
+						</td>
+						<td>
+							2&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-35201&courseName=Liiketoiminnan+ja+tietoj%e4rjestelmien+yhteensovittaminen&courseNameEng=Business-IT+Alignment&year=2019">
+							
+							
+							TLO-35201&nbsp;
+							
+											
+								Liiketoiminnan ja tietojärjestelmien yhteensovittaminen
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 3 / 31 / 66 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 7 / 11 / 78 / 4 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 92 / 8&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							29&nbsp;
+						</td>
+						<td>
+							4&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-35237&courseName=Information+Security+Management&courseNameEng=Information+Security+Management&year=2019">
+							
+							
+							TLO-35237&nbsp;
+							
+											
+								Information Security Management
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 11 / 22 / 33 / 33 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 6 / 13 / 38 / 44 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 94 / 6&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							18&nbsp;
+						</td>
+						<td>
+							2&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-35247&courseName=Data+and+Software+Business&courseNameEng=Data+and+Software+Business&year=2019">
+							
+							
+							TLO-35247&nbsp;
+							
+											
+								Data and Software Business
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 2 / 2 / 25 / 54 / 15 / 2&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 2 / 6 / 23 / 50 / 17 / 2&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										6 / 85 / 8&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							48&nbsp;
+						</td>
+						<td>
+							7&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-35257&courseName=Data+and+Information+Management&courseNameEng=Data+and+Information+Management&year=2019">
+							
+							
+							TLO-35257&nbsp;
+							
+											
+								Data and Information Management
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 2 / 10 / 18 / 55 / 14 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 9 / 21 / 51 / 17 / 2&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 91 / 9&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							49&nbsp;
+						</td>
+						<td>
+							7&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-35307&courseName=Emerging+Technology+Adoption+and+Use&courseNameEng=Emerging+Technology+Adoption+and+Use&year=2019">
+							
+							
+							TLO-35307&nbsp;
+							
+											
+								Emerging Technology Adoption and Use
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 4 / 20 / 56 / 12 / 8&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 20 / 76 / 4 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										4 / 96 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							25&nbsp;
+						</td>
+						<td>
+							3&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-35400&courseName=Digitalisaation+johtaminen&courseNameEng=Digitalization+and+management&year=2019">
+							
+							
+							TLO-35400&nbsp;
+							
+											
+								Digitalisaation johtaminen
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 14 / 29 / 43 / 14 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 14 / 29 / 29 / 29 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							7&nbsp;
+						</td>
+						<td>
+							1&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-35621&courseName=Vaihtuva-aiheinen+tietojohtamisen+opintojakso&courseNameEng=Topic+of+Current+Interest+in+Information+and+Knowledge+Management&year=2019">
+							
+							
+							TLO-35621&nbsp;
+							
+											
+								Vaihtuva-aiheinen tietojohtamisen opintojakso
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 15 / 31 / 54 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 46 / 54 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 100 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							13&nbsp;
+						</td>
+						<td>
+							2&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TLO-35631&courseName=Tietojohtamisen+erikoisty%f6&courseNameEng=Directed+Study+in+Information+and+Knowledge+Management&year=2019">
+							
+							
+							TLO-35631&nbsp;
+							
+											
+								Tietojohtamisen erikoistyö
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							TLO-35641&nbsp;
+							
+											
+								Tietojohtamisen syventävä opintojakso
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TTA-31011&courseName=Yrityksen+talous&courseNameEng=Business+Economics&year=2019">
+							
+							
+							TTA-31011&nbsp;
+							
+											
+								Yrityksen talous
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 9 / 46 / 44 / 1&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 1 / 9 / 39 / 50 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										3 / 96 / 1&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							254&nbsp;
+						</td>
+						<td>
+							15&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TTA-32010&courseName=Johdon+laskentatoimi&courseNameEng=Management+Accounting&year=2019">
+							
+							
+							TTA-32010&nbsp;
+							
+											
+								Johdon laskentatoimi
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										1 / 0 / 2 / 12 / 45 / 40 / 1&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										1 / 1 / 3 / 12 / 41 / 42 / 1&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										2 / 94 / 4&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							163&nbsp;
+						</td>
+						<td>
+							11&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TTA-35011&courseName=Ulkoinen+laskentatoimi+ja+verotus&courseNameEng=Financial+Accounting+and+Taxation&year=2019">
+							
+							
+							TTA-35011&nbsp;
+							
+											
+								Ulkoinen laskentatoimi ja verotus
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 4 / 35 / 61 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 3 / 3 / 35 / 60 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										5 / 95 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							82&nbsp;
+						</td>
+						<td>
+							4&nbsp;
+						</td>
+						<td>
+							
+								<img src="/kaiku/images/check.gif"
+	              					alt="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen" 
+	              					title="Opintojakson kyselyistä ainakin yhteen opettaja on antanut vastauksen"/>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+								<a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQueries&courseCode=TTA-35021&courseName=Laskentatoimi+johtamisen+tukena&courseNameEng=Advanced+Management+Accounting&year=2019">
+							
+							
+							TTA-35021&nbsp;
+							
+											
+								Laskentatoimi johtamisen tukena
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 7 / 20 / 58 / 15 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 2 / 24 / 55 / 16 / 2&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										2 / 90 / 8&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							55&nbsp;
+						</td>
+						<td>
+							8&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							TUT-30006&nbsp;
+							
+											
+								Competency-based Teaching and Curriculum
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							TUT-30036&nbsp;
+							
+											
+								How to Teach Multicultural Groups?
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							YHTES-30016&nbsp;
+							
+											
+								Common Core Studies
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							YHTES-30027&nbsp;
+							
+											
+								Major Studies
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0 / 0 / 0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										0 / 0 / 0&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							0&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							YHTTAMK-32046&nbsp;
+							
+											
+								Best Seller Competition
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							YHTTAMK-32060&nbsp;
+							
+											
+								B2B myyntiosaaminen
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							YHTTAMK-32070&nbsp;
+							
+											
+								B2B myyntivuorovaikutustaidot
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							YHTTAMK-32080&nbsp;
+							
+											
+								Pk-yrittäjän myyntijohtaminen
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+							
+								<tr class="odd" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#f7f8f9';">
+							
+						
+						<td>
+							
+							
+							YHTTAY-30300&nbsp;
+							
+											
+								Opettajan pedagogiset opinnot
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+						
+							
+								<tr class="even" onmouseover="this.style.background='#d8d8d8';" onmouseout="this.style.background='#ebecec';">
+							
+							
+						
+						<td>
+							
+							
+							YHTTAY-30301&nbsp;
+							
+											
+								Opettajan pedagogisia opintoja
+							
+							
+							
+							
+						</td>
+						
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+							<td>
+								
+									
+									
+										&nbsp;
+									
+								
+							</td>
+							
+						
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				
+				
+				<tr>
+					<td>
+						Yhteensä
+					</td>
+					
+					<td>
+						
+							
+							
+								1 / 3 / 7 / 23 / 44 / 21 / 1&nbsp;
+							
+						
+					</td>
+					
+					<td>
+						
+							
+							
+								1 / 3 / 7 / 22 / 42 / 24 / 2&nbsp;
+							
+						
+					</td>
+					
+					<td>
+						
+							
+							
+								4 / 85 / 12&nbsp;
+							
+						
+					</td>
+					
+					<td>
+						4770&nbsp;
+					</td>
+					<td>
+						416&nbsp;
+					</td>
+					<td></td>
+				</tr>
+				
+			</table>
+		
+	
+</form>
+
+
+
+<br>
+<br>
+
+
+
+		</div>
+
+		<div id="footerInfobox">
+			Kaiku - Tampereen yliopisto
+			Sovelluksen versio: 1.15.0 (10.3.2020)
+		</div>
+				
+		<div id="footer"><span id="footerInfoLink" class="about">Tietoa sovelluksesta</span></div>
+
+		</div>
+		</div>
+		</div>
+	</body>
+</html>

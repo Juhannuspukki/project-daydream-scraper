@@ -7,7 +7,7 @@ import math
 def parseCourses(fileName):
     print("Processing " + fileName)
 
-    with open((fileName + '.html'), 'rb') as file:
+    with open(("kaiku-html/" + fileName + '.html'), 'rb') as file:
         soup = BeautifulSoup(file, features="lxml")
     soup = soup.find("table", {"class": "common"})
     soup = soup.find_all("tr", ["even", "odd"])  # find correct elements
@@ -141,6 +141,8 @@ def analyze():
         with open((fileName + '.json'), 'w', encoding="utf-8") as outfile:
             json.dump(gradeCourses(courseList), outfile, indent=2, ensure_ascii=False)
 
+    # Year 18-19 is in several files
+
     courses = []
 
     for i in range(10):
@@ -149,4 +151,16 @@ def analyze():
 
     courses = gradeCourses(sorted(courses, key=itemgetter('grade'), reverse=True))
     with open('kaiku-18-19.json', 'w', encoding="utf-8") as outfile:
+        json.dump(courses, outfile, indent=2, ensure_ascii=False)
+
+    # Year 19-20 is also in several files
+
+    courses = []
+
+    for i in range(10):
+        courseList = parseCourses("kaiku-19-20-" + str(i))
+        courses = courses + courseList
+
+    courses = gradeCourses(sorted(courses, key=itemgetter('grade'), reverse=True))
+    with open('kaiku-19-20.json', 'w', encoding="utf-8") as outfile:
         json.dump(courses, outfile, indent=2, ensure_ascii=False)
