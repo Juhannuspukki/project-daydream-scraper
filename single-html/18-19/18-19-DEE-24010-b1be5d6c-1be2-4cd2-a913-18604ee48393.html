@@ -1,0 +1,995 @@
+<html lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Kaiku
+  </title>
+  <link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css"/>
+  <script src="/kaiku/javascript/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/kaiku.js" type="text/javascript">
+  </script>
+  <link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css"/>
+  <link href="/kaiku/style/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="hidden" id="pop-up">
+   <img alt="hourclass" src="/kaiku/images/hourglass_small.png"/>
+   <br/>
+   Raportti latautuu...
+  </div>
+  <div id="outer">
+   <div id="page">
+    <div id="banner">
+     <img alt="Kaiku" src="/kaiku/images/Logo_TAU_FI.png" style="height: 50px;"/>
+     <span class="page_name">
+      Kaiku
+      <br/>
+     </span>
+     <div id="banner_inner_right">
+      <nobr>
+       <a href="https://www.tut.fi/pop">
+        POP
+       </a>
+       |
+       <a href="https://www.tut.fi/tutka">
+        TUTKA
+       </a>
+      </nobr>
+      <span class="user_name">
+       Jere Laine
+       <br/>
+      </span>
+      <br/>
+      <a href="/kaiku/logOut/logOut">
+       Kirjaudu ulos
+      </a>
+     </div>
+    </div>
+    <div id="menu" style="min-height: 15px;">
+     <nobr>
+      <a href="/kaiku/kaiku/mainpage">
+       Etusivu
+      </a>
+      <a href="/kaiku/studentMainPageSearch/feedback">
+       Anna Palautetta
+      </a>
+      <a class="selected" href="/kaiku/examineFeedbackPage/feedback">
+       Palautteet
+      </a>
+      <a href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf" style="font-size: 12px;">
+       ?
+      </a>
+      <a href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&amp;PREVIOUS_VIEW=feedbackSummaryCourseQueryResults" style="font-size: 10px;">
+       in English
+      </a>
+     </nobr>
+    </div>
+    <div id="content">
+     <div id="inner_content">
+      <style>
+       button {
+		white-space: nowrap;
+	}
+      </style>
+      <br/>
+      <form action="/kaiku/examineFeedbackPage/feedback" id="pageInformation" method="post">
+       <table>
+        <tbody>
+         <tr>
+          <td colspan="3">
+           <a href="/kaiku/examineFeedbackPage/feedback?action=landingPageLink">
+            Opintojaksojen palautteet
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=depOrCoursegroupLink&amp;depOrCoursegroupId=10102">
+            Sähkötekniikka
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=courseImplementationLink&amp;chosenCourseCode=DEE-24010">
+            DEE-24010
+				Sähkövoimajärjestelmän säätö ja käyttö
+           </a>
+           →
+		
+			Kysely 27.04.19-10.06.19
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           <br/>
+           <h2>
+            <nobr>
+             DEE-24010
+				
+					Sähkövoimajärjestelmän säätö ja käyttö
+					
+					(
+             <a href="https://www.tut.fi/opinto-opas/wwwoppaat/opas2018-2019/perus/aineryhmat/Sahkovoimatekniikka/DEE-24010.html" target="plain">
+              Opinto-opas
+             </a>
+             )
+            </nobr>
+           </h2>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Lukuvuosi 2018 - 2019,
+					Periodit IV
+           <br/>
+           Kysely 27.04.19-10.06.19
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Vastanneita yhteensä: 25
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           En anna palautetta vastanneita yhteensä: 3
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- The analysis part -->
+       <!-- ***************** -->
+       <table class="common">
+        <tbody>
+         <tr>
+          <th colspan="2" style="font-size: 13px;">
+           Opettajan vastaus opiskelijoiden antamaan toteutuskertapalautteeseen
+          </th>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <b>
+            Nykyinen vastaus
+           </b>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span class="prebr">
+            Kurssin taustaa
+Kurssin aihepiiri on teoreettisesti Sähköenergiatekniikan osalta kaikkein hankalimpia. Nykyisessä toteutuksessa on tavoitteena käsitellä aika yleisellä tasolla asioita, joita erityisesti sähkönsiirrossa tulee eteen, kun tarkastellaan koko järjestelmän käyttäytymistä erityisesti muutostilanteissa. Nyky-päivänä toki Facts- ja HVDC-laitteita on asennettuna myös alemman jännitetason verkkoihin. 
+Valitettavasti aihepiirin laajuus ja kurssin suppeus (5 op.) ei mahdollista syvällisempää keskittymis-tä eri aihepiireihin. 
+Oppikurssin sisällön kannalta PSCAD ei oikeastaan ole oikea työkalu nykyisten harjoitustöiden tekoon. Oletettavasti kuitenkin hyvin harva opiskelijoista työllistyy suoraan Fingridiin tai muuhun sellaiseen työyhteisöön, jossa yleisesti käytettäisiin siirtoverkon suunnitteluohjelmistoja. PSCAD-ohjelmistoa sen sijaan käytetään laajasti koko sähköenergiatekniikan alueella (myös jakeluyhtiöis-sä). Tämän takia työkaluna harjoitustöissä on PSCAD.
+
+Vastapalaute
+Kommentteja palautteesta: 1) Kokonaisuutta pidettiin onnistuneena, palautteen ka. 4.0 2) Vastasi osaamistavoitteita, palautteen ka. 4.2
+
+Kurssin ajankohta oli nyt ensimmäistä kertaa vuosiin Mallinnus ja analyysi-kurssin jälkeen IV-periodilla, joka on parempi ajankohta kuin syksyn I periodi. 
+Aikaisemmilla toteutuskerroilla on ollut ongelmia esitietojen kanssa. Kurssin esitietovaatimuksissa todetaan yksikäsitteisesti, että kurssi DEE-24000 mallinnus ja analyysi olevan pakollinen. Mieles-täni tänä vuonna ei yhdessäkään palautteessa mainittu vaikeuksia siirtotekniikan peruslaskujen kanssa. 
+
+Kurssin luentojen ja harjoitusten toteutusta ja sisältöä pidettiin hyvänä. Luennoissa olen pyrkinyt muuttamaan sisältöä systemaattisesti yleisemmäksi kuin aiemmilla toteutuksilla, jolloin se oli aika Fingrid painotteista. Tämä työ on edelleen kesken ja samalla toki sisältöä pitää nykyaikaistaa. 
+
+Kriittisimmät kommentit koskivat PSCAD-harjoitustöitä ja niiden aikataulua ja sisältöä. Tämä on usein ollut eniten kritiikkiä saava osuus. Toisaalta tämä kuvaa kuinka tärkeä osa se on opiskelijoi-den mielestä kurssikokonaisuutta, kuten sen on tarkoituskin olla.
+PSCAD-töitä on aiemmin pidetty 5-6, mutta silloin kurssi oli kahden periodin mittainen. Tuon ajan toteutuksessa oli paikallaan pitää nykyisen ensimmäisen työn tapainen osuus, koska PSCAD-taitoja tarvittiin paljon laajemmin lopuissa harjoitustöissä. 
+
+Tämän tyyppisten harjoitustöiden osalta on aina kaksipiippuinen juttu kuinka selkeitä työohjeet ja neuvonta saa/pitää olla. Diplomi-insinöörin töissä (työtehtävästä riippuen) on ihan normaalia se, että tietoa joutuu hakemaan monia eri kanavia käyttäen ja siitä on osattava poimia olennainen. Jos har-joitustöiden ohjeet ovat liian valmiita, ei töiden tekeminen opeta mitään oleellista, vaan ainoastaan toistamaan asioita ohjeen mukaisesti, joka ei ole yliopisto-opetuksen tarkoitus.
+
+Palaute kritiikkiin 
+PSCAD-töiden työmäärä opiskelijoiden osalta näyttää olevan aika hyvin kohdillaan. Töiden osuus arvostelussa oli 30 %:ia ja työmäärässä se vastaa 30%*5 op.*27 h = 40 h työtä.
+
+Opetusresurssien takia PSCAD-töihin ei pystytä laboratorion puolelta panostamaan enempää. Töi-den ohjaus ja tarkastus on iso ponnistus työtunteina mitattuna. Ryhmäkoko esim. saisi olla korkein-taan 2. Näille asioille ei yksinkertaisesti voi mitään, sillä PSCAD:in käytön hallitsevia ja opetukseen osallistuvia on laboratoriossa muutama.
+
+Moodlea ei käytetä työryhmien muodostamiseen, koska laboratorion saaman opiskelijapalautteen pohjalta on päätetty supistaa erillisten ohjelmien käyttö minimiin ja käyttää Rock/Pop-ympäristöä mahdollisimman paljon.
+
+Töiden sisältö erityisesti työn 1 osalta sen sijaan aiheutti enimmät kommentit. Ensimäistä työn oh-jetta ja sisältöä pidettiin jopa sekavana. Tässä on selkeästi kehitettävää, koska kahden muun työn osalta oli palautteessa ainoastaan muutama kommentti.
+
+t. Juhani Bastman
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- <table>
+			<tr><td><div class="line" ></div></td></tr>
+			<tr><td>Kyselyn tulosten julkisuus</td></tr>
+			<tr><td><div class="line" ></div></td></tr>
+		</table>-->
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th style="font-size: 13px;">
+           Kysymyskohtaiset palautteet
+          </th>
+         </tr>
+        </tbody>
+       </table>
+       <h1>
+        Monivalintakysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <table class="common">
+        <!-- NORMAL OBLIGATORY CHOICE QUESTIONS -->
+        <tbody>
+         <tr>
+          <th colspan="4" width="90%">
+           Yleisarvosana opintojaksolle ja sen toteutukselle.
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4.04
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           0.72
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           6.0
+          </td>
+          <td>
+           24.0
+          </td>
+          <td>
+           24.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           12.0
+          </td>
+          <td>
+           48.0
+          </td>
+          <td>
+           72.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           7.0
+          </td>
+          <td>
+           28.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           25.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista?
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4.18
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           0.72
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           17.39
+          </td>
+          <td>
+           17.39
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           10.0
+          </td>
+          <td>
+           43.48
+          </td>
+          <td>
+           60.87
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           8.0
+          </td>
+          <td>
+           34.78
+          </td>
+          <td>
+           95.65
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           4.35
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           23.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin.
+          </th>
+          <td class="empty" rowspan="9" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2.14
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           0.34
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä vähäinen opintopisteisiin nähden. (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Työmäärä sopiva opintopisteisiin nähden. (2)
+          </td>
+          <td>
+           19.0
+          </td>
+          <td>
+           86.36
+          </td>
+          <td>
+           86.36
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä liian suuri opintopisteisiin nähden. (3)
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           13.64
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           22.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- OPEN QUESTIONS !!! -->
+       <br/>
+       <h1>
+        Avoimet kysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Mikä onnistui opintojaksolla hyvin?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Bastman, Juhani,
+									18.06.2019
+           </span>
+           <br/>
+           Harjoitustöistä oli paljon apua kurssin oppimistavoitteiden saavuttamisessa. Luennolla annetuista esimerkeistä oli helppo oppia todellisen maailman säädöstä ja käytöstä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opetusmateriaaali ja -tavat olivat laajat ja monipuoliset
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat jälleen menestystarina luennoitsijan osalta. Harjoitukset tukivat oppimista ja mallintivat hyvin luentojen käsitteitä. Harjoitustöiden tehtävät auttoivat ymmärtämään  sähköverkon stabiilisuuteen vaikuttivia tekijöitä ja sen säädön ratkaisuja paljon paremmin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvä opetus
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           hyvät luennot
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           PSCAD-harjoitustyöt olivat hyviä, sekä kurssimateriaali ylipäätänsä selkeä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyöt olivat hyviä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Erinomainen kurssi kaiken kaikkiaan! Luennoista saa paljon enemmän irti kuin pelkistä materiaaleista.
+Positiivisena huomiona myös se, kun kysyit opiskelijoilta ns. erikseen, onko kysymyksiä.
+Kurssiasioihin liittyvä tiedotus oli jälleen kerran erinomaista!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennoitsijan ammattitaito sekä jämäkkä ote opetettavaan asiaan ja itse luennoimiseen teki kurssista erinomaisen kokemuksen. Opetus oli erinomaisen laadukasta ja keskittyi olennaiseen, mikä on valitettavan harvinaista herkkua. PSCAD-harjoitukset tukivat pieniä sivujuonteita lukuunottamatta (ks. kehitysideat) hyvin optetttuja asioita.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyöt olivat hyviä ja opettavaisia. Myös luennot olivat hyviä, Bastman on hyvä luennoitsija! Kurssin siirtäminen 4. periodille heti 3. periodin DEE-24000 jälkeen vaikuttaa hyvältä ratkaisulta, vaikka itsellä tuli nyt turhan pitkä tauko tämän kurssin ja viime keväänä käydyn DEE-24000 välille.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot todella hyviä ja pysyttiin hyvin asiassa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kaikki muut paitsi ensimmäinen harkkatyö olivat hyvin järjestettyjä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Miten kehittäisit opintojaksoa?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Bastman, Juhani,
+									18.06.2019
+           </span>
+           <br/>
+           Osa harjoitustöistä/töiden tehtävistä vei liikaa aikaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustöiden palautukset ja korjaukset ajoittuivat tenttiviikoille
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Omalla kohdalla harjoitustyöt olivat todella raskaita. Itselläni oli isompi koulutyö menossa samaan aikaan ja oman työpari ei ehtinyt tekemään ensimmäistä työtä yhtä hyvin kuin loppuja töitä. Hän ei ollut käyttänyt PSCAD-ohjelmaa  aikaisemmin eikä käynyt vapaaehtoisessa käyttöharjoituksessa. Sen lisäksi hän kävi töissä samaan aikaan. Eli jouduin tekemään simuloinnit yksin ja opettamaan ohjelman käytön hänelle. Minullakin oli suuria vaikeuksia käyttää ohjelmaa alussa, vaikka kävin käyttöharjoituksessa, ja näiden tekijöiden takia ensimmäinen työ seisoi yli viikon. Saimme apua, mutta työtä ei saatu valmiiksi viralliseen palautuspäivämäärään mennessä. Itse kannoin suurimman työmäärän ja vastuun harjoitustöiden tekemisestä. Käytin harjoitustöiden tekemiseen yli 38,5 tuntia.
+
+Suosittelen jokaisen kurssilaisen käymistä pakollisessa käyttöharjoituksessa harjoitustöihin liittyen tai ensimmäinen työ tehdään yksin ja loput ryhmissä. Tällöin jokainen ryhmänjäsen osaisi käyttää ohjelmaa eikä kaikki vastuu lepäisi yhden henkilön päällä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ensimmäinen pscad työ oli vaikea selkoinen; tähän oltaisiin voitu järjestää vielä opetusta tai muuttaa työn rakennetta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           En mitenkään
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Valitettavasti omassa ryhmässäni kahdella henkilöllä PSCAD ei toiminut kunnolla liittyen kaiketi verkkoasemille tallennettujen tiedostojen tiedostopolkuihin, joka hankaloitti töiden tekemistä sekä lisäsi niihin käytettyä aikaa. Tämä tietty on ohjelmistotekninen asia ja tähän on varmaankin hankala vaikuttaa kurssihenkilökunnan toimesta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harkkatyön 1.osan tarkistuksessa kesti luvattoman kauan. Muuten siinä annettiin kyllä hyvin ohjeita opiskelijoille. 
+Harkkatyön 2. osassa ryhmämme sai palautetta, että osa kaavoista oli väärin, mutta näiden osalta ei annettu sitten oikeita kaavoja tarkastajan puolelta edes lopullisessa arvioinnissa. Sanottiin vain, että oppimisen kannalta kannattaa katsoa, mikä meni vikaan. Tämä oli kuitenkin vain pieni asia, ja 2. osaan saimme esim. palautteen vain muutamassa päivässä.
+Joitain saattaa häiritä se, että tentin tulokset ovat nimeen yhdistetyt, ts. opiskelijanumeron avulla ilmoitetut tulokset olisivat hieman anonyymimmät.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssin aikana käsiteltiin monia tärkeitä asioita, mutta jopa ylimääräistä aikaa jäi kurssin loppupuolelle. Joidenkin kokonaisuuksien opetussisältöä voisi siis syventää, esimerkiksi heilahteluyhtälön soveltamisesta ja järjestelmän käyttäytymisestä sen mukaan olisi mielellään kuullut lisää. 
+
+PSCAD-harjoituksissa voisi painottaa enemmän tulosten tulkintaa ja mallin toiminnan ymmärrystä. Nyt töissä 1 ja 2 suurin määrä aikaa kului reunallisiin ohjelman käytöön liittyviin asioihin, jotka eivät edes lisänneet PSCAD:in käyttötaitoa, sillä ihmettelimme lähinnä  mikä etukäteen nimetty muuttuja vastaa mitäkin arvoa ja mihin mikäkin lähtöarvo pitää syöttää.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           HT1 tekemiseen kului paljon aikaa. Muissa harkkatöissä oli selkeämmät ohjeet ja lähtökohdat.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ensimmäinen harkkatyö oli huonosti järjestetty
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyöt olivat hyviä, mutta 1. ja 2. kanssa tuli hieman kiire töiden ollessa osittain päällekkäin ja samanaikaisesti toisen kurssin kahden vastaavanlaajuisen harjoitustyön kanssa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <!-- STUDENT RESPONSES -->
+       <br/>
+       <br/>
+      </form>
+      <br/>
+      <br/>
+     </div>
+     <div id="footer">
+      <span class="about" id="footerInfoLink">
+       Tietoa sovelluksesta
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div aria-describedby="footerInfobox" aria-labelledby="ui-id-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable" role="dialog" style="display: none; position: absolute;" tabindex="-1">
+   <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+    <span class="ui-dialog-title" id="ui-id-1">
+    </span>
+    <button aria-disabled="false" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="close">
+     <span class="ui-button-icon-primary ui-icon ui-icon-closethick">
+     </span>
+     <span class="ui-button-text">
+      close
+     </span>
+    </button>
+   </div>
+   <div class="ui-dialog-content ui-widget-content" id="footerInfobox">
+    Kaiku - Tampereen yliopisto
+			Sovelluksen versio: 1.15.0 (10.3.2020)
+   </div>
+   <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;">
+   </div>
+  </div>
+ </body>
+</html>

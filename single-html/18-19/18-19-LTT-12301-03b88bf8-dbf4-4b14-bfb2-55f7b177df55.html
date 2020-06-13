@@ -1,0 +1,3564 @@
+<html lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Kaiku
+  </title>
+  <link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css"/>
+  <script src="/kaiku/javascript/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/kaiku.js" type="text/javascript">
+  </script>
+  <link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css"/>
+  <link href="/kaiku/style/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="hidden" id="pop-up">
+   <img alt="hourclass" src="/kaiku/images/hourglass_small.png"/>
+   <br/>
+   Raportti latautuu...
+  </div>
+  <div id="outer">
+   <div id="page">
+    <div id="banner">
+     <img alt="Kaiku" src="/kaiku/images/Logo_TAU_FI.png" style="height: 50px;"/>
+     <span class="page_name">
+      Kaiku
+      <br/>
+     </span>
+     <div id="banner_inner_right">
+      <nobr>
+       <a href="https://www.tut.fi/pop">
+        POP
+       </a>
+       |
+       <a href="https://www.tut.fi/tutka">
+        TUTKA
+       </a>
+      </nobr>
+      <span class="user_name">
+       Jere Laine
+       <br/>
+      </span>
+      <br/>
+      <a href="/kaiku/logOut/logOut">
+       Kirjaudu ulos
+      </a>
+     </div>
+    </div>
+    <div id="menu" style="min-height: 15px;">
+     <nobr>
+      <a href="/kaiku/kaiku/mainpage">
+       Etusivu
+      </a>
+      <a href="/kaiku/studentMainPageSearch/feedback">
+       Anna Palautetta
+      </a>
+      <a class="selected" href="/kaiku/examineFeedbackPage/feedback">
+       Palautteet
+      </a>
+      <a href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf" style="font-size: 12px;">
+       ?
+      </a>
+      <a href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&amp;PREVIOUS_VIEW=feedbackSummaryCourseQueryResults" style="font-size: 10px;">
+       in English
+      </a>
+     </nobr>
+    </div>
+    <div id="content">
+     <div id="inner_content">
+      <style>
+       button {
+		white-space: nowrap;
+	}
+      </style>
+      <br/>
+      <form action="/kaiku/examineFeedbackPage/feedback" id="pageInformation" method="post">
+       <table>
+        <tbody>
+         <tr>
+          <td colspan="3">
+           <a href="/kaiku/examineFeedbackPage/feedback?action=landingPageLink">
+            Opintojaksojen palautteet
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=depOrCoursegroupLink&amp;depOrCoursegroupId=310600">
+            Tekniikan ja luonnontieteiden tiedekunta
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=courseImplementationLink&amp;chosenCourseCode=LTT-12301">
+            LTT-12301
+				Kestävän kehityksen perusteet
+           </a>
+           →
+		
+			Kysely 08.12.18-21.01.19
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           <br/>
+           <h2>
+            <nobr>
+             LTT-12301
+				
+					Kestävän kehityksen perusteet
+					
+					(
+             <a href="https://www.tut.fi/opinto-opas/wwwoppaat/opas2018-2019/perus/aineryhmat/Muut_suoritukset/LTT-12301.html" target="plain">
+              Opinto-opas
+             </a>
+             )
+            </nobr>
+           </h2>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Lukuvuosi 2018 - 2019,
+					Periodit I-II
+           <br/>
+           Kysely 08.12.18-21.01.19
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Vastanneita yhteensä: 70
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           En anna palautetta vastanneita yhteensä: 2
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- The analysis part -->
+       <!-- ***************** -->
+       <table class="common">
+        <tbody>
+         <tr>
+          <th colspan="2" style="font-size: 13px;">
+           Opettajan vastaus opiskelijoiden antamaan toteutuskertapalautteeseen
+          </th>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <b>
+            Nykyinen vastaus
+           </b>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span class="prebr">
+            Tervehdys,
+Kiitos runsaasta ja rakentavasta palautteestanne! Mukava kuulla, että lukupiireistä pidettiin, ja että ne tuntuivat hyödyllisiltä oppimisen kannalta. Palautteenne perusteella suurin osa kurssista tuntuu olevan ihan hyvä. Yhteisten tilaisuuksien järjestelyjä täytyy tosiaan miettiä. Pidin ajatuksestanne, että ryhmä jaettaisiin useimpiin pieniin ryhmiin, jotka keskustelisivat Padletin kysymyksistä. Opettja voisi sitten kierrellä eri ryhmissä osallistumassa keskusteluun. Osa toivoi luentoja lisää. Se voisi tosiaan olla ihan hyvä juttu joissain kohdin. 
+Nähdään muilla kursseilla!
+Kaikkien opettajien puolesta 
+Terveisin,
+Hannele
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- <table>
+			<tr><td><div class="line" ></div></td></tr>
+			<tr><td>Kyselyn tulosten julkisuus</td></tr>
+			<tr><td><div class="line" ></div></td></tr>
+		</table>-->
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th style="font-size: 13px;">
+           Kysymyskohtaiset palautteet
+          </th>
+         </tr>
+        </tbody>
+       </table>
+       <h1>
+        Monivalintakysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <table class="common">
+        <!-- NORMAL OBLIGATORY CHOICE QUESTIONS -->
+        <tbody>
+         <tr>
+          <th colspan="4" width="90%">
+           Yleisarvosana opintojaksolle ja sen toteutukselle.
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           3.32
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           0.94
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           2.86
+          </td>
+          <td>
+           2.86
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           13.0
+          </td>
+          <td>
+           18.57
+          </td>
+          <td>
+           21.43
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           19.0
+          </td>
+          <td>
+           27.14
+          </td>
+          <td>
+           48.57
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           31.0
+          </td>
+          <td>
+           44.29
+          </td>
+          <td>
+           92.86
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           5.71
+          </td>
+          <td>
+           98.57
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           1.43
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           70.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista?
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           3.38
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           0.98
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           3.08
+          </td>
+          <td>
+           3.08
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           10.0
+          </td>
+          <td>
+           15.38
+          </td>
+          <td>
+           18.46
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           20.0
+          </td>
+          <td>
+           30.77
+          </td>
+          <td>
+           49.23
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           24.0
+          </td>
+          <td>
+           36.92
+          </td>
+          <td>
+           86.15
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           7.0
+          </td>
+          <td>
+           10.77
+          </td>
+          <td>
+           96.92
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           3.08
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           65.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin.
+          </th>
+          <td class="empty" rowspan="9" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2.06
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           0.42
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä vähäinen opintopisteisiin nähden. (1)
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           6.06
+          </td>
+          <td>
+           6.06
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Työmäärä sopiva opintopisteisiin nähden. (2)
+          </td>
+          <td>
+           54.0
+          </td>
+          <td>
+           81.82
+          </td>
+          <td>
+           87.88
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä liian suuri opintopisteisiin nähden. (3)
+          </td>
+          <td>
+           8.0
+          </td>
+          <td>
+           12.12
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           66.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- NORMAL OFFICIAL CHOICE QUESTIONS -->
+       <br/>
+       <span class="header">
+        Oppiminen
+       </span>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th colspan="4" width="90%">
+           Mielenkiintoni opetettuun aiheeseen lisääntyi opintojakson aikana.
+          </th>
+          <td class="empty" rowspan="11" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           3.25
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           0.76
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Täysin eri mieltä (1)
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           4.62
+          </td>
+          <td>
+           4.62
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Jokseenkin eri mieltä (2)
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           4.62
+          </td>
+          <td>
+           9.23
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Jokseenkin samaa mieltä (3)
+          </td>
+          <td>
+           32.0
+          </td>
+          <td>
+           49.23
+          </td>
+          <td>
+           58.46
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Täysin samaa mieltä (4)
+          </td>
+          <td>
+           25.0
+          </td>
+          <td>
+           38.46
+          </td>
+          <td>
+           96.92
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           3.08
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           65.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- USER DEFINED CHOICE QUESTIONS -->
+       <br/>
+       <span class="header">
+        Omat kysymykset
+       </span>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th colspan="4" width="90%">
+           Kuinka monelle lukupiirikerralle luit lukupiirimateriaalia (edes osan)? Vastaa rehellisesti! Älä vastaa "en osaa sanoa".
+          </th>
+          <td class="empty" rowspan="12" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           3.62
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           0.87
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En koskaan (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1-2 kertaa (2)
+          </td>
+          <td>
+           8.0
+          </td>
+          <td>
+           12.12
+          </td>
+          <td>
+           12.12
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           3-4 kertaa (n. puolet) (3)
+          </td>
+          <td>
+           18.0
+          </td>
+          <td>
+           27.27
+          </td>
+          <td>
+           39.39
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5-6 kertaa (melkein joka kerta) (4)
+          </td>
+          <td>
+           31.0
+          </td>
+          <td>
+           46.97
+          </td>
+          <td>
+           86.36
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Ihan joka kerta (5)
+          </td>
+          <td>
+           9.0
+          </td>
+          <td>
+           13.64
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           66.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- OPEN QUESTIONS !!! -->
+       <br/>
+       <h1>
+        Avoimet kysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Mikä onnistui opintojaksolla hyvin?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Auvinen, Hannele,
+									17.01.2019
+           </span>
+           <br/>
+           Lukupiirien organisointi onnistui hyvin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opetuksen toteutus.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyöt olivat mukava tehdä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opintojakso oli mielenkiintoinen, mutta oikeastaan kiinnostukseni heräsi vasta toisella periodilla sitten, kun olin tottunut yliopisto-opiskeluun.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirien aiheet olivat kiinnostavia ja harjoitustyö kokonaisuudessaan (essee, verkkokeskustelu, seminaarit, opponoinnit) oli hyvä, opettavainen ja mielenkiintoinen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pienet lukupiirit olivat onnistuneita ja materiaalit monipuolisia. Lukupiiriryhmät olisi voineet olla muuttuvia, jolloin keskustelu olisi ollut vaihtelevampaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Aiheiden käsittely lukupiiriryhmissä (ensimmäisellä tunnilla) oli hyvä, asiat jäivät paremmin mieleen, kun niistä sai keskustella. Lisäksi tuli uusia näkökulmia omaan ajatteluun, kun kuuli myös muiden mielipiteitä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Monipuolinen aiheiden käsittely.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pienryhmäkeskustelut ja niistä raportin kirjoittaminen toimiva konsepti. Samoin kuin Padlet-alustan käyttö.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiiri oli toimiva tälle kurssille, kun se sai pohtimaan oikeasti itse käsiteltäviä aiheita
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Energiatekniikan professori oli mielenkiintoinen, asiantunteva ja hyviä kysymyksiä kysynyt vieras.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvät materiaalit, joskus liiankin hyvät.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirit olivat mielenkiintoisia koska kaikilla oli tosi paljon tietoa aiheesta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Seminaaritilaisuudet olivat hyviä. Sai kokemusta suurehkolle yleisölle esiintymisestä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           tunneilla käytävät keskustelut olivat hyviä ja antoisia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           lukupiirit
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kiinnostavat materiaalit ja vierailijat lukupiireissä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirien koonti luennot
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirit olivat hyvä idea ja saivat lukemaan aiheista. Myös verkkokeskustelu  herätti hyvää keskustelua ja toi eri näkökulmia esille.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Omaehtoinen aiheiden opiskeleminen. Keskustelemalla jaa mielipiteitä vaihtamalla asiat jäävät hyvin mieleen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Aiheet olivat mielenkiintoisia ja mielestäni oli hyvä, että paikalla oli eri "alojen" opettajia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirien aiheet ja annetut aineistot olivat mielenkiintoisia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harkkatyöt ja seminaarit oli oikeastaan aika kiva ja kehittävä juttu! Mukavaa vaihtelua
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ryhmääni valikoitui aktiivisia ihmisiä ja keskustelut olivat todella kiinnostavia
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirimalli oli mielestäni toimiva ratkaisu kurssin suoritustavaksi. Kurssin lopputyöseminaari oli myös hyvä ensikosketus tulevia seminaareja varten.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Muutamat luennot jotka pidettiin oli hyviä ja informatiivisia. LIsää niitä kurssille. Ne voisivat toimia johdatteluna lukupiireihin
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Eri aiheet mielenkiintoisia
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Keken aihealueet ja niiden tärkeys nousivat hyvin esille kurssin aikana.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ryhmätyö kokonaisuudesaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           lukupiirikeskustelut oman ryhmän kanssa olivat mielenkiintoisia
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Vierailevat vetäjät olivat kivoja ja heillä oli mielenkiitoista sanottavaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiireissä oli kiinnostavia aiheita ja niistä kehittyi usein antoisia keskusteluja ja ne herättivät paljon pohdintaa jopa omisssa elintavoissa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielenkiintoinen sisältö ja keskusteleva toteutus laittoi varmasti jokaisen ajattelemaan myös omaa vaikutustaan kestävään kehitykseen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirit olivat todella mielenkiintoisia!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirit olivat kaikki erittäin mielenkiintoisia. harjoitustyön tekeminen kaikista opettavaisin. Oli erittäin mielenkiintoista tutustua hyvin läheisesti erilaisiin aihealueisiin. Omaamme tietysti parhaiten.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Aiheet olivat kiinnostavia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           .
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiiriaiheet suurimmilta osin mielenkiintoisia ja keskustelua herättäviä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Vaikka läsnäolopakko on välillä haastava saada sovitettua aikatauluun, lukupiirit onnistuivat hyvin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirimuotoinen opetus oli toimiva, sillä näin kiinnostavista aiheista sai paljon tietoa ja keskustelut ryhmän kanssa olivat mielenkiintoisia
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ryhmäkeskustelut. Harkkatyö oli ihan mielenkiintoinen projekti.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Miten kehittäisit opintojaksoa?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Auvinen, Hannele,
+									06.02.2019
+           </span>
+           <br/>
+           Lukupiirien kokoomaluennot ei olleet kovin toimivia, aina samat tyypit vaan puhui. Ymmärrän että raporttien tarkoituksena on saada meidät keskusteöemaan aiheesta ja oppimaan raporttien kirjoittamista, mutta se tuntuo turhalta kertata viikon takaista keskustelua.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Enemmän lukupiirejä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opetusta olisi voinut olla ehkä vähän enemmän, esim. pieni kiinnostuksen herättävä kooste tulevan viikon lukupiiriaiheesta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssin fuksimaisuus näkyi kun ihmisiä oli vaikeaa aktivoida keskusteluun ja monilla oli kiire pois. Tälle ei varmaan voi mitään, mutta aktivoimista yhteisessä keskustelussa olisi hyvä miettiä. Kurssin työmäärä ei ollut suuri, joten jokainen ryhmä voisi esim. Alustaa yhden keskustelupiirin ja valita kysymyksiä, kaahootia tms.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirimateriaaleja enintään 5 kappaletta per kerta, muuten ei mitenkään ehdi käydä niitä läpi. Lukupiirin pitämistä vapaavalintaisena ajankohtana voisi harkita, välillä tuotti vaikeuksia päästä paikalle. Esseen palautus olisi kuitenkin samalla tavalla kuin nytkin, mutta opiskelijat saisivat itse päättää milloin keskustelevat aiheesta. Lukupiirin koontiosa oli melko kankea, luulen että olisi järkevämpää pitää se jatkossa useammassa pienemmässä ryhmässä, jolloin keskustelua voisi syntyä paremmin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Viisi opintopistettä kurssista on aivan liian paljon. Toki kurssi on ensisijaisesti tarkoitettu ehkä fukseille, mutta jotenki silti työmäärä tuntui hyvin vähäiseltä 5 op nähden. Lisäksi, kun arviointi on hyväksytty/hylätty, se ei ainakaan itseäni motivoi panostamaan kurssiin.
+Lukupiirit ideana hyvä. Kuitenkin koontiluento olisi voinut olla esim. niin että yhdistetään pari kolme ryhmää yhteen ja hieman isommalla porukalla pohditaan asioita lisää. Tällä tavoin koonnista voisi saada enemmän irti.
+Lisäksi harkkatyön aihe voisi olla rajatumpi ja työ itsessään laajempi, sillä työn maksimipituus 6 sivukin oli 4 hengen ryhmälle todella vähän.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Aktivoivampia ja monipuolisempia tehtäviä, kuten vaikkapa online-pelejä/sovelluksia tmv. Lukupiirit kävivät toisinaan hieman puuduttaviksi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiiri on kätevä systeemi sinänsä, mutta että saataisiin järkevää keskustelua, voisi olla hieman enemmän luentoja kurssin alkupäästä. Keskustellessa olisi mukavampaa, että pohja olisi vahvempi!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Aiheita tai niiden järjestystä voisi vielä miettiä. Loppupuolella tuli parissa lukupiirissä sellainen olo, että asiasta on jo keskusteltu muutamaan kertaan aikaisemminkin. Toki ymmärrän, että aiheet lomittuvat vahvasti toisiinsa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tiedostusta voisi parantaa enemmän, esim. harjoitustöistä voisi olla paremmin infoa että mitä siihen halutaan ja sen aikataulu olisi kiva saada aikaisemmin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kysymysten läpikäynti
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           lisää lukupiirejä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Enemmän pelivaraa pakollisiin läsnäoloihin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           kokoomaluento tulisi toteuttaa eri tavalla tai poistaa sillä se ei innostanut keskustelemaan liian ison porukan vuoksi. Myös materiaalien laatu ja määrä vaihtelivat hyvin paljon, eli siis niitä oli välillä liian paljon jotta niistä olisi voinut keskustella kattavasti
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Suurin kehitysehdotus liittyy ryhmien muodostamiseen. Opiskelijoille annettiin vapaat kädet muodostaa lukupiiriryhmät/esseeryhmät. Mikä on ihan ok, mutta kaikkien kannalta parempi olisi että ryhmät arvotaan. Tämä vaikuttaa peruskoulu-maiselta ratkaisulta, mutta näin sen silti parempana. 
+1. Kaikki pääsevät ryhmään, eikä käteen vaivaa että jäisi ulkopuoliseksi.
+2. Opettajalle helpompi kun arvontakoneella valmiit ryhmät eikä kukaan tule sanomaan viimisenä päivänä ettei löydä ryhmää.
+3. Tulee tehtyä yhteistyötä kaikkien kanssa. Löytää ryhmästä uusia tuttavuuksia joihin ei välttämättä muuten olisi koskaan tullut tutustuneeksi. Pääsee aina uuteen ryhmään eikä niin että samat henkilöt valitsevat aina samat jäsenet.
+
+Toivon että ryhmät arvottaisiin jatkossa myös muillakin tulevilla kursseilla, koska tämähän ei tämän kurssin osalta minua enää koske.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirit sisäänsä olivat ihan hyviä ja niistä oppi jonkin verran uutta. Toisen tunnin keskustelut sen sijaan olivat puuduttavia. Suuressa ryhmässä oli vaikea nhdä kaikkia, eikä monikaan osallistunut keskusteluun. Raportin kirjoittamisessa oli hieman keinotekosta aina lisäillä "Pekka sanoi"- ja "Liisa lisäsi"- lauseita. Ne olisi voinut jättää pois.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Vähemmän pakollisia toteutuskertoja. Esim. joka toinen kerta luento ja sen jälkeinen kerta lukupiiri aiheesta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirit olivat hyvä tapa herättää keskustelua ja ajatuksia tärkeistä aiheista, ja itse ainakin koin saavani paljon mietittävää ja vinkkejä juurikin kestävää kehitystä ajatellen. Kovinkaan paljon puhdasta tietoa en kuitenkaan koe opintojakson aikana saaneeni, mutta ehkä se ei tämäntyyppisen aiheen kanssa olekaan juuri tärkeintä.
+Toisinaan lukupiirimateriaalia oli todella paljon eikä niiden lukeminen tuntunut kovinkaan hyödylliseltä ja innostavalta, sillä mukana oli paljon ns. "nice to know" -materiaalia, jotka hyvin löyhästi liittyivät lukupiirin aiheeseen. Ideaalisin materiaalin pituus olisi mielestäni noin 15-30 min perehtymistä vaativa, jolloin valmistelu ei tunnu liian raskaalta ja sen tekee vielä mielellään.
+Lukupiiriraporttien kirjoittaminen tuntui vähän oudolta ja jossain määrin ajan hukalta, kun asiat oli jo kertaalleen käyty yhdessä läpi, mutta ymmärrän, että muuten työskentelyn seuraaminen olisi aika hankalaa. Kovin innokasta vastaanottoa se ei kuitenkaan saanut.
+Lukupiirien jälkeisissä keskusteluosioissa jakaantuminen pienempiin ryhmiin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssi onnistui kaikin puolin hyvin
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Enemmän luentoja, ei ole mielekästä, että yliopistokurssi perustuu artikkelien lukemiseen. Ainakaan minulle ei jää siten juuri mitään mieleen. Sen sijaan jos osaava henkilö (kuten te) kertoo samoista asioista luennolla, oppiminen tehostuu huimasti. Toisten opiskelijoiden kanssa keskustelu ei ole välttämättä kovin hedelmällistä, sillä emme tiedä kurssin asioista kovinkaan paljoa. Kokoavat yhteiskeskustelut voisivat toimia, jos ryhmäkoko olisi neljännes nykyisestä, mutta näin isolla porukalla siitä ei tule yhtään mitään. Ja ajan kuluttaminen pöytien ja tuolien järjestyksen vaihtamiseen on vain typerää enkä usko, että se saa ketään avaamaan suutaan, sillä ryhmäkeskustelujen ongelma ei ole tuoleissa vaan ryhmäkoossa. Ryhmäkeskustelun voisi unohtaa suosiolla ja vaihtaa luentoon, että tunnilta jäisi edes jotain käteen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Poistaisin lukupiiriraporttien tekemisen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirien jälkeinen tunti ei toiminut, ei saatu aikaan luontevaa ja sitä kautta kiinnostavaa keskustelua.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Välillä lukupiireihin tehdyt kysymykset itsessään jo hankalia, eikä kaikkia osattu selittää auki, vaikka asiasta kysyikin. Osat aiheista myös täysin vieraita, vielä näin alussa opintoja, ja näistä olisi pitänyt osata sanoa omia mielipiteitä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Vähemmän pakollista läsnäoloa
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirikysymykset olivat usein suoran vastauksen vaativia, eivätkä kannustaneet tai mahdollistaneet keskustelua. Tämä näkyi erityisesti vierailevien luennoitsijoiden kohdalla. Heitä voisi ohjata muodostamaan pohtivampia kysymyksiä. Lukupiiriraportin kirjoittaminen oli mielestäni hieman turhaa, sillä se, että yksi ihminen ryhmästä kävi ryhmän keskustelun uudestaan läpi ei edistänyt hänen tai muun ryhmän oppimista. Toisaalta näen raportin merkityksen opintojakson seuraamisen kannalta hyödyllisenä luennoitsijalle.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ryhmäkeskustelut toimivat, mutta koontiluennot eivät vielä näin opintojen alussa. Kynnys omien näkemysten esittåmiselle oli aika suuri, kun tietoa ja mielipiteitä eri aiheista ei ole vielä tarpeeksi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kehittäisin lukupiirejä siten, että opettaja voisi mielestäni kierrellä tunnin aikana ja vastailla oppilaiden kysymyksiin. Lukupiirimateriaalia oli joskus liikaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirien koontiluento oli keskustelun osalta toisinaan aavistuksen hyytynyttä. Mahdollisesti jotakin, millä opiskelijoita saisi osallistettua enemmän?
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           itseopiskeltavat materiaalit ja joka kerta kirjoitettavat raportit ei mielestäni ollut hyvä toteutustapa kurssille, etenkin kun miettii suurta työmäärää ja siitä saatavia opintopisteitä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Vaikka keveämieliset luku- ja keskustelupiirit olivat mukavaa vaihtelua, niistä voisi tehdä hieman järjestelmällisempiä. Esimerkiksi voisi jakaa vaihtuvia rooleja opiskelijoille ja ryhmille.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirit olivat mielenkiintoisia, mutta niistä tehdyt raportit voitaisiin mielestäni korvata esim. jollain itsenäisesti tehtävällä oppimispäiväkirjalla tms. 
+Lukupiirien koontikeskustelut eivät myöskään oikein toimineet ainakaan nykyisellä tavalla. Lukupiirien toinen tunti voitaisiin mielestäni käyttää johonkin josta saisi lisää jutunjuurta lukupiireihin, kuten luentomaiseen opetukseen tai vaikka dokumenttien katselemiseen.
+Ryhmätyöt olivat hyvä lopputyö kurssiin, mutta motivaatio niiden tekemiseen olisi voinut olla isompi jos kurssista saisi arvosanan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirien keskustelut olivat monesti yksipuolisia, monien ääni ei kuulunut. Padlet oli hyvä, sillä siten sai äänensä kuuluville ainakin ne jotka eivät mieluusti puhu, mutta keskustelua voisi kannustaa jotenkin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Omatoimisempaa etäopiskelua, moodle-tehtäviä jne tai sitten asiantuntijoiden vetämiä keskusteluita.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Vähentäisin ehkä hieman lukupiiri materiaalien määrää tai tekisin niihin jonkun valmiin mallin miten aineistot voisi jakaa ryhmän kesken, nyt välillä kävi niin, että runsaan aineistoluettelon nähtyään motivaatio laski, eikä tullut tutustuttua aineistoihin juuri ollenkaan. Yhteiskeskustelu osuutta voisi vielä kehittää sellaiseksi, että jokainen uskaltaisi osallistua koko ryhmän keskusteluun esimerkiksi voitaasiin käydä ryhmittäin läpi yhteisesti mitä pienryhmäkeskusteluissa on noussut esiin, jolloin jokainen joituisi osallistumaan keskusteluun
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirien kysymyksiä konkreettisemmiksi. Koontiluennon voisi toteuttaa paremmin esim. keskusteluilla pienemmissä ryhmissä, jotka yhdistävät 2-3 alun pienryhmää. Enemmän aineistoihin liittyvää pohdintaa. Koontiluennot liian usein vain sitä, että pohditaan miten kukakin kierrättää tai tekee muita ympäristötekoja.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirien toisen puolen osio, jossa kaikki kokoontuivat yhteen keskustelemaan lukupiirin aiheesta, oli jokseenkin sekava. Idea oli ihan hyvä, mutta toteutus ei toiminut. Tuntui hassulta keskustella uudelleen samoista asioista, joista oli juuri tunnin keskustellut oman ryhmän kanssa. Toki uusiakin näkökulmia nousi esiin, mutta hyvin pitkälti keskustelu oli samanlaista. Lisäksi äänessä oli vain muutama henkilö, eikä keskustelu lähtenyt rullaamaan. 
+Koonti-osuus lukupiirin lopussa on ajatukseltaan hyvä, mutta toteutus saattaisi olla parempi, jos esim. opettajat olisivat enemmän äänessä. He voisivat vaikka kertoa omia näkökulmiaan tai lisätietoa käsitellystä aiheesta, minkä jälkeen opiskelijat voisivat esittää omia näkemyksiään. Näin tunnelma ei olisi ehkä niin jännittynyt/hiljainen. Lisäksi, jos opettajat kertoisivat esim. mitkä todellisuudessa ovat suurimmat energianlähteet, ei opiskelijoille jäisi vääriä käsityksiä. Lukupiiriryhmissä saattaa joskus olla hyvää keskustelua, mutta toisinaan materiaaleista on ymmärretty väärin jokin asia, joka olisi hyvä oikaista koonti-osuudessa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kokoavat tilaisuudet olivat vaivaannuttavia. Keskusteluun oli hankala lähteä mukaan eikä keskustelun taso pysynyt useinkaan kovin objektiivisena.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tärkeimpiä asioita lukupiireissä käsitellyistä aiheista voisi kerätä moodleen selkeäksi kokonaisuudeksi (esim. lukupiirin jälkeen), sillä lukupiirimateriaaleissa tieto on vähän hajanaisesti ja laajoista englanninkielisistä materiaaleista tärkeimpiä pointteja on välillä hieman vaikeaa löytää. Selkeistä tiivistelmistä kurssin asioita voisi kerrata myöhemminkin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Osaamistavoitteet voisi käydä kurssin alussa läpi, jotta tietäisi edes suunnilleen, mitä opintojaksolla tulisi oppia. Olin vähän hukassa tämän asian suhteen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Koontiluennoista ei oikein saanut mitään irti. Omasta mielestä suuri piiri, jossa  on 50 henkilöä, joista vain n 5 puhuu/keskustelee aiheesta, ei toimi. Minulle jotkin lukupiirien aiheista olivat vieraita ja koontiluennoilla tunnuttiin kysyvän paljon mielipiteitä padlet kysymyksistä yms. Itse kokisin ehkä paremmaksi, että koonti luennolla  luennoitsijat kiertelisivät ryhmissä ja keskustelisivat ryhmän kesken tai sitten, aina yksi lukupiiri ryhmä esittelisi aiheen loppuseminaarien tapaan
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lisää lukupiirejä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Viime vuonna oli ollut vielä tentti, millä kurssi suoritettiin. Itselleni se olisi ollut mielekkäämpi tapa suorittaa kurssi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jos raportit ja harjoitustyö arvosteltaisiin mahsollisesti niihin myös panostaisi enemmän, itse tuntui että teki asiat sieltä mistä aita on matalin koska ei tule arvosanaa joka vaikuttaisi mihinkään
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ei tule mieleen nyt erityisemmin mitään. Välillä lukupiirien jälkeen kokoomaluennoilla keskustelua ei ollut kauhean paljon.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <!-- USER DEFINED OPEN QUESTIONS -->
+       <span class="header">
+       </span>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Kuvaa opintojaksoa yhdellä laatusanalla TAI kerro mitä muuta haluat sanoa opintojaksosta ja sen toteutuksesta?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Auvinen, Hannele,
+									17.01.2019
+           </span>
+           <br/>
+           Mielenkiintoinen
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielenkiintoinen
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirit olivat hyvä, koontiluennot ei
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Erilainen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirit olivat hyvää vaihtelua luennoille ja tenteille, mutta toisaalta oppimista ehkä vähän haittasi se, että tietoa ei ollut koottuna mihinkään selkeästi, minkä vuoksi asioita ei ole tullut kerrattua lukupiirien jälkeen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvin mielenkiintoinen sisältö, joka kärsi huonosta toteutuksesta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kehittämiskelpoinen (lähinnä lukupiirien toinen tunti, ensimmäinen toimi hyvin)
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Täytyy sanoa, että YKIn fukseilla oli paljon fiksuja ajatuksia. En usko, että olin itse tuolla tasolla silloin, kun aloitin opintoni TTY:llä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssissa olisi potentiaalia parempaankin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           yleisesti ihan onnistunut kurssi
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Turhauttava.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           ajankohtainen
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           opintojaksolla on todella mielenkiintoinen aihe
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Piristävä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielenkiintoinen
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ajatuksia herättävä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kiinnostava
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Keskustelua herättävä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opintojaksolta sai paljon hyviä ajatuksia kestävään kehitykseen ja sen edistämiseen liittyen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssi ei ehkä anna selkeää kokonaiskuvaa aiheista. Mielestäni yhteisten luentojen lisääminen auttaisi asiaa! Vaikka joka toinen kerta luento, joka toinen lukupiiri.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Monipuolinen
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hämmentävä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielenkiintoinen
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           pohjustava.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Toteutus oli kivaa vaihtelua luentopohjaiseen opetukseen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           työläs
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Erilaista
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Sähkötalon luokka oli todella kylmä!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Yleissivistävä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielenkiintoinen
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielenkiintoinen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Liian moderni
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tylsä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tasalaatuinen
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pyöreä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tietorikas
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ajatuksia herättävä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Tukivatko lukupiirit oppimistasi?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Auvinen, Hannele,
+									17.01.2019
+           </span>
+           <br/>
+           Kyllä!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           jonkin verran mutta auttoi myös pohtimaan omia mielikuvia asioista
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Eivät juurikaan, käytiin itsestään selvyyksiä läpi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä. Asiat tuli kerrattua ja käsiteltyä paremmin lukupiireissä, vaikka yleensä kaikkia aineistoja ei ehtinyt lukea.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tukivat, mutta eivät tarpeeksi
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä. Ne innostivat perehtymään materiaaliin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä, asiat jäivät paremmin mieleen, kuin jos olisin vain kuullut ne luennolla.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tukivat, suurin oppiminen kurssilla tapahtui omalla kohdallani pienryhmä keskustelujen aikana
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Keskusteleminen pienryhmissä oli ihan kivaa, mutta henkilökohtaisesti oppimiseen olisi voinut olla parempiakin keinoja.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           +
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirit olivat opettavaisia, mutta keskustelut toistivat itseään melko paljon. Mielestäni ryhmiä oltaisiin voitu vaihdella jonkin verran. Ryhmämme oli kyllä mukava ja keskustelua riitti, mutta jos ryhmiä vaihdeltaisiin, voisi ehkä tulla enemmän näkökulmia keskusteltaviin aiheisiin.
+Lukupiiriraporttien kirjoittaminen oli myös vähän ongelmallista, koska huomasin ainakin itse että keskusteluun osallistuminen kärsi aina puheenjohtajakerroilla, kun piti keskittyä siihen että saa keskustelua kirjattua ylös.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           kyllä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tukivat äärimmäisen hyvin
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä. Asioita tuli todella pyöritettyä monesta eri näkökulmasta pienryhmäkeskusteluissa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä. Kiva että aiheiden lukeminen ja tutustuminen tapahtuivat kotona ja keskusteluissa tärkeimmät asiat jäivät mieleen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä silloin kun materiaaleihin oli ehtinyt perehtyä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Joo, paitsi että hyväksytty/hylätty-arvioinnin vuoksi en loppuvaiheissa jaksanut enää panostaa ja lukea kaikkea annettua materiaalia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ryhmäkeskusteluissa tuli paljon erilaisia näkökulmia esiin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jonkin verran, mutta materiaalia oli niin paljon, että aina ei kyennyt siihen tarpeeksi tutustumaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tukivat todella paljon. Olin odottanut perinteistä kirjatentti-kurssia, mutta nyt joutuikin tekemään yllättäin töitä opintopisteitten eteen :-)
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirit olivat ihan hauska tapa toeuttaa kurssia. Välillä lukupiirimateriaalia oli kuitenkin aivan älyttömän paljon, vaikka niitä jakaisikin ryhmän keskuudessa. Lukupiirien aiheita voisi vähän tähdentää, jotta aihetta ei olisi niin paljon käsiteltävänä. Lukupiirien raporttien ohjeistusta voisi myös selventää esim. halutaanko siinä käytettävän lähteitä vai onko se pelkkää pohdintaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           kyllä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           kyllä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Aiheen ollessa mielenkiintoinen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           tukivat, mutta niistä oli hankalaa poimia oleellisia tietoja silloin kun materiaali jaettiin osallistujien kesken niin etteivät kaikki lukeneet kaikkea
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Eivät juurikaan; materiaaleja ei ryhmäni jaksanut lukea. Yhteinen kokoontuminen oli vain kiusallista muutaman ihmisen vuoropuhelua.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jossain määrin, usein materiaalit olivat kyllä liian pitkiä ja/tai monimutkaisia. Uutta oppi etenkin muilta keskustelukumppaneilta ja opettajilta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirit tukivat jokseenkin oppimista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pääosa oppimisesta tapahtui niissä...
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tukivat.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Vähän
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Eipä juuri.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Joo
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä, kun muutkin ryhmän jäsenet olivat kiinnostuneita aiheista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Etenkin ryhmäkeskustelut
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Miten yhteistä keskusteluosuutta voitaisiin parantaa, jotta useampi osallistuisi keskusteluun?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Auvinen, Hannele,
+									17.01.2019
+           </span>
+           <br/>
+           Jokainen ryhmä voisi kertoa, minkä kysymyksen laittoi Padlettiin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Keskustelun johtaminen ja innostaminen on tärkeää. Mielestäni padlettiin annetut kysymykset ei tarvitsisi kohdentaa juuri ryhmälle joka sen on kirjoittanut vaan he juuri ovat keskustelleet keskenään asiasta ja jääneet epäselvyyteen asiasta. Keskustelun toistaminen tuntuu itsestä turhalta. Puheenvuoron ohjaaminen suoraan tietylle alueelle helpottaa siihen tarttumista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ryhmän jakaminen esim kahtia
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           ...
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ks kohta 5
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Meidän lukupiirissä kaikki osallistuivat keskusteluun hyvin, jos vain tiesivät keskusteltavasta aiheesta. Lukupiirimateriaali pitäisi oikeasti lukea ennen keskustelua, jotta keskusteleminen oikeasti onnistuisi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           En keksi muuta kuin että jokaiselle vähintään 3-5 kertaa yhteiseen keskusteluun osallistuneelle palkinnoksi esim. haalarimerkki opintojakson lopussa. Pitäähän sitä nyt jotenkin palkita kun ei kerran arvosanaakaan anneta :D
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Yhteisessä keskusteluosuudessa ryhmä oli aivan liian suuri, mikä nosti omalta osalta riman korkealle. Toisaalta keskusteluun heitettyjä mutu-tuntumoita ei kyseenalaistettu ja usein jäi epäselväksi mikä keskustelussa oli faktaa ja mikä arvailua. Opettaja olisi voinut johtaa keskustelua enemmän tietopohjaisesti.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opiskelijoita on vaikea motivoida puhumaan yhteisessä osuudessa, jos he eivät itse halua kertoa näkökulmiaan. Mielestäni opettajat voisivat kertoa alkuun juurikin jotain lisätietoa käsittelystä aiheesta, jolloin opiskelijoiden puheenvuorot eivät olisi niin suuressa roolissa. Tämä ei tietenkään korjaa ongelmaa, mutta ainakin osuudessa olisi edes jotakin puhetta.
+Toisaalta ryhmiltä voi kysellä esittämästään kysymyksestä (kuten nytkin tehtiin), jolloin he kertovat ainakin hieman ajatuksiaan kysymyksen takana.
+Yksi keino olisi myös se, että nimettäisiin ryhmille puheenvuoroja. Esim. niin, että ryhmä 1 on esittänyt kysymyksen padletiin ja he kertovat ensin kysymyksestään. Sitten ryhmä 2 on vuoro kertoa omaa näkökulmaansa asiaan. Tämän jälkeen vielä muut voisivat kommentoida asiaa, jos haluavat. Tällä tavalla kaikki ryhmät eivät kylläkään ehtisi ääneen joka kerralla, eikä pakottaminen ole kivoimpia keinoja lisätä keskustelua, mutta tällä tavoin syntyisi edes hieman keskustelua.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Suuri rinki isolla tyhjällä tilalla oli mielestäni painostava. Tolvasen kerralla oli mielestäni parempi ryhmittyminen ja hyvä tunnelma keskustella, johtuu varmaan osittain myös siitä, että keskustelukertoja oli niin monta alla.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pienemmät ryhmät. Vaihtoehtoisesti luennoitsijan esittämiä kysymyksiä, joihin jokainen pienryhmä/muutamasta pienryhmästä koottu suurempi ryhmä vastaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Käytäisiin pienryhmäkerrallaan mitä kunkin keskustelussa noussut esiin
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Keppiä tai porkkanaa omantunnon mukaan, tai välillä kysymällä parempia kysymyksiä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Erilaisia tapoja tuoda mielipiteensä esiin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Yhteisessä keskusteluosuudessa oli ehkä vähän liikaa väkeä koska niin isossa ryhmässä on monien vaikeaa avata suutaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jakamalla viikottain vaihtuvia rooleja ryhmille.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           jokaiselle ryhmälle voisi jakaa aiheen josta kysyä tai puhua
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Padlet-kysymyksen kirjoittanut ryhmä avaamaan hieman kysymyksen taustoja, ehkä ryhmät miettimään vastauksia padlet-kysymyksiin jo pienryhmäkeskustelun aikana?
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ei istuttaisi piirissä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harvan on helppo keskustella näin suuressa ryhmässä aiheesta, josta tietää vasta vähän. Keskustelut olisi voitu käydä muutamassa pienemmässä ryhmässä tai vaikka verkkokeskusteluna.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jos jokainen ryhmä itse vetäisi yhden keskustelupiirin voisi motivaatiota löytyä enemmän. Esim jokainen ryhmä toimisi kerran opettajan roolissa ja kyselisi. Toinen vaihtoehto on että jokainen ryhmä kysyisi oman kysymyksensä, johon muut vastaavat.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pienemmät ryhmäkoot ja opettajat esimerkiksi kiertelisivät niiden välillä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pienemmissä ryhmissä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Puhetta pienryhmissä enemmän. Suuremmissa ryhmissä osallistujaprosentti jää lähes aina pienemmäksi. Toisaalta aiheita kullekin viikolle voisi jaotella ryhmäkohtaisesti jotenkin niin, että pienryhmät keskittyisivät aiheeseen kullakin viikolla hieman eri näkökulmista, ja sitten kaikki ryhmät osallistuisivat joukkokeskusteluun kukin omalta näkökannaltaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Padlet-pohdinnat on kyllä ihan hyvä juttu. Haaste on ehkä iso ryhmä! Mutta luokkatilan uudelleenjärjestäminen on mielestäni huonoa ajankäyttöä eikä auta keskustelua olennaisesti.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Joku kerta voisi olla käsiennostoäänestyksiä ja vetäjä voisi valita muutaman ihmisen takapenkistä perustelemaan kantansa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Suuren ryhmäkoon vuoksi puhuminen voi tuntua vaikealta, joten keskusteluosuuden jakaminen pienempiin ryhmiin voisi olla toimivampi ratkaisu.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           En saanut oikein mitään yhteisistä keskusteluaiheista irti. Ne tuntuivat olevan pelkkiä mielipiteitä ja mutuilua. Olisi kiva että asiantuntijaopettajia hyödynnettäisiin enemmän. Keskusteluosuus voisi esim. olla asiantuntijan pitämä, jossa hän kertoo faktoja ja tilastoja ja vasta tämän jälkeen mentäisiin lukupiiriin pohtimaan aihetta enemmän.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           En tiedä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Se täytyy lähteä opiskelijoista käsin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jokainen ryhmä voisi vuorollaan kantaa kortensa kekoon kysymysten suhteen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           tulisi enemmän keskittyä lukupiirin aikana käsiteltyihin kysymyksiin joihin on jo valmistautunut vastaamaan
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pienemmissä ryhmissä keskustelu toimisi varmasti paremmin. Itse en ainakaan oikein kehdannut puhua niin suuressa ryhmässä. Pienessä se olisi ollut luontevaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jakamalla iso porukka esimerkiksi kahteen pienempään.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jokainen ryhmä voisi valmistella jostakin aiheesta vastauksia/lisäkysymyksiä, jotta keskustelu saataisiin aktivoitua. Hyvin usein keskustelu oli melko harvojen ihmisten kesken.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Itselleni ryhmä oli liian suuri, jotta olisin mukavasti kyennyt siellä ajatuksiani esittämään. Enemmän keskustelua varmasti saataisiin yhdistämällä vain muutamia ryhmiä keskenään niin, että oltaisiin esim. 10-20 henkilön ryhmissä. Omalla kohdallani tämä olisi ainakin lisännyt kykyä saada suuni auki.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mahdollisesti pienemmät yhteisen osuuden ryhmät?
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Omassa ryhmässäni kaikki osallistuivat aktiivisesti ja saimme hyvää keskustelua aikaiseksi joka kerta, joten en osaa sanoa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Se pitäsi poistaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Poistamalla sen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pienemmät ryhmäkoot, esimerkiksi yhdistettäisiin muutama lukupiiriryhmä, jossa jatkettaisiin keskustelua. Liian ison ryhmän kanssa keskustelua vaikea saada jatkumaan, eikä kaikkien kommentteja aina ymmärrä täysin
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pienemmät ryhmät, niin ehkä ujommatkin uskaltaisivat sanoa jotain.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pienenmmät ryhmät ehkä vaikka jaettaisiin kahteen. Anonyyminä jätetyt kysymykset voitaisiin käsitellä niin ettei kysytä ryhmältä että kukas tämän kysyi?
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielestäni padlet-kysymysten pohjalta alkaneet keskustelut toimivat muita paremmin, etenkin kun kysymys esitettiin ensin sen kirjoittaneelle ryhmälle. Näin toimiminen edistäisi ehkä keskustelun syntymistä, sillä se pakottaisi useampia aktivoitumaan keskustelussa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ajankohta näille oli liian aikainen. Yhteinen osuus voisi toimia, jos muutamat ryhmät yhdistyisivät keskenään ja opettajat kiertäisivät näissä?
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Mikä on sopiva määrä lukupiirimateriaalia?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Auvinen, Hannele,
+									17.01.2019
+           </span>
+           <br/>
+           Joko neljä pidempää artikkelia/muuta julkaisua tai 8 lyhyempää, jotta on helppo jakaa ryhmän kesken aineisto
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Maksimissaan 5 artikkelia. Varsinkin jos teksti oli englanniksi, sen lukemiseen meni enemmän aikaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirimateriaalin lukemiseen tulisi mennä maksimissaan 1-2 tuntia, itselle tämä tarkoittaisi suomenkielisessä teksitissä noin 5-6 artikkelia ja englanninkielisessä 1-2 artikkelia. Jos englanninkielistä materiaali on niin sitä pitäisi olla vähemmän verrattaessa suomenkieliseen, sillä monille sanosto oli täysin ennalta tuntematonta, joka hidastutti lukemista paljon
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pari artikkelia
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           4-5 sivua
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Omasta mielestä suurin osa lukupiirimateriaaleista olivat hyvän kokoisia. Kaikkia en lukenut, mutta oli hyvä jakaa niitä ryhmän kesken
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Noin viisi artikkelia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirimateriaalin määrä oli mielestäni hyvä, kun sen jakoi ryhmäläisten kesken. Jos halutaan, että jokainen lukee kaikki materiaalit, määrää voisi ehkä vähän pienentää
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Sellainen että kaikki pystyvät perehtymään kaikkiin materiaaleihin joka viikko. Muuten keskustelu kärsii.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           5 eri materiaalia alkaa olemaan maksimi, riippuen kunkin materiaalien pituudesta. Jos materiaaliin sisältyy englanninkielisiä artikkeleita tms., olisi materiaalien määrä hyvä olla pienempi. Englanninkielisissä materiaaleissa oli usein hyvää asiaa, mutta ainakin itselleni tieteellisen tekstin lukeminen englanniksi on vielä melko uuvuttavaa, ja vaatii paljon keskittymistä, joten niiden lisäksi olisi hyvä olla myös kevyempää luettavaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           0,5 h-1,0 h kaikkien läpikäymiseen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Riippuu aineiston pituudesta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           n. 15 sivua tekstiä, kevyempää aineistoa jaksaa lukea enemmänkin, mutta raskasta englanninkielistä tutkimustietoa jaksaa lukea ehkä sen sivun tai kaksi ennen kuin motivaatio lopahtaa
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Viitisen A4:sta per opiskelija per aihe.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jos koko materiaalin lukemiseen menee enemmän kuin tunti, niin voi varmaan karsia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ehkä n.5 linkkiä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Muutama (2-3) artikkeli tai yksi pidempi teksti.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           olisi mukavampi jos materiaali esiteltäisiin luentotyyppisesti
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           4-5 kohtuullisen kokoista artikkelia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           4-5 yli yhden sivun mittaista tekstiä, ei toki pelkästään 60 sivun tutkimuksia
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Riippuu laajuudesta, mutta ehkä 2-4 eri lähdettä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           n. 4-5 tekstiä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Määrä kurssilla oli sopiva
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jos liittyy aiheeseen niin voi olla paljonkin, mutta ympäripyöreitä tekstejä on turha laittaa joka viikko.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           5 kappaletta jos, niissä on useampia sivuja. Välillä materiaaleja oli aivan liikaa ja/tai ne olivat aivan liian pitkiä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Max 30 sivua luettavaa/kerta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tämän opintojakson määrä oli sopiva.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           ehkä 2-3 juttua. Mitä enemmän materiaalia, sitä huonommin siihen tutustutaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           4-5 pakollista ja pari ekstraa, jos aihe kiinnostaa enemmän
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Noin 50 sivua kuvineen ja teksteineen / viikko.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lähteitä voisi olla niin, että niitä tulee kaksi per henkilö eli yhteensä 8 mikäli ryhmässä on neljä jäsentä. Lähteet eivät kuitenkaan voi olla liian pitikiä kuten kokonaisia kirjoja tai diplomitöitä. Englanninkielisissä lähteissä oli välillä liian vaikeaa sanastoa, että niitä ei ymmärtänyt.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ehkä 1-8 artikkelia, enemmän jos lyhyitä ja vähemmän jos pitkiä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Sellainen, että ne saa luettua alle puolessa tunnissa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Riippuu mielestäni materiaalin pituudesta ja muododsta, esimerkiksi videon katsominen ja siitä asian sisäistäminen on mielekkäämpää, kuin pitkän tekstin lukeminen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           n. 2-3 artikkelia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           sopiva määrä on n 20-25 sivua, riippuu hyvin paljon kielestä ja siitä, kuinka paljon aiheesta tulisi tietää etukäteen
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Vähemmän pitkiä artikkeleita, enemmän lyhyitä videoita aiheesta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           2-3 artikkelia. Viidestä eteenpäin on jo liikaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           15-20 sivua
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lukupiirimateriaaliksi on turha laittaa tieteellisiä tutkimuksia ja vielä vähemmän englanninkielisiä. Sellainen lukupiirimateriaali on varma keino tappaa lukumotivaatio, vaikka aihe kiinnostaisikin. Tieteelliset kirjoitukset kun ovat hyvin pitkiä ja vaikealukuisia. Uutisartikkelit tai lyhyet kokoavat raportit ovat parempia materiaaleja herättämään mielenkiinto. Tällaisia voisi olla maksimissaan viisi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Niin että lukemiseen menee n. 15-30 min. Mieluummin kaikki lukevat saman kuin että jokainen ryhmän jäsen perehtyy johonkin osaan aineistosta. (ellei aineisto ole juuri sitä "nice to know" -osastoa)
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           3-4 parin sivun artikkelia
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Toisinaan sitä tuntui aluksi olevan liikaa, mutta aina kun lähti materiaalia tutkimaan, huomasi että helpostihan niihin pystyi tutustumaan. Tietysti pitkiä raportteja en lukenut kokonaan, mutta silmäily antoi hyvän yleiskuvan aiheesta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Muutama lyhyt artikkeli.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Aivan maksimissaan 30 minuutin verran, mielellään noin 20.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Yli viisi artikkelia alkaa olla jo liikaa, riippuu tietenkin pituudesta ja haastavuudesta, jotkin englannin kieliset materiaalit olivat melko haastavaakin englantia, ja näihin olikin melko aikaavievää perehtyä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Riippuu ihmisen esitiedoista aiheesta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           nojoo vähän vaihtelevasti josksus oli isoja tekstejä niin oli vaikea.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           4-5 artikkelia oli mielestäni sopiva määrä kunhan ne eivät ole yli 5 sivua pitkiä. Jotkin englanninkieliset pitkät artikkelit olivat raskasta luettavaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           N. 5-7 linkkiä oli mielestäni paras määrä lukupiirimateriaalia opintojakson aikana
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Riippuu paljon materiaalin pituudesta... Lyhyempiä pysytyy sisäistämään nopealla aikataululla useamman mutta laajempia materiaaleja ei mielestäni saisi olla 2-3 enempää.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           1-3 aineistoa/ hlö riippuen pituudesta
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Olivatko johdattelevat kysymykset hyvä tapa lukupiirikeskustelun ohjaamiseen vai olisiko parempi (joskus) antaa ryhmälle vapaat kädet puhua lukemastaan materiaalista?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Auvinen, Hannele,
+									17.01.2019
+           </span>
+           <br/>
+           Johdattelevat kysymykset ovat hyviä, mutta välillä kysymykset olivat liikaa "etsi aineistosta oikea vastaus" tyyppisiä, joista taas ei juurikaan ollut mitään hyötyä. Johdattelevat kysymykset on hyviä, koska ne auttaa pysymään aiheessa ja suuntaa keskustelua juuri oleellisiin asioihin
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Johdattelevat kysymykset olivat minusta hyviä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           kysymykset olivat hyviä, sillä pystyi lukemaan tekstiä niin, että haki oleellista valmiiksi tietoa asiasta. Kuitenkin jäi mielikuva että lukupiiriraportissa tulee antaa omat vastaukset juuri näihin kysymyksiin
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kysymykset oli hyvä pohja.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tämä tapa oli hyvä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Johdattelevat kysymykset olivat äärimmäisen hyvät, jos aihe on koko ryhmälle ihan uusi siitä on hankala saada keskustelua aikaan
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pidin johdattelevista kysymyksistä, mutta olisi myös ollut hauska kokeilla keskustella aiheista vapaasti.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Yhteistä keskustelua voitaisiin käydä vaihtoehtoisesti lukupiirimateriaali kerrallaan ja keskustella siitä, mitä kyseisestä materiaalista opittiin tai mitä siitä olisi pitänyt oppia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kysymykset hyviä, mutta myös "provosoivat" kommentit toimivat paremmin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kysymykset olivat hyviä. Joillain kerroilla niitä tosin oli ehkä pari liikaa, sillä tunti ei meinannut riittää jokaisen läpikäyntiin. Kysymysten avulla kuitenkin keskustelu lähti hyvin käyntiin. Täysin vapaiden käsien antaminen voisi saada aikaan erilaista keskustelua, mutta luulisin, että olisi hyvä olla edes muutama kysymys hieman johdattelemassa keskustelua. Omassa ryhmässämme ehdimme kuitenkin melko usein keskustelemaan myös asioista kysymysten ulkopuolelta. Joku saattoi nostaa esiin mielenkiintoisen näkökulman, josta ehdimme lyhyesti keskustella kysymysten ohella.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvä olla edes jotain runkoa, mutta pienempikin johdattelu olisi välillä riittänyt.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kysymykset toimivat, vaikka olivatkin usein liian avoimia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           kysymykset oli hyvä tapa niin oli joku runko, mistä lähteä liikkeelle, välillä kysymykset olivat vain hieman spesifejä jolloin ne eivät oikein vieneet keskustelua eteen päin vaan vain etsittiin tarkka yksi vastaus kysymykseen ja jatkettiin seuraavaan kysymykseen
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Joskus materiaalit ja kysymykset eivät sopineet täysin yhteen, mutta eiköhän opiskelijat osaa tarvittaessa soveltaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           +
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Johdattelevat kysymykset olivat hyviä, sillä niiden avulla keskustelu eteni loogisesti. Niihin pystyi ottamaan esille myös ennen materiaalien lukemista opittuja asioita, joita opiskelijoilta löytyykin tosi paljon.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielestäni kysymykset antoivat hyvän rakenteen keskusteluille.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           kysymykset olivat hyviä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Johdattelevat kysymykset toimivat hyvin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kysymykset olivat oikein hyviä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyllä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Olivat, koska ne herättivät keskustelua, vaikka kaikki eivät olisi lukeneet kaikkia tekstejä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Johdattelevat kysymykset olivat hyviä. Näiden avulla on helpompi löytää ja muistaa keskeisimmät asiat isosta määrästä tekstiä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielestäni kysymykset toimivat hyvin ja niiden avulla oli helppoa pysyä aiheessa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kysymykset oli hyviä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Johdattelevat kysymykset olivat yleensä aiheeseen nähden onnistuneita.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Olivat hyvä juttu!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Johdattelevat kysymykset ovat hyviä, jotta keskutelun saa käyntiin. Kysymyksiä ei saisi olla enempää kuin neljä. Vaihtoehtoisesti voisi olla useampikin kysymys, josta ryhmä saisi valita haluamansa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Johdattelevat kysymykset olivat ihan hyvä tapa, mutta voisi harkita että kysymyksiä antaa vain muutamalla ensimmäisellä kerralla ja lopuilla kerroilla voisi olla vapaampaa keskustelua, jolloin ryhmä voisi oikeasti keskustella aiheesta joka heitä kiinnostaa eniten. Näin raportistakin tulee laadukkaampi, kun voi paneutua pienempään osa-alueeseen, eikä koita mahduttaa kaikkea sivun mittaiseen raporttiin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyviä, antoi sopivaa perspektiiviä miettiä aihetta
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Johdattelevat kysymykset toimivat mielestäni hyvin keskustelua avaajina. Jos ne osuvat hyvin aiheen ytimeen, ne ovat hyödyllisiä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           olivat hyvä tapa
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kysymykset olivat hyviä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           johdattelevat kysymykset olivat hyviä sillä ne antoivat tarttumapintaa materiaaliin
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kysymykset olivat hyvät
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Johdattelevat kysymykset olivat hyviä ja auttoivat keskustelussa. Vapaat kädet voivat viedä keskustelun sivuraiteille.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Johdattelevat kysymykset olivat oleellisia, joten niitä on hyvä olla jatkossakin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kysymykset olivat tarpeellisia. Tuskin olisimme ilman niitä käsitelleet aiheita tarpeeksi monipuolisesti. Toki voisi laajemmissa aiheissa antaa esimerkiksi vaihtoehtoja mihin asiaan ryhmä haluaa perehtyä tarkemmin, mutta kysymykset olivat ainakin meille tarpeellisia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kysymykset olivat hyvät, auttoivat keskustelun kulussa. Hyvä olisi kumminkin antaa myös vapautta keskustelulle jos/kun se lähtee sujumaan pidemmälle
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kysymykset olivat hyviä ainakin osittain. Ehkä voisi olla myös omaa keskustelua.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kysymykset olivat hyviä, ne toivat vähän järkeä keskusteluihin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Vapaat.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Enemmän vapaat kädet, myös materiaalin ulkopuolelta. Materiaali on hyvä lukupiirin pohjaksi, mutta usein mielenkiintoisimmat keskustelut saatiin aikaan omista mielipiteistä eikä niinkään täysin materiaaleihin pohjautuvista puheista
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Oli hyvä tapa
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           joo oli
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kysymykset ovat hyvä tapa, vapaa keskustelu tulee kyllä siinä ohessa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Johdattelevat kysymykset olivat hyviä ideana, mutteivat aina muodoltaan keskustelun pohjaksi sopivia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Silloin, kun ne todella olivat johdattelevia, niin niistä oli hyötyä. Välillä kysymykset oli liian tarkkoja, eikä ryhmän pohdinnalle jäänyt tilaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kysymykset auttoivat. Loivat rungon keskustelulle.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <!-- STUDENT RESPONSES -->
+       <br/>
+       <br/>
+      </form>
+      <br/>
+      <br/>
+     </div>
+     <div id="footer">
+      <span class="about" id="footerInfoLink">
+       Tietoa sovelluksesta
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div aria-describedby="footerInfobox" aria-labelledby="ui-id-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable" role="dialog" style="display: none; position: absolute;" tabindex="-1">
+   <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+    <span class="ui-dialog-title" id="ui-id-1">
+    </span>
+    <button aria-disabled="false" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="close">
+     <span class="ui-button-icon-primary ui-icon ui-icon-closethick">
+     </span>
+     <span class="ui-button-text">
+      close
+     </span>
+    </button>
+   </div>
+   <div class="ui-dialog-content ui-widget-content" id="footerInfobox">
+    Kaiku - Tampereen yliopisto
+			Sovelluksen versio: 1.15.0 (10.3.2020)
+   </div>
+   <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;">
+   </div>
+  </div>
+ </body>
+</html>

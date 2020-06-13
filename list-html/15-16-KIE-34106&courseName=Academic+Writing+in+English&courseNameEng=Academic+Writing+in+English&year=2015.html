@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Kaiku
+  </title>
+  <link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css"/>
+  <script src="/kaiku/javascript/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/kaiku.js" type="text/javascript">
+  </script>
+  <link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css"/>
+  <link href="/kaiku/style/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="hidden" id="pop-up">
+   <img alt="hourclass" src="/kaiku/images/hourglass_small.png"/>
+   <br/>
+   Raportti latautuu...
+  </div>
+  <div id="outer">
+   <div id="page">
+    <div id="banner">
+     <img alt="Kaiku" src="/kaiku/images/Logo_TAU_FI.png" style="height: 50px;"/>
+     <span class="page_name">
+      Kaiku
+      <br/>
+     </span>
+     <div id="banner_inner_right">
+      <nobr>
+       <a href="https://www.tut.fi/pop">
+        POP
+       </a>
+       |
+       <a href="https://www.tut.fi/tutka">
+        TUTKA
+       </a>
+      </nobr>
+      <span class="user_name">
+       Jere Laine
+       <br/>
+      </span>
+      <br/>
+      <a href="/kaiku/logOut/logOut">
+       Kirjaudu ulos
+      </a>
+     </div>
+    </div>
+    <div id="menu" style="min-height: 15px;">
+     <nobr>
+      <a href="/kaiku/kaiku/mainpage">
+       Etusivu
+      </a>
+      <a href="/kaiku/studentMainPageSearch/feedback">
+       Anna Palautetta
+      </a>
+      <a class="selected" href="/kaiku/examineFeedbackPage/feedback">
+       Palautteet
+      </a>
+      <a href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf" style="font-size: 12px;">
+       ?
+      </a>
+      <a href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&amp;PREVIOUS_VIEW=feedbackSummaryCourseQueriesResults" style="font-size: 10px;">
+       in English
+      </a>
+     </nobr>
+    </div>
+    <div id="content">
+     <div id="inner_content">
+      <form action="/kaiku/examineFeedbackPage/feedback" id="pageInformation" method="post">
+       <p>
+        <a href="/kaiku/examineFeedbackPage/feedback?action=landingPageLink">
+         Opintojaksojen palautteet
+        </a>
+        →
+        <a href="/kaiku/examineFeedbackPage/feedback?action=depOrCoursegroupLink&amp;depOrCoursegroupId=">
+        </a>
+        → IHA-3307 Model-based Real Time Control and Rapid Prototyping
+       </p>
+       <h1>
+        Opintojakson kyselyiden tulokset
+       </h1>
+       IHA-3307   Model-based Real Time Control and Rapid Prototyping
+       <table>
+        <tr>
+         <td>
+          Lukuvuosi
+         </td>
+         <td>
+          <select id="searchForm2.chosenAcademicYear" name="searchForm2.chosenAcademicYear">
+           <option value="2019">
+            2019-2020
+           </option>
+           <option selected="selected" value="2018">
+            2018-2019
+           </option>
+           <option value="2017">
+            2017-2018
+           </option>
+           <option value="2016">
+            2016-2017
+           </option>
+           <option value="2015">
+            2015-2016
+           </option>
+           <option value="2014">
+            2014-2015
+           </option>
+           <option value="2013">
+            2013-2014
+           </option>
+           <option value="2012">
+            2012-2013
+           </option>
+           <option value="2011">
+            2011-2012
+           </option>
+           <option value="0">
+            Kaikki/All
+           </option>
+          </select>
+         </td>
+         <td>
+          <input name="BUTTON_CHOOSE" type="submit" value="Valitse"/>
+         </td>
+        </tr>
+       </table>
+       <p>
+        Kyselyn tulokset eivät ole automaattisesti kaikkien nähtävillä, vaan toteutuskertavastaavan tulee julkaista tulokset.
+       </p>
+       <p>
+        Yleisarvosana: 0% / 1% / 2% / 3% / 4% / 5% / En osaa sanoa%
+        <br/>
+        Yleisarvosana opintojaksolle ja sen toteutukselle. (Yleisarvosanan antaminen perustuu omaan henkilökohtaiseen kokemukseesi opintojaksosta (sis. opetus, tilat, oppimateriaalit, viestintä, opetusajankohdat sekä muut opetusjärjestelyt). Onnistuiko tämä opintojakso sinulle tärkeissä asioissa? )
+       </p>
+       <p>
+        Osaamistavoitteet: 0% / 1% / 2% / 3% / 4% / 5% / En osaa sanoa%
+        <br/>
+        Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista? (Opintojakson osaamistavoitteet näkyvät 'osaamistavoitteiden' -linkistä. Arvioi, kuinka hyvin opintojakso mielestäsi tuki osaamistavoitteiden saavuttamista.)
+       </p>
+       <p>
+        Arvioitu työmäärä: Työmäärä vähäinen opintopisteisiin nähden.% / Työmäärä sopiva opintopisteisiin nähden.% / Työmäärä liian suuri opintopisteisiin nähden.%
+        <br/>
+        Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin. ()
+       </p>
+       <table class="common">
+        <tr>
+         <th>
+          Kysely
+         </th>
+         <th>
+          Yleisarvosana
+         </th>
+         <th>
+          Osaamistavoitteet
+         </th>
+         <th>
+          Arvioitu työmäärä
+         </th>
+         <th>
+          Vastaajia (N)
+         </th>
+         <th>
+          En anna palautetta vastanneet (N)
+         </th>
+         <th style="width: 125px;">
+          Opettaja vastannut
+         </th>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2015 - 2016,  Periodit I-II  COURSE BEGINS: 14.9.2015 This is a very intensive online version of Academic Writing, and is intended for undergraduate TUT students. This course satisfies the same requirement for the compulsory foreign language studies as Written Communication; therefore, it is not advised that you take both courses. If you are not sure which to take, Written Communication is oriented more towards professional writing and this course academic writing. This course is more challenging.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=22534">
+           Toteutuskertakysely 18.12.15-31.01.16
+          </a>
+         </td>
+         <td>
+          0 / 0 / 18 / 24 / 53 / 6 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 12 / 59 / 29 / 0
+         </td>
+         <td>
+          0 / 71 / 29
+         </td>
+         <td>
+          17
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2015 - 2016,  Periodit I  This group is only for TUTA (industrial engineering and management), or TIJO (knowledge management) students concurrently enrolled in Strategic Management.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=20520">
+           Toteutuskertakysely 10.10.15-23.11.15
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 40 / 60 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 30 / 70 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          10
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2015 - 2016,  Periodit II  This group is only for TUTA or TIJO students concurrently enrolled in TLO-32020 Business and Competitive Intelligence.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=22157">
+           Toteutuskertakysely 05.12.15-18.01.16
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 7 / 43 / 50 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 50 / 50 / 0
+         </td>
+         <td>
+          0 / 79 / 21
+         </td>
+         <td>
+          14
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2015 - 2016,  Periodit III-IV  This implementation is exclusively for undergraduate students of biotechnology/biomedical engineering who are concurrently enrolled in the course Tissue Engineering.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=24761">
+           Toteutuskertakysely 30.04.16-13.06.16
+          </a>
+         </td>
+         <td>
+          6 / 25 / 44 / 13 / 13 / 0 / 0
+         </td>
+         <td>
+          6 / 6 / 41 / 25 / 22 / 0 / 0
+         </td>
+         <td>
+          0 / 55 / 45
+         </td>
+         <td>
+          32
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2015 - 2016,  Periodit III-IV  COURSE BEGINS: 25.1.2016 This is the standard online version of the course open to undergraduate students from all TUT faculties.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=24762">
+           Toteutuskertakysely 30.04.16-13.06.16
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 50 / 25 / 0 / 25
+         </td>
+         <td>
+          0 / 0 / 0 / 33 / 33 / 0 / 33
+         </td>
+         <td>
+          0 / 33 / 67
+         </td>
+         <td>
+          4
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td>
+          Yhteensä
+         </td>
+         <td>
+          0 / 0 / 0 / 9 / 64 / 27 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 56 / 44 / 0
+         </td>
+         <td>
+          11 / 78 / 11
+         </td>
+         <td>
+          11
+         </td>
+         <td>
+          1
+         </td>
+         <td>
+         </td>
+        </tr>
+       </table>
+      </form>
+      <br/>
+      <br/>
+     </div>
+     <div id="footerInfobox">
+      Kaiku - Tampereen yliopisto Sovelluksen versio: 1.15.0 (10.3.2020)
+     </div>
+     <div id="footer">
+      <span class="about" id="footerInfoLink">
+       Tietoa sovelluksesta
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

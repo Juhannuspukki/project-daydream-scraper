@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Kaiku
+  </title>
+  <link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css"/>
+  <script src="/kaiku/javascript/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/kaiku.js" type="text/javascript">
+  </script>
+  <link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css"/>
+  <link href="/kaiku/style/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="hidden" id="pop-up">
+   <img alt="hourclass" src="/kaiku/images/hourglass_small.png"/>
+   <br/>
+   Raportti latautuu...
+  </div>
+  <div id="outer">
+   <div id="page">
+    <div id="banner">
+     <img alt="Kaiku" src="/kaiku/images/Logo_TAU_FI.png" style="height: 50px;"/>
+     <span class="page_name">
+      Kaiku
+      <br/>
+     </span>
+     <div id="banner_inner_right">
+      <nobr>
+       <a href="https://www.tut.fi/pop">
+        POP
+       </a>
+       |
+       <a href="https://www.tut.fi/tutka">
+        TUTKA
+       </a>
+      </nobr>
+      <span class="user_name">
+       Jere Laine
+       <br/>
+      </span>
+      <br/>
+      <a href="/kaiku/logOut/logOut">
+       Kirjaudu ulos
+      </a>
+     </div>
+    </div>
+    <div id="menu" style="min-height: 15px;">
+     <nobr>
+      <a href="/kaiku/kaiku/mainpage">
+       Etusivu
+      </a>
+      <a href="/kaiku/studentMainPageSearch/feedback">
+       Anna Palautetta
+      </a>
+      <a class="selected" href="/kaiku/examineFeedbackPage/feedback">
+       Palautteet
+      </a>
+      <a href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf" style="font-size: 12px;">
+       ?
+      </a>
+      <a href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&amp;PREVIOUS_VIEW=feedbackSummaryCourseQueriesResults" style="font-size: 10px;">
+       in English
+      </a>
+     </nobr>
+    </div>
+    <div id="content">
+     <div id="inner_content">
+      <form action="/kaiku/examineFeedbackPage/feedback" id="pageInformation" method="post">
+       <p>
+        <a href="/kaiku/examineFeedbackPage/feedback?action=landingPageLink">
+         Opintojaksojen palautteet
+        </a>
+        →
+        <a href="/kaiku/examineFeedbackPage/feedback?action=depOrCoursegroupLink&amp;depOrCoursegroupId=10502">
+         Arkkitehtuuri
+        </a>
+        → ARK-00142 Arkkitehtuurimedia
+       </p>
+       <h1>
+        Opintojakson kyselyiden tulokset
+       </h1>
+       ARK-00142   Arkkitehtuurimedia
+       <table>
+        <tr>
+         <td>
+          Lukuvuosi
+         </td>
+         <td>
+          <select id="searchForm2.chosenAcademicYear" name="searchForm2.chosenAcademicYear">
+           <option selected="selected" value="2019">
+            2019-2020
+           </option>
+           <option value="2018">
+            2018-2019
+           </option>
+           <option value="2017">
+            2017-2018
+           </option>
+           <option value="2016">
+            2016-2017
+           </option>
+           <option value="2015">
+            2015-2016
+           </option>
+           <option value="2014">
+            2014-2015
+           </option>
+           <option value="2013">
+            2013-2014
+           </option>
+           <option value="2012">
+            2012-2013
+           </option>
+           <option value="2011">
+            2011-2012
+           </option>
+           <option value="0">
+            Kaikki/All
+           </option>
+          </select>
+         </td>
+         <td>
+          <input name="BUTTON_CHOOSE" type="submit" value="Valitse"/>
+         </td>
+        </tr>
+       </table>
+       <p>
+        Kyselyn tulokset eivät ole automaattisesti kaikkien nähtävillä, vaan toteutuskertavastaavan tulee julkaista tulokset.
+       </p>
+       <p>
+        Yleisarvosana: 0% / 1% / 2% / 3% / 4% / 5% / En osaa sanoa%
+        <br/>
+        Yleisarvosana opintojaksolle ja sen toteutukselle. (Yleisarvosanan antaminen perustuu omaan henkilökohtaiseen kokemukseesi opintojaksosta (sis. opetus, tilat, oppimateriaalit, viestintä, opetusajankohdat sekä muut opetusjärjestelyt). Onnistuiko tämä opintojakso sinulle tärkeissä asioissa? )
+       </p>
+       <p>
+        Osaamistavoitteet: 0% / 1% / 2% / 3% / 4% / 5% / En osaa sanoa%
+        <br/>
+        Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista? (Opintojakson osaamistavoitteet näkyvät 'osaamistavoitteiden' -linkistä. Arvioi, kuinka hyvin opintojakso mielestäsi tuki osaamistavoitteiden saavuttamista.)
+       </p>
+       <p>
+        Arvioitu työmäärä: Työmäärä vähäinen opintopisteisiin nähden.% / Työmäärä sopiva opintopisteisiin nähden.% / Työmäärä liian suuri opintopisteisiin nähden.%
+        <br/>
+        Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin. ()
+       </p>
+       <table class="common">
+        <tr>
+         <th>
+          Kysely
+         </th>
+         <th>
+          Yleisarvosana
+         </th>
+         <th>
+          Osaamistavoitteet
+         </th>
+         <th>
+          Arvioitu työmäärä
+         </th>
+         <th>
+          Vastaajia (N)
+         </th>
+         <th>
+          En anna palautetta vastanneet (N)
+         </th>
+         <th style="width: 125px;">
+          Opettaja vastannut
+         </th>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2019 - 2020,  Periodit I-V  Revit Basics 4 cr This module is about learning the basic use of Autodesk Revit. On this module, we cover using the interface, working and moving inside the modeling environment, creating a building with construction tools, importing images and dwg-files and creating visualizations and layout from the building model. We also cover creating custom objects (revit families). The language of this module/course implementation is English. The module/course implementation is an online course (guidance is given as contact teaching) and it can be performed during the time wanted by the student. The teaching materials are in Moodle and the return of the finished work is done there. The guidance is given in the classroom RH216, in the Friday afternoon. The changes will be informed in Moodle. The return of the exercise work of a module/course implementation for the evaluation can be done once in a period. Deadline dates of the return: 1st March 2020 (The 3rd period) 10th May 2020 (The 4th period) The absolute last deadline (the 4th period) is 27th May 2020; The ROCK information system closes and the teachers have 21 days to evaluate the exercise works and to record the study credits. 23rd August 2020 is the deadline of the summer period; the teaching begins 24th August 2020 (1st period) and the study credits will be recorded in the new Sisu information system.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          Ei kyselyitä
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2019 - 2020,  Periodit I-V  3ds Max Basics 2 cr This module is about learning the basic use of Autodesk 3ds Max interface and modeling tools. On this module, we cover using 3ds Max interface, working and moving inside the modeling environment, creating and importing objects, moving, selecting and manipulating objects, working with the snap tools, working with imported geometries from cad-programs, working with cameras, creating basic renderings and applying texturing. We also cover basic polygon modeling, spline modeling and combining these two techniques. We import a furniture object from furniture vendor Vitra and create a library object from it. The language of this module/course implementation is English. The module/course implementation is an online course (guidance is given as contact teaching) and it can be performed during the time wanted by the student. The teaching materials are in Moodle and the return of the finished work is done there. The guidance is given in the classroom RH216, in the Friday afternoon. The changes will be informed in Moodle. The return of the exercise work of a module/course implementation for the evaluation can be done once in a period. Deadline dates of the return: 1st March 2020 (The 3rd period) 10th May 2020 (The 4th period) The absolute last deadline (the 4th period) is 27th May 2020; The ROCK information system closes and the teachers have 21 days to evaluate the exercise works and to record the study credits. 23rd August 2020 is the deadline of the summer period; the teaching begins 24th August 2020 (1st period) and the study credits will be recorded in the new Sisu information system.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          Ei kyselyitä
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2019 - 2020,  Periodit I-V  3ds Max and V-Ray 2 cr This module is about learning the basic use of the Vray rendering plugin software for 3ds Max. On this module, we cover creating lighting with Vray lights, creating good quality Vray materials and controlling the rendering quality with Vray We also cover post-production of interior and exterior visualizations with Adobe Photoshop program. We build the surroundings of our building using cutout material like images of grass trees and bushes and learn how to manage unifying lighting and coloration for these materials. The language of this module/course implementation is English. The module/course implementation is an online course (guidance is given as contact teaching) and it can be performed during the time wanted by the student. The teaching materials are in Moodle and the return of the finished work is done there. The guidance is given in the classroom RH216, in the Friday afternoon. The changes will be informed in Moodle. The return of the exercise work of a module/course implementation for the evaluation can be done once in a period. Deadline dates of the return: 1st March 2020 (The 3rd period) 10th May 2020 (The 4th period) The absolute last deadline (the 4th period) is 27th May 2020; The ROCK information system closes and the teachers have 21 days to evaluate the exercise works and to record the study credits. 23rd August 2020 is the deadline of the summer period; the teaching begins 24th August 2020 (1st period) and the study credits will be recorded in the new Sisu information system.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          Ei kyselyitä
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2019 - 2020,  Periodit I-V  Arkkitehtuurimedian perusteet 2 - 3D-mallinnus, SketchUp 2 op Moduulin/toteutuskerran kieli on suomi. Moduuli/toteutuskerta on verkkokurssi (ohjausta annetaan myös kontaktiopetuksena) ja sen voi suorittaa haluamanaan aikana. Opetusmateriaali on Moodlessa ja valmiin työn palautus tapahtuu sinne. Ohjausta annetaan luokassa RH216 tiistai-aamupäivisin. Muutoksista tiedotetaan Moodlessa. Moduulin/toteutuskerran työn palautuksen arviointia varten voi tehdä kerran periodissa. Palautuksen määräpäivät: 1.3.2020 (3. periodi) 10.5.2020 (4. periodi) 27.5.2020 on ehdoton viimeinen deadline (4. periodi); ROCK sulkeutuu ja opettajilla on 21 päivää aikaa arvioida työt ja kirjata suoritukset. 23.8.2020 kesäperiodin deadline; opetus alkaa 24.8.2020 (1. periodi) ja suoritukset kirjataan uuteen Sisu-järjestelmään.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=45863">
+           Toteutuskertakysely 09.12.19-22.01.20
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 50 / 50 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 50 / 50 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          2
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2019 - 2020,  Periodit I-V  Arkkitehtuurimedian perusteet 3 - Pikseligrafiikka, Photoshop 1 op Moduulin/toteutuskerran kieli on suomi. Moduuli/toteutuskerta on verkkokurssi (ohjausta annetaan myös kontaktiopetuksena) ja sen voi suorittaa haluamanaan aikana. Opetusmateriaali on Moodlessa ja valmiin työn palautus tapahtuu sinne. Ohjausta annetaan luokassa RH216 tiistai-aamupäivisin. Muutoksista tiedotetaan Moodlessa. Moduulin/toteutuskerran työn palautuksen arviointia varten voi tehdä kerran periodissa. Palautuksen määräpäivät: 1.3.2020 (3. periodi) 10.5.2020 (4. periodi) 27.5.2020 on ehdoton viimeinen deadline (4. periodi); ROCK sulkeutuu ja opettajilla on 21 päivää aikaa arvioida työt ja kirjata suoritukset. 23.8.2020 kesäperiodin deadline; opetus alkaa 24.8.2020 (1. periodi) ja suoritukset kirjataan uuteen Sisu-järjestelmään.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          Ei kyselyitä
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td>
+          Yhteensä
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 50 / 50 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 50 / 50 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          2
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+         </td>
+        </tr>
+       </table>
+      </form>
+      <br/>
+      <br/>
+     </div>
+     <div id="footerInfobox">
+      Kaiku - Tampereen yliopisto Sovelluksen versio: 1.15.0 (10.3.2020)
+     </div>
+     <div id="footer">
+      <span class="about" id="footerInfoLink">
+       Tietoa sovelluksesta
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

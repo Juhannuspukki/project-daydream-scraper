@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Kaiku
+  </title>
+  <link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css"/>
+  <script src="/kaiku/javascript/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/kaiku.js" type="text/javascript">
+  </script>
+  <link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css"/>
+  <link href="/kaiku/style/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="hidden" id="pop-up">
+   <img alt="hourclass" src="/kaiku/images/hourglass_small.png"/>
+   <br/>
+   Raportti latautuu...
+  </div>
+  <div id="outer">
+   <div id="page">
+    <div id="banner">
+     <img alt="Kaiku" src="/kaiku/images/Logo_TAU_FI.png" style="height: 50px;"/>
+     <span class="page_name">
+      Kaiku
+      <br/>
+     </span>
+     <div id="banner_inner_right">
+      <nobr>
+       <a href="https://www.tut.fi/pop">
+        POP
+       </a>
+       |
+       <a href="https://www.tut.fi/tutka">
+        TUTKA
+       </a>
+      </nobr>
+      <span class="user_name">
+       Jere Laine
+       <br/>
+      </span>
+      <br/>
+      <a href="/kaiku/logOut/logOut">
+       Kirjaudu ulos
+      </a>
+     </div>
+    </div>
+    <div id="menu" style="min-height: 15px;">
+     <nobr>
+      <a href="/kaiku/kaiku/mainpage">
+       Etusivu
+      </a>
+      <a href="/kaiku/studentMainPageSearch/feedback">
+       Anna Palautetta
+      </a>
+      <a class="selected" href="/kaiku/examineFeedbackPage/feedback">
+       Palautteet
+      </a>
+      <a href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf" style="font-size: 12px;">
+       ?
+      </a>
+      <a href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&amp;PREVIOUS_VIEW=feedbackSummaryCourseQueriesResults" style="font-size: 10px;">
+       in English
+      </a>
+     </nobr>
+    </div>
+    <div id="content">
+     <div id="inner_content">
+      <form action="/kaiku/examineFeedbackPage/feedback" id="pageInformation" method="post">
+       <p>
+        <a href="/kaiku/examineFeedbackPage/feedback?action=landingPageLink">
+         Opintojaksojen palautteet
+        </a>
+        →
+        <a href="/kaiku/examineFeedbackPage/feedback?action=depOrCoursegroupLink&amp;depOrCoursegroupId=314300">
+         Kielikeskus
+        </a>
+        → KIE-08007 Intercultural Communication Skills
+       </p>
+       <h1>
+        Opintojakson kyselyiden tulokset
+       </h1>
+       KIE-08007   Intercultural Communication Skills
+       <table>
+        <tr>
+         <td>
+          Lukuvuosi
+         </td>
+         <td>
+          <select id="searchForm2.chosenAcademicYear" name="searchForm2.chosenAcademicYear">
+           <option value="2019">
+            2019-2020
+           </option>
+           <option value="2018">
+            2018-2019
+           </option>
+           <option value="2017">
+            2017-2018
+           </option>
+           <option selected="selected" value="2016">
+            2016-2017
+           </option>
+           <option value="2015">
+            2015-2016
+           </option>
+           <option value="2014">
+            2014-2015
+           </option>
+           <option value="2013">
+            2013-2014
+           </option>
+           <option value="2012">
+            2012-2013
+           </option>
+           <option value="2011">
+            2011-2012
+           </option>
+           <option value="0">
+            Kaikki/All
+           </option>
+          </select>
+         </td>
+         <td>
+          <input name="BUTTON_CHOOSE" type="submit" value="Valitse"/>
+         </td>
+        </tr>
+       </table>
+       <p>
+        Kyselyn tulokset eivät ole automaattisesti kaikkien nähtävillä, vaan toteutuskertavastaavan tulee julkaista tulokset.
+       </p>
+       <p>
+        Yleisarvosana: 0% / 1% / 2% / 3% / 4% / 5% / En osaa sanoa%
+        <br/>
+        Yleisarvosana opintojaksolle ja sen toteutukselle. (Yleisarvosanan antaminen perustuu omaan henkilökohtaiseen kokemukseesi opintojaksosta (sis. opetus, tilat, oppimateriaalit, viestintä, opetusajankohdat sekä muut opetusjärjestelyt). Onnistuiko tämä opintojakso sinulle tärkeissä asioissa? )
+       </p>
+       <p>
+        Osaamistavoitteet: 0% / 1% / 2% / 3% / 4% / 5% / En osaa sanoa%
+        <br/>
+        Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista? (Opintojakson osaamistavoitteet näkyvät 'osaamistavoitteiden' -linkistä. Arvioi, kuinka hyvin opintojakso mielestäsi tuki osaamistavoitteiden saavuttamista.)
+       </p>
+       <p>
+        Arvioitu työmäärä: Työmäärä vähäinen opintopisteisiin nähden.% / Työmäärä sopiva opintopisteisiin nähden.% / Työmäärä liian suuri opintopisteisiin nähden.%
+        <br/>
+        Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin. ()
+       </p>
+       <table class="common">
+        <tr>
+         <th>
+          Kysely
+         </th>
+         <th>
+          Yleisarvosana
+         </th>
+         <th>
+          Osaamistavoitteet
+         </th>
+         <th>
+          Arvioitu työmäärä
+         </th>
+         <th>
+          Vastaajia (N)
+         </th>
+         <th>
+          En anna palautetta vastanneet (N)
+         </th>
+         <th style="width: 125px;">
+          Opettaja vastannut
+         </th>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2019 - 2020,  Periodit I-II  This course develops students intercultural communication skills through short lectures, practical exercises and multicultural teamwork in face-to-face and online environments. The multicultural groups consist of both local and international students, which allows the students to learn and practice intercultural communication with each other in each class and teamwork. At the end of the course students will be able to: identify different cultural communication patterns, concepts of time, politeness and work values in social, academic and professional environments . describe adaptation processes to cultural foreign environments and to multicultural settings. identify the influence and importance of nonverbal communication and the relation of language and thought in cross-cultural collaboration. apply strategies to enhance collaboration in multicultural teams independently explore, analyze, and give suggestion to overcome critical incidents in social, professional and academic settings. This implementation of the course will take place on Tuesdays (Period I and 2) from 9.15 - 12.00 in room PC110, Hervanta. During the first period we meet every week, but in the second period we do not have face to face lessons every week. You can find information about the dates for the learning events below: Tue 03.09 Tue 10.09 Tue 17.09 Tue 24.09 Tue 01.10 Tue 08.10 Tue 29.10 Tue 12.11 Tue 26.11
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=45985">
+           Toteutuskertakysely 09.12.19-22.01.20
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 48 / 52 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 4 / 43 / 52 / 0
+         </td>
+         <td>
+          14 / 82 / 5
+         </td>
+         <td>
+          27
+         </td>
+         <td>
+          1
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2019 - 2020,  Periodit I-II  This course develops students intercultural communication skills through short lectures, practical exercises and multicultural teamwork in face-to-face and online environments. The multicultural groups consist of both local and international students, which allows the students to learn and practice intercultural communication with each other in each class and teamwork. This implementation of the course has less contact lessons in the classroom and more online work than other implementations. At the end of the course students will be able to: identify different cultural communication patterns, concepts of time, politeness and work values in social, academic and professional environments . describe adaptation processes to cultural foreign environments and to multicultural settings. identify the influence and importance of nonverbal communication and the relation of language and thought in cross-cultural collaboration. apply strategies to enhance collaboration in multicultural teams independently explore, analyze, and give suggestion to overcome critical incidents in social, professional and academic settings. This implementation of the course will take place on Thursdays (Period I and 2) from 9.15 - 12.00 in room PC110, Hervanta. Notice that we do not meet in the classroom every week because we work more online that in other implementations of the same course. You can find information about the dates for the learning events below: Thu 05.09 Thu 19.09 Thu 03.10 Thu 24.10 Thu 14.11 Thu 28.11
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=45986">
+           Toteutuskertakysely 09.12.19-22.01.20
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 25 / 75 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 35 / 65 / 0
+         </td>
+         <td>
+          9 / 91 / 0
+         </td>
+         <td>
+          24
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2019 - 2020,  Periodit II-IV  This implementation of the course targets outgoing and incoming exchange students in Tampere University during the spring semester 2019-2020. See more information on the section of "Additional information". This course develops students intercultural communication skills through short lectures, practical exercises and multicultural teamwork in face-to-face and online environments. The multicultural groups consist of both local and international students, which allows the students to learn and practice intercultural communication with each other in each class and teamwork. At the end of the course students will be able to: identify and apply strategies to study and live in a new cultural environment. make a plan of activities and goals to accomplish during their studies abroad. identify different cultural communication patterns, concepts of time, politeness and work values in social, academic and professional environments . describe adaptation processes to cultural foreign environments and to multicultural settings. identify the influence and importance of nonverbal communication and the relation of language and thought in cross-cultural collaboration. apply strategies to enhance collaboration in multicultural teams independently explore, analyze, and give suggestion to overcome critical incidents in social, professional and academic settings.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=47019">
+           Toteutuskertakysely 27.04.20-10.06.20
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 25 / 0 / 75 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 0 / 100 / 0
+         </td>
+         <td>
+          25 / 75 / 0
+         </td>
+         <td>
+          4
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2019 - 2020,  Periodit III-IV  This course develops students intercultural communication skills through short lectures, practical exercises and multicultural teamwork in face-to-face and online environments. The multicultural groups consist of both local and international students, which allows the students to learn and practice intercultural communication with each other in each class and teamwork. This implementation of the course has less face-to-face lessons and more online work than other implementations but it has the same content. At the end of the course students will be able to: identify different cultural communication patterns, concepts of time, politeness and work values in social, academic and professional environments . describe adaptation processes to cultural foreign environments and to multicultural settings. identify the influence and importance of nonverbal communication and the relation of language and thought in cross-cultural collaboration. apply strategies to enhance collaboration in multicultural teams independently explore, analyze, and give suggestion to overcome critical incidents in social, professional and academic settings.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=47020">
+           Toteutuskertakysely 27.04.20-10.06.20
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 18 / 36 / 45 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 14 / 14 / 73 / 0
+         </td>
+         <td>
+          5 / 95 / 0
+         </td>
+         <td>
+          22
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2019 - 2020,  Periodit III-IV  This course develops students intercultural communication skills through short lectures, practical exercises and multicultural teamwork in face-to-face and online environments. The multicultural groups consist of both local and international students, which allows the students to learn and practice intercultural communication with each other in each class and teamwork. At the end of the course students will be able to: identify different cultural communication patterns, concepts of time, politeness and work values in social, academic and professional environments . describe adaptation processes to cultural foreign environments and to multicultural settings. identify the influence and importance of nonverbal communication and the relation of language and thought in cross-cultural collaboration. apply strategies to enhance collaboration in multicultural teams independently explore, analyze, and give suggestion to overcome critical incidents in social, professional and academic settings.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=47021">
+           Toteutuskertakysely 27.04.20-10.06.20
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 6 / 38 / 56 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 7 / 27 / 67 / 0
+         </td>
+         <td>
+          7 / 87 / 7
+         </td>
+         <td>
+          16
+         </td>
+         <td>
+          1
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td>
+          Yhteensä
+         </td>
+         <td>
+          0 / 0 / 0 / 6 / 35 / 58 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 6 / 29 / 66 / 0
+         </td>
+         <td>
+          9 / 88 / 2
+         </td>
+         <td>
+          93
+         </td>
+         <td>
+          2
+         </td>
+         <td>
+         </td>
+        </tr>
+       </table>
+      </form>
+      <br/>
+      <br/>
+     </div>
+     <div id="footerInfobox">
+      Kaiku - Tampereen yliopisto Sovelluksen versio: 1.15.0 (10.3.2020)
+     </div>
+     <div id="footer">
+      <span class="about" id="footerInfoLink">
+       Tietoa sovelluksesta
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,1393 @@
+<html lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Kaiku
+  </title>
+  <link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css"/>
+  <script src="/kaiku/javascript/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/kaiku.js" type="text/javascript">
+  </script>
+  <link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css"/>
+  <link href="/kaiku/style/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="hidden" id="pop-up">
+   <img alt="hourclass" src="/kaiku/images/hourglass_small.png"/>
+   <br/>
+   Raportti latautuu...
+  </div>
+  <div id="outer">
+   <div id="page">
+    <div id="banner">
+     <img alt="Kaiku" src="/kaiku/images/Logo_TAU_FI.png" style="height: 50px;"/>
+     <span class="page_name">
+      Kaiku
+      <br/>
+     </span>
+     <div id="banner_inner_right">
+      <nobr>
+       <a href="https://www.tut.fi/pop">
+        POP
+       </a>
+       |
+       <a href="https://www.tut.fi/tutka">
+        TUTKA
+       </a>
+      </nobr>
+      <span class="user_name">
+       Jere Laine
+       <br/>
+      </span>
+      <br/>
+      <a href="/kaiku/logOut/logOut">
+       Kirjaudu ulos
+      </a>
+     </div>
+    </div>
+    <div id="menu" style="min-height: 15px;">
+     <nobr>
+      <a href="/kaiku/kaiku/mainpage">
+       Etusivu
+      </a>
+      <a href="/kaiku/studentMainPageSearch/feedback">
+       Anna Palautetta
+      </a>
+      <a class="selected" href="/kaiku/examineFeedbackPage/feedback">
+       Palautteet
+      </a>
+      <a href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf" style="font-size: 12px;">
+       ?
+      </a>
+      <a href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&amp;PREVIOUS_VIEW=feedbackSummaryCourseQueryResults" style="font-size: 10px;">
+       in English
+      </a>
+     </nobr>
+    </div>
+    <div id="content">
+     <div id="inner_content">
+      <style>
+       button {
+		white-space: nowrap;
+	}
+      </style>
+      <br/>
+      <form action="/kaiku/examineFeedbackPage/feedback" id="pageInformation" method="post">
+       <table>
+        <tbody>
+         <tr>
+          <td colspan="3">
+           <a href="/kaiku/examineFeedbackPage/feedback?action=landingPageLink">
+            Opintojaksojen palautteet
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=depOrCoursegroupLink&amp;depOrCoursegroupId=">
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=courseImplementationLink&amp;chosenCourseCode=MAT-02700">
+            MAT-02700
+				Operaatiotutkimus
+           </a>
+           →
+		
+			Kysely 08.12.18-21.01.19
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           <br/>
+           <h2>
+            <nobr>
+             MAT-02700
+				
+					Operaatiotutkimus
+					
+					(
+             <a href="https://www.tut.fi/opinto-opas/wwwoppaat/opas2018-2019/perus/aineryhmat/Matematiikka/MAT-02700.html" target="plain">
+              Opinto-opas
+             </a>
+             )
+            </nobr>
+           </h2>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Lukuvuosi 2018 - 2019,
+					Periodit II
+           <br/>
+           Kysely 08.12.18-21.01.19
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Vastanneita yhteensä: 91
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           En anna palautetta vastanneita yhteensä: 16
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- The analysis part -->
+       <!-- ***************** -->
+       <table class="common">
+        <tbody>
+         <tr>
+          <th colspan="2" style="font-size: 13px;">
+           Opettajan vastaus opiskelijoiden antamaan toteutuskertapalautteeseen
+          </th>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <b>
+            Nykyinen vastaus
+           </b>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span class="prebr">
+            Palautteen perusteella luentoihin ja laskuharjoituksiin oltiin pääosin ihan tyytyväisiä, vaikkakin toimimattomista Stack-tehtävistä mainittiin monessa palautteessa. Stack-tehtävien ongelmat saataneen kyllä kuntoon hyvissä ajoin ennen seuraavaa toteutusta. Itse harjoitustilanteisiinkin liittyen tuli joitakin parannusehdotuksia, osa kaipasi ohjattuja laskuharjoituksia ja itse harkkasalikaan ei välttämättä ollut optimaalinen kirjallisten tehtävien läpikäynnissä. Ongelmana on periaatteessa se, että paikan päällä tekemisen mahdollistamiseksi pitäisi Matlab-tehtävät joko jättää pois tai teettää kotitöinä, missä kummassakin on omat ongelmansa. Jään pohtimaan tätä.
+
+Yhdestä joulukuun tentin tehtävästä (kaksivaihemenetelmä) tuli kieltämättä vähän turhan työläs, mikä osaltaan myös näkyi palautteissa. Tätä ongelmaa ei käsittääkseni esiintynyt enää myöhemmissä uusintatenteissä.
+
+Kurssin sisältöön liittyen tuli myös joitakin kehittämisehdotuksia. Jotkut kaipasivat syvällisempää ymmärrystä algoritmeista sekä niiden taustalla olevista periaatteista, ja tämän toiveen pystynen toteuttamaan siinä vaiheessa jos/kun saan kirjoitettua kurssille oman luentomateriaalin. Joidenkin mielestä LP-tehtävien kaltaisten ongelmien ratkaisemine kynällä ja paperilla ei ole enää tätä päivää, mikä periaatteessa onkin ihan totta. Silti on kuitenkin myös niin, että algoritmien toiminnan ymmärtämiseksi kunnolla on tarpeen suorittaa ko. algoritmi myös kynällä ja paperilla muutamaan kertaan. Pelkkä reaalimaailman ongelmien mallintamine LP-tehtäviksi ja niiden ratkaiseminen Matlabilla tekisi sekin kurssin aika puuduttavaksi ja sisällöllisesti köyhäksi.
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- <table>
+			<tr><td><div class="line" ></div></td></tr>
+			<tr><td>Kyselyn tulosten julkisuus</td></tr>
+			<tr><td><div class="line" ></div></td></tr>
+		</table>-->
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th style="font-size: 13px;">
+           Kysymyskohtaiset palautteet
+          </th>
+         </tr>
+        </tbody>
+       </table>
+       <h1>
+        Monivalintakysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <table class="common">
+        <!-- NORMAL OBLIGATORY CHOICE QUESTIONS -->
+        <tbody>
+         <tr>
+          <th colspan="4" width="90%">
+           Yleisarvosana opintojaksolle ja sen toteutukselle.
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           3.78
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           0.84
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           2.2
+          </td>
+          <td>
+           2.2
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           3.3
+          </td>
+          <td>
+           5.49
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           23.0
+          </td>
+          <td>
+           25.27
+          </td>
+          <td>
+           30.77
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           47.0
+          </td>
+          <td>
+           51.65
+          </td>
+          <td>
+           82.42
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           15.0
+          </td>
+          <td>
+           16.48
+          </td>
+          <td>
+           98.9
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           1.1
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           91.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista?
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           3.95
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           0.84
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           6.02
+          </td>
+          <td>
+           6.02
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           16.0
+          </td>
+          <td>
+           19.28
+          </td>
+          <td>
+           25.3
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           38.0
+          </td>
+          <td>
+           45.78
+          </td>
+          <td>
+           71.08
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           22.0
+          </td>
+          <td>
+           26.51
+          </td>
+          <td>
+           97.59
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           2.41
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           83.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin.
+          </th>
+          <td class="empty" rowspan="9" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2.06
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           0.24
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä vähäinen opintopisteisiin nähden. (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Työmäärä sopiva opintopisteisiin nähden. (2)
+          </td>
+          <td>
+           73.0
+          </td>
+          <td>
+           93.59
+          </td>
+          <td>
+           93.59
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä liian suuri opintopisteisiin nähden. (3)
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           6.41
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           78.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- OPEN QUESTIONS !!! -->
+       <br/>
+       <h1>
+        Avoimet kysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Mikä onnistui opintojaksolla hyvin?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Mattila, Mika,
+									20.03.2019
+           </span>
+           <br/>
+           Kokeeseen valmentavat aineistot olivat hyviä ja auttoivat ymmärtämään, mikä on opintojaksolla olennaisinta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opetus oli jopa innostavaa IMA-kursseihin verrattuna. Luennoilla edettiin sopivaa vauhtia, eikä asioihin jääty turhaan jumiin/jaarittelemaan. Viestintä tiedotettavista asioista opiskelijoille oli hyvä ja aktiivista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot hyvin informatiivisia eikä turhaa asiaa tuntunut olevan paljoa
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           lähes kaikki
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kaikki oli erittäin mielen kiintoinen aihe
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ihan paras kurssi
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           videoluennoista plussaa
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Vaikka eri aihealueita oli paljon, opintojakso tuntui silti jokseenkin yhtenäiseltä kokonaisuudelta, eikä ollut liian sekava. Laskuharjoitukset olivat opettavia ja riittävän haastavia.
+
+Luennoilla on tervetullutta, että luennoitsija kirjoittaa luentoesimerkit taululle, eikä vain näytä valmiita esimerkkejä prujusta. Taululle tehtävän esimerkin tahdissa pysyy paremmin mukana, mikä helpottaa asian oppimista.
+
+Luentojen videotallenteet ovat ehdottoman hieno asia, joiden ansiosta luennon voi silti katsoa, vaikka omassa aikataulussa olisikin päällekkäisyyksiä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvät laskuharjoitustehtävät ja sopiva tentti
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luentojen videoinnista oli paljon apua ja laskareissa olleet tehtävät tukivat tenttiin valmistautumista hyvin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Laskuharjoitukset olivat hyödyllisiä ja niissä oppi paljon
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvät luennot.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mika on timanttia
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Esimerkit luennolla todella hyviä! Laskarisysteemi oli hyvä, tehtävät hyviä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harkat hyödyllisiä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Menetelmiä käytiin läpi monipuolisesti. Luennoitsija osasi asiansa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -Moodle tehtävät hyviä (kunhan on saatu toimimaan "kunnolla")
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Laskuharjoitusten opetus selkeää ja hyvää!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kiva, että luennot videoitiin! En päässyt itse luennoille ollenkaan, mutta katsoin kaikki videolta ja arvostan todella, että tämä onnistui. Harjoitustehtävät olivat opettavaisia ja oli kiva, että niistä oli tehty "arkisia" (esim. uimaviestijoukkue ja sähkövoimalat). Tiedotus toimi hyvin! Kaikin puolin kiva ja hyvin järjestetty kurssi!:)
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Videoluennot
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pidin käytännönläheisistä tehtävistä, niitä voi ehkä hyödyntää työelämässäkin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Intensiivinen opetustapa, jos teki harkkoja
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harkat oli hyvät ja matlab tuli tutummaksi kuin aikaisemmin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harkat monipuoliset ja kattavat. Hyvä pruju
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luentojen videointi on erittäin hyvä asia. Myös stack-tehtävät osana harjoitustehtäväpakettia on hyvä, vaikkakin niissä hieman käytännön hankaluuksia olikin. Kaikki etäopiskelua tukevat uudistukset otetaan mielellään vastaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvä harkat ja Matlab-tehtävät
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Laskareissa tehtävät aukenivat ja selvenivät hyvin itselleni.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Laskuharjoitukset olivat vaikeudeltaan sopivia. Hyvä, että luennot videoitiin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennoitsija oli hyvä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luentotallenteet, laskuharjoitustilaisuudet
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitukset mielestäni suurimmalta osin tuki asioiden oppimista. Paikalla tehtävät matlab harjoitukset olivat hyvä lisä näyttämään miten laskentaa ehkä oikeasti nykyään tehdään.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Laskuharjoitukset selvensivät asiat hyvin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustilaisuuksissa käytiin hyvin tehtäviä läpi. Tehtävien ratkaisut selitettiin kattavasti. Lisäksi luentotallenteet olivat hyviä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat tosi hyviä ja laskuharjoituksissa oli rento tunnelma, mutta silti oppi silti hyvin. MatLabin käyttöä myös oppi hyvin, sitä ei ollut aikasemmilla matikan kursseilla käyttänyt yhtä laajasti.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Taululle kirjoitetut muistiinpanot todella hyvät.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pruju on erinomainen ja opettajan tapa käydä läpi aineistoa oli kiitettävän selkeä, samoin tuntien rakenne. Opettajalla (Mika) on erittäin kiitettävä ote opettamiseen ja oli oikein mukava kurssi, siitä täydet pisteet! Vaikka muutaman kerran opetus meni yliajalle, ei tällä mielestäni ole mitään merkitystä, eikä se haittaa ollenkaan. Oppimaanhan tunnille on tultu! Harkat oli juuri hyvät samoin, että ne käytiin läpi ja vinkattiin, miten homma etenee.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot ja laskuharjoitukset - luennot viedoitiin, siitä iso plussa. Laskuharjoitukset oli järjestetty järkevästi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustehtävät olivat mielekkäitä ja stackitkin olivat hyviä kunhan ne saatiin korjattua. Luennotkin olivat tehokkaita videolta katsottuna.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitukset hyviä ja harjoitustilaisuudet tiiviitä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Miten kehittäisit opintojaksoa?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Mattila, Mika,
+									20.03.2019
+           </span>
+           <br/>
+           Oikeiden vastausten arvot olisi helpottanut tehtävien teossa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielestäni Stack-tehtävät ovat kivoja, mutta olisi hyvä, jos ne saataisiin toimimaan kunnolla.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mahdollisuus palauttaa harkkaryhmätehtävät moodleen
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ehkä ei ensi kerralla keskeneräisiä stack -tehtäviä. Opetushenkilökunta kuitenkin reagoi hyvin jo aikaisessa vaiheessa vähentäen stackkien pistepainoa. Tentti oli melko työläs.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Stackit kuntoon
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ei juurikaan
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Stackit kuntoon, nykyinen toteutus todella turhauttava.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Puolet kotitehtävistä voisi olla STACK -tehtäviä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tentti aivan liian vaikea, ei vastannut mitenkään sitä mitä harjoituksissa opeteltiin. Harjoitussysteemi ei toiminut ollenkaan, matlab-tehtävillä ei tehnyt mitään ja normaali matikan kurssien harjoitussysteemi on paljon parempi. SIlloin ei tarvitse istua harjoituksissa turhaan, jos on jo osannut ja ymmärtänyt tehtävät ja ne jotka tarvitsevat apua tehtävien tekemiseen, saavat sitä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tentti voisi olla paremmin linjassa esimerkkitenttien ja laskuharjoitusten kanssa. Joulukuun tentin tehtävät olivat pitkiä ja joiltain osin tuntuivat siltä, että niistä oli tarkoituksella tehty kömpelöitä laskea. Ainakin verrattuna esimerkkitentteihin, varsinaisen tentin haastavuus tuntui menneen aika lailla yläkanttiin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Stack-harjoituksissa oli ongelmia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Simplex-algoritmit yms manuaalinen työ, jota kurssilla tehtiin aivan liikaa, on jo todella vahvasti aikansa elänyttä touhua. Sen sijaan, että oltaisiin todella opeteltu optimoimaan reaalimaailman ongelmia, harjoiteltiin plus- ja kertolaskua. Tässä nyt ei valitettavasti vaan ole mitään järkeä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Stack-tehtävissä oli vielä parannettavaa, mutta se on ymmärrettävää koska ne olivat käytössä ensimmäistä kertaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Itseä olisi kiinnostanut saada jonkilainen ymmärrys miksi jotkin algoritmit johtavat optimitulokseen mutta sen sisällyttäminen opintojaksoon saattaisi tehdä siitä monille aika raskaan. Ehkä luennoilla lyhyehkönä sivujuonena ja harjoitusten vikassa tehtävässä tämä voisi toimia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitukset todella työläitä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tentti oli suhteettoman vaikea
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Suunnilleen kurssin puolivälissä tuntui, että asioiden vauhti koveni ja putosin hetkeksi kärryiltä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -Luennoilla käsiteltävät prujun esimerkit ok, käsittelyyn liikaa aikaa luennoilla
+
+-Prujun ulkopuoliset esimerkit hyviä, mutta opetus todella kehnoa (ainakin omalle oppimistyylille). Mitä järkeä tehdä esimerkkejä, joita luennoitsija kirjoittaa niin lujaa vauhtia taululle, että pelkkä esimerkkien kirjoittaminen omaan vihkoon samaa vauhtia käy mahdottomaksi? --&gt; Hivenen opiskelijan omalle ajattelulle varattaisiin aikaa, eikä vain ctrl+c ctrl+v. Usein esimerkkien loput meni täysin ohi itseltä tämän vuoksi. (Kysyminen toki mahdollista, mutta jäljessä olevan kurssin aikataulun vuoksi, ei kovin mielekästä [lisämyöhästymiset])
+
+- Tentti armoton moukari verrattuna aiempiin. Esim. graafinen ratkaisu näyttänee olleen usein kokonainen yksi tenttitehtävä, nyt vain 2 pistettä. 
+
+-Laskaritehtävistä olisi kiva saada "oikeat" vastaukset etukäteen. Parin sivun simplex pyörittelyt eivät ole kovin nannaa laskareissa alkaa pohtimaan missä oma virhe on mahdollisesti tullut.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pruju oli hieman suppea ja epäselvä. Laskuharjoitusten todella työläiden laskujen tekemistä helpottaisi suuresti, jos oikeat vastaukset olisivat saatavilla. Stack-tehtävät toimivat luokattoman huonosti.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Stackien kanssa oli vähäsen ongelmia, mutta ihan ymmärrettävää ensimmäisellä kerralla. Tentti vaikutti työläältä verrattuna aiempiin tentteihin, mutta se testasi hyvin kurssin asiat.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harkkaryhmässä tila oli huono, näkyvyys taululle surkea, joten tehtävien tarkempi läpikäynti meni siellä aivan ohi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           ehkä harjoituksiin tuleminen pisteiden vuoksi on puolittain turhaa
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           ei ehdotuksia
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kyseinen tentti oli mielestäni huomattavasti vaikeampi ja sekavampi kuin annetut edelliset mallitentit
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Matlab-tehtäviä voisi sitoa kurssiin paremmin. Nyt ne tuntuivat vähän irrallisilta
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssi oli pitkälti vaan algoritmien laskemista käsin, mitä tietokone tekisi nopeammin ja tarkemmin. Tenttikin oli lähinnä algoritmien muistamista ulkoa, ja simplex-taulukon kanssa saa olla aika tarkkana, ettei tule yhtään virhettä jos on yhtään useampi iteraatio. Voisi olla enemmän teoriaa ja vaikeampia laskuja tietokoneella.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tentin tehtävät voisivat olla vähätöisempiä, jotta kaikki tenttiaika ei menisi tehtävien kirjoittamiseen, ja tentin ehtisi tehdä kokonaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tehtäviin olisi mukava saada vastaus jo ennen purkutilaisuuden alku, jotta tietäisi, onko laskenut oikein vai onko jotain mahdollisesti pielessä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Stack-tehtävien toiminnallisuus
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Stack -harjoitusten toimimattomuus, mikä kurssihenkilökunnalla jo tiedossa
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Osa pisteistä laskuharjotuksiin tehtävistä läksyistä ja osa tunnilla tehtävistä vaikeammista tehtävistä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Stack-tehtävät tuottivat teknisten ongelmien takia haasteita, joten ne voisi korjata ja testata kunnolla ennen seuraavaa toteutuskertaa. Muuten toteutuskerta oli onnistunut.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Esimerkit luennoilla olivat usein tosi pitkiä, mikä ymmärrettävää, sillä tehtävät olivat pitkiä, mutta luentoesimerkkejä voisi ehkä jakaa enemmän, että mielenkiinto säilyisi ja jaksaisi keskittyä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Videoita katsaottaessa ei aina nähny taulun alareunaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Osan luennoista katsoin videolta ja niissä ääni katosi välillä aina johonkin. Tämä korjaantui usein käynnistämällä video uudestaan ja siirtämällä kohtaan, jossa ääni katosi. Muutamissa videoissa tämäkään ei toiminut, mikä on huono juttu (mm. kertausluento). Ongelmaa ei ole ollut muiden kurssien luentovideoissa havaittavissa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Olisin ehkä kaivannut hieman enemmän ohjattua kertausta opintojakson lopussa, etenkin vaikeimmista asioista kuten peliteoriasta sekä simplex-taulukoinneista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Enemmän harjoittelua yhtälöryhmien ratkaisuun matlabilla kuin mupad.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ei juuri tule mieleen mitään. Paitsi ehkä pruju voisi olla parempi...
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <!-- STUDENT RESPONSES -->
+       <br/>
+       <br/>
+      </form>
+      <br/>
+      <br/>
+     </div>
+     <div id="footer">
+      <span class="about" id="footerInfoLink">
+       Tietoa sovelluksesta
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div aria-describedby="footerInfobox" aria-labelledby="ui-id-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable" role="dialog" style="display: none; position: absolute;" tabindex="-1">
+   <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+    <span class="ui-dialog-title" id="ui-id-1">
+    </span>
+    <button aria-disabled="false" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="close">
+     <span class="ui-button-icon-primary ui-icon ui-icon-closethick">
+     </span>
+     <span class="ui-button-text">
+      close
+     </span>
+    </button>
+   </div>
+   <div class="ui-dialog-content ui-widget-content" id="footerInfobox">
+    Kaiku - Tampereen yliopisto
+			Sovelluksen versio: 1.15.0 (10.3.2020)
+   </div>
+   <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;">
+   </div>
+  </div>
+ </body>
+</html>

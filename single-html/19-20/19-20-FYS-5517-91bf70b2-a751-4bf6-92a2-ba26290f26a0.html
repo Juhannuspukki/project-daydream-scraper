@@ -1,0 +1,963 @@
+<html lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Kaiku
+  </title>
+  <link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css"/>
+  <script src="/kaiku/javascript/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/kaiku.js" type="text/javascript">
+  </script>
+  <link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css"/>
+  <link href="/kaiku/style/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="hidden" id="pop-up">
+   <img alt="hourclass" src="/kaiku/images/hourglass_small.png"/>
+   <br/>
+   Raportti latautuu...
+  </div>
+  <div id="outer">
+   <div id="page">
+    <div id="banner">
+     <img alt="Kaiku" src="/kaiku/images/Logo_TAU_FI.png" style="height: 50px;"/>
+     <span class="page_name">
+      Kaiku
+      <br/>
+     </span>
+     <div id="banner_inner_right">
+      <nobr>
+       <a href="https://www.tut.fi/pop">
+        POP
+       </a>
+       |
+       <a href="https://www.tut.fi/tutka">
+        TUTKA
+       </a>
+      </nobr>
+      <span class="user_name">
+       Jere Laine
+       <br/>
+      </span>
+      <br/>
+      <a href="/kaiku/logOut/logOut">
+       Kirjaudu ulos
+      </a>
+     </div>
+    </div>
+    <div id="menu" style="min-height: 15px;">
+     <nobr>
+      <a href="/kaiku/kaiku/mainpage">
+       Etusivu
+      </a>
+      <a href="/kaiku/studentMainPageSearch/feedback">
+       Anna Palautetta
+      </a>
+      <a class="selected" href="/kaiku/examineFeedbackPage/feedback">
+       Palautteet
+      </a>
+      <a href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf" style="font-size: 12px;">
+       ?
+      </a>
+      <a href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&amp;PREVIOUS_VIEW=feedbackSummaryCourseQueryResults" style="font-size: 10px;">
+       in English
+      </a>
+     </nobr>
+    </div>
+    <div id="content">
+     <div id="inner_content">
+      <style>
+       button {
+		white-space: nowrap;
+	}
+      </style>
+      <br/>
+      <form action="/kaiku/examineFeedbackPage/feedback" id="pageInformation" method="post">
+       <table>
+        <tbody>
+         <tr>
+          <td colspan="3">
+           <a href="/kaiku/examineFeedbackPage/feedback?action=landingPageLink">
+            Opintojaksojen palautteet
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=depOrCoursegroupLink&amp;depOrCoursegroupId=10602">
+            Fysiikka
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=courseImplementationLink&amp;chosenCourseCode=FYS-5517">
+            FYS-5517
+				Fundamentals of Nonlinear Optics
+           </a>
+           →
+		
+			Kysely 27.04.20-10.06.20
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           <br/>
+           <h2>
+            <nobr>
+             FYS-5517
+				
+					Fundamentals of Nonlinear Optics
+					
+					(
+             <a href="https://www.tut.fi/opinto-opas/wwwoppaat/opas2019-2020/perus/aineryhmat/Fysiikka/FYS-5517.html" target="plain">
+              Opinto-opas
+             </a>
+             )
+            </nobr>
+           </h2>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Lukuvuosi 2019 - 2020,
+					Periodit IV
+           <br/>
+           Kysely 27.04.20-10.06.20
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Vastanneita yhteensä: 11
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           En anna palautetta vastanneita yhteensä: 2
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- The analysis part -->
+       <!-- ***************** -->
+       <table class="common">
+        <tbody>
+         <tr>
+          <th colspan="2" style="font-size: 13px;">
+           Opettajan vastaus opiskelijoiden antamaan toteutuskertapalautteeseen
+          </th>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <b>
+            Nykyinen vastaus
+           </b>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span class="prebr">
+            Thank you very much for the good overall feedback.
+ I am happy that the course, especially given the current circumstances, has been mostly well-received. I am happy that the style of lecturing (whiteboard/handwriting) was appreciated and helped to get a better grasp on the theory of nonlinear optics. 
+I am sorry that the exercises, as well as to some extent the exam, were not received that well and sometimes caused confusion. I will try to formulate the exercise and solutions clearer and balance the workload with the number of achievable points better. Some of the issues raised could have been adjusted during the lecture, so please raise these points earlier such that I (or any other teacher) can react or explain the reasons. 
+(more detailed responses can be seen below)
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- <table>
+			<tr><td><div class="line" ></div></td></tr>
+			<tr><td>Kyselyn tulosten julkisuus</td></tr>
+			<tr><td><div class="line" ></div></td></tr>
+		</table>-->
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th style="font-size: 13px;">
+           Kysymyskohtaiset palautteet
+          </th>
+         </tr>
+        </tbody>
+       </table>
+       <h1>
+        Monivalintakysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <table class="common">
+        <!-- NORMAL OBLIGATORY CHOICE QUESTIONS -->
+        <tbody>
+         <tr>
+          <th colspan="4" width="90%">
+           Yleisarvosana opintojaksolle ja sen toteutukselle.
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4.09
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           0.79
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           27.27
+          </td>
+          <td>
+           27.27
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           36.36
+          </td>
+          <td>
+           63.64
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           36.36
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           11.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td colspan="4">
+           Opettajan vastauksen kirjoitti:
+					Fickler, Robert,
+					 
+					09.06.2020
+           <br/>
+           <span class="prebr">
+            Thank you for the good feedback, I will respond to the questions and concerns below and take them into account in the next semester.
+           </span>
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista?
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4.45
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           0.66
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           9.09
+          </td>
+          <td>
+           9.09
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           36.36
+          </td>
+          <td>
+           45.45
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           6.0
+          </td>
+          <td>
+           54.55
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           11.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td colspan="4">
+           Opettajan vastauksen kirjoitti:
+					Fickler, Robert,
+					 
+					09.06.2020
+           <br/>
+           <span class="prebr">
+            Thank you for the good feedback, I will respond to the questions and concerns below and take them into account in the next semester.
+           </span>
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin.
+          </th>
+          <td class="empty" rowspan="9" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2.09
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           0.29
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä vähäinen opintopisteisiin nähden. (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Työmäärä sopiva opintopisteisiin nähden. (2)
+          </td>
+          <td>
+           10.0
+          </td>
+          <td>
+           90.91
+          </td>
+          <td>
+           90.91
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä liian suuri opintopisteisiin nähden. (3)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           9.09
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           11.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td colspan="4">
+           Opettajan vastauksen kirjoitti:
+					Fickler, Robert,
+					 
+					09.06.2020
+           <br/>
+           <span class="prebr">
+            I am happy that the majority agreed that the workload was in agreement with the credit points.
+           </span>
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- OPEN QUESTIONS !!! -->
+       <br/>
+       <h1>
+        Avoimet kysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Mikä onnistui opintojaksolla hyvin?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Opettajan vastaus
+					
+					:
+           <br/>
+           <span class="prebr">
+            Thank you very much for the positive feedback. I am happy that the course, especially given the current circumstances, has been mostly well-received. Of course, the situation was challenging for everybody.
+Thank you also for appreciating the use of the whiteboard and (via zoom) handwriting. I am glad to see that this leads to the intended effect, i.e. to get an easier grasp on the rather theoretical topic.
+Nevertheless, I hope that I can include some more examples of experiments and applications in the future.
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Fickler, Robert,
+									09.06.2020
+           </span>
+           <br/>
+           very detailed description of every physical phenomenon. Good learning environment amused by jokes.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           I like how certain details from textbook were cut. Where it was possible to remove the gradual refinement of the theory, this was done, as a result, good lectures were obtained.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           The method of lecture was good
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           The lecture material and lectures were handled well, considering the situation.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           The lectures and most of the exercises were well organized, especially, when considering the unusual situation.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           The lectures were of extreme usefulness. Writing everything on the board (and then on the paper) by hand is helpful since it gets easier to follow the material.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Miten kehittäisit opintojaksoa?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Opettajan vastaus
+					
+					:
+           <br/>
+           <span class="prebr">
+            Thank you for the feedback and I am sorry that the jokes (which I was not aware of making) were sometimes too distracting. This was not intended but might stem from my intent to create a relaxed environment, which I hoped might trigger more discussions and questions.
+I am very sorry to hear that the exercises were not received that well. I agree that I (we) underestimated some of the exercises before handing them out, however, I tried to be fair by not even increasing the number of achievable points in the rather challenging exercises, which also means that some exercises gave rather easy-to-achieve points. I will try to implement and balance the exercises better in the future. I will also try to formulate the questions and answers in more detail or less ambiguous. 
+That being said, the special circumstances prevented us from having dedicated exercise sessions in which all questions and ambiguities could be clarified. Hence, we learned to implement it in this way also just now and we are sorry if this caused some confusion. Maybe you can give such feedback already during the course next time you encounter these issues, such that we can adjust the exercise session by trying to implement it also as a discussion session and clarify the misunderstandings. Similarly for the systems of pointing in the exercises, please raise these issues during the course and I can react and adapt. 
+Lastly, I am surprised about the feedback that I posed a question in the exam that was apparently too challenging to present during the lecture. This was not the case. There were questions addressing topics for which the exact calculation is very challenging and was not given during the lecture. However, in the exam, I asked for a conceptual understanding of these topics only and no calculation. I also included in the exam some easier problems and some problems that are more challenging on purpose. This was done to give fair chances to all students to show their abilities. Hence, the exam might have been a bit longer than the usual exams (thereby might have occurred more challenging) but this was also caused by the fact that all material had to be allowed. I also adjusted the point scale, i.e. what amount of points are considered to be an excellent exam, to account for that. 
+
+Lastly, I am surprised about the feedback that I posed a question in the exam that was apparently to challenging to present during the lecture. This was not the case. There were questions addressing topics for which the exact calculation is very challenging and was not given during the lecture. However, in the exam I asked for a conceptual understanding on these topics only and no calculation. I also included in the exam some easier problems and some problems that are more challenging on purpose. This was done to give fair chances to all students to show their abilities. Hence, the exam might have been a bit longer than the usual exams (thereby might have occurred more challenging) but this was also caused by the fact that all material had to be allowed. I also adjusted the point scale, i.e. what amount of points are considered to be an excellent exam, to account for that.
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Fickler, Robert,
+									09.06.2020
+           </span>
+           <br/>
+           Too much jokes make me hard to focuse on lecture content.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Exercise sessions were awful. It's not only because of online format where students get the exercise sets and solutions after deadline (without online meetings). The teacher answered questions quickly, but he was in doubt if it concerned other ways of approaches to solving a problem. The wording of questions is sometimes very vague. Sometimes too complex problems were proposed, the theory for the solution of which went beyond the framework of the courses. Moreover, the author of the tasks sometimes did not have a ready-made solution in advance, and he himself did not know in advance how difficult the task could be. The teacher should carefully formulate the tasks and solve them in advance in order to assess their complexity.
+
+The theory on the exam also went beyond the scope of the course, and some of these tasks were too complex to complete. For example, for one problem, even in the lecture notes, it was noted that the simplified case was difficult to solve and the answer was immediately offered, but in the exam, a more complicated case was proposed for a direct solution. It was proposed for a solution, because the course was not considered, and the answer in the form of the formula was not given. For the next exam, one would not want the questions to go so far beyond the course.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Homework was bit difficult sometimes
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           The grading system for the exercises seemed arbitrary and not that transparent. Also the given solutions were quite short and sometimes incomplete. Due to the lack of exercise sessions for discussion, I would have expected a bit more detail in the solutions and the grading criteria on Moodle.
+
+There was also an unusual amount of errors in the given exercise solutions, that were quietly fixed throughout the course. A bit more transparency in pointing out these errors and their effect on the exercise scores would have been good.
+
+Finally, I would have personally restricted the exam to only a cheat sheet to even out the playing field with previous implementations. But there was no good solution to this problem.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           The grading of exercises could improve. Now, it does not really correspond to the amount of work needed to solve the problem. The worst contrast was of course at exercise set 5 where students get 10 points from two easy calculations and 3 points from a difficult (Robert Boyd's words) derivation. In the future, the amount of points awarded from each problem should reflect more on the amount of work required.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Exercise sessions need to be improved. The tasks were not corresponding to the materials from lectures at times; the problems might sound ambiguous and unclear (or missing some data making the task confusing).
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <!-- STUDENT RESPONSES -->
+       <br/>
+       <br/>
+      </form>
+      <br/>
+      <br/>
+     </div>
+     <div id="footer">
+      <span class="about" id="footerInfoLink">
+       Tietoa sovelluksesta
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div aria-describedby="footerInfobox" aria-labelledby="ui-id-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable" role="dialog" style="display: none; position: absolute;" tabindex="-1">
+   <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+    <span class="ui-dialog-title" id="ui-id-1">
+    </span>
+    <button aria-disabled="false" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="close">
+     <span class="ui-button-icon-primary ui-icon ui-icon-closethick">
+     </span>
+     <span class="ui-button-text">
+      close
+     </span>
+    </button>
+   </div>
+   <div class="ui-dialog-content ui-widget-content" id="footerInfobox">
+    Kaiku - Tampereen yliopisto
+			Sovelluksen versio: 1.15.0 (10.3.2020)
+   </div>
+   <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;">
+   </div>
+  </div>
+ </body>
+</html>

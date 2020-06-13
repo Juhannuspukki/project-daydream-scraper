@@ -1,0 +1,1774 @@
+<html lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Kaiku
+  </title>
+  <link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css"/>
+  <script src="/kaiku/javascript/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/kaiku.js" type="text/javascript">
+  </script>
+  <link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css"/>
+  <link href="/kaiku/style/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="hidden" id="pop-up">
+   <img alt="hourclass" src="/kaiku/images/hourglass_small.png"/>
+   <br/>
+   Raportti latautuu...
+  </div>
+  <div id="outer">
+   <div id="page">
+    <div id="banner">
+     <img alt="Kaiku" src="/kaiku/images/Logo_TAU_FI.png" style="height: 50px;"/>
+     <span class="page_name">
+      Kaiku
+      <br/>
+     </span>
+     <div id="banner_inner_right">
+      <nobr>
+       <a href="https://www.tut.fi/pop">
+        POP
+       </a>
+       |
+       <a href="https://www.tut.fi/tutka">
+        TUTKA
+       </a>
+      </nobr>
+      <span class="user_name">
+       Jere Laine
+       <br/>
+      </span>
+      <br/>
+      <a href="/kaiku/logOut/logOut">
+       Kirjaudu ulos
+      </a>
+     </div>
+    </div>
+    <div id="menu" style="min-height: 15px;">
+     <nobr>
+      <a href="/kaiku/kaiku/mainpage">
+       Etusivu
+      </a>
+      <a href="/kaiku/studentMainPageSearch/feedback">
+       Anna Palautetta
+      </a>
+      <a class="selected" href="/kaiku/examineFeedbackPage/feedback">
+       Palautteet
+      </a>
+      <a href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf" style="font-size: 12px;">
+       ?
+      </a>
+      <a href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&amp;PREVIOUS_VIEW=feedbackSummaryCourseQueryResults" style="font-size: 10px;">
+       in English
+      </a>
+     </nobr>
+    </div>
+    <div id="content">
+     <div id="inner_content">
+      <style>
+       button {
+		white-space: nowrap;
+	}
+      </style>
+      <br/>
+      <form action="/kaiku/examineFeedbackPage/feedback" id="pageInformation" method="post">
+       <table>
+        <tbody>
+         <tr>
+          <td colspan="3">
+           <a href="/kaiku/examineFeedbackPage/feedback?action=landingPageLink">
+            Opintojaksojen palautteet
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=depOrCoursegroupLink&amp;depOrCoursegroupId=10103">
+            Tietotekniikka
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=courseImplementationLink&amp;chosenCourseCode=TIE-20100">
+            TIE-20100
+				Tietorakenteet ja algoritmit
+           </a>
+           →
+		
+			Kysely 28.04.18-31.08.18
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           <br/>
+           <h2>
+            <nobr>
+             TIE-20100
+				
+					Tietorakenteet ja algoritmit
+					
+					(
+             <a href="https://www.tut.fi/opinto-opas/wwwoppaat/opas2017-2018/perus/aineryhmat/Ohjelmistotekniikka/TIE-20100.html" target="plain">
+              Opinto-opas
+             </a>
+             )
+            </nobr>
+           </h2>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Lukuvuosi 2017 - 2018,
+					Periodit III-IV
+           <br/>
+           Kysely 28.04.18-31.08.18
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Vastanneita yhteensä: 134
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           En anna palautetta vastanneita yhteensä: 17
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- The analysis part -->
+       <!-- ***************** -->
+       <table class="common">
+        <tbody>
+         <tr>
+          <th colspan="2" style="font-size: 13px;">
+           Opettajan vastaus opiskelijoiden antamaan toteutuskertapalautteeseen
+          </th>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <b>
+            Nykyinen vastaus
+           </b>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span class="prebr">
+            Kiitos kaikille palautteesta! Yritämme parhaamme mukaan kehittää kurssia palautteen perusteella. Ensi kerralla täytyy varmaan säätää hieman työmäärää ja toisaalta harkita sitä, olisiko tentillä enemmän painoarvoa (tätä harkittiin jo viime kerralla, mutta päädyttiin silloin hyväksytty/hylätty-arvosteluun).
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- <table>
+			<tr><td><div class="line" ></div></td></tr>
+			<tr><td>Kyselyn tulosten julkisuus</td></tr>
+			<tr><td><div class="line" ></div></td></tr>
+		</table>-->
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th style="font-size: 13px;">
+           Kysymyskohtaiset palautteet
+          </th>
+         </tr>
+        </tbody>
+       </table>
+       <h1>
+        Monivalintakysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <table class="common">
+        <!-- NORMAL OBLIGATORY CHOICE QUESTIONS -->
+        <tbody>
+         <tr>
+          <th colspan="4" width="90%">
+           Yleisarvosana opintojaksolle ja sen toteutukselle.
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4.35
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           0.77
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           1.49
+          </td>
+          <td>
+           1.49
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           18.0
+          </td>
+          <td>
+           13.43
+          </td>
+          <td>
+           14.93
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           44.0
+          </td>
+          <td>
+           32.84
+          </td>
+          <td>
+           47.76
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           69.0
+          </td>
+          <td>
+           51.49
+          </td>
+          <td>
+           99.25
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           0.75
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           134.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista?
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4.48
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           0.7
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           1.61
+          </td>
+          <td>
+           1.61
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           9.0
+          </td>
+          <td>
+           7.26
+          </td>
+          <td>
+           8.87
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           40.0
+          </td>
+          <td>
+           32.26
+          </td>
+          <td>
+           41.13
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           71.0
+          </td>
+          <td>
+           57.26
+          </td>
+          <td>
+           98.39
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           1.61
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           124.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin.
+          </th>
+          <td class="empty" rowspan="9" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2.13
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           0.34
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä vähäinen opintopisteisiin nähden. (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Työmäärä sopiva opintopisteisiin nähden. (2)
+          </td>
+          <td>
+           99.0
+          </td>
+          <td>
+           86.84
+          </td>
+          <td>
+           86.84
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä liian suuri opintopisteisiin nähden. (3)
+          </td>
+          <td>
+           15.0
+          </td>
+          <td>
+           13.16
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           114.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- OPEN QUESTIONS !!! -->
+       <br/>
+       <h1>
+        Avoimet kysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Mikä onnistui opintojaksolla hyvin?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Rintala, Matti,
+									10.10.2018
+           </span>
+           <br/>
+           Työt olivat ok. Palautteen saaminen kesti.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyöt, viikkotehtävät, luentoesseet sekä byTheMark-tehtävät. Tykkäsin, että sai itse hieman päättää miten paljon haluaa panostaa mihinkin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat pääsääntöisesti hyviä (niille joille pääsin)
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssin rakenne oli onnistunut: kurssissa painotettiin tasaisesti työmäärää ja tentti oli pelkästään läpipääsyä varten (tämä on todellä hyvä, sillä tällöin kurssin aikana tehty työmäärä saa oikeaa arvostusta ja merkitystä, lisäksi tentissä ei ole niin paljon paineita ja se vain testaa, että onko kurssilla oikeasti tehnyt mitään).
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Paljon tehtäviä, joita tekemällä kyllä oppi asioita.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyöt olivat erittäin hyvin toteutettuja. Luennot ja materiaalit olivat myös onnistuneita.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot varmasti parhaita mitä millään kurssilla tähän mennessä. Loistavaa ja mielenkiintoista asiaa aiheeseen liittyen eikä vain luentodiojen lukemista.
+
+Harjoitustyöt hyvin toteutettu. Ohjeet todella selvät ja työt tukivat aiheiden oppimista hyvin. Hyvin aikaa ja tarvittaessa sai apua.
+
+Slack -kanava oli hyödyllinen.
+
+Tut+ -tehtävät oli hyödyllisiä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvä luennotsija teki luennoista mielenkiintoisia seurata ja ylimääräinen kannustin motivoi tulemaan paikanpäälle joka viikko.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot ovat mielenkiintoisia ja opettavaisia. Mahdollisuus katsoa luennot myös tallenteilta on kätevä, tätä toivoisi käyttöön laajemminkin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jatkuva harkkatyö mielestäni loistava. Aikaa ei mene uuden kurssin puolen koodista huolehtimiseen ja voidaan keskittyä olennaiseen. Antaa hyvän jatkumon työlle.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat mielenkiintoisia ja opettavaisia
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyöt olivat haastavuudeltaan mielestäni sopivia ja niistä oli karsittu hyvin kaikki "turha" pois ja keskityttiin oleelliseen. Tentti oli myös hyvin tehty. Vaikken tentiin kummemmin lukenut, niin siinä kysyttiin juuri asioita jotka olivat jääneet kurssilta mieleen ja mittasi juuri sitä, kuinka hyvin kurssilla oli töitä tehnyt eikä esim. sitä kuka oli opetellut asioita eniten ulkoa ennen tenttiä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat erinomaisia. Kurssilla oli pakko pysyä koko ajan mukana tahdissa, minkä ansiosta koko ajan pystyi omaksumaan uutta asiaa eikä missään kohtaa tuntunut, että ei ymmärtäisi uusia asioita. Kurssin toteutus ja arvostelu olivat myös erinomaisia. Kurssi oli parhaiten toteutettu kurssi TTY:llä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielestäni tosi hyvin järjestetty kurssi, arvostelu varsinkin motivoi käymään opetustapahtumissa ja oppimaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Todella mielenkiintoiset luennot! Luentovideot olivat pelastus, sillä itselläni oli toiset luennot päällekkäin. Tehtävät ja luentoesseet olivat hyviä tapoja valmistautua ja kerrata.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opetus oli erittäin asiantuntevaa ja innostavaa ja opintojakson aiheet tulivat tutuksi erittäin kattavasti. Harjoitustyöt olivat tarkoituksenmukaisia. Kurssi auttoi ajattelemaan laajemmin ja muutti kokonaisuutena tapaani ohjelmoida ja hakea siihen liittyvää tietoa. Hienoa työtä!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Paras kurssi, joka on ollut kolmen vuoden aikana TTY:llä ja en edes tykkää ohjelmoimisesta. Kerrankin ymmärrän, mitä kurssilla käsitellään, aihepiiri on tarpeeksi rajattu, oppilaita kannustetaan kunnolla pysymään mukana ja harkkatyöt eivät aiheuta itsetuhoisuutta vaikeudellaan, mutta laittavat kuitenkin ajattelemaan tosissaan. Toivoisin, että muillekin kursseille otettaisiin samanlainen käytäntö pisteiden ja arvostelun kanssa (mainosta muille kurssinpitäjille pliis). Ohjelmoiden tekniikoiden kurssin jälkeen itsetunto ohjelmoimiskyvykkyyden kanssa oli nollassa ja nyt tuntuu taas siltä, että ehkä osaankin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvät luennot, kiinnostavat harkkatyöt. Hyvä että harjoittelupisteitä voi kerätä eri tavoilla.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennoiden ja prujun avulla sai hyvän pohjan asioiden soveltamiselle. Tut+ tehtävät olivat myös hyviä teorian oppimiseen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyöt olivat mielekkäitä ja opettavia. Tukevaa oheismateriaalia paljon.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitukset hyviä ja assarit ammattitaitoisia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Videoluennoista pisteiden saaminen on hieno järjestelmä - kannustaa katsomaan videoita jos ei ole päässyt luennolle paikalle. Harkkatöihin liittyen tykkäsin vaihtoehtoisista tavoista kääntää/ajaa/testata ohjelmaa, eikä automattiisesti vain pakotettu QtCreatorin käyttöön.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat loistavia
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssi oli toteutettu todella hyvin! Asiat oli helppo omaksua ja opin kurssilla todella paljon ja vaikka olen sivuaineopiskelija, ei kurssin sisältöön ollut vaikea päästä sisään OHJPRSK pohjalta. Assarit olivat myös hyvin motivoituneita harkkojen vetäjiä. Erityiskiitos Lauralle ammattimaisesta otteesta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssilla pystyi itse valitsemaan, mikä oppimistapa on paras ja sen mukaan valikoida työmäärää. Lisäksi harjoitustyöt olivat erittäin hyvin suunniteltuja, sillä ne pakottivat keskittymään ja opettelemaan oikeita asioita. Lisäksi kurssin vetäjä oli erittäin joustava kurssin suorituksen hyväksymisessä, vaikka olin itse mokaillut asian kanssa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennoitsija on todella loistava puhutusta kielestä riippumatta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kaikki oli ihan jees, harvinaisen hyvä kurssi keskimäärin
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennoitsijan opetustapa oli hyvä. Tykkäsin myös eri tavoista kerätä opintosuorituksia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Aivan mahtava kurssi. Tekemistä oli aika paljon, mutta toisaalta pystyi aika paljon itse valitsemaan mihin käyttää aikaa. Luennot tosi hyviä ja videot on aina plussaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Videot ja BTM tehtävät
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luentoesseet olivat erittäin hyviä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot, esimerkit, harjoitustyöt.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           On mahtavaa, että kurssilla painotetaan oppimista kurssin aikana ja arvosana perustuu myöskin siihen eikä tenttiin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opintojakso oli kokonaisuudessaan oikein positiivinen kokemus, en oikein voi nostaa mitään erityisen hyvin onnistunuttta osa-aluetta esiin, sillä jokainen osa-alue toimi mainiosti.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssin jako selkeisiin osakokonaisuuksiin helpotti opiskelua ja sen rytmittämistä. Opetus oli innostavaa! Oli myös mukavaa että harjoitustyöt liittyivät toisiinsa, helpotti tekemistä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Erittäin hyvä luennoitsija; laadukkaat diat, eivätkä luennot olleet pelkästään ns. kalvosulkeisia. Myöskin harjoitustöiden tehtävänannot olivat laadukkaita, ja palautuksen jälkeiset purkutilaisuudet olivat hyödyllisiä oppimisen kannalta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opiskelijoiden aktivointi tai ainakin sen yrittäminen oli mallikasta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opintojaksolla oli kokoajan hyvin selkeä viikottainen rakenne ja harjoitustyöt olivat erittäin hyvät, niin vaatimusten kuin myös valmiin pohjan osalta. Myös luennot olivat erittäin onnistuneita! Matti on ehodottomasti paras luennoitsija joka on yliopistossa tullut vastaan. Harvoin yliopistossa luennoitsijat omaavat niinkin suuren intohimon itse opettamiseen ja siihen, että luennoilla aktivoidaan opiskelijoita, jolloin oppiminen tehostuu huomattavasti!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harkkatöiden tulokset voisi saada nopeammin. Kotitehtävät, viikkotehtävät ja harkat tukivat hyvin oppimista
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kiinnostavat luennot ja innostava luennoitsija!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot, harjoitustyöt ja viikkotehtävät
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Käytännössä kaikki: luennot olivat rakenteeltaan hyviä, harjoitusten muoto (läksyt ensin ja lisätehtävät) oli hyvä, verkkotehtävien vaativuustaso oli riittävän haastava, sekä oppimispäiväkirjan artikkelit/videot olivat kiinnostavia ja tulevaan asiaan tarpeeksi liittyviä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Erityisesti TUT+ tehtävät olivat hyviä ja mukavia tehdä. Luennot olivat hyiä ja tärkeimmät asiat käytiin perusteellisesti läpi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot eivät voisi parempia olla.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat todella hyvät. Luennoitsija oli asiantunteva, mutta rento. Luennoilla oli hyvä keskusteleva ilmapiiri. Harjoitustyöt etenivät loogisesti ja ne oli helppo ymmärtää - analogia kaupunkeihin ja teihin toimi loistavasti.
+TUT+-tehtävät tukivat oppimista hyvin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Runsaasti eri vaihtoehtoja kurssin suorittamiseen
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielenkiintoinen aihe, ja hyvät ja opettavaiset harojitustyöt. Ennen kaikkea kiitokset töiden valmiista koodirungosta!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kerrassaan erinomaisesti järjestetty kurssi, kerrankin TTYllä! Koin oikeasti olevani joka viikko perillä kurssin tapahtumista ja aiheista, kiitos luentoesseekäytännön. Viikkotehtävät oliivat sopivan suuruisia/työläitä ja auttoivat asioiden hahmottamisessa. Osa by the mark tehtävistä oli todella mahtavia, sieltä pystyi kivan visuaalisessa muodossa käydä tsekkaamassa miten joku algoritmi toimi. Harkatyöt olivat hyvin suunniteltuja ja niitä oli suorastaaan mukava toteuttaa. Pidin ratkaisusta, että harkkatyöt pohjautuivat edeltäjiinsä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lähes kaikki. Omasta mielestä käsitettä "onnistunut toteutus" ei päästä lähemmäs tämän kevään toteutuksen osalta. Luentoesseen valmistivat hyvin luentoja varten (mikäli niitä jaksoi kirjoittaa), luennoilla käytiiin asiaa selkeästi ja mielenkiintoisesti. Myös luennoitsija-opiskelijat-vuorovaikutus oli hyvää. 
+
+Harjoitustyöt olivat sopivat kokoisia, sopivan haastavia ja tarjosivat hyvät mahdollisuudet oppia kurssin asioita ja/tai kokeilla niitä käytännössä. Koin myös harjoitustöiden jälkipuinnit hyödyllisiksi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pidin mahdollisuudesta suorittaa kurssi lähes kokonaisuudessaan etänä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot mielenkiintoisia. Aiheisiin johdateltiin hyvin eikä menty liian syvälle teknisiin toteutuksiin, jolloin olisi pudonnut ehkä kärryiltä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitukset, harjoitustyöt ja tehtävät olivat sopivia. Luennot olivat laadukkaita.
+
+Harjoitustyöt olivat myös mielenkiintoisia, minkä lisäksi saman koodin käyttäminen uudestaan oli opettavaista, kun huomasi, miten vaatimusten muutokset ja vanhan koodin hyödyntäminen aiheuttivat uudenlaisia haasteita.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyöt olivat tarpeeksi haastavia ja niissä pystyi soveltamaan periaatteessa suoraan luennoilla ja harjoituksissa opittua asiaa, mikä vahvisti oppimista huomattavasti. Luennot olivat myös mielenkiintoisia ja erityisesti harjoitustöitä käsittelevät luennot tuntuivat erityisen hyödyllisiltä. TUT+:an tehtävät vahvistivat myös opittua, mutta ne eivät tuntuneet riesalta vaan olivat vaikeustasoltaan juuri sopivia. Luentodiat olivat selkeitä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           *
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot perehdyttivät aiheeseen kuin aiheeseen hyvin. Lisämateriaaleja oli hyvin saatavilla. Suoritustavat oli monipuoliset.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyöt olivat mielekkäitä ja opettavaisia sekä nivoutuivat hienoksi kokonaisuudeksi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Erityisesti luennot. Oli päivänselvää, että Matti oli oikeasti varautunut ja valmistellut luentoja, toisin kuin monilla muilla kursseilla.
+
+Myös harjoitukset olivat pääsääntöisesti hyödyllisiä ja kehittäviä.
+
+Kokonaisuudessaan kurssi oli kenties parhaiten pidetty kurssi TTY:llä, jonka olen toistaiseksi käynyt.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennoitsija, harkkatyöt kiinnostavia, aihe kiinnostavaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kokonaisuutena kurssin toteutus toimi. Ilmoittaminen kurssin asioista kesken kurssin erinomaista, ylipäänsä materiaali toteutettu erittäin selkeästi. Mielenkiintoiset luennot, joille jaksoi vaivautua jopa paikan päälle.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Oppi ja sisäisti asiat erittäin hyvin ja teki asiasta todella mielenkiintoista. Harkkatyöt liitty samaan aiheeseen niin oli huomattavasti helpompi tehdä toinen ja kolmas harkkatyö, harjoitukset ja viikkotehtävät ja bythemark ei ollut kovin isoja työmääriä ja niihin ei tarvinnut jäädä jumiin, se oli hyvä. Ensimmäinen harkkatyö oli erittäin paljon isompi työmaa kuin toinen ja kolmas, kolmas oli reilusti alle puolet ensimmäisestä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Arvosanan muodostuminen koko kurssin aikana tehdyistä suorituksista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat kivoja ja harjoitustyöt mielenkiintoisia. Kokonaisuudessa kurssi on yksi tähän asti lempikursseistani.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Todella hyvin rakennettu kurssi, joka paneutuu mielenkiintoisiin ja käytännönläheisiin aiheisiin. Ilo opiskella.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harkkoja yms hyvin
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Voin sanoa oppineeni tällä kurssilla todella paljon. Tehokas ja mielenkiintoinen kurssi!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ennakkomateriaalit olivat hyviä ja valmistivat tehokkaasti luentoon. Läksyistä oppi myös paljon. Harjoitustöissä oli hyvin kiinnostavaa koittaa tehostaa koodia, kun sen sai ensin jotenkin toimimaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luentoesseiden jälkeen luennot tuntuivat jo jokseenkin tutuilta. TUT+:n harjoitukset havainnollistivat hyvin käytyjä asioita ja harjoitusten keskustelupainotteisuus antoi suotuisan ympäristön oppimiselle.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Miten kehittäisit opintojaksoa?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Rintala, Matti,
+									10.10.2018
+           </span>
+           <br/>
+           En osaa sanoa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Poistaisin pakolliset läsnäolot ja harjoitukset ja siirtyisin perinteiseen arvosana = harkkatyöt + tentti
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harkkaryhmät olivat usein varsin passiivisia, eikä vetäjä oikein jaksanut kannustaa osallistumaan. Tähän voisi keksiä jotain aktivoivia virikkeitä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Viikkoharjoituksista pisteet tulivat uskomattoman myöhässä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustehtäviin vastaukset Moodleen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luentomateriaali kaipaisi päivittämistä. Viikkoharjoituksista olisi kiva olla mallivastaukset saatavilla jossain muodossa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           En osaa sanoa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Laskarikäytäntö aluksi vähän sekava. Ei oikein tiennyt, että mitä kaikkea tulee tehdä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Viikkoharjoitusryhmissä tehtävät tehtävät olisivat ehkä voineet olla jotenkin enemmän innostavampia ja osallistavampia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Työmäärää voisi hieman vähentää esimerkiksi tekemällä viikkoharjoitusten esitehtävät viikkoharjoituksissa paikan päällä. Lisäksi C++:n vaikutusta voisi hieman vähentää.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tentti voisi vaikuttaa arvosanaan. Se antaisi tasapainoa sellaisia, jotka eivät ole lähtökohtaisesti niin kokeneita ohjelmoinnin kanssa mutta ovat olleet aktiivisesti mukana oppimassa kurssin aiheita. Tuntui, että 3 arvosanaan projektityössä ei riittänyt perus hyvä osaaminen, vaan että siihenkin olisi pitänyt olla enemmän intohimoisesti etsinyt vaihtoehtoja. Oppimisen kannalta näillä kehitysjutuilla ei ole sinänsä väliä. Ei kai sitä numeroiden vuoksi kuuluisi opiskella.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ei tässä paljon kehitettävää ole, mutta harjoitustöitä olisi voinut analysoida vieläkin kattavammin silloin, kun ne ovat vielä tuoreena mielessä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hajautustaulut tulivat luennoilla vähän myöhään suhteessa 2. harkkatyöhön. Olin kerennyt saamaan jo 2. harkkatyön aikalailla valmiiksi käyttäen std::map -tietorakennetta, kun huomasin että olisikin kannattanut käyttää std::unordered_map. Olin myös ymmärtänyt, että kaikki tarvittavat asiat oli jo käyty 2. harjoitustyötä varten
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harkoista voisi tulla jonkilaiset mallivastaukset, joista voisi esim. kerrata tenttiin ja tarkistaa omat tehtävät. Luennoilla voitaisiin vaikeammista aiheista käydä jokin esimerkki taululla läpi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jos ensimmäisen harjoitustyön kerkeäisi aloittaa/palauttaa aikaisemmin, voisi kurssihenkilökunta keretä antaa palautteen ennen seuraavaa, ja sama onnistuisi mahdollisesti myös seuraavaan
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyöt todella huonosti järjestettyjä. Arvostelut tulevat todella myöhässä, arvostelut kohtuuttomia (rankaistaan virheistä kohtuuttoman paljon ja vaikuttaa kurssi muutenkin olevan varsinaista rinnalla röyhistelyä, hyvästä ja ehyestä harjoitustyöstä voisi jo antaa hyvin plussaa, epänormaalin hyvästä tehokkuudesta sitten bonusta).
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Palautteet harkkatöistä olisi ollut kiva saada ennen seuraavaa harkkatyötä. Ensimmäisen ht:n palautteen osalta tämä ei toteutunut, vaikka tämä olisi varmaan korjaantunut pari päivää deadlinea siirtämällä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielestäni kurssilla on ehkä hieman liikaa työtä. Ehkä jostain osa-alueista, esim luento-esseistä tai viikkoharkoista voisi vähentää. Toisaalta kurssille voisi enemmän tuoda valinnanvapautta ja esimerkiksi kaikki osa-alueet eivät olisi pakollisia, vaan opiskelija saisi itse valita, mitkä osa-alueet hän haluaa suorittaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoituksien "pakollinen" läsnäolo 100% suorittamiseen tuntui vähän liian raskaalta ottaen huomioon, että kurssi sisältää 1x luentoesseitä, 1x luentoja ja 2x viikkotehtäviä per viikko jo valmiiksi. Ja koko kurssisuoritukseen lisätään vielä 3 harjoitustyötä ja yksi sähköinen tentti. Nämä harjoitustyöt voisivat olla hiukan laajempia viikkoharjoituksien läsnäolon sijaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustöiden arvostelu olisi kiva saada nopeammin, harjoitustöiden riippuvuutta toisistaan voisi myös vähentää
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Plussan tehtäviä pitäisi ehkä päivittää vastaamaan tämän kurssin sisältöä, nyt niistä vähän paistoi läpi se, että ne on tehty aallon kurssille.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyöt voisi ehkä 1. ja 2. välillä jakaa enemmän erilaisiksi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pidemmät tentti-ikkunat
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hieman enemmän jos käytäisiin läpi c++-spesifisiä juttuja niin harjoitustyöt ehkä helpottuisivat. Mutta ymmärrän kyllä että kurssi halutaan pitää yleisluontoisena algoritmi- ja tietorakennekurssina.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Viikkoharjoitukset voisi koostua muustakin kuin pelkistä "pohdi/tee ryhmissä": esimerkiksi assari voisi käydä harjoitusten aihepiireihin liittyviä esimerkkejä aluksi läpi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Arvostelussa en oikein tiedä miten sitä pitäisi muuttaa. Arvosanaa 5 on todella vaikeaa saavuttaa tai ainakin se on työlästä ja harjoitustöissä pitäisi onnistua melkein täydellisesti jokaisessa. Itselle kävi ainakin niin, että viimeisen harkkatyön kohdalla oli ihan sama mikä arvosana siitä tulee kunhan sen läpi saa niin arvosanaa on aina sama johtuen muiden osa-alueiden pisteistä.
+
+Ehkä voisi miettiä lisäämällä vaihtoehtoa, että Exam tentissä pärjääminen todella hyvin voisi kasvattaa arvosanaa +1?
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           En osaa sanoa kuinka kurssia voisi enää parantaa
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitukset olivat hieman heikompia luentojen rinnalla
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Vähemmän pientä sälää mitä tehdä, luentoesseet, viikkoharjoitukset ja tut+ -tehtävät liikaa.  + selkeämmät tehtävänannot viikkotehtävissä. Joskus sain puolet pisteistä assarilta kun en tehnyt jotain mitä ei edes pyydetty tekemään.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Enemmän ohjelmointia viikkotehtäviin
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kokonaisarvosanan muodostumiseen vaadittavien tehtävien skaalaa voisi yrittää hioa vielä. Kolmosen saaminen on kohtalaisen helpon tuntuista, kun riittää että käy luennoilla, tekee satunnaisia läksyjä ja pääsee harjoitustyöt läpi arvosanalla 1.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tentin painoarvo voisi olla suurempi kuin pelkkä hyväksytty/hylätty. Lisäksi harjoituksiin osallistumisen painoarvo voisi olla suurempi kuin 1p/kerta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pistejärjestelmä ei ollut mielestäni järkevä. Arvosanan pitäisi määräytyä sen mukaan, kuinka on oppinut, eikä työmäärän mukaan. Tämä järjestelmä ei motivoi itsenäistä opiskelua.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Viikkoharjoituksissa jotkin assarit eivät osanneet asiaa tai muuten opettaa. Oikeiden vastausten käsittely jäi tällöin puolitiehen.
+Jotkin tehtävistä eivät olleet yksiselitteisiä, joten osa harjoitusten ajasta kului hukkaan eri tulkintoja punnitessa.
+Ensimmäisessä ja/tai toisessa harjoitustyössä tehdyt huonot toteutuspäätökset saattoivat vaikeuttaa kolmannen harjoitustyön järkevää toteuttamista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harkkojen sisältöä voisi koittaa hioa mielenkiintoisammaksi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot liian alkeellisia, eivät juuri hyödytä, sillä itseopiskelulla voi lukuea 5 kertaa enemmän samassa ajassa. Melko teennäistä luoda luennoille jonkin sortin läsnäolopakko, sillä muuten ihmiset optimoisivat aikansa johonkin hyödyllisempään.
+
+Suurimmat moitteet ja suorat torut annan arvioinnista, joissa "osaamista" mitataan pitkälti täysin näennäisillä ja idioottimaisilla mittareilla. 
+- Jos hyvin toteutetusta projektista unohtaa yhdekin nippelikohdan lukuisten joukosta, annetaan tästä valtava arvosanan pudotus. Ihminen on erehtyvä, ja tulisi ehdottomasti huomioida, että se ei korreloi todellisen osaamistason kanssa yhtään. Vai tarkoittaako natsitus-arvostelu sitä, että tarkastajilla on liika töitä siihen, että viitsittäisiin kiinnittää huomiota oleellisiin tekijöihin, joista tosin on  vain vaikempi tehdä konkreettista checklistaa. (Älkää hitto puolittako arvosanaa, jos järjestelmänne ovat niin kankeita, että ette kyenneet sitä ajoissa arvostelemaan.)
+
+- By-the-mark tehtävien sorttausosiot olivat mahdottomia tehdä virheettä. (Koittakaa niitä vaikka itse, jos ette usko.) Myös useiden muiden algoritmien tarkka noudattaminen oli pitkälti arvuuttelua. By the mark-tehtävät eivät oikeasti juuri olleet muuta kuin tylsää kliksuttelua hienoksi tuunatulla käyttöliittymällä. Sori sanoa suoraan, mutta ei välttämättömän hyödyllisiä oppimisen kannalta.
+
+Lyhyt yhteenveto kurssilla käyteystä pisteytyksestä ja sen korrelaatiosta oppimisen kanssa:
+Luento-läsnäolopisteet : nolla markkaa
+by-the-mark - pisteet : nolla markkaa
+laskari-pisteet : yksi markka.
+laskari-läsnäolot : 10 penniä.
+luento-esseet: puoli markkaa
+wikipedia : tonnin seteli
+harkkatyöt : toinen tonnin seteli
+
+
+(ps. Mielestäni kurssidioissa oli virhe, kun mainittiin että breath-first -haku voidaan muutta depth-first hauksi muuttamalla pino jonoksi.)
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Joidenkin assareiden harjoituksissa pilkkua viilattiin helppojen asioiden kohdalla aivan liian pitkään. Turhauttavinta oli käydä juurta jaksaen kotitehtäviä, kun niihin  liittyvät oivallukset tulivat tuskin kellekään enään tunnilla uutena jännittävänä asiana. Harkoissa tehtäviin tehtäviin ajan painottaminen olisi mielekkäämpi ratkaisu.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Olisi ollut kiva saada jonkunlaiset malliratkaisut harjoitustehtäviin
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitusryhmissä tulleita "jokerivinkkejä harjoitustöihin" voisi jotenkin antaa muuallakin. Kaikkea ei nimittäin ei keritty käymään tarpeeksi hitaasti/hyvin itse harjoitusryhmässä, mikä ehkä kostautui hieman harjoitustyötä tehdessä. Lisäksi jos kurssi joskus konfiguroidaan tut+:ssaan, kannattaa säilyttää kurssi melko samanlaisena, kun se kerta näinkin toimii.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielestäni työmäärä oli opintopisteisiin nähden liian suuri.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitukset tuntuivat hieman tehottomilta, joten en käynyt kuin muutamassa. Asiaa päästiin käymään vain vähän, ja nettitehtävistä sai huomattavasti nopeammin pisteitä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tunnille ilmoittautumisen voisi laittaa ihan hyvin taustalle auki pariksi minuutiksi ja luentoa voisi ehkä samalla jatkaa luontevasti ilman sen suurempaa taukoa.
+
+Olisi ollut hyvä, jos nettitehtävät olisivat olleet heti aluksi näkyvillä tai ensimmäisen tehtävän umpeutumisesta olisi tullut varoitus/muistutus luennolla tai vaikkapa sähköpostiin (mahdollinen automaattinen ominaisuus tehtävä palveluun?). Kurssin alussa niitä ei ollut lainkaan, joten ensimmäiset tehtävät umpeutuivat, ennen kuin muistin, että nekin olivat osa kurssia.
+
+Luentoläsnäolojen valvomissysteemi tuntui hieman erikoiselta. Ainakin olisi hyvä, jos ne saisi nopeammin ja selkeämmin moodleen näkyviin, jotta ei tarvitsisi murehtia, onko ollut liikaa poissa/onko kaikki merkinnät kirjattu. (Esim. Montako tähän mennessä kirjatuista luennoista on ollut paikalla ja paljonko luentoja tulee olemaan yhteensä.X/Y/Z)
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Viikkoharjoituksista olisi mukava saada jonkinlaisia ratkaisuja, mutta ymmärrän myös käytännön vaikeuden tulevia toteutuskertoja ajatellen. Vaihtoehtoisesti muistiinpanojen tekemisen tärkeyttä viikkoharjoituksissa voisi painottaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           *
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Arvostelussa painotettiin liikaa läsnäoloa. Näin lähes täyspäiväisesti töissä käyvänä sivuaineilijana luentoläsnäolojen ja viikkoharkkojen kevyempi pisteytys luentotallenteisiin ja etätehtäviin verrattuna jätti huonon maun suuhun.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Nykyinen pisteytysjärjestelmä palkitsee enemmän aikaikkunoiden muistamisesta kuin osaamisesta. Erilaisia tehtävätyyppejä on niin paljon, että helposti jokin niistä unohtuu tehdä, ja nykytoteutuksella tämä näkyy heti kurssiarvosanassa. Tehtävät olivat myös varsin helppoja kurssiin MAT-71000 Tieto ja laskenta verrattuna, ja näillä kahdella kurssilla oli merkittävää päällekkäisyyttä. Myös luentojen tahti voisi olla nopeampi, sillä molempia kursseja yhtä aikaa käydessä asiat tulivat tutuiksi MAT-71000:ssa, ja TIE-21000:n luennoilla tuli istuttua kirjan ymv. parissa pisteitä hakemassa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Omaa motivaatiotani olisi parantanut se, että harjoitustyöt eivät olisi riippuneet toisistaan. Olisi ollut mukavaa päästä tekemään kolme erillistä harjoitustyötä ja aloittaa aina puhtaalta pöydältä. Ainakin itselläni ensimmäisessä harjoitustyössä epäonnistuminen jätti pahan maun joka ei lähtenyt seuraavaa kahta tehdessä.
+
+Kurssin arvostelu on myös sikäli ankara, että ainakin omassa tapauksessani juuri ensimmäisessä harjoitustyössä epäonnistuminen käytännössä teki mahdottomaksi arvosanan 5 saavuttamisen. Tämä siitä huolimatta, että tiedän ymmärtäneeni kurssin asiat paremmin kuin useimmat, enkä koe arvosanan 4 kuvaavan kurssin asioiden hallitsemistani. En tiedä mitä tälle asialle tarkalleen ottaen voisi tehdä, mutta jotain varmasti voisi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ehkä yhden nopan voisi saada enemmän. Harjoituksissa voisi miettiä, pitäisikö tiimityöskentelyä rohkaista enemmän. Nyt se oli assarista riippuvaa ja yleensä yksin miettimistä.
+
+Kurssi voisi ehkä olla luentojen osalta lyhyempi. Kerta viikossa on aika vähän, ja nämä asiat voisi ehkä sisäistää yhdessä periodissa, jonka jälkeen sitten seuraavassa periodissa harkkatyöt?
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustöistä olisi kiva saada arvosanat ennen seuraavan työn palautusta, palvelisi myös oppimismielessä paremmin. Viikkoharjoitusten paikalla päällä oleminen tuntui täysin turhalta, ylipäänsä viikkohajroitusten osalta paikan päällä ei tehty juuri mitään, esitehtävät kattoivat viikkoharjoitukset käytännössä kokonaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tässä ei paljoa kehitettävää ollut, hyvin suunniteltu ja organisoitu, toki se että UTA:lla sama kurssi on 10op ni onhan se aina vähän ikävää, niinkuin kaikki TITE:n kurssit, jotka on isompia työmaita kuin muiden aineiden kurssit (olen titeä opiskeleva sähköteekkari)
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyöt voisivat olla enemmän irrallisia toisistaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lisää TUT+ tehtäviä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kannustaisin opiskelijoita vielä enemmän ystävälliseen keskusteluun viikkoharkoissa. Ilmapiiri yleisesti tietotekniikan kursseilla on ollut jännittyneempi kuin pääaineeni kursseilla ja mokaamisen pelko on myös jotenkin suurempi. Toivoisin, että ideoita heiteltäisiin enemmän ilman painetta siitä, onko vastaus oikea. Yksi kurssi ei pysty asiaan paljoa vaikuttamaan, mutta tälläinen asia tuli vain mieleen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hylkäisin kurssin nettisivun. Kaikki ohjeet ja materiaalit yhteen paikkaan. Moodle on siihen sopiva. Harjoitustyöt voisivat olla enemmän valmiinkoodin tehostamistehtäviä kuin uuden koodin kirjoitustehtäviä. Näin voisi keskittyä enemmän kurssin tavoitteisiin ja opetella koodausta muualla.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <!-- STUDENT RESPONSES -->
+       <br/>
+       <br/>
+      </form>
+      <br/>
+      <br/>
+     </div>
+     <div id="footer">
+      <span class="about" id="footerInfoLink">
+       Tietoa sovelluksesta
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div aria-describedby="footerInfobox" aria-labelledby="ui-id-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable" role="dialog" style="display: none; position: absolute;" tabindex="-1">
+   <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+    <span class="ui-dialog-title" id="ui-id-1">
+    </span>
+    <button aria-disabled="false" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="close">
+     <span class="ui-button-icon-primary ui-icon ui-icon-closethick">
+     </span>
+     <span class="ui-button-text">
+      close
+     </span>
+    </button>
+   </div>
+   <div class="ui-dialog-content ui-widget-content" id="footerInfobox">
+    Kaiku - Tampereen yliopisto
+			Sovelluksen versio: 1.15.0 (10.3.2020)
+   </div>
+   <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;">
+   </div>
+  </div>
+ </body>
+</html>

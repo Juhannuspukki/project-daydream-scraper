@@ -1,0 +1,1200 @@
+<html lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Kaiku
+  </title>
+  <link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css"/>
+  <script src="/kaiku/javascript/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/kaiku.js" type="text/javascript">
+  </script>
+  <link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css"/>
+  <link href="/kaiku/style/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="hidden" id="pop-up">
+   <img alt="hourclass" src="/kaiku/images/hourglass_small.png"/>
+   <br/>
+   Raportti latautuu...
+  </div>
+  <div id="outer">
+   <div id="page">
+    <div id="banner">
+     <img alt="Kaiku" src="/kaiku/images/Logo_TAU_FI.png" style="height: 50px;"/>
+     <span class="page_name">
+      Kaiku
+      <br/>
+     </span>
+     <div id="banner_inner_right">
+      <nobr>
+       <a href="https://www.tut.fi/pop">
+        POP
+       </a>
+       |
+       <a href="https://www.tut.fi/tutka">
+        TUTKA
+       </a>
+      </nobr>
+      <span class="user_name">
+       Jere Laine
+       <br/>
+      </span>
+      <br/>
+      <a href="/kaiku/logOut/logOut">
+       Kirjaudu ulos
+      </a>
+     </div>
+    </div>
+    <div id="menu" style="min-height: 15px;">
+     <nobr>
+      <a href="/kaiku/kaiku/mainpage">
+       Etusivu
+      </a>
+      <a href="/kaiku/studentMainPageSearch/feedback">
+       Anna Palautetta
+      </a>
+      <a class="selected" href="/kaiku/examineFeedbackPage/feedback">
+       Palautteet
+      </a>
+      <a href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf" style="font-size: 12px;">
+       ?
+      </a>
+      <a href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&amp;PREVIOUS_VIEW=feedbackSummaryCourseQueryResults" style="font-size: 10px;">
+       in English
+      </a>
+     </nobr>
+    </div>
+    <div id="content">
+     <div id="inner_content">
+      <style>
+       button {
+		white-space: nowrap;
+	}
+      </style>
+      <br/>
+      <form action="/kaiku/examineFeedbackPage/feedback" id="pageInformation" method="post">
+       <table>
+        <tbody>
+         <tr>
+          <td colspan="3">
+           <a href="/kaiku/examineFeedbackPage/feedback?action=landingPageLink">
+            Opintojaksojen palautteet
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=depOrCoursegroupLink&amp;depOrCoursegroupId=10103">
+            Tietotekniikka
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=courseImplementationLink&amp;chosenCourseCode=TIE-50100">
+            TIE-50100
+				Digitaalisuunnittelu
+           </a>
+           →
+		
+			Kysely 06.12.14-19.01.15
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           <br/>
+           <h2>
+            <nobr>
+             TIE-50100
+				
+					Digitaalisuunnittelu
+					
+					(
+             <a href="https://www.tut.fi//wwwoppaat/opas2014-2015/perus/aineryhmat/Digitaali-_ja_tietokonetekniikka/TIE-50100.html" target="plain">
+              Opinto-opas
+             </a>
+             )
+            </nobr>
+           </h2>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Lukuvuosi 2014 - 2015,
+					Periodit I-II
+           <br/>
+           Kysely 06.12.14-19.01.15
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Vastanneita yhteensä: 30
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           En anna palautetta vastanneita yhteensä: 0
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- The analysis part -->
+       <!-- ***************** -->
+       <table class="common">
+        <tbody>
+         <tr>
+          <th colspan="2" style="font-size: 13px;">
+           Opettajan vastaus opiskelijoiden antamaan toteutuskertapalautteeseen
+          </th>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <b>
+            Nykyinen vastaus
+           </b>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span class="prebr">
+            Omasta vinkkelistä katsottuna kurssi sujui erittäin hyvin. Tämä näkyy myös tenttituloksissa. Harjoitustöiden suurin murhenkryyni oli HDL-designer työkalu. Valitettavasti ei ole ollut oikein parempaakaan, jolla voitaisiin näyttää useita erilaisia tapoja tehdä suunnittelu. Vinkkaa jos myöhemmin työelämässä löydät paremman työkalun!
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- <table>
+			<tr><td><div class="line" ></div></td></tr>
+			<tr><td>Kyselyn tulosten julkisuus</td></tr>
+			<tr><td><div class="line" ></div></td></tr>
+		</table>-->
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th style="font-size: 13px;">
+           Kysymyskohtaiset palautteet
+          </th>
+         </tr>
+        </tbody>
+       </table>
+       <h1>
+        Monivalintakysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <table class="common">
+        <!-- NORMAL OBLIGATORY CHOICE QUESTIONS -->
+        <tbody>
+         <tr>
+          <th colspan="4" width="90%">
+           Yleisarvosana opintojaksolle ja sen toteutukselle.
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           3.73
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           0.85
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           3.33
+          </td>
+          <td>
+           3.33
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           6.67
+          </td>
+          <td>
+           10.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           13.33
+          </td>
+          <td>
+           23.33
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           20.0
+          </td>
+          <td>
+           66.67
+          </td>
+          <td>
+           90.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           10.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           30.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista?
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4.07
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           0.77
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           3.33
+          </td>
+          <td>
+           3.33
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           16.67
+          </td>
+          <td>
+           20.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           15.0
+          </td>
+          <td>
+           50.0
+          </td>
+          <td>
+           70.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           9.0
+          </td>
+          <td>
+           30.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           30.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin.
+          </th>
+          <td class="empty" rowspan="9" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2.21
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           0.48
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä vähäinen opintopisteisiin nähden. (1)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           3.45
+          </td>
+          <td>
+           3.45
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Työmäärä sopiva opintopisteisiin nähden. (2)
+          </td>
+          <td>
+           21.0
+          </td>
+          <td>
+           72.41
+          </td>
+          <td>
+           75.86
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä liian suuri opintopisteisiin nähden. (3)
+          </td>
+          <td>
+           7.0
+          </td>
+          <td>
+           24.14
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           29.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- OPEN QUESTIONS !!! -->
+       <br/>
+       <h1>
+        Avoimet kysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Mikä onnistui opintojaksolla hyvin?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Hämäläinen, Timo,
+									12.01.2015
+           </span>
+           <br/>
+           Opintojakson ansiosta paikkasin tietojani digitaalisuunnittelusta. Esimerkiksi ennen opintojaksoa en tiennyt fan-in/fan-outien tarkkaa vaikutusta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           kaikki OK
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvä ympäristö harjoitustöiden tekemistä varten.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tietokoneharjoitukset olivat tarpeeksi haasteellisia ja mukavia tehdä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennoilla oli aina hyödyllistä asiaa ja luennoitsija puhui asioista sopivalla tavalla. Yksi parhaimmista luennoitsijoista mitä minulla on ollut.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harkkatyö on jollain tasolla hieno, koska kumulatiivinen. Tosin sen tekeminen on aivan hillittömän pöljää, kun sitä ei pääse tekeen fiksuna projektina vaan se on palasina eri harkoissa. Mutta hyvä harjoitus.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat täynnä informaatiota.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           tietokoneharjoitukset olivat yleisesti hyvin toteutettuja.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvällä työtilanteella motivointi toimii aina :) Luennoitsija antoi myös hyvin selkeän kuvan siitä, miten tämä kurssi lomittuu muihin kursseihin. Lisäksi oli mukavaa, että raskaankin asian lomassa oli aina välillä "välipaloja" käytännön puolelta. Oli hyvä, että tietokone- ja paperiharkkoja oli vuoroviikoin, sillä ne tukivat toisiansa ja molemmat olivat mielestäni tarpeellisia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot oli hyvin toteutettu. Luennoitsija tiesi mistä puhuu.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitukset olivat hyviä ja opettavaisia
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Aihe on mielenkiintoinen, ja harkkatöissä pääsi oppimaan asioita kyllä ihan hyvin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot ja niiden dokumentointi oli tehty hyvin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat mielenkiintosia ja etenivät loogisessa järjestyksessä. Luentokalvot olivat sisällöltään riittävän informatiivisia soveltuakseen tenttiinlukumateriaaliksi.
+
+Tentti onnistui osaamisen mittarina hyvin, vaikka aika kävi kortille lopussa.
+
+PC-harjoitukset olivat aiheiltaan mielenkiintoisia ja tehtävienannot pääosin selkeitä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitukset:
+Laajat, sopivan haastavat, sopivan paljon
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvä että kurssilla sai lainaan FPGA-laudan, jolla suunnitteluita pystyi kokeilemaan käytännössä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Yleisesti kiva
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvin painotettu käytännön työskentelyä ja tentissäkin mukavaa vaihtelua että on tehtävä joka mittaa yleistä osaamista, jolla pääsee jo läpi ja isohko suunnittelu tehtävä jos haluaa paremman arvosanan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot ja harjoituset tukivat erittäin täydentävästi sisältöä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Niin paperi- kuin tietokoneharjoituksetkin oli hyvin toteutettu ja niiden avulla oppi hyvin. Luennot olivat mielenkiintoisia ja opettavaisia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyöt olivat hyvin opettavaisia ja hyvin aikataulutettuja. Luennot olivat mielenkiintoisia ja luennoitsijalla oli selvästi intohimoa materiaaliin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Miten kehittäisit opintojaksoa?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Hämäläinen, Timo,
+									12.01.2015
+           </span>
+           <br/>
+           HDL Designer -työkalu on kaikkien aikojen surkein työkalu eikä sille löydy mitään käyttöä tosimaailmasta!!!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Näin opiskelijan näkökulmasta olisi mukavempi jos kurssin kaikki materiaali olisi kurssin sivuilla, tai voisi ainakin olla pieni ilmoitus siellä joka kertoo että missä ne luentokalvot piileskelee.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Toivoisin hieman enemmän tukea assistenteilta koska loppua kohden oli hieman vaikea saada viikkoharjoituksissa apua ongelmiin (demoilu vei varsinkin viimeisillä kerroilla suurimman osan assistenttien ajasta). En saanut etänä koulun ulkopuolella Quartusin softaa toimimaan (lisenssin haku epäonnistuu) jotta olisin voinut ladata suunnitellun toiminnallisuuden FPGA kortille. Laitoin tästä kysäriä assistenteille mutta ratkaisua ongelmaan ei ole ollut. HDL designer ja ModelSim toimii etänä ok(lisenssin haku toimii).
+Paperiharjoitusten tekoa voisi harkita siten että ratkaisuja tehtäisiin tietokoneharjoitusten tapaan porukalla.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Sakari ei osaa käyttä hdl designeria tarpeeksi, Arto olisi parempi assari tietokoneharjoituksiin
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tehtävänannot varsinkin paperitehtävissä saisivat olla selkeämpiä ja yksityiskohtaisempia. Olisi hyvä, jos aikaisempien tehtävien ratkaisut näkisi jostain.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           HDL-designer aiheutti pahimmat vitutukset koko yliopistouran aikana.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tilakone ja viiveiden lasku supistuisi pienempään. Kerrottaisiin "ne ovat tämmösiä ja näin niitä tehdään ja niillä on tämmösiä ominaisuuksi ja katsokaakin, että tilakone ei jää jumiin."
+
+Enempi sarjasta rintaan ja rinnasta sarjaan, sekä erilaisia muunnoksia. Paperilla piirien vääntäminen piirtäminen on hidasta ja tulkitseminen vielä hitaampaa. Eli minimaalinen VHDL setti, opetellaan muutoksia, tilakoneen vatkaus ja mistä se viive tulee.
+
+Ja jos tentissä on datalehti niin mielellään sellaisena, että siitä on kerrottu myös operointi ja piirin toiminnallisuus.
+
+HDL designerin voisi tunkea sinne minne valo ei paista. Se on epäintuitiivinen jopa quartukseen verrattuna. Puoli tuntia menee asioiden tekemiseen, puoltoista tuntia sen kanssa taisteluun.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Assarit voisivat olla enemmän perillä tietokoneharjoitusten tehtävistä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kaikkia harjoituksissa käytyjä asioita ei löytynyt luentomonisteista. Tentissä olisi hyvä olla useampi tehtävä. Suunnittelutehtävässä jos alussa tekee virheen, se kertautuu kaikkiin muihinkin osiin tai jos jää alussa jumiin johonkin niin ei voi näyttää, että osaa kuitenkin muut asiat.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssin suurin murheenkryyni oli HDL-designer..  Ymmärrän kyllä, miksi ohjelmaa käytetään ja että sen kanssa täytyy lähinnä elää. Olisin kuitenkin toivonut enemmän tukea varsinkin alkuvaiheessa ja ehkä jonkinlaista "HDL:än yleisimmät bugit" -listaa, sillä meillä tuntui olevan kaikilla samat ongelmat, jotka sitten joku onnistui sattumalta ratkaisemaan. Lisäksi tutoriaalit olivat pahasti vanhentuneita, mikä lisäsi yleistä sekaannusta. Tästä säädöstä johtuen laitoin, että työmäärä oli liian suuri.
+
+Myös tentin viimeisen tehtävän olisi ehkä voinut jakaa pienempii ja ennenkaikkea toisistaan riippumattomiin palasiin, sillä nyt yhteen kohtaa jumittuminen tarkoitti sitä, että lopputenttiäkään ei oikein voinut kunnolla tehdä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennoilla ja harjoituksissa olisi hyvä käydä/käydä enemmän läpi datasheettien lukua, jotta sitä ei tarvitsisi opetella vasta tentissä. Tämä olisi myös hyvä siksi että töissäkin niitä täytyy varmasti enemmän tai vähemmän selailla ja ymmärtää niissä esiintyviä merkintätapoja. Paperiharjoituksissa taululle piirrettävät tehtävät olivat erittäin rasittavia sillä itse tehtävän tarkitukseen kului vähemmän aikaa kuin sen taululle piirtämiseen. Tähän voisi hyvänä ratkaisuna olla se että assistentti tarkistaisi vastauksen oppilaan paperista ja näyttäisi sen jälkeen videotykillä oikean vastauksen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tentin toinen tehtävä oli todella vaikea ja poikkesi mielestäni liikaa harjoituksen tyylistä opettaa asioita.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Aika paljon aikaa meni ihan vaan HDL designerin kanssa tappeluun, kaikki piti älytä itse (vaikka ohjeet olikin)...
+
+Ensimmäisen tentin ajankohta oli surkea! Samana päivänä neljä TIE-laitoksen tenttiä!?
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tietokoneharjoituksissa monilla ilmenneitä ongelmia olisi hyvä koota nettisivuille, jotta kaikki eivät taistelisi saman asian kanssa. Esim. HDL Designerin toiminnan epäloogisuudet.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           PC-harjoitukset
+===============
+
+PC-harjoituksissa HDLDesignerin kanssa oli ajoittain pahoja ongelmia, joiden ratkomiseen melkein puolet töihin käytetystä ajasta kului. Samoin pari tehtävää jäi jopa tekemättä sen vuoksi, että ohjelma antoi kryptisiä virheilmoituksia testipenkkiä avattaessa. HDLDesigneriin liittyviin bugeihin tuskin voi vaikuttaa, mutta ainakin osaan näistä ongelmista keksittiin ratkaisu kurssin aikana (esim. VHDL-koodi ei käänny automaattisesti). Näistä ratkaisuista ei kuitenkaan tiedotettu yleisesti vaikka niistä assarille kerrottiin vaan tieto levisi puskaradion kautta muiden kurssilaisten tietoisuuteen.
+
+Assarit olivat pääosin asiantuntevia, mutta heidän määränsä suhteessa harjoitukseen osallistujiin oli liian pieni. Samoin PC-harjoitusryhmiä oli mielestäni liian vähän ja harjoitusten tekemiseen soveltuvien koneiden määrä liian pieni.
+
+Paperiharjoitukset
+==================
+
+Pidän erittäin omituisena käytäntönä sitä, että tehtävistä ei laiteta oikeita ratkaisuja nettiin harjoitusviikon päätteeksi. Joidenkin tehtävien ratkaisut jäivät epätäydellisiksi lähinnä siksi että assari vilautti tykiltä ratkaisuja, minkä jälkeen jatkettiin nopeasti eteenpäin. Etenkin ajoituskaavioiden kanssa tämä oli ongelma enkä näin ollen oppinut niitä lainkaan niin hyvin kuin olisin halunnut. Kaiken huipuksi assari lupasi joitain vastauksia nettiin kun huomautin harkoissa että eihän näitä ehdi millään kopioimaan itselleni. Vastauksia ei muuten näkynyt missään enää niiden harkkojen jälkeen joten nuo asiat jäivät epäselviksi. Perusteluksi sille että oikeita ratkaisuja ei anneta opiskelijoille sain, että tehtävät ovat samoja joka vuosi ja näin ollen joku opiskelijoista voisi laittaa vastaukset kaikkien saataville.
+
+Nyt ihan oikeasti. Olen käynyt TTYllä varmaan yli 60 kurssia ja tämä on ensimmäinen jossa tätä pidetään ongelmana. Jopa niin paljon että vanhoista tehtävistä pidetään kiinni opiskelijoiden oppimisen kustannuksella. Ehkä olisi syytä kehitellä uusia tehtäviä tai muunnella vanhoja jotta suora kopiointi ei olisi mahdollista? Lisäksi vinkkinä ratkaisut voi laittaa jakoon niin, että toisen toteutuskerran opiskelijat eivät pääse niihin käsiksi seuraavana vuonna. Esim. POP ja Moodle soveltuvat tähän hyvin. Vähintä mitä asialle voitaisiin tehdä olisi jakaa paperiversioita oikeista ratkaisuista jos digitaalinen jakaminen huolestuttaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitukset:
+HDL Designer on aivan uskomaton kasa sontaa... Assarit voisivat edes yrittää tutustua sovellukseen kurssia varten, jotta osaisivat kertoa oppilaille kikat, millä softasta saa edes jotenkin käyttökelpoisen.
+
+Esimerkiksi ohjelma ei aina generoinut uutta VHDL koodia, vaikka design oli muuttunut (Compile always lippu korjasi tämän, mutta meidän piti itse löytää ominaisuus, joka löytyi aivan sattumalta).
+
+Tentti:
+Tentti oli hyvä ja haastava, mutta tehtävä 2 oli työmäärältään jälleen mitoitettu kehnosti. Jos ei tuntenut FIFO-komponentin toimintaa etukäteen, piti miettiä tosi pitkään miten sen käyttö toimii, ennenkuin pääsi edes aloittamaan tehtävää.
+
+Itselläni ja varmasti monella muulla jäi tehtävä kesken (aika loppui), vaikka olisin osannut ratkaista kaikki tehtävän osat kyllä.
+
+Työmäärä vs. opintopisteet:
+Kurssin työmäärä oli ylivoimaisesti suurin tähän asti vastaantulleista 5op kursseista, sanoisin että tuplat verrattuna seuraavaksi suurimpaan. 
+
+Työmäärä ei sinänsä ollut ylivoimainen, oikeastaan aika hyväkin (opin todella paljon ja varmasti opittu pysyy myös muistissa), mutta noppia vain 5?
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tentin suunnittelutehtävä oli aika laaja tenttitehtäväksi. Varsinkin jos alussa lähti vähänkin väärään suuntaan tehtävänratkaisussa, ei aika enää riittänyt virheen korjaamiseen.
+
+Kyseinen tehtävä oli kyllä hyvä ja käytännönläheinen, mutta olisi sopinut paremmin vaikka pienimuotoiseksi harjoitustyöksi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hdl designer harjoitukset tuottivat välillä ongelmia teknisistä syistä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           HDL designer.
+
+Paperiharkoissa kävi aika usein niin että taululle tehty ratkaisu ei ollut ihan sellainen mitä assari halusi, mutta sitten ei vaivauduttu näyttämään sitä mallivastausta, joten välillä jäi hieman epäselväksi että oliki taululla tehty ratkaisu ihan hyvä vai ei.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -Paperiharjoitusten toteutuksen voisi miettiä uusiksi. 
+-Tentistä 2/3 vienyt tehtävä todella vaikea verrattuna mihinkään mitä kurssilla tehtiin/käytiin läpi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ehkäpä piste lisää opintopisteisiin, kun kaikennäköiseen sähläämiseen HDL-designerin kanssa kuluu niin paljon aikaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opintojaksossa ei ole mielestäni juurikaan kehitettävää.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielestäni ei pitäisi olla minimivaatimuksia viikkoharjoituspisteille. Sen sijaan voisi olla enemmän painoarvoa tietokoneharjoituksilla, jotka olivat paljon mielenkiintoisempia. Voisi olla mahdollisuus bonuspisteiden hankkimiseen esimerkiksi vapaaehtoisella ja vapaavalintaisella projektilla.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitusten tehtävistä olisi mukava saada malliratkaisut, jotta voisi opiskella asiat jotka jäi epäselviksi. Tietokoneharjoituksiin käytettävä ohjelma on täysin susi. Ainakin sen sisältämistä bugeista olisi hyvä olla joku FAQ, jottei tarvitsisi useita tunteja ihmetellä miksei jokin toimi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <!-- STUDENT RESPONSES -->
+       <h1>
+        Opiskelijoiden vapaat palautteet
+        <img alt="(i)" src="/kaiku/images/quickhelp_ttylta.gif" title="Opiskelija ei pysty muuttamaan jo kertaalleen lähettämiään vastauksia, vaan saa toisella vastauskerralla kommentoida vapaa palaute -kenttään."/>
+       </h1>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th width="45%">
+           Opettajan vastaus
+          </th>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+											Hämäläinen, Timo,
+											12.01.2015
+           </span>
+           <br/>
+           Tentti olisi voinut olla parempikin. Väittämät olivat ok, mutta jotta tentistä jäisi enemmän käteen, yhden jättimäisen ja vaikean suunnittelu-/analyysitehtävän sijaan olisi mielestäni parempi olla useampi käytännön tehtävä, monipuolisesti kurssin eri aihealueista.
+          </td>
+          <td>
+           Opettajan vastauksen kirjoitti:
+											Hämäläinen, Timo,
+											12.01.2015
+           <br/>
+           <span class="prebr">
+            Tentin suunnittelutehtävä oli laaja, mutta siinä oli tarkka tehtävälista, jonka taas puolestaan oli tarkoitus ohjata järkevään tapaan edetä ratkaisun kanssa. Virheiden kumuloitumisesta ei rankaistu arvostelussa.
+           </span>
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <br/>
+      </form>
+      <br/>
+      <br/>
+     </div>
+     <div id="footer">
+      <span class="about" id="footerInfoLink">
+       Tietoa sovelluksesta
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div aria-describedby="footerInfobox" aria-labelledby="ui-id-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable" role="dialog" style="display: none; position: absolute;" tabindex="-1">
+   <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+    <span class="ui-dialog-title" id="ui-id-1">
+    </span>
+    <button aria-disabled="false" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="close">
+     <span class="ui-button-icon-primary ui-icon ui-icon-closethick">
+     </span>
+     <span class="ui-button-text">
+      close
+     </span>
+    </button>
+   </div>
+   <div class="ui-dialog-content ui-widget-content" id="footerInfobox">
+    Kaiku - Tampereen yliopisto
+			Sovelluksen versio: 1.15.0 (10.3.2020)
+   </div>
+   <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;">
+   </div>
+  </div>
+ </body>
+</html>

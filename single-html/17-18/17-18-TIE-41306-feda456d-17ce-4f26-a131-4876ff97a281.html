@@ -1,0 +1,1179 @@
+<html lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Kaiku
+  </title>
+  <link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css"/>
+  <script src="/kaiku/javascript/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/kaiku.js" type="text/javascript">
+  </script>
+  <link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css"/>
+  <link href="/kaiku/style/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="hidden" id="pop-up">
+   <img alt="hourclass" src="/kaiku/images/hourglass_small.png"/>
+   <br/>
+   Raportti latautuu...
+  </div>
+  <div id="outer">
+   <div id="page">
+    <div id="banner">
+     <img alt="Kaiku" src="/kaiku/images/Logo_TAU_FI.png" style="height: 50px;"/>
+     <span class="page_name">
+      Kaiku
+      <br/>
+     </span>
+     <div id="banner_inner_right">
+      <nobr>
+       <a href="https://www.tut.fi/pop">
+        POP
+       </a>
+       |
+       <a href="https://www.tut.fi/tutka">
+        TUTKA
+       </a>
+      </nobr>
+      <span class="user_name">
+       Jere Laine
+       <br/>
+      </span>
+      <br/>
+      <a href="/kaiku/logOut/logOut">
+       Kirjaudu ulos
+      </a>
+     </div>
+    </div>
+    <div id="menu" style="min-height: 15px;">
+     <nobr>
+      <a href="/kaiku/kaiku/mainpage">
+       Etusivu
+      </a>
+      <a href="/kaiku/studentMainPageSearch/feedback">
+       Anna Palautetta
+      </a>
+      <a class="selected" href="/kaiku/examineFeedbackPage/feedback">
+       Palautteet
+      </a>
+      <a href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf" style="font-size: 12px;">
+       ?
+      </a>
+      <a href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&amp;PREVIOUS_VIEW=feedbackSummaryCourseQueryResults" style="font-size: 10px;">
+       in English
+      </a>
+     </nobr>
+    </div>
+    <div id="content">
+     <div id="inner_content">
+      <style>
+       button {
+		white-space: nowrap;
+	}
+      </style>
+      <br/>
+      <form action="/kaiku/examineFeedbackPage/feedback" id="pageInformation" method="post">
+       <table>
+        <tbody>
+         <tr>
+          <td colspan="3">
+           <a href="/kaiku/examineFeedbackPage/feedback?action=landingPageLink">
+            Opintojaksojen palautteet
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=depOrCoursegroupLink&amp;depOrCoursegroupId=10103">
+            Tietotekniikka
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=courseImplementationLink&amp;chosenCourseCode=TIE-41306">
+            TIE-41306
+				User Experience: Design and Evaluation
+           </a>
+           →
+		
+			Kysely 17.02.18-14.05.18
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           <br/>
+           <h2>
+            <nobr>
+             TIE-41306
+				
+					User Experience: Design and Evaluation
+					
+					(
+             <a href="https://www.tut.fi/opinto-opas/wwwoppaat/opas2017-2018/perus/aineryhmat/Ihmiskeskeinen_teknologia/TIE-41306.html" target="plain">
+              Opinto-opas
+             </a>
+             )
+            </nobr>
+           </h2>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Lukuvuosi 2017 - 2018,
+					Periodit II-III
+           <br/>
+           Kysely 17.02.18-14.05.18
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Vastanneita yhteensä: 44
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           En anna palautetta vastanneita yhteensä: 1
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- The analysis part -->
+       <!-- ***************** -->
+       <table class="common">
+        <tbody>
+         <tr>
+          <th colspan="2" style="font-size: 13px;">
+           Opettajan vastaus opiskelijoiden antamaan toteutuskertapalautteeseen
+          </th>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <b>
+            Nykyinen vastaus
+           </b>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span class="prebr">
+            Thank you for making the effort to give feedback about the UXDE course! It's really nice to see such positive evaluations in general about the learning outcomes and increased capability for independent and critical thinking. From the teachers' perspective, this development was also evident during the course, so you can be satisfied about the work you've done.
+
+Your suggestions for improving the course are very helpful and will be taken into consideration. I've listed below the essential takeaways for what worked well and shouldn't be changed (marked with + sign), and for things to improve in the course (marked with - sign).
+
+Lectures:
++ Keep the number of lectures small and their content concise, and keep the possibility to watch them on video. 
++ Arrange interesting guest lecturers.
+- Content-wise, reduce the basic UX definitions, and increase the discussion of UX models with concrete and practical examples and guidelines. This seems to be the largest improvement need on the course content: the actual use and benefits of UX models remained somewhat vague and wasn't explained well.
+- During lectures, have also practical exercises related to the theoretical parts.
+- Ensure that the guest lecturers' slides are recorded on video (if they're using Mac).
+
+Weekly exercises:
++ Keep the focus on practical work related to the group assignment process.
+- Connect also the latter exercise sessions more tightly to the group assignment.
+- Choose a timeslot later than 8 am for the exercise sessions :)
+
+Group assignment:
++ Collect topics for group assignment from external customers/companies.
++ Form the groups based on a preference survey in the beginning of the course.
+- Make sure that the customers are from Tampere region (students definitely should not need to travel for course work).
+- Add a question about motivation (the grade you would be satisfied with) to help in forming balanced groups.
+- Give an example of the whole group assignment process to explain more clearly how experience-driven design process is carried out on this course, and what are the steps and expected schedule for the work.
+
+Exam:
+- Explain what it means to write a reflective essay.
+
+Overall, the focus on experience-driven design approach will be maintained, as it provides a certain kind of a framework and perspective towards UX design. The vision of designing for an experience is important to grasp, even if it may not be so easy to outline UX goals and follow the experience-driven process when doing practical work in the industry. UXDE aims to provide understanding of the theoretical aspects of UX, while giving tools to apply theory into practice. Next year, the connection between theory (especially UX models) and practice will hopefully be more clear. Thanks again and hopefully you'll be able to use what you've learned in practical work!
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- <table>
+			<tr><td><div class="line" ></div></td></tr>
+			<tr><td>Kyselyn tulosten julkisuus</td></tr>
+			<tr><td><div class="line" ></div></td></tr>
+		</table>-->
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th style="font-size: 13px;">
+           Kysymyskohtaiset palautteet
+          </th>
+         </tr>
+        </tbody>
+       </table>
+       <h1>
+        Monivalintakysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <table class="common">
+        <!-- NORMAL OBLIGATORY CHOICE QUESTIONS -->
+        <tbody>
+         <tr>
+          <th colspan="4" width="90%">
+           Yleisarvosana opintojaksolle ja sen toteutukselle.
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4.3
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           0.73
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           2.27
+          </td>
+          <td>
+           2.27
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           9.09
+          </td>
+          <td>
+           11.36
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           19.0
+          </td>
+          <td>
+           43.18
+          </td>
+          <td>
+           54.55
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           19.0
+          </td>
+          <td>
+           43.18
+          </td>
+          <td>
+           97.73
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           2.27
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           44.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista?
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4.4
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           0.69
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           11.36
+          </td>
+          <td>
+           11.36
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           16.0
+          </td>
+          <td>
+           36.36
+          </td>
+          <td>
+           47.73
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           22.0
+          </td>
+          <td>
+           50.0
+          </td>
+          <td>
+           97.73
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           2.27
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           44.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin.
+          </th>
+          <td class="empty" rowspan="9" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2.1
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           0.37
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä vähäinen opintopisteisiin nähden. (1)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           2.44
+          </td>
+          <td>
+           2.44
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Työmäärä sopiva opintopisteisiin nähden. (2)
+          </td>
+          <td>
+           35.0
+          </td>
+          <td>
+           85.37
+          </td>
+          <td>
+           87.8
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä liian suuri opintopisteisiin nähden. (3)
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           12.2
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           41.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- OPEN QUESTIONS !!! -->
+       <br/>
+       <h1>
+        Avoimet kysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Mikä onnistui opintojaksolla hyvin?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Kaipainen, Kirsikka,
+									21.06.2018
+           </span>
+           <br/>
+           All the process and content of the course were well organized and prepared so that students can work smoothly by the flow. Besides, practical work with actual company was also really good to learn.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           different evaluation methods. I really liked the way it went forward, especially with the more practical issues and exercise sessions
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           The methods those ere taught during the lecture
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           .
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           THE exercise sessions were really good. Also, making group according to survey was an excellent idea.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Paljon tutkimusviitteitä kalvoissa, niitä tuli luettua enemmän kuin yleensä ja varmasti syvensivät tietoja.
+
+Tulin olleeksi tekemisissä kurssihenkilökunnan enemmän kuin kursseilla yleensä ja he olivat erittäin avuliasta ja ystävällistä väkeä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvät ja todentuntuiset projektit. Mielekästä tehdä yhteistyötä oikeiden asiakkaiden kanssa. Tiiviit luennot ja tehokkaat harjoitukset.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssin vetäjät olivat mahtavia! Olitte innostavia, osasitte asianne, olitte aina tarvittaessa apuna, luentojanne oli ilo kuunnella ja harkoissa oli mukava käydä, vaikka olivatkin aamukasilta! Vierailuluennoitsijat olivat onnistuneita valintoja. Aamujumpat toimivat! Kiitos teille! :)
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           weekly exercises were awesome. It is good that we had a chance to do some group work during the exercise.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ryhmätyöt ja niiden ohjaus
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyö oli mielenkiintoinen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Exercise sessions
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Amount of lecturers, since the most important task was to put the theory into practice. Also the  idea of working on the project in the workshops. I liked that you made up the groups and we were able to vote which topic we liked the most. The exam was good in that it weighted on the project and what we learned from it. Good way to have us reflect on the work we did and learned from it.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           The concepts taught were well aligned with the practical assignment
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot mielenkiintoisia ja todella hyvä, että ne oli mahdollista katsoa etänäkin. Muutenkin plussaa joustavasta suoritusmahdollisuudesta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielestäni kokonaisuus oli hyvin rakennettu: Luentoja ei ollut liikaa ja oltiin löydetty hyvin tärkeimmät asiat. Harjoitukset tukivat harjoitustyön tekemistä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Real clients.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Projektityöaiheita oli paljon tarjolla ja useat niistä olivat hyvin kiintoisia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Workshopit oli tosi hyviä. Kertaus aina luennosta ja sitten konkreettista tekemistä oli hyvä tapa oppia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           We got well introduced to the concept of UX in general. We got insight on how to complete a UX design process step by step.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           ex sessions were very helpful.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           + Course was very well organized. Deadlines and other practicalities clearly available. 
++ First practice session was fun.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           The opportunity to work with real customers. Thanks to the university for this connection
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Miten kehittäisit opintojaksoa?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Kaipainen, Kirsikka,
+									21.06.2018
+           </span>
+           <br/>
+           It would be helpful if an example of the whole process is given to students.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Its alreadt pretty well developed
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           .
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           I would have added guest lecturer’s slides in the lecture videos.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           UX-mallit (CUE jne.) vaikuttivat hyödyllisiltä ja kiinnostavalta aiheelta mutta olisin toivonut enemmän konkretiaa niiden käyttämisestä.
+
+Kurssin informaatiosisällön yleinen rakenne jäi jotenkin vähän epäselväksi ja aika pitään en ollut ihan varma mitä kurssilla oikein oli tarkoitus korkealla tasolla oppia.
+
+Yhtäältä UX:n määrittely kurssin alussa lomittui aika paljon aiempien kurssien kanssa ja sen voisi ehkä jättää peruskurssien heiniksi, tässä vaiheessa asian pitäsi olla jo hallussa. 
+
+Toisaalta tuntui että keskityttiin paljon joihinkin tiettyihin menetelmiin  (esim. EDD) yleisempien periaatteiden jäädessä vähän vähemmälle. Yliopistokurssilta kuitenkin odottaisin yleisempää ja laajempaa näkökulmaa enkä niin paljon tämän hetken kuumimpia virtauksia. UX:n puolella tämä on tietysti hankalampaa kun kaikki kehittyy jatkuvasti ja konsensusta ja standardeja ei vielä kauheasti ole. Mutta esimerkiksi juuri UX-mallit yleisesti, emootiot ja tunteet ja niiden käyttö yleisesti ovat juuri sitä yleisempää näkökulmaa mitä toivoisin.
+
+Näihin liittyy mielestäni yleisempikin ongelma UX-pääaineessa. Kurssit eivät oikein muodosta selkeää jatkumoa ja niitä on välillä vaikea erotella toisistaan. Esimerkiksi omaan silmääni tämän kurssin ja Human-Centered Product Developmentin merkittävin ero oli se että tässä oli EDD ja siellä Lean.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Sähköinen tentti kaiken projektityöskentelyn, luentojen ja harjoitusten päälle tuntuu raskaalta. On epätasapainoista, että toisista projektipainotteisista kursseista saa 5op nimenomaan projektin tekemisestä; tällä kurssilla projekti on itsessään työläs ja monivaiheinen, jonka päälle ylimääräinen tentti tuo vain liikaa työtunteja, siitä on näin myöhään (toukokuussa) vaikea oppia enää mitään uutta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jotkin harjoitustyöaiheet olivat tarkemmin määriteltyjä kuin toiset, mutta se ei välttämättä ole huono asia. (Oli mahtavaa, että työt tehtiin ulkopuolisille.) Tätä voisi täsmentää ja korostaa kurssilla, että aihe voi elää paljonkin, ja miettiä, kuinka paljon toteutuksen vapautta toivotaan kurssilaisilta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Would be good to provide and point on the general logic and structure of the content, some general overview of the UX methods. It was not very clear from the lecture slides
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           luennot ja harjoitukset voisi yhdistää siten, että luentojen yhteydessä tehtäsiin aihetta konkretisoivia harjoituksia. Nyt jäivät vähän teoriapainotteisiksi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Viikkoharjoitusten ajankohta oli ainakin itselleni liian aikainen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Fine now.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           We only worked on the project in the first 3 workshops, after that we mainly made presentations after short studying on topics.It would have been better to work more on the projects during the workshops. There also should be something that can be done about group members that do not carry their load. In the end, they get the points and credits for work they did not do, while other team members carry on their weight and correct their mistakes.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           I would be great if the clients for the assignments are from Tampere region, so that students can easily and more frequently be in touch with them.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ryhmätyön ryhmiin jakautuminen voisi perustua arvosanatavoitteisiin. Lusmujen kanssa on aika raskasta tehdä töitä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tentistä olisi kiva saada jonkinlainen esimerkkitentti. Vaikka asioita lukee hyvin, voi terminologiassa tulla vastaan haasteita. Varsinkin Reflective Essay oli terminä sellainen, että olisi toivonut tästä kurssin aiheeseen liittyen esimerkki, kuinka sellainen rakennetaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           The exercise groups were not really useful for the project development. Also, the content during the lectures seemed random. It was hard to identify connections.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kenties lisäisin opintopistemäärää hieman (ja tarvittaessa lisää pakollisia suorituksia), sillä projektityölle olisi mielellään antanut enemmänkin aikaa sen kiinnostavuuden johdosta, mutta päällekkäisten kurssien vuoksi se ei ollut mahdollista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyö saattoi olla pikkaisen liian monimutkainen. Yksinkertaistamalla siitä saattaisi saada enemmän irti.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           I think there needs to be a clearer connection on how the topics in the lectures are connected. It took me a lot of time, when I was studying for the exam, to draw a logical conclusion on how everything is connected. Talking with colleagues, they felt the same thing. 
+
+How can I explain this. In the slides, there should be clear explanations on why a UX model is used for example. Like, "UX models guide the design this and that way...". This can be too abstract though at times, it should be explained in more specific detail. Like the benefits of using a UX model. There was a lot of abstractness in the slides when we had UX models (I keep using the models because it is the example i remember more clearly). I think that this abstractness causes the content to feel disconected as i tried to explain a bit above. 
+
+Other than that, I learned a lot!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           I'd limit the whole course within one period. It makes the follow up of assignments and exam more easier for students.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           + Practice sessions could have been more useful if they would have been about putting theory into practice instead of students presenting theories/methodologies.
++ Exam could have been after the lectures
++As an overall I think course has quite ambitious goals as it is combining practice, theory and presenting the project work in an academic format (perhaps for our group, for me at least, getting the project work done on time got too much emphasis at the expense of what we were supposed to learn).
++Group selection could have factored in something like motivation/"available time for the course"
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tiimityön sijasta henkilökohtaisempi suorite.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           The theoretical part could have been more intense because the course content did not differ much from all other courses in TUT in UX. Students work on different projects during them, but all else is the same. Besides, when we were giving mid presentation, the teacher did not comment much while some prentations were really poor and required commenting. It felt like wasting of all listeners' time :(
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <!-- STUDENT RESPONSES -->
+       <br/>
+       <br/>
+      </form>
+      <br/>
+      <br/>
+     </div>
+     <div id="footer">
+      <span class="about" id="footerInfoLink">
+       Tietoa sovelluksesta
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div aria-describedby="footerInfobox" aria-labelledby="ui-id-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable" role="dialog" style="display: none; position: absolute;" tabindex="-1">
+   <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+    <span class="ui-dialog-title" id="ui-id-1">
+    </span>
+    <button aria-disabled="false" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="close">
+     <span class="ui-button-icon-primary ui-icon ui-icon-closethick">
+     </span>
+     <span class="ui-button-text">
+      close
+     </span>
+    </button>
+   </div>
+   <div class="ui-dialog-content ui-widget-content" id="footerInfobox">
+    Kaiku - Tampereen yliopisto
+			Sovelluksen versio: 1.15.0 (10.3.2020)
+   </div>
+   <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;">
+   </div>
+  </div>
+ </body>
+</html>

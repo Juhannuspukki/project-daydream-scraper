@@ -1,0 +1,747 @@
+<html lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Kaiku
+  </title>
+  <link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css"/>
+  <script src="/kaiku/javascript/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/kaiku.js" type="text/javascript">
+  </script>
+  <link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css"/>
+  <link href="/kaiku/style/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="hidden" id="pop-up">
+   <img alt="hourclass" src="/kaiku/images/hourglass_small.png"/>
+   <br/>
+   Raportti latautuu...
+  </div>
+  <div id="outer">
+   <div id="page">
+    <div id="banner">
+     <img alt="Kaiku" src="/kaiku/images/Logo_TAU_FI.png" style="height: 50px;"/>
+     <span class="page_name">
+      Kaiku
+      <br/>
+     </span>
+     <div id="banner_inner_right">
+      <nobr>
+       <a href="https://www.tut.fi/pop">
+        POP
+       </a>
+       |
+       <a href="https://www.tut.fi/tutka">
+        TUTKA
+       </a>
+      </nobr>
+      <span class="user_name">
+       Jere Laine
+       <br/>
+      </span>
+      <br/>
+      <a href="/kaiku/logOut/logOut">
+       Kirjaudu ulos
+      </a>
+     </div>
+    </div>
+    <div id="menu" style="min-height: 15px;">
+     <nobr>
+      <a href="/kaiku/kaiku/mainpage">
+       Etusivu
+      </a>
+      <a href="/kaiku/studentMainPageSearch/feedback">
+       Anna Palautetta
+      </a>
+      <a class="selected" href="/kaiku/examineFeedbackPage/feedback">
+       Palautteet
+      </a>
+      <a href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf" style="font-size: 12px;">
+       ?
+      </a>
+      <a href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&amp;PREVIOUS_VIEW=feedbackSummaryCourseQueryResults" style="font-size: 10px;">
+       in English
+      </a>
+     </nobr>
+    </div>
+    <div id="content">
+     <div id="inner_content">
+      <style>
+       button {
+		white-space: nowrap;
+	}
+      </style>
+      <br/>
+      <form action="/kaiku/examineFeedbackPage/feedback" id="pageInformation" method="post">
+       <table>
+        <tbody>
+         <tr>
+          <td colspan="3">
+           <a href="/kaiku/examineFeedbackPage/feedback?action=landingPageLink">
+            Opintojaksojen palautteet
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=depOrCoursegroupLink&amp;depOrCoursegroupId=10103">
+            Tietotekniikka
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=courseImplementationLink&amp;chosenCourseCode=MAT-01310">
+            MAT-01310
+				Insinöörimatematiikka A 3
+           </a>
+           →
+		
+			Kysely 27.02.17-10.07.17
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           <br/>
+           <h2>
+            <nobr>
+             MAT-01310
+				
+					Insinöörimatematiikka A 3
+					
+					(
+             <a href="https://www.tut.fi/opinto-opas/wwwoppaat/opas2016-2017/perus/aineryhmat/Matematiikka/MAT-01310.html" target="plain">
+              Opinto-opas
+             </a>
+             )
+            </nobr>
+           </h2>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Lukuvuosi 2016 - 2017,
+					Periodit III
+           <br/>
+           Kysely 27.02.17-10.07.17
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Vastanneita yhteensä: 279
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           En anna palautetta vastanneita yhteensä: 24
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- The analysis part -->
+       <!-- ***************** -->
+       <table class="common">
+        <tbody>
+         <tr>
+          <th colspan="2" style="font-size: 13px;">
+           Opettajan vastaus opiskelijoiden antamaan toteutuskertapalautteeseen
+          </th>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <b>
+            Nykyinen vastaus
+           </b>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span class="prebr">
+            Iso kiitos palautteesta. Sitä olikin melko paljon, 27 sivua! En suoraan kommentoi yksittäisiä asioita vaan keskityn kysymysjärjestyksessä niihin palautteisiin, joista nousi enemmän kommentteja. 
+
+Hyvin onnistui: 
+Useissa palautteissa mainittiin MatLab harjoittelun ja siihen liittyvän tentin, esimerkkien ja tehtävien onnistuneen hyvin. Muutenkin laskuharjoitukset sekä STACKit että perinteiset saivat paljon kiitosta. Luennot ja opettajana innostuneisuus ja hyvä ilmapiiri oli myös useasti mainittu ja luonnollisesti piristi kovasti palautteen lukuhetkeä (hetkijä). Kurssille oli tuotu lisää käytännön läheisyyttä differentiaaliyhtälöiden muodostamisen kautta ja siitä myös pidettiin. Myös viikkokertaukset oli mainittu useammassa positiivisessa kommentissa.  
+
+Harkat ja kurssi oli haastava/vaikea, mutta se haastavuus toimi myös palkitsevana. Matematiikka onkin siinä mielessä mahtava, että uuden opettelu ja oppiminen on aina haastavaa ja on käytettävä aikaa ja aivoja, mutta kun asian oppii, niin se on hyvin palkitsevaa ja antaa ison ilon ja onnen tunteen. Sama kommentti tuli myös MatLabin oppimiseen liittyen, alkuun harmitti, mutta kun oli riittävästi harjoitellut, niin huomasi homman hyödyllisyyden. Materiaalia ja esimerkkejä oli tarjolla runsaasti. 
+
+Kehitettävää: 
+Toisin kuin edellisen kappaleen viimeisessä lauseessa, niin osalle opiskelijoista materiaaleja ja esimerkkejä oli vieläkin liian vähän. Luentojen tahtia pyydettiin rauhoittamaan hieman ja työmäärää kompensoimaan toivottiin enemmän pisteitä. Työmäärän kompensointiin IMA1 ja IMA2 opintojaksoihin verrattuna olimme ajatelleet sitä, että nyt tehtäviä voi olla enemmän kun rinnalla ei ole jumppaa eikä MatLabin alkeita.
+
+Kurssin sisältöön liittyen tuli palaute, jossa kritisoitiin ja pyydettiin vastausta siihen, miksi soveltaminen on insinöörimatematiikan kurssilla niin pienessä roolissa ja mekaaninen laskeminen isossa. Tämä johtuu siitä, että ennen kuin ihmisen on mahdollista kehittää itse sovelluksia ja mallintaa asioita on sekä ilmiö, että ratkaisun mahdollistama rakenne ymmärrettävä hyvin ja syvällisesti. Pelkästään soveltamista harjoittelemalla jää prosessi melko vajaaksi. Kun ymmärretään myös se matemaattinen tausta, niin on mahdollisuuksia soveltaa samaa rakennetta myös uusiin tilanteisiin kehittäen samalla uutta. On mahdotonta käyttää sellaista apuvälinettä uuden kehittämisessä, josta ei ole kuullut tai jota ei ymmärrä. Kun opiskelut etenevät, niin sovelluksia tulee sitten ammattiaineissa enemmän. Jos kursseilla olisi enemmän aikaa, niin tietenkin ottaisimme myös sovelluksia enemmän, mutta vaikka tällä kurssilla käsitellään vain muutama perusintegrointimenetelmä (kaikki jipot ja vaikeat vääntämiset tehdään nykyään MatLabilla) sekä sarjateorian ja differentiaaliyhtälöiden alkeet, niin 7 viikossa näiden käsittely ja omaksuminen on työlästä. Nämä kaikki ovat kuitenkin perustyökaluja jokaisella diplomi-insinöörille.  
+
+Tehtäviä oli liian paljon ja liian kiire oli. Tämä oli totta! Jatkossa pyrimme kaikin keinoin palauttamaan pidemmät harjoitukset ja kehittämään myös muita keinoja, joilla opiskelijoille tulee enemmän tukea laskemiseen. Tässä vain jatkuvasti vähenevät resurssit ovat ongelmana. Tehtävien määrää ei voi enää vähentää, nyt oli jo oppimisen kannalta liian vähän tehtäviä.           
+
+Olin aika yllättynyt, kun muutamassa palautteessa pidettiin kurssia liian teoreettisena, kun tämä kuitenkin on niitä laskennallisempia kursseja mitä on. Mutta asia on ensimmäisellä kerralla vaikea ja vaatii todella työntekoa. Ennen luentoja opiskelijan pitäisi lukea monisteesta tai muualta seuraavana tuleva asia itse läpi. Näin luennon aikana pystyisi sisäistämään enemmän. Jos asia tulee ensimmäisen kerran luennoilla niin siinä yhdessä kokonaisuudessa (2h luennot) ehditään käymään asia jo pitkälle. Joku ehdotti harjoitusten ja luentojen suhteen (nyt oli 6:2) muuttamista. Tätä kannattaisivat varmasti useat, mutta ongelma tuleekin sitten Sali- ja opettajaresurssien puolelta. 
+
+Hei Hei HEI!!! Jos assistentin tai käytänteiden kanssa on ongelmia, niin ottakaa HETI yhteyttä luennoitsijaan! Arvatkaa tuliko melkein itku, kun useasta palautteesta luin harkoissa olleen liian tiukkaa käytäntöä joissain asioissa. Mulle tärkeää on se, että harkat on aina oppimistilanne ja ilmapiiri on hyvä. Assarin ja opettaja työ on ohjata ja opettaa, ei nipottaa! Pidin assareiden kanssa viikottain palaverin ja jos vain joku olisi tuonut minun tietooni ongelmia, niin olisi heti puuttunut ja vaatinut käytänteiden muuttamista. Jatkossa OTTAKAA AINA HETI YHTEYTTÄ vastuuopettajaan!!! 
+
+EXAM-tentistä ja MatLabin käytöstä tuli paljon palautetta myös kehitettävää osiossa ja niitä on tarkoitus kehittää paljon. Pois niitä ei enää jätetä, koska näin saamme enemmän myös soveltamista mukaan opintojaksoon.
+
+Festian iso Sali ei saanut kiitosta. Erityisesti MatLab näkyi siellä heikosti. Salin vaihto ei onnistu, sillä se on ainoa riittävän suuri sali. Näkyvyyttä yritän miettiä ensi vuotta varten. 
+
+Harjoitukset: 
+Useille opiskelijoille harjoitusjärjestelmä oli hyvä ja toimiva. Mutta muutamia isoja ongelmia myös oli ja niistä kirjoitinkin jo tuolla kehitettävää osioissa. MatLabia toivottiin hyödynnettävän enemmän ja kaikki ratkaisut toivottiin käytävän läpi. Aika ei näihin valitettavasti riittänyt. Joitain hyviä ehdotuksia oli, joita pitää miettiä ja puntaroida. 
+
+EXAM-tentti 
+IMA2:lla on kaikille pakollisena MatLabin alkeet. Joten kenellekään ei pitäisi MatLab tulla enää IMA3:lla uutena. Sellaisia kommentteja oli muutama, jossa MatLabin kurssia toivottiin ennen IMA3:sta MatLabin opetusta. Samoin MatLabin alkeisiin järjestetään joka vuosi (myös viime vuonna) tilaisuuksia, joissa henkilö opettaa käyttöä alusta pitäen. Näissä ei vaan moni käynyt. Tämän tyyliset kommentit, joita oli muutamia, nimittäin ihmetyttivät minua kovasti. Jatkossa on minun IMA2:lla korostettava enemmän, että ohjelmaa tullaan käyttämään matematiikan lopuilla kursseilla ja myös ammattiaineissa. MatLabin osaaminen kuuluu jokaisen diplomi-insinöörin osaamistavoiteisiin. Mutta palautteesta ja kokemuksesta opitaan. Ensi vuonna MatLabia korostetaan jo aiemmin ja myös opetuksia. Samoin IMA2:lla tulee pakollisia MatLab elementtejä muitakin alkeiden lisäksi. Alkeita parannetaan myös. Ei kenellekään ole etu, jos opiskelijat saavat MatLabista traumoja, jatkossa on opetus tehtävä pidemmällä aikavälillä. 
+
+EXAM-tentti jakoi porukan aika lailla kahteen leiriin. Jatkossa sitä kehitetään ja apuna on nämä teidän kirjoittamat kommentit: aika, tehtävien määrä ja tasalaatuisuus.  Valitettavasti joihinkin asioihin ei voida vaikuttaa (suttupaperit). 
+
+Yhdessä palautteessa ihmeteltiin, miksi matematiikassa opetellaan muutakin kuin soveltamista. Pelkkä valmiiden asioiden soveltaminen riittää insinöörille, mutta diplomi-insinöörin on pystyttävä yhdistelemään erilaisia teorioita ja luomaan uutta samalla varmistuen sen oikeellisuudesta. Matematiikan opiskelu ja oppiminen, loogisten struktuurien käsittely, yhdistely ja uuden asian johtaminen antavat mahdollisuuksia myös tällaiseen kehittymiseen. Sovelluksetkin ovat tärkeitä ja niissä oli EXAM-tentilla iso rooli. EXAM-tentin tarkoitus oli mitata differentiaaliyhtälöiden muodostamisen osaamista, jossa MatLabia hyödynnettiin ratkaisussa. Jatkossa korostan tätä asiaa. Nyt moni mielti asiaa vain MatLab-tenttinä, josta ei ollut kyse. 
+
+Differentiaaliyhtälömoduli sai kiitosta ja korjausehdotuksia. Se oli ehkä liian vaikea. Nyt sitä laajennetaan ja pyritään muuttaman sellaiseksi, että se johdattaa oppimista pienemmin askelin eteenpäin. Samoin yrityskertojen rajoitus poistetaan. 
+
+Kiitos palautteista ja kommenteista!! Terhi
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- <table>
+			<tr><td><div class="line" ></div></td></tr>
+			<tr><td>Kyselyn tulosten julkisuus</td></tr>
+			<tr><td><div class="line" ></div></td></tr>
+		</table>-->
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th style="font-size: 13px;">
+           Kysymyskohtaiset palautteet
+          </th>
+         </tr>
+        </tbody>
+       </table>
+       <h1>
+        Monivalintakysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <table class="common">
+        <!-- NORMAL OBLIGATORY CHOICE QUESTIONS -->
+        <tbody>
+         <tr>
+          <th colspan="4" width="90%">
+           Yleisarvosana opintojaksolle ja sen toteutukselle.
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           3.42
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           0.86
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           6.0
+          </td>
+          <td>
+           2.15
+          </td>
+          <td>
+           2.15
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           31.0
+          </td>
+          <td>
+           11.11
+          </td>
+          <td>
+           13.26
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           97.0
+          </td>
+          <td>
+           34.77
+          </td>
+          <td>
+           48.03
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           120.0
+          </td>
+          <td>
+           43.01
+          </td>
+          <td>
+           91.04
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           18.0
+          </td>
+          <td>
+           6.45
+          </td>
+          <td>
+           97.49
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           7.0
+          </td>
+          <td>
+           2.51
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           279.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista?
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           3.48
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           0.88
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           6.0
+          </td>
+          <td>
+           2.29
+          </td>
+          <td>
+           2.29
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           24.0
+          </td>
+          <td>
+           9.16
+          </td>
+          <td>
+           11.45
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           88.0
+          </td>
+          <td>
+           33.59
+          </td>
+          <td>
+           45.04
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           109.0
+          </td>
+          <td>
+           41.6
+          </td>
+          <td>
+           86.64
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           23.0
+          </td>
+          <td>
+           8.78
+          </td>
+          <td>
+           95.42
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           12.0
+          </td>
+          <td>
+           4.58
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           262.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin.
+          </th>
+          <td class="empty" rowspan="9" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2.19
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           0.43
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä vähäinen opintopisteisiin nähden. (1)
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           1.56
+          </td>
+          <td>
+           1.56
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Työmäärä sopiva opintopisteisiin nähden. (2)
+          </td>
+          <td>
+           200.0
+          </td>
+          <td>
+           78.12
+          </td>
+          <td>
+           79.69
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä liian suuri opintopisteisiin nähden. (3)
+          </td>
+          <td>
+           52.0
+          </td>
+          <td>
+           20.31
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           256.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- STUDENT RESPONSES -->
+       <br/>
+       <br/>
+      </form>
+      <br/>
+      <br/>
+     </div>
+     <div id="footer">
+      <span class="about" id="footerInfoLink">
+       Tietoa sovelluksesta
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div aria-describedby="footerInfobox" aria-labelledby="ui-id-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable" role="dialog" style="display: none; position: absolute;" tabindex="-1">
+   <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+    <span class="ui-dialog-title" id="ui-id-1">
+    </span>
+    <button aria-disabled="false" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="close">
+     <span class="ui-button-icon-primary ui-icon ui-icon-closethick">
+     </span>
+     <span class="ui-button-text">
+      close
+     </span>
+    </button>
+   </div>
+   <div class="ui-dialog-content ui-widget-content" id="footerInfobox">
+    Kaiku - Tampereen yliopisto
+			Sovelluksen versio: 1.15.0 (10.3.2020)
+   </div>
+   <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;">
+   </div>
+  </div>
+ </body>
+</html>

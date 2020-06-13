@@ -1,0 +1,657 @@
+<html lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Kaiku
+  </title>
+  <link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css"/>
+  <script src="/kaiku/javascript/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/kaiku.js" type="text/javascript">
+  </script>
+  <link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css"/>
+  <link href="/kaiku/style/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="hidden" id="pop-up">
+   <img alt="hourclass" src="/kaiku/images/hourglass_small.png"/>
+   <br/>
+   Raportti latautuu...
+  </div>
+  <div id="outer">
+   <div id="page">
+    <div id="banner">
+     <img alt="Kaiku" src="/kaiku/images/Logo_TAU_FI.png" style="height: 50px;"/>
+     <span class="page_name">
+      Kaiku
+      <br/>
+     </span>
+     <div id="banner_inner_right">
+      <nobr>
+       <a href="https://www.tut.fi/pop">
+        POP
+       </a>
+       |
+       <a href="https://www.tut.fi/tutka">
+        TUTKA
+       </a>
+      </nobr>
+      <span class="user_name">
+       Jere Laine
+       <br/>
+      </span>
+      <br/>
+      <a href="/kaiku/logOut/logOut">
+       Kirjaudu ulos
+      </a>
+     </div>
+    </div>
+    <div id="menu" style="min-height: 15px;">
+     <nobr>
+      <a href="/kaiku/kaiku/mainpage">
+       Etusivu
+      </a>
+      <a href="/kaiku/studentMainPageSearch/feedback">
+       Anna Palautetta
+      </a>
+      <a class="selected" href="/kaiku/examineFeedbackPage/feedback">
+       Palautteet
+      </a>
+      <a href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf" style="font-size: 12px;">
+       ?
+      </a>
+      <a href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&amp;PREVIOUS_VIEW=feedbackSummaryCourseQueryResults" style="font-size: 10px;">
+       in English
+      </a>
+     </nobr>
+    </div>
+    <div id="content">
+     <div id="inner_content">
+      <style>
+       button {
+		white-space: nowrap;
+	}
+      </style>
+      <br/>
+      <form action="/kaiku/examineFeedbackPage/feedback" id="pageInformation" method="post">
+       <table>
+        <tbody>
+         <tr>
+          <td colspan="3">
+           <a href="/kaiku/examineFeedbackPage/feedback?action=landingPageLink">
+            Opintojaksojen palautteet
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=depOrCoursegroupLink&amp;depOrCoursegroupId=10604">
+            Automaatio- ja konetekniikka
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=courseImplementationLink&amp;chosenCourseCode=ASE-2411">
+            ASE-2411
+				Johdatus systeemien hallintaan
+           </a>
+           →
+		
+			Kysely 14.03.17-28.03.17
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           <br/>
+           <h2>
+            <nobr>
+             ASE-2411
+				
+					Johdatus systeemien hallintaan
+					
+					(
+             <a href="https://www.tut.fi/opinto-opas/wwwoppaat/opas2016-2017/perus/aineryhmat/Systeemitekniikka/ASE-2411.html" target="plain">
+              Opinto-opas
+             </a>
+             )
+            </nobr>
+           </h2>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Lukuvuosi 2016 - 2017,
+					Periodit III-IV
+           <br/>
+           Kysely 14.03.17-28.03.17
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Vastanneita yhteensä: 22
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           En anna palautetta vastanneita yhteensä: 0
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- The analysis part -->
+       <!-- ***************** -->
+       <table class="common">
+        <tbody>
+         <tr>
+          <th colspan="2" style="font-size: 13px;">
+           Opettajan vastaus opiskelijoiden antamaan toteutuskertapalautteeseen
+          </th>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <b>
+            Nykyinen vastaus
+           </b>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span class="prebr">
+            Kiitos kattavasta palautteesta! Moni on vaivautunut kertomaan tuntemuksistaan ja kokemuksistaan työhön liittyen. Alla on opettajan koonti palautteista seuraavasti lokeroituna: 1) Positiiviset kokemukset, 2) Negatiiviset kokemukset, 3) Kehitysehdotukset.
+
+
+1) Positiiviset kokemukset:
+
++ Työn lopussa järjestetty lyhyt opetustuokio, sekä siellä saatu henkilökohtainen ohjaus ja palaute. Opetustuokion ohjaava ote ja keskustelu opiskelijoiden kanssa. Epäselviin kysymyksiin saadut vastaukset. 
+
++ Teorian ja käytännön yhdistäminen
+
++ Mielenkiintoinen työ, mieleenpainuvuus ja havainnollisuus, opettava työ
+
++ Käytännönläheisyys ja oman kädenjäljen näkyvyys, tekemispainotteisuus
+
++ Sopiva kuormitus
+
++ Menetelmän vapaa valinta
+
++ Testausosuus, verrokkitulosten näkeminen ja vertailu omiin vastaaviin
+
++ Häiriöiden vaikutusten demoaminen
+
+
+2) Negatiiviset kokemukset:
+
+- Joillakin aikatauluongelmia esimerkiksi siitä syystä, että työ tuli yllättäen. --&gt; Opettajan vastaus: Palautteesta ei valitettavasti selvinnyt, miksi jotkut kokivat työn tulleen yllättäen. Työohjeen ensimmäinen versio jaettiin yli kaksi viikkoa ennen dedistä, ja lopullinen versio 5.2.2017. Työn dedis oli 20.2.2017, jolloin lopullinen ohje oli saatavilla 15 vrk ennen dedistä. Valitettavasti aiemmin työohjetta ei olisi ollut mahdollista antaa, koska harjoitustyön laite saapui vasta helmikuun alussa. Jatkossa harkitaan, pitääkö työlle antaa enemmän aikaa. Opettajaa mietityttää myös se, tavoittaako kurssilla käytetyt viestintävälineet (POP ja lähiopetustilanteet) kaikkia opiskelijoita. Jos ei tavoita, niin mistä syystä ei tavoita.
+
+- Suora lainaus: ”Eli ylipäänsä harjoituksissa voitaisiin enemmän tehdä yhdessä eikä vain katsottaisi lävitse valmiita mallivastauksia, koska tällöin ei opi samalla tavalla.” --&gt; Opettajan vastaus: Tällä toteutuskerralla harjoitukset on pyritty toteuttamaan siten, että valmiita tai lähes valmiita mallivastauksia, simulaattoreita ja koodinpätkiä hyödynnetään mahdollisimman paljon. Näin toimitaan muun muassa siksi, ettei arvokasta lähiopetusaikaa kuluteta simulaattoreiden tekoon, vaan oleellisten ja opettajan huolellisesti suunnittelemien asioiden läpikäymiseen, niistä keskusteluun, sekä kenties yllättävienkin ja usein vaikeiksi koettujen asioiden taustoittamiseen ja niihin panostamiseen. Käänteinen opetus on yksi keino vastata opiskelijan tarpeeseen, jota vanhalla kurssilla joitain vuosia sitten käytettiin. Uuden kurssin uudelle toteutuskerralle käänteistä tapaa ei valitettavasti resurssien vähyyden takia pystytty toteuttamaan. 
+
+- Epäsopiva kuormitus
+
+
+3) Kehitysehdotukset:
+
++ Toinen vastaavankaltainen työ, tai harjoitustöitä ylipäänsä lisää
+
++ Häiriöiden huomiointi
+
++ Omatoiminen QUBE-kokeilu
+
++ Lisää vastaavankaltaisia laitteita, joilla pääsee tekemään käytännön insinöörityötä
+
++ Suora lainaus: ”Ehkä juuri alkuun pääsemiseen voisi kehittää hieman enemmän apuja, jotta oleellisempien asioiden tutkimiseen voisi panostaa enemmän.” --&gt; Opettajan vastaus: Ymmärrän pointin. Alkuun pääseminen ja sopivan polun löytäminen voivat olla haastavia etenkin käytännön töissä. Kuitenkin tällaiset haasteet ovat autenttisia insinöörin arjessa. Haasteiden voittaminen on oleellinen ja harkittu tavoite, mikä vie yksilön kehitystä eteenpäin.
+
+Yt
+-VP-
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- <table>
+			<tr><td><div class="line" ></div></td></tr>
+			<tr><td>Kyselyn tulosten julkisuus</td></tr>
+			<tr><td><div class="line" ></div></td></tr>
+		</table>-->
+       <!-- OPEN QUESTIONS !!! -->
+       <br/>
+       <h1>
+        Avoimet kysymykset
+       </h1>
+       <!-- USER DEFINED OPEN QUESTIONS -->
+       <span class="header">
+       </span>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Kerro mielipiteesi kurssin harjoitustyöstä. Arvioi myös harjoitustyön kuormittavuutta. Miten kehittäisit harjoitustyötä?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Pyrhönen, Veli-Pekka,
+									07.04.2017
+           </span>
+           <br/>
+           Harjoitustyö oli mielestäni hyvä ja käytännöllinen tapa opettaa kurssin asioita. Tekemällä työn pääsi konkreettisesti käsiksi systeemien hallintaan, mikä on hyvää vaihtelua pelkille luennoille ja harjoituksille. Systeemien hallinnan asiat ovat usein aika vaikeita sisäistää ellei niitä pääse ikinä soveltamaan käytännössä.
+
+Harjoitustyö ei ollut ollenkaan liian vaikea tai liian helppo. Sen tekemisessä sai käyttää aivoja, mutta sen parissa ei kuitenkaan tarvinnut turhautua, ja viettää pitkiä öitä, kuten joidenkin muiden töiden parissa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyö oli kiva lisä kurssille
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyö oli monella tapaa opettavainen. Kuormittavuus oli mielestäni sopiva, mutta vaikutti siltä, että joihinkin työaiheisiin löytyi toisia paremmin materiaaleja ja toimintamenetelmiä kurssin aineistoista. Kun käytettäviä menetelmiä saa valita vapaasti, työltä vaadittavat tavoitteet on tärkeää määritellä tarkasti ja selkeästi. Tämä toki jo suurimmilta osin toteutuikin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Oli tosi hyvä päästä viimein oikeasti säätään jotain. Aikaa tähän ei loppuviimeks mennyt kuin muutama tunti, jotein ei tämä ainakaan liian raskas ollut. Olisi ehkä ollut jopa hauskaa toteuttaa vielä toinen vaihe tähän, eli siis jatkaa samaa työtä vielä vähän monimutkaisemmaksi. (Heiluri? Tai sitten vaan parannella ominaisuuksia integraattorilla ym.)
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyö tuli yllättäen ja melko kiireisellä aikataululla, joten tuolloin kuormitti melko paljon. Viikko tai kaksi lisää tekoaikaa ja kerta tai pari ylimääräistä ohjauskertaa. Muuten työ varsin mainio ja opettavainen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           QUBE:n käyttäminen harjoitustyössä oli positiivista. Aiemmin ei ole harjoitustöissä ollut mahdollisuutta nähdä miten säätöratkaisu toimii käytännössä. HT havainnollisti siis hyvin todellisten toimilaitteiden epäideaalisuuksia ja rajoitteita säätösuunnittelussa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pidin harjoitustyöstä ja mielestäni se on erittäin hyvä osa kurssia. Työ ei ollut liian hankala varsinkin sen takia koska siihen oli saanut hyvät pohjat viikkoharkoista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyö oli ok ja kuormittavuuskin sopiva varsinkin, jos olisi päässyt harkkoihin kysymään neuvoja. Harkkatyössä olisi voinut ehkä jopa verrata kahta erilaista säätötapaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Itse harjoitustyö hyvä ja opettava, mutta jos mahdollista, olisi kiva pystyä testaamaan enemmän itse kuutioita.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyö oli mielenkiintoinen ja tuntui myös hyödylliseltä. Työmäärä vaikutti melko sopivalta, tosin alkuun pääseminen oli melko hankalaa ja itselläni ainakin "valaistuminen" tapahtui vasta päivää ennen palautusta, joten hienosäätö jäi vähäiseksi. Ehkä juuri alkuun pääsemiseen voisi kehittää hieman enemmän apuja, jotta oleellisempien asioiden tutkimiseen voisi panostaa enemmän.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyö oli mielenkiintoinen ja testaus kruunasi koko homman. Aikaa ei kulunut paljoa, n. 5 tuntia maksimissaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Henkilökohtaisesti pidin harjoitustyöstä ja sen tekemisestä. Joitakin kurssilla opittuja asioita pääsi soveltamaan sen yhteydessä, minkä koin oppimisen kannalta hyödylliseksi.
+
+Kuormittavuus ei mielestäni ollut liiallinen, mutta huono ajoitus aiheutti sen, että en pystynyt tekemään työtä niin hyvin kuin olisin halunnut. "Normaalissa" tilanteessa en kokisi harjoitustyötä liian työlääksi.
+
+Harjoitustyön tekemiseen olisi mielestäni tarkoituksenmukaista olla vielä enemmän suoraan siihen soveltuvia työkaluja. Opittujen asioiden soveltaminen on toki oppimisprosessin kannalta hienoa, mutta alkuun olisi mukava päästä hieman helpommalla. Ongelmani voivat tietenkin johtua ajallisen panostuksen rajallisuudesta, mutta ohjauksen suunnittelu alusta asti analyyttisin keinoin osoittautui itselleni liian vaikeaksi. Kelvolliseen lopputulokseen pääsi kyllä kokeellisinkin menetelmin, mutta se ei mielestäni ollut erityisen opettavaista. Jos tätä aloituskynnystä saataisiin madallettua, työ tukisi oppimista mielestäni paremmin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyö oli erittäin mukava, missä pääsi oikeasti itse miettimään ongelmaa ja ratkaisua ja tekemään insinöörityötä.
+Harjoitustyö sellaisenaan oli hyvä. Itse kehittäisin harkkoja enemmän TODO-tyyppisiksi ilman valmiita skriptejä. Tällöin oppi menisi paremmin perille. Harkoissa käydyn tausta matskun ja esimerkit voisi antaa POPissa ja sivuta varsinaisella luennolla demoten.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyö oli hyvä lisä kurssille, koska pääsi toteuttamaan asioita käytännössä. Harjoitustyön kuormittavuus oli sopiva. Harjoitustyötä olisi hyvä päästä itse testaamaan tekemisen aikana.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Härjoitustyö oli mielekäs, kun pääsi kokeilemaan kurssin oppisisällön asioita käytännössä. Työ oli varmasti monelle myös ensimmäinen säätötekniikkaan liittyvä laajempi harjoitustyö. Kuormitus oli mielestäni sopiva, meillä kului parini kanssa työhön noin kahden illan panos (n.6h). Mielestäni harjoitustyön tavoite ja ohjeet olivat selkeitä ja mielestäni kokonaisuus oli sellaisenaan toimiva.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           - Kurssin harjoitustyö oli käytännönläheinen, mikä on ison plussan arvoinen.
+- Minusta olisi myös hyödyllistä, jos jossakin harjoituksessa demottaisiin kädestä pitäen kuinka vastaavanlainen harjoitustyö tehtäisiin. Tällöin pääsisi näkemään, kuinka kurssin luennoija tekisi itse käytännössä yhdessä opiskelijoiden kanssa hyvän säädön johonkin ongelmaan. Tämä tukisi mielestäni hyvin oppimista. (Eli ylipäänsä harjoituksissa voitaisiin enemmän tehdä yhdessä eikä vain katsottaisi lävitse valmiita mallivastauksia, koska tällöin ei opi samalla tavalla.)
+- Mielestäni kurssilla pitäisi olla 2-3 samankaltaista ja laajuista harjoitustyötä tukemassa oppimista.
+- Harjoitustyö ei ollut ylitse pääsemättömän vaikea, vaikkakin peruskurssista olikin kulunut jo pari vuotta aikaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opettavainen työ, joka avasi hyvin aiheen teoriaa ja käytäntöä. Työssä pääsi hyvin kokeilemaan erilaisia suunnittelutoimenpiteitä simulointimallin avulla. Työmäärä oli sopiva. 
+
+Olisi hyvä jos työssä pääsisi myös suunnitteluvaiheessa käyttämään ja kokeilemaan Cubea.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyön suoritustavan sai itse valita melko vapaasti, joten se oli positiivista. Myös säätö tehtävä oli mukava, koska luennoilla oli käyty kattavasti aiheeseen liittyvät asiat hyvin. Harjoitustyön kuormittavuus ei ollut liian suuri eikä liian pieni mielestäni.
+Kehitettävänä ehkä häiriöiden huomioiminen säädössä olisi mielenkiintoista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyön työnannon voisi antaa hiukan aiemmin (kuten myös välikokeen aikataulun), sillä opiskelijoiden aikataulu saattaa olla jo täynnä lyhyellä ajalla.  Muutoin harjoitustyö oli mielenkiintoinen. Oli kiva päästä kokeilemaan teoriaa käytännössä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyö oli kiinnostava ja sopivan kuormittava aikatauluun nähden.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyö oli hyvä harjoitus säätimen suunnittelusta. Laskuharjoitukset antoivat hyvän pohjan työn tekemiselle eikä se siten ollut liian kuormittava. Säätöjärjestelmän toiminnan näkeminen oikeassa sovelluksessa pelkän simulaattorin sijaan oli erittäin havainnolstavaa ja mieleenjäävää. Lisää qube laitteita, jotta opiskelijat voisivat testata säätimensä toimivuutta itsenäisesti ja suunnitella erilaisia säätimiä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyöhön meni jonkin verran aikaa, mutta se oli mielekäs ja opettava, joten en kokenut sitä liian kuormittavaksi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Testaussessioon liittyi lyhyt harjoitustyökohtainen opetustuokio. Kerro mielipiteesi siitä.
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Pyrhönen, Veli-Pekka,
+									07.04.2017
+           </span>
+           <br/>
+           On hyvä saada hieman suoraa palautetta omasta työstä. Testaussessiossa myös tuli mielenkiintoista lisätietoa työn aihealueesta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Se oli mielenkiintoinen
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Sessio oli erittäin hyödyllinen minulle. Epäselvät asiat ja kysymykset ovat parhaiten mielessä juuri työn tekemisen ja palautuksen jälkeen. Niitä on myös helpompi kysyä ja selvittää tällaisessa tilaisuudessa kuin kaikille yhteisessä palautetilaisuudessa. Tärkeää olisi tietysti järjestää sessio mahdollisimman pian harjoitustyön palautuksen jälkeen, jolloin asiat ovat vielä kirkkaina mielessä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mukava oli jutella. Harvoin saa noin välitöntä ja henkilökohtaista palautetta. Saatoin jopa innostua siellä vähän vielä lisää tästä aiheesta. :D
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Testaussessio oli hyvä demonstraatio käytännöntilanteesta ja jopa niistä metodeista miten ongelmat saatetaan joskus selvittää (tässä tapauksessa mm. kuinka joskus homma ratkeaa pätevällä trial-and-error-metodilla.) Olisi ehkä auttanut työtä tehdessä ja simulointitulosten ymmärtämistä, jos laitteella olisi päässyt demoamaan jotain aemmin itse.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvä lyhyt keskustelu oman säätösuunnittelumenetelmän käytöstä ja matkalla heränneistä kyssäreistä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opetustuokion pitäminen tälläisen harkkatyön jälkeen on mielestäni välttämätöntä, jotta saa kokonaisen kuvan harkkatyöstä. Vähän suuremman tilan voisi opetustuokiolle varata, jotta jokainen näkisi hyvin mitä on tekeillä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opetustuokio oli hyvä ja opettavainen. Oli kiva nähdä käytännössä, miten säätöpiiri toimii ja kuulla vinkkejä tulevaisuuden varalle
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Sessio oli muuten erittäin hyvä, mutta aikaa olisi voinut olla enemmän, jotta toteutuksia olisi ehditty käymään vielä tarkemmin läpi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Saatin käytyä siinä aika monia erilaisia kokeiluja ja demottua erilaisien säätimien ominaisuuksia lyhyessä ajassa konkreettisesti.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Testaussessio oli kaikkineen erittäin positiivinen kokemus ja kaikki mitä siellä käytiin läpi oli erittäin mielenkiintoista. Oli myös mukava nähdä toisenkin ryhmän työ ja miten se erosi omasta toteutuksen ja toiminnankin puolesta. Myös eri aiheen työn tulos käytiin pikaisesti läpi ja sekin oli hyvin mielenkiintoista. Pidin siis kaikesta testaussessioon liittyvästä ja sen kaltaista opetusta toivoisin olevan enemmänkin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Toimiva. Sai hyvän käsityksen myös niistä aspekteista, joita ei välttämättä ollut miettinyt.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opetustuokio oli hyvä ja asioita jäi mieleen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opetustuokiossa pääsi näkemään joitain toteutettuun säätimeen liittyviä "heikkouksia". Se myös konkretisoi hyvin erot simulaattorimallin ja oikean järjestelmän välillä. Esille tuli myös asioita, joita ei tullut mietittyä harjoitustyötä tehdessä. Kaiken kaikkiaan hyvä ja kompakti opetustuokio.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           - Testaussessio oli hyödyllinen, mutta sen pitäisi olla lähempänä harjoitustyön palautus aikaa. Nyt oli kulunut useampi viikko työn palautuksesta, minkä takia harjoitustyötä tehtäessä ilmenneet ongelmat eivät olleet mielessä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tuokiossa selostettiin selkeästi ja kattavasti työhön liittyviä yksityiskohtia ja vastattiin mieltä askarruttaviin kysymyksiin. Yksilöllinen opetus on selvästi tehokkainta, eikä sitä voi olla liikaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Sessio oli hyvin informatiivinen, vaikka se oli niin lyhyt. Myös häiriöiden vaikutusta pystyttiin testaamaan, joka oli hyvä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Oman harjoitustyön toiminnan näkeminen varsinaisella laitteella oli mielenkiintoista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opetustuokio oli hyvin järjestetty ja sen aikana sai infoa myös muista harjoitustyö aiheista, mikä oli mielestäni hyvä asia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opetustuokiossa päästiin näkemään suunnitellun säätimen toimita todellisuudessa ja havainnollistettiin miksi toiminta simulaattorissa ja todellisuudessa saattavat poiketa. Tämä oli erittäin opettavaista ja mielenkiintoista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Testaussessiossa oli hyvä tilanne kysyä mieltä askarruttavia kysymyksiä.
+
+Jäin kaipailemaan, samalla kertaa eri säätömenetelmällä harjoitustyön tehneen opiskelijan työn nopeaa läpi käyntiä. Voisi "ristiin" lyhyesti pääpiirteittäin kertoa, miten säätö ko. menetelmällä käytännössä toimii ja mitä kannattaa ottaa huomioon. Ajattelisin tämän olevan vähintään kertaamisen näkökulmasta hyvä asia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <!-- STUDENT RESPONSES -->
+       <br/>
+       <br/>
+      </form>
+      <br/>
+      <br/>
+     </div>
+     <div id="footer">
+      <span class="about" id="footerInfoLink">
+       Tietoa sovelluksesta
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div aria-describedby="footerInfobox" aria-labelledby="ui-id-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable" role="dialog" style="display: none; position: absolute;" tabindex="-1">
+   <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+    <span class="ui-dialog-title" id="ui-id-1">
+    </span>
+    <button aria-disabled="false" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="close">
+     <span class="ui-button-icon-primary ui-icon ui-icon-closethick">
+     </span>
+     <span class="ui-button-text">
+      close
+     </span>
+    </button>
+   </div>
+   <div class="ui-dialog-content ui-widget-content" id="footerInfobox">
+    Kaiku - Tampereen yliopisto
+			Sovelluksen versio: 1.15.0 (10.3.2020)
+   </div>
+   <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;">
+   </div>
+  </div>
+ </body>
+</html>

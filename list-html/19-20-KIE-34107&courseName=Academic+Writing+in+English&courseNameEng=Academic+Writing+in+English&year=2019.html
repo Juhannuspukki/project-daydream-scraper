@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Kaiku
+  </title>
+  <link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css"/>
+  <script src="/kaiku/javascript/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/kaiku.js" type="text/javascript">
+  </script>
+  <link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css"/>
+  <link href="/kaiku/style/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="hidden" id="pop-up">
+   <img alt="hourclass" src="/kaiku/images/hourglass_small.png"/>
+   <br/>
+   Raportti latautuu...
+  </div>
+  <div id="outer">
+   <div id="page">
+    <div id="banner">
+     <img alt="Kaiku" src="/kaiku/images/Logo_TAU_FI.png" style="height: 50px;"/>
+     <span class="page_name">
+      Kaiku
+      <br/>
+     </span>
+     <div id="banner_inner_right">
+      <nobr>
+       <a href="https://www.tut.fi/pop">
+        POP
+       </a>
+       |
+       <a href="https://www.tut.fi/tutka">
+        TUTKA
+       </a>
+      </nobr>
+      <span class="user_name">
+       Jere Laine
+       <br/>
+      </span>
+      <br/>
+      <a href="/kaiku/logOut/logOut">
+       Kirjaudu ulos
+      </a>
+     </div>
+    </div>
+    <div id="menu" style="min-height: 15px;">
+     <nobr>
+      <a href="/kaiku/kaiku/mainpage">
+       Etusivu
+      </a>
+      <a href="/kaiku/studentMainPageSearch/feedback">
+       Anna Palautetta
+      </a>
+      <a class="selected" href="/kaiku/examineFeedbackPage/feedback">
+       Palautteet
+      </a>
+      <a href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf" style="font-size: 12px;">
+       ?
+      </a>
+      <a href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&amp;PREVIOUS_VIEW=feedbackSummaryCourseQueriesResults" style="font-size: 10px;">
+       in English
+      </a>
+     </nobr>
+    </div>
+    <div id="content">
+     <div id="inner_content">
+      <form action="/kaiku/examineFeedbackPage/feedback" id="pageInformation" method="post">
+       <p>
+        <a href="/kaiku/examineFeedbackPage/feedback?action=landingPageLink">
+         Opintojaksojen palautteet
+        </a>
+        →
+        <a href="/kaiku/examineFeedbackPage/feedback?action=depOrCoursegroupLink&amp;depOrCoursegroupId=314300">
+         Kielikeskus
+        </a>
+        → KIE-34107 Academic Writing in English
+       </p>
+       <h1>
+        Opintojakson kyselyiden tulokset
+       </h1>
+       KIE-34107   Academic Writing in English
+       <table>
+        <tr>
+         <td>
+          Lukuvuosi
+         </td>
+         <td>
+          <select id="searchForm2.chosenAcademicYear" name="searchForm2.chosenAcademicYear">
+           <option value="2019">
+            2019-2020
+           </option>
+           <option value="2018">
+            2018-2019
+           </option>
+           <option value="2017">
+            2017-2018
+           </option>
+           <option selected="selected" value="2016">
+            2016-2017
+           </option>
+           <option value="2015">
+            2015-2016
+           </option>
+           <option value="2014">
+            2014-2015
+           </option>
+           <option value="2013">
+            2013-2014
+           </option>
+           <option value="2012">
+            2012-2013
+           </option>
+           <option value="2011">
+            2011-2012
+           </option>
+           <option value="0">
+            Kaikki/All
+           </option>
+          </select>
+         </td>
+         <td>
+          <input name="BUTTON_CHOOSE" type="submit" value="Valitse"/>
+         </td>
+        </tr>
+       </table>
+       <p>
+        Kyselyn tulokset eivät ole automaattisesti kaikkien nähtävillä, vaan toteutuskertavastaavan tulee julkaista tulokset.
+       </p>
+       <p>
+        Yleisarvosana: 0% / 1% / 2% / 3% / 4% / 5% / En osaa sanoa%
+        <br/>
+        Yleisarvosana opintojaksolle ja sen toteutukselle. (Yleisarvosanan antaminen perustuu omaan henkilökohtaiseen kokemukseesi opintojaksosta (sis. opetus, tilat, oppimateriaalit, viestintä, opetusajankohdat sekä muut opetusjärjestelyt). Onnistuiko tämä opintojakso sinulle tärkeissä asioissa? )
+       </p>
+       <p>
+        Osaamistavoitteet: 0% / 1% / 2% / 3% / 4% / 5% / En osaa sanoa%
+        <br/>
+        Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista? (Opintojakson osaamistavoitteet näkyvät 'osaamistavoitteiden' -linkistä. Arvioi, kuinka hyvin opintojakso mielestäsi tuki osaamistavoitteiden saavuttamista.)
+       </p>
+       <p>
+        Arvioitu työmäärä: Työmäärä vähäinen opintopisteisiin nähden.% / Työmäärä sopiva opintopisteisiin nähden.% / Työmäärä liian suuri opintopisteisiin nähden.%
+        <br/>
+        Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin. ()
+       </p>
+       <table class="common">
+        <tr>
+         <th>
+          Kysely
+         </th>
+         <th>
+          Yleisarvosana
+         </th>
+         <th>
+          Osaamistavoitteet
+         </th>
+         <th>
+          Arvioitu työmäärä
+         </th>
+         <th>
+          Vastaajia (N)
+         </th>
+         <th>
+          En anna palautetta vastanneet (N)
+         </th>
+         <th style="width: 125px;">
+          Opettaja vastannut
+         </th>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2019 - 2020,  Periodit I-II  This course is intended for undergraduate students working towards their BSc degree at TUT, who have already completed either Spoken Communication in English or Professional Interactions in English. MSc students should take the course Thesis Writing unless Academic Writing is stipulated in their degree requirements. Each course implementation caters for specific degree programmes, please make sure that you sign up for the correct one via the links below. **** When a course is over-subscribed, i.e. there are more sign-ups than places on the course, then we enrol the required number of students according to the target group and then (and only then), sign-up time. **** The course is offered in an online format. **** Assessment will take into account the following: - Active participation and interaction with peers (in and outside of the classroom); - Successful completion of all assignments by the deadlines, including peer review and self-review; **** In order to achieve the learning outcomes, the student will need to - read &amp; follow instructions - study the learning materials - successfully complete course assignments by the deadlines - engage in peer review - collaborate with fellow students - manage time effectively - communicate effectively with peers and teachers - use their initiative - reflect on learning Learning and assessment of learning will take place during the course.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=46007">
+           Toteutuskertakysely 09.12.19-22.01.20
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 48 / 48 / 5 / 0
+         </td>
+         <td>
+          0 / 0 / 5 / 30 / 50 / 15 / 0
+         </td>
+         <td>
+          0 / 95 / 5
+         </td>
+         <td>
+          21
+         </td>
+         <td>
+          5
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2019 - 2020,  Periodit I-III  This course is intended for undergraduate students working towards their BSc degree at TUT, who: - are enrolled on the programmes for TUTA or TIJO (industrial engineering and management), and - are taking the course Business Intelligence, and - have already completed either Spoken Communication in English or Professional Interactions in English Attendance is required at several small group meetings with the teacher.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=46486">
+           Toteutuskertakysely 24.02.20-08.04.20
+          </a>
+         </td>
+         <td>
+          0 / 0 / 50 / 50 / 0 / 0 / 0
+         </td>
+         <td>
+          0 / 0 / 50 / 0 / 50 / 0 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          2
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2019 - 2020,  Periodit III-IV  This course is intended for undergraduate students working towards their BSc degree at TUT, who have already completed either Spoken Communication in English or Professional Interactions in English. MSc students should take the course Thesis Writing unless Academic Writing is stipulated in their degree requirements. Each course implementation caters for specific degree programmes, please make sure that you sign up for the correct one via the links below. **** When a course is over-subscribed, i.e. there are more sign-ups than places on the course, then we enrol the required number of students according to the target group and then (and only then), sign-up time. **** The course is offered in an online format. **** Assessment will take into account the following: - Active participation and interaction with peers (in and outside of the classroom); - Successful completion of all assignments by the deadlines, including peer review and self-review; **** In order to achieve the learning outcomes, the student will need to - read &amp; follow instructions - study the learning materials - successfully complete course assignments by the deadlines - engage in peer review - collaborate with fellow students - manage time effectively - communicate effectively with peers and teachers - use their initiative - reflect on learning Learning and assessment of learning will take place during the course.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=47052">
+           Toteutuskertakysely 27.04.20-10.06.20
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 17 / 61 / 17 / 6
+         </td>
+         <td>
+          0 / 0 / 6 / 13 / 63 / 13 / 6
+         </td>
+         <td>
+          0 / 87 / 13
+         </td>
+         <td>
+          18
+         </td>
+         <td>
+          4
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2019 - 2020,  Periodit III-IV  Only for those students of BIO/MET whose programme requires completion of Academic Writing. This part of the English is taught online. However, you will have contact with an English teacher via your PIE lessons.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=47053">
+           Toteutuskertakysely 27.04.20-10.06.20
+          </a>
+         </td>
+         <td>
+          0 / 7 / 22 / 37 / 29 / 5 / 0
+         </td>
+         <td>
+          0 / 8 / 10 / 40 / 35 / 8 / 0
+         </td>
+         <td>
+          0 / 72 / 28
+         </td>
+         <td>
+          41
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2019 - 2020,  Periodit V  Intensive online summer course.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          Ei kyselyitä
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td>
+          Yhteensä
+         </td>
+         <td>
+          0 / 4 / 12 / 35 / 40 / 7 / 1
+         </td>
+         <td>
+          0 / 4 / 9 / 31 / 45 / 10 / 1
+         </td>
+         <td>
+          0 / 82 / 18
+         </td>
+         <td>
+          82
+         </td>
+         <td>
+          9
+         </td>
+         <td>
+         </td>
+        </tr>
+       </table>
+      </form>
+      <br/>
+      <br/>
+     </div>
+     <div id="footerInfobox">
+      Kaiku - Tampereen yliopisto Sovelluksen versio: 1.15.0 (10.3.2020)
+     </div>
+     <div id="footer">
+      <span class="about" id="footerInfoLink">
+       Tietoa sovelluksesta
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

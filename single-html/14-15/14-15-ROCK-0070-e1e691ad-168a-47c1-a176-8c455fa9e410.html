@@ -1,0 +1,801 @@
+<html lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Kaiku
+  </title>
+  <link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css"/>
+  <script src="/kaiku/javascript/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/kaiku.js" type="text/javascript">
+  </script>
+  <link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css"/>
+  <link href="/kaiku/style/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="hidden" id="pop-up">
+   <img alt="hourclass" src="/kaiku/images/hourglass_small.png"/>
+   <br/>
+   Raportti latautuu...
+  </div>
+  <div id="outer">
+   <div id="page">
+    <div id="banner">
+     <img alt="Kaiku" src="/kaiku/images/Logo_TAU_FI.png" style="height: 50px;"/>
+     <span class="page_name">
+      Kaiku
+      <br/>
+     </span>
+     <div id="banner_inner_right">
+      <nobr>
+       <a href="https://www.tut.fi/pop">
+        POP
+       </a>
+       |
+       <a href="https://www.tut.fi/tutka">
+        TUTKA
+       </a>
+      </nobr>
+      <span class="user_name">
+       Jere Laine
+       <br/>
+      </span>
+      <br/>
+      <a href="/kaiku/logOut/logOut">
+       Kirjaudu ulos
+      </a>
+     </div>
+    </div>
+    <div id="menu" style="min-height: 15px;">
+     <nobr>
+      <a href="/kaiku/kaiku/mainpage">
+       Etusivu
+      </a>
+      <a href="/kaiku/studentMainPageSearch/feedback">
+       Anna Palautetta
+      </a>
+      <a class="selected" href="/kaiku/examineFeedbackPage/feedback">
+       Palautteet
+      </a>
+      <a href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf" style="font-size: 12px;">
+       ?
+      </a>
+      <a href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&amp;PREVIOUS_VIEW=feedbackSummaryCourseQueryResults" style="font-size: 10px;">
+       in English
+      </a>
+     </nobr>
+    </div>
+    <div id="content">
+     <div id="inner_content">
+      <style>
+       button {
+		white-space: nowrap;
+	}
+      </style>
+      <br/>
+      <form action="/kaiku/examineFeedbackPage/feedback" id="pageInformation" method="post">
+       <table>
+        <tbody>
+         <tr>
+          <td colspan="3">
+           <a href="/kaiku/examineFeedbackPage/feedback?action=landingPageLink">
+            Opintojaksojen palautteet
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=depOrCoursegroupLink&amp;depOrCoursegroupId=">
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=courseImplementationLink&amp;chosenCourseCode=ROCK-0070">
+            ROCK-0070
+				KAIKU admin testikurssi
+           </a>
+           →
+		
+			Kysely 01.10.14-31.07.15
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           <br/>
+           <h2>
+            <nobr>
+             ROCK-0070
+				
+					KAIKU admin testikurssi
+					
+					(
+             <a href="https://www.tut.fi//wwwoppaat/opas2014-2015/perus/aineryhmat/Muut_suoritukset/ROCK-0070.html" target="plain">
+              Opinto-opas
+             </a>
+             )
+            </nobr>
+           </h2>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Lukuvuosi 2014 - 2015,
+					Periodit IV
+           <br/>
+           Kysely 01.10.14-31.07.15
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Vastanneita yhteensä: 2
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           En anna palautetta vastanneita yhteensä: 0
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- The analysis part -->
+       <!-- ***************** -->
+       <table class="common">
+        <tbody>
+         <tr>
+          <th colspan="2" style="font-size: 13px;">
+           Opettajan vastaus opiskelijoiden antamaan toteutuskertapalautteeseen
+          </th>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <b>
+            Nykyinen vastaus
+           </b>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span class="prebr">
+            Ohjeita lukijalle
+
+Tässä oppaassa (Opas 1) kerrotaan tekniikan kandidaatin ja diplomi-insinöörin / arkkitehdin tutkintojen rakenne sekä tutkintovaatimukset. Tutkinto-ohjelmat ja niiden opintosuunnat on esitelty oppaan alussa. Tutkinto-ohjelman kuvauksen alkuun on koottu tutkinto-ohjelmien vastuuhenkilöt yhteystietoineen. Oppaan jälkimmäisestä osasta löytyvät aineopintojen ja syventävien opintojen opintokokonaisuuksien kuvaukset aakkosjärjestyksessä. 
+
+Opas 1 sisältää myös perustietoja yliopistosta, yleisiä ohjeita opiskeluun sekä tutkinto- ja tenttiohjesäännöt. Tämän oppaan tiedot ovat 1.8.2013 voimaan tulleen tutkintorakenteen ja siihen perustuvan maaliskuussa 2013 hyväksytyn tutkintosäännön mukaisia. 
+
+Yliopistossa julkaistaan myös Opas 2, joka sisältää laitosten tarjoamat opintojaksot ja niiden kuvaukset. Opinto-oppaat 1 ja 2 on tarkoitettu ensisijaisesti TTY:n perustutkinto-opiskelijoille eli tekniikan kandidaatin, diplomi-insinöörin tai arkkitehdin tutkinnon suorittajille.
+
+Opas 3 on tarkoitettu jatko-opiskelijoille eli tekniikan ja filosofian tohtorin sekä tekniikan lisensiaatin tutkintoa suorittaville. Opas sisältää yleiset ohjeet jatkotutkintoa suorittaville sekä jatkotutkintokelpoisten opintojaksojen kuvaukset.
+
+Avoimen yliopiston kesäopas sisältää avoimessa yliopistossa kesällä tarjottavan opetuksen sekä opintojaksojen kuvaukset. Avoimessa yliopistossa tarjottava opetus on perustutkintoa suorittavien käytettävissä maksutta, mikäli opintojaksojen opetusryhmissä on tilaa.
+
+Lisäksi julkaistaan kansainväliset opinto-oppaat Study Guide for Degree Students, jossa kerrotaan englanninkielisten tutkinto-ohjelmien rakenne ja tutkintovaatimukset, sekä Course Catalogue (www-opas), joka sisältää englanninkielisten opintojaksojen kuvaukset.
+
+Www oppaat löytyvät TTY:n julkisilta sivuilta: http://www.tut.fi/fi/nykyisille-opiskelijoille/. 
+
+Tampereen teknillisen yliopiston Porin yksikkö julkaisee oman opinto-oppaansa. Myös Porin opinto-opas julkaistaan sähköisenä opinto-opassivuilla.
+
+
+Opiskeluiloa!
+
+Kirsi Lindfors
+
+Opiskelijapalvelun päällikkö
+Opiskelijapalvelut
+&amp;#8195;
+OPISKELU TAMPEREEN TEKNILLISESSÄ YLIOPISTOSSA
+
+
+Opinto-oikeus ja lukuvuosi-ilmoittautuminen
+Kaikkien opiskelijoiden on ilmoittauduttava lukuvuosittain yliopistoon joko läsnä- tai poissaolevaksi. Opiskelija, joka ei ole ilmoittautunut määräaikaan mennessä, menettää opinto-oikeutensa. 
+Ks. POP &gt; OPISKELU &gt; Ilmoittautuminen &gt; Lukuvuosi-ilmoittautuminen (https://pop-portal.tut.fi/portal/page/portal/POP-portaali/30Opiskelu_fi/20ilmoittautuminen/05lukuvuosi-ilmoittautuminen).
+
+Ilmoittautuminen opintojaksoille
+Kaikille opintojaksoille tulee ilmoittautua POPissa Omat opinnot-välilehden kautta ennen opintojakson alkua. Ks. POP &gt; OPISKELU &gt; Ilmoittautuminen &gt; Opintojaksoilmoittautuminen (https://pop-portal.tut.fi/portal/page/portal/POP-portaali/30Opiskelu_fi/20ilmoittautuminen/07opintojaksoilmoittautuminen).
+
+Tentteihin ilmoittautuminen ja tenteissä noudatettavat pelisäännöt
+Tentti-ilmoittautuminen on pakollista. Tentteihin ilmoittaudutaan POPissa Omat opinnot -välilehden kautta. Tenttiin ilmoittautumattomien vastauspapereita ei tarkasteta. Opiskelijalla on oikeus suorittaa samaan opintojaksoon liittyvä tentti korkeintaan kolme kertaa riippumatta siitä, ovatko aiemmat tenttisuoritukset hyväksyttyjä tai hylättyjä. Peruuttamatta jätetty ilmoittautuminen lasketaan käytetyksi tenttikerraksi.
+Tentti-ilmoittautuminen on tehtävä viimeistään viikko (7 vuorokautta) ennen tenttiä ja peruutettava POPissa viimeistään kolme arkipäivää ennen tenttitilaisuutta.
+Tarkempia ohjeita tentteihin liittyen löytyy tenttiohjesäännöstä:  
+POP &gt; OPISKELU &gt; Säännöt &gt; Tenttiohjesääntö (https://pop-portal.tut.fi/portal/page/portal/POP-portaali/30Opiskelu_fi/55saannot/05tenttiohjesaanto).  
+
+Henkilökohtainen opintosuunnitelma (HOPS)
+Jokaisen opiskelijan on tehtävä henkilökohtainen opintosuunnitelma (HOPS), joka kattaa erikseen sekä alemman että ylemmän korkeakoulututkinnon opinnot. Henkilökohtainen opintosuunnitelma on tehtävä viimeistään silloin, kun opiskelija aloittaa pääaineen opinnot. HOPS laaditaan erillisellä sähköisellä työkalulla oman tutkinto-ohjelman ohjeiden mukaisesti. HOPS-työkalun osoite on http://www.tut.fi/hops.
+
+Opintosuoritusten arvostelu
+Opettaja arvostelee opintojaksoon kuuluvat suoritukset ja osasuoritukset 30 päivän kuluessa suoritusten antamisesta. Arvosanat julkaistaan POPissa Omat opinnot -osiossa. Mikäli arvostelutuloksia ei vielä kuukauden kuluttua suorituksen tekemisestä ole tullut, voi asiasta lähettää viestin osoitteeseen tenttimyohastymiset@tut.fi.
+Mikäli opiskelija ei ole tyytyväinen opintojakson tai sen osasuorituksen arvosteluun, voi siihen pyytää oikaisua suullisesti tai kirjallisesti arvostelun tehneeltä opettajalta. Tarkempia tietoja oikaisumenettelystä löytyy tämän oppaan lopusta Tutkintosäännön 11 luku Muutoksenhaku-kohdasta. (Tutkintosääntö kokonaisuudessaan: https://pop-portal.tut.fi/portal/page/portal/POP-portaali/30Opiskelu_fi/55saannot/03tutkintosaanto).
+
+Opintosuoritusten tallennus ja ote suorituksista
+Opintosuoritukset (kuten kokonais-, tentti- ja välikoesuoritus) tallennetaan opiskelijapalveluiden ylläpitämään opintorekisteriin. Opintojen aikana opintorekisteriotteen voi tilata POPista tai hakea Opintotoimistosta. Virallisen, leimatun otteen saa Opintotoimistosta suomeksi tai englanniksi. Opintotoimistosta on pyynnöstä mahdollista saada myös opiskelijatodis¬tus eli todistus kirjoilla olosta yliopistossa. Todistus on saatavissa suomeksi, ruotsiksi, englanniksi, ranskaksi ja saksaksi.
+
+
+Tutkintotodistus ja valmistuminen
+Kun kaikki tutkintoon kuuluvat opinnot on suoritettu, haetaan tutkintotodistusta erillisellä hakemuksella. Ks. POP &gt; OPISKELU &gt; Valmistuminen (https://pop-portal.tut.fi/portal/page/portal/POP-portaali/30Opiskelu_fi/40valmistuminen).
+
+Opiskelijapalautejärjestelmä
+Opintojakson suorittamiseen liittyy palautteen antaminen. (Ks. POP &gt; OPISKELU &gt; Vaikuta opetukseen &gt; Opintojaksopalaute (https://pop-portal.tut.fi/portal/page/portal/POP-portaali/30Opiskelu_fi/60vaikuta-opetukseen/03opintojaksopalaute).
+ 
+Opinnot muissa yliopistoissa
+Useimmissa tutkinto-ohjelmissa on mahdollista suorittaa sivuaineopintoja (noin 25 op) jossakin toisessa yliopistossa. Opintojen on hyvä muodostaa ko¬konaisuus, esim. approbatur tai aineopinnot jne., joka on mahdollista anoa hyväksyttäväksi osaksi opiskelijan tutkintoa eli osaksi HOPSia.
+Tutkintoon on mahdollista anoa sisällytettäväksi myös muita suomalaisessa ja ulko¬maisessa yliopistossa tai ammatillisessa oppilaitok¬sessa suoritettuja opintojaksoja. Muualla suoritettujen opintojen hyväksi lukemisesta tutkintoon päättää tutkinto-ohjelman johtaja. 
+Suomen yliopistojen JOO-sopimus antaa mahdollisuuden opiskella muissa yliopistoissa TTY:n puoltamia opintoja. Opinnot liitetään osaksi tekniikan kandidaatin/diplomi-insinöörin/arkkitehdin tutkintoa. Haku syyslukukauden opintoihin on pääsääntöisesti keväisin 30.4. ja kevätlukukauden opintoihin syksyisin 31.10. mennessä. Osassa yliopistoja on myös jatkuva haku. 
+Kansainvälistyminen
+TTY pyrkii siihen, että mahdollisimman monella valmistuvalla opiskelijalla olisi jo valmistumisvaiheessaan kansainvälistä kokemusta. Kokemusta voi helposti hankkia opiskeluaikana esimerkiksi lähtemällä vaihtoon, suorittamalla työharjoittelun ulkomailla, opiskelemalla englanninkielisessä tutkinto-ohjelmassa tai toimimalla kv-tutorina.
+TTY tukee opiskelijoiden kansainvälistymistä tarjoamalla stipendejä ulkomailla suoritettaviin opiskelu- ja harjoittelujaksoihin sekä edistämällä kansainvälistymismahdollisuuksia. Vaihto-opiskelun voi suorittaa TTY:n partneriyliopistoissa, joita löytyy ympäri maailmaa yli 170. Yksityiskohtaista tietoa sekä henkilökohtaista opastusta ja opaskirjasia kaikista TTY:n kansainvälistymismahdollisuuksista saa Kansainväliset palvelut -yksiköstä, Tietotalon 1. kerroksesta. Ks. POP &gt; OPISKELU &gt; Vaihto-opiskelu ja kansainvälistyminen (https://pop-portal.tut.fi/portal/page/portal/POP-portaali/30Opiskelu_fi/50vaihto-opiskelu-ja-kansainvalistyminen).
+
+
+Verkko-opiskelu
+TTY:llä kehitetään tieto- ja viestintätekniikan opetusta ja opiskelua osana tutkinto-opetusta. Verkko-opetusta toteutetaan mm. Moodle-oppimisalustan avulla.
+Verkkokursseina opiskeltavien opintojaksojen tarjonta vaihtelee laitoksittain. Lisätietoa opiskelua monipuolistavista ja joustavuutta lisäävistä tieto- ja viestintätekniikka-avusteisista opintojaksoista löytyy opinto-oppaista ja POPista kohdasta Omat opinnot.
+TTY:n tarjoamille verkkovälitteisille opintojaksoille voi JOO-sopimuksen puitteissa ilmoittautua muista yliopistoista ja korkeakouluista (ks. kohta opinnot muissa yliopistoissa) normaalin JOO-opintojen hakuprosessin puitteissa.
+
+
+TUTKINNOT
+
+Perustutkinnot
+Tutkinnoista säädetään yliopistolaissa (558/2009), valtioneuvoston asetuksessa yliopistojen tutkinnoista (794/2004) sekä TTY:n tutkintosäännössä (maaliskuu 2013).
+Tekniikan alalla alempaan ja ylempään korkeakoulututkintoon johtava koulutus järjestetään tutkinto-ohjelmissa. Tekniikan kandidaatin tutkinto-ohjelmiin voi sisältyä yksi tai useampi opintosuunta.  Alemman eli tekniikan kandidaatin tutkinnon laajuus on 180 opintopistettä ja ylemmän eli diplomi-insinöörin tai arkkitehdin tutkinnon laajuus on 120 opintopistettä.  
+Opintopistejärjestelmä perustuu eurooppalaiseen opintosuoritusten ja arvosanojen siirtojärjestelmään ECTS (European Credit Transfer System). Laskennallisesti opintojakso mitoitetaan opintopisteinä siten, että 26 2/3 tuntia kokonaisopiskelutyötä vastaa yhden opintopisteen (op) laajuista suoritusta. Lukuvuotta kohti suoritetaan keskimäärin 60 opintopistettä. 
+Tekniikan kandidaatin tutkinto koostuu perusopinnoista, suuntaavista opinnoista (mikäli tutkinto-ohjelma sisältää opintosuuntia), pääaineesta, sivuaineesta/-aineista, kandidaatin työstä (ml. seminaari ja kypsyysnäyte) ja vapaavalintaisista opinnoista. Joissakin ohjelmissa tutkintoon sisältyy myös harjoittelua.
+Diplomi-insinöörin ja arkkitehdin tutkinnot koostuvat yhteisistä opinnoista, pääaineesta, sivuaineesta/-aineista, diplomityöstä (ml. kypsyysnäyte) ja vapaavalintaisista opinnoista. Joissakin ohjelmissa tutkintoon sisältyy myös harjoittelua. 
+Jatkotutkinnot
+Yliopiston jatkotutkintoja ovat tekniikan lisensiaatin ja tohtorin sekä filosofian tohtorin tutkinnot. Oikeus jatkotut¬kinnon suorittamiseen on arkkitehdilla ja diplomi-insinöörillä. Myös muun koti- tai ulkomaisen ylemmän korkeakoulututkinnon suorittanut voidaan hyväksyä TTY:lle jatko-opiskelijaksi.  
+Jatko-opinnoista koostetaan oma erillinen opas, Opas 3 (http://www.tut.fi/fi/nykyisille-opiskelijoille/).
+Tutkintovaatimukset
+Tekniikan kandidaatin, diplomi-insinöörin ja arkkitehdin tutkintovaatimukset määräytyvät opintojen aloitusvuo¬den mukaan. Esimerkiksi syksyllä 2015 aloittavat noudattavat koko tutkinnon osalta opinto-oppaan 2015–2016 tutkintorakennetta. Sen sijaan tutkinnon osina olevat opintokokonaisuudet, kuten perus¬opinnot ja aineopinnot, voidaan suorittaa eri vuosien tutkintovaatimusten mukaisesti. Opintokokonaisuudet eivät kuitenkaan pääsääntöisesti voi olla tutkintorakennetta vanhemman oppaan mukaisia. Esimerkiksi, mikäli tutkintorakenne on opinto-oppaan 2011–2012 mukainen, perusopinnot voivat olla opinto-oppaasta 2012–2013 ja pääaine 2013–2014  opinto-oppaasta. Yksittäinen opintokokonaisuus on muodostettava aina saman lukuvuoden oppaan tutkintovaatimusten mukaisesti.
+
+Tutkintojen suorittamisajat
+Yliopistolaissa rajataan alemman ja ylemmän korkeakoulututkinnon suorittamisaika yliopistoissa. Opintoaikojen rajaus ei koske ennen 1.8.2005 saatuja opinto-oikeuksia.
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- <table>
+			<tr><td><div class="line" ></div></td></tr>
+			<tr><td>Kyselyn tulosten julkisuus</td></tr>
+			<tr><td><div class="line" ></div></td></tr>
+		</table>-->
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th style="font-size: 13px;">
+           Kysymyskohtaiset palautteet
+          </th>
+         </tr>
+        </tbody>
+       </table>
+       <h1>
+        Monivalintakysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <table class="common">
+        <!-- NORMAL OBLIGATORY CHOICE QUESTIONS -->
+        <tbody>
+         <tr>
+          <th colspan="4" width="90%">
+           Yleisarvosana opintojaksolle ja sen toteutukselle.
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2.0
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           1.0
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           50.0
+          </td>
+          <td>
+           50.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           50.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           50.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista?
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2.0
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           1.0
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           50.0
+          </td>
+          <td>
+           50.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           50.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           50.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin.
+          </th>
+          <td class="empty" rowspan="9" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           1.5
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           1.5
+          </td>
+          <td>
+           0.5
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä vähäinen opintopisteisiin nähden. (1)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           50.0
+          </td>
+          <td>
+           50.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Työmäärä sopiva opintopisteisiin nähden. (2)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           50.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä liian suuri opintopisteisiin nähden. (3)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- STUDENT RESPONSES -->
+       <br/>
+       <br/>
+      </form>
+      <br/>
+      <br/>
+     </div>
+     <div id="footer">
+      <span class="about" id="footerInfoLink">
+       Tietoa sovelluksesta
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div aria-describedby="footerInfobox" aria-labelledby="ui-id-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable" role="dialog" style="display: none; position: absolute;" tabindex="-1">
+   <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+    <span class="ui-dialog-title" id="ui-id-1">
+    </span>
+    <button aria-disabled="false" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="close">
+     <span class="ui-button-icon-primary ui-icon ui-icon-closethick">
+     </span>
+     <span class="ui-button-text">
+      close
+     </span>
+    </button>
+   </div>
+   <div class="ui-dialog-content ui-widget-content" id="footerInfobox">
+    Kaiku - Tampereen yliopisto
+			Sovelluksen versio: 1.15.0 (10.3.2020)
+   </div>
+   <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;">
+   </div>
+  </div>
+ </body>
+</html>

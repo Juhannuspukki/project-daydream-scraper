@@ -1,0 +1,968 @@
+<html lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Kaiku
+  </title>
+  <link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css"/>
+  <script src="/kaiku/javascript/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/kaiku.js" type="text/javascript">
+  </script>
+  <link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css"/>
+  <link href="/kaiku/style/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="hidden" id="pop-up">
+   <img alt="hourclass" src="/kaiku/images/hourglass_small.png"/>
+   <br/>
+   Raportti latautuu...
+  </div>
+  <div id="outer">
+   <div id="page">
+    <div id="banner">
+     <img alt="Kaiku" src="/kaiku/images/Logo_TAU_FI.png" style="height: 50px;"/>
+     <span class="page_name">
+      Kaiku
+      <br/>
+     </span>
+     <div id="banner_inner_right">
+      <nobr>
+       <a href="https://www.tut.fi/pop">
+        POP
+       </a>
+       |
+       <a href="https://www.tut.fi/tutka">
+        TUTKA
+       </a>
+      </nobr>
+      <span class="user_name">
+       Jere Laine
+       <br/>
+      </span>
+      <br/>
+      <a href="/kaiku/logOut/logOut">
+       Kirjaudu ulos
+      </a>
+     </div>
+    </div>
+    <div id="menu" style="min-height: 15px;">
+     <nobr>
+      <a href="/kaiku/kaiku/mainpage">
+       Etusivu
+      </a>
+      <a href="/kaiku/studentMainPageSearch/feedback">
+       Anna Palautetta
+      </a>
+      <a class="selected" href="/kaiku/examineFeedbackPage/feedback">
+       Palautteet
+      </a>
+      <a href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf" style="font-size: 12px;">
+       ?
+      </a>
+      <a href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&amp;PREVIOUS_VIEW=feedbackSummaryCourseQueryResults" style="font-size: 10px;">
+       in English
+      </a>
+     </nobr>
+    </div>
+    <div id="content">
+     <div id="inner_content">
+      <style>
+       button {
+		white-space: nowrap;
+	}
+      </style>
+      <br/>
+      <form action="/kaiku/examineFeedbackPage/feedback" id="pageInformation" method="post">
+       <table>
+        <tbody>
+         <tr>
+          <td colspan="3">
+           <a href="/kaiku/examineFeedbackPage/feedback?action=landingPageLink">
+            Opintojaksojen palautteet
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=depOrCoursegroupLink&amp;depOrCoursegroupId=10604">
+            Automaatio- ja konetekniikka
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=courseImplementationLink&amp;chosenCourseCode=ASE-4060">
+            ASE-4060
+				Systeemien hallinnan kehittyneet menetelmät
+           </a>
+           →
+		
+			Kysely 09.12.17-22.01.18
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           <br/>
+           <h2>
+            <nobr>
+             ASE-4060
+				
+					Systeemien hallinnan kehittyneet menetelmät
+					
+					(
+             <a href="https://www.tut.fi/opinto-opas/wwwoppaat/opas2017-2018/perus/aineryhmat/Systeemitekniikka/ASE-4060.html" target="plain">
+              Opinto-opas
+             </a>
+             )
+            </nobr>
+           </h2>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Lukuvuosi 2017 - 2018,
+					Periodit I-II
+           <br/>
+           Kysely 09.12.17-22.01.18
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Vastanneita yhteensä: 7
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           En anna palautetta vastanneita yhteensä: 0
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- The analysis part -->
+       <!-- ***************** -->
+       <table class="common">
+        <tbody>
+         <tr>
+          <th colspan="2" style="font-size: 13px;">
+           Opettajan vastaus opiskelijoiden antamaan toteutuskertapalautteeseen
+          </th>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <b>
+            Nykyinen vastaus
+           </b>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span class="prebr">
+            Kiitokset suomastasi mittausinformaatiosta, joka mahdollistaa säätökorjauksia syksyn 2018 implementointiin. Muun muassa töiden järjestys, aloitusajakohta, preppausaikataulu ja parinmuodostuksen tapa vaihdetaan.
+
+Tervetuloa syksyn 2018 opintojaksolle ASE-7556 LQG Control with Matlab oppimaan lisää LQG/MPC-asioista, myös jatkuva-aikaisesta LQG-säädöstä, ei-stationaarisesta säädöstä ja estimoinnista sekä aikapainotuksista.
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- <table>
+			<tr><td><div class="line" ></div></td></tr>
+			<tr><td>Kyselyn tulosten julkisuus</td></tr>
+			<tr><td><div class="line" ></div></td></tr>
+		</table>-->
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th style="font-size: 13px;">
+           Kysymyskohtaiset palautteet
+          </th>
+         </tr>
+        </tbody>
+       </table>
+       <h1>
+        Monivalintakysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <table class="common">
+        <!-- NORMAL OBLIGATORY CHOICE QUESTIONS -->
+        <tbody>
+         <tr>
+          <th colspan="4" width="90%">
+           Yleisarvosana opintojaksolle ja sen toteutukselle.
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4.29
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           0.45
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           71.43
+          </td>
+          <td>
+           71.43
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           28.57
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           7.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td colspan="4">
+           Opettajan vastauksen kirjoitti:
+					Jussila, Terho,
+					 
+					03.03.2018
+           <br/>
+           <span class="prebr">
+            Opintojakson työtavat näyttävät miellyttävän opiskelijoita muualla mainituista epäkohdista huolimatta.
+           </span>
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista?
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           0.53
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           14.29
+          </td>
+          <td>
+           14.29
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           71.43
+          </td>
+          <td>
+           85.71
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           14.29
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           7.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td colspan="4">
+           Opettajan vastauksen kirjoitti:
+					Jussila, Terho,
+					 
+					03.03.2018
+           <br/>
+           <span class="prebr">
+            Linjassa edellisen kanssa.
+           </span>
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin.
+          </th>
+          <td class="empty" rowspan="9" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2.29
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           0.45
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä vähäinen opintopisteisiin nähden. (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Työmäärä sopiva opintopisteisiin nähden. (2)
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           71.43
+          </td>
+          <td>
+           71.43
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä liian suuri opintopisteisiin nähden. (3)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           28.57
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           7.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td colspan="4">
+           Opettajan vastauksen kirjoitti:
+					Jussila, Terho,
+					 
+					03.03.2018
+           <br/>
+           <span class="prebr">
+            Luulenpa, että tällä opintojaksolla nämä luvut kertovat aika tarkasti totuuden.
+           </span>
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- OPEN QUESTIONS !!! -->
+       <br/>
+       <h1>
+        Avoimet kysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Mikä onnistui opintojaksolla hyvin?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Opettajan vastaus
+					
+					:
+           <br/>
+           <span class="prebr">
+            Kiva kuulla näistä myönteisistä asioista. Tämä opintojakso taitaa olla oikeasti yksi niistä harvoista, joissa työmäärä voi ylittää op-normin aikuistenoikeesti.
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Jussila, Terho,
+									03.03.2018
+           </span>
+           <br/>
+           Seminaarit mielenkiintoisia. Jokaisesta harjoitustyöstä/seminaarista saatu palaute oli positiivinen asia samoin esitysten videokuvaaminen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustöiden aiheet olivat mielenkiintoisia. Hyvää oli myös se, että kaikista suorituksista sai kirjallisen palautteen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           GS-työhön oli helppo lähteä VP:n pohjustusluentojen jälkeen. GS-ohjekin oli suoraviivainen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielestäni kurssilla oppi tehokkaasti asioita, koska aihepiireihin oli pakko perehtyä aika hyvin, jotta niistä osaisi puhua uskottavasti esiteltäessä. Työt olivat luonteeltaan ja asettelultaan melko erilaisia ja monipuolisia. Palaute töiden jälkeen oli hyödyllistä. Kahden hengen ryhmäkoko oli sopiva.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Oli hyvä että pääsimme itse toteuttamaan säätöratkaisuja. Kurssi oli todella työläs, mutta sen myötä myös hyvin opettavainen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitustyöt olivat hyvin käytännönläheisiä ja havainnollisia. Päälisin puolin opastus oli riittävää
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Miten kehittäisit opintojaksoa?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Opettajan vastaus
+					
+					:
+           <br/>
+           <span class="prebr">
+            kanssa hyvin eri tasoisia, eivätkä työmoraali ja tavoitteet kohdanneet. Jos parityöskentelystäkin annettaisiin jonkilaista palautetta, eh
+
+
+Itseopiskelusta: Vanhanaikaisilla opintojaksoilla tentin ahdistamat ja tentissä ehkä epäonnistuneet opiskelijat usein toivat (aiheellisesti) esiin sen, että työelämässä saa käyttää kirjallisuutta, ohjelmistoja ja ohjelmistojen manuaaleja, joten tentti on :(. Tämä palaute ja osin LQG-opintojakson ASE-7556 kokemukset ovat osoittaneet, että ei se työelämämahdollisuus niin helppoa olekaan, jos ei ole oikeasti hikoillut vaikeiden asioiden parissa jo opintojen aikana. 
+
+LQG-preppausluennoista moni oli poissa ja sai kompensaatioksi rahaa työnantajaltaan. Sen preppauksen piti tukea sekä LQG-työtä että MPC-työtä. Lisäksi ASE-2116:n ja ASE-7556:n kaikki matsku oli saatavilla itseopiskeluun. 
+
+Esitelmän jälkeinen teoria aihepiiristä olisi varmaan hyödyllinen. LQG-työstä se on saatavilla ASE-7556:n matskusta ja istunnoista, myös keväällä 2018 ja syksyllä 2018. 
+
+Kommentti parityön ongelmista on arvokas ja ollut jo tiedossamme. Joskus salliittiin vapaa valinta, joka sekään ei aina toiminut. VP:lla ja minulla on uusia ideoita siitä, miten jatkossa yritämme välttää ne.
+
+Kyllä noita aikataulutietoja oli POPissa hyvin varhan, joskin jonkun tapahtuman kohdalla näppäilymoka oli piilottanut tapahtuman. Lisäksi aikataulu taisi olla esillä johdantoluennolla.
+
+Vaativalla LQG-työllä aloittaminen on ollut haastavaa, kun samaan aikaan on pitänyt ottaa haltuun sekä vaikea asia että opintojakson erikoisen suoritustavan sapluuna ja preppausta ovat vaikeuttaneet kesätyön viimeisten viikkojen aiheuttamat poissaolot. Sovimme jo VP:n kanssa, että tämän välttämiseksi emme aloita LQG-työllä ensi syksynä. Tarkoituksena on myös integroida LQG- ja MPC-työn yhteinen preppaus LQG-opintojakson tunteihin.  Lisäksi opintojakso lienee syytä aloittaa vasta luentoviikolla 2.
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Jussila, Terho,
+									03.03.2018
+           </span>
+           <br/>
+           Kurssi nojautui aika vahvasti opiskelijoiden itse opiskeluun ja itselleni tämä oli todella vaativa lähtökohta. Itse olisin toivonut harjoituksia luentojen rinnalle jossa olisi opeteltu LQG:n,Gain schedulingin ja MPC-säätimien tekoa. Näiden opittujen taitojen avulla olisi voinut tehdä ne oman ryhmän harjoitustyöt.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           MPC-aihe jäi loppupuolella melko pieneen rooliin, joten siitä ei hirveän konkreettista käsitystä jäänyt. Ehkä jokin jatkokurssi aiheeseen liittyen voisi toimia?
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           LQG- ja MPC-töiden kanssa tuli kiire tai oikeastaan aika loppui kesken. Aiheet sisältivät sen verran uutta asiaa, että aiheeseen tutustumiseen meni paljon aikaa. Terhon preppausluentoihin olisi voinut ottaa alle sellaisen "LQG for dummies" tuokion. Toinen MPC-verkkoluento olisi ollut hyvä olla.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kuten pikkujouluissa puhuttiin, niin pieni teoria aihepiiristä esitelmän jälkeen voisi olla hyödyllinen. Aiheeseen on kuitenkin omatoimisesti perehdytty ennen sitä, joten pohjatietoon saisi varmasti hyvin täydennystä ja tarkennuksia. 
+
+Kahdesta ensimmäisestä työstä voisi myös olla mielenkiintoista nähdä jonkinlainen malliratkaisu jälkikäteen (jos resurssit riittää ja vaikka palautekeskustelut olivatkin hyviä).
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jonkinlainen palaute parityöskentelystä olisi hyvä, nyt ei mitenkään seurattu miten parityöskentely sujui. Omassa ryhmässäni olimme parini kanssa hyvin eri tasoisia, eivätkä työmoraali ja  tavoitteet kohdanneet. Jos parityöskentelystäkin annettaisiin jonkilaista palautetta, ehkä se kannustaisi kaikkia parempaan parityöskentelyyn, ja siihen, ettei työn toteuttamista jätetä vain toisen parin harteille. 
+
+Myös kurssin aikataulut olisi ollut mukava tietää etukäteen. Varsinkin, kun vaadittiin pakollista läsnäoloa, olisi ollut hyvä tietää reilusti etukäteen, koska koululla pitää olla paikalla. Myös töiden deadlinet olisi ollut mukava tietää heti kurssin alussa, näin kurssin työskentely olisi ollut helpompi sisällyttää omaan aikatauluun.
+
+Töiden työmäärää olisi myös voinut ehkä hieman tasoittaa. Nyt ensimmäisen työn tekeminen vei huomattavasti enemmän aikaa kun kahden muun työn. Toisaalta ensimmäiseen työhön olisi voinut myös antaa enemmän toteutusaikaa, mikä olisi helpottanut työstä aiheutunutta stressiä ja työmäärää. Kolmas työ oli taas hieman liiankin lyhyt, ja siihen olisi ollut mukava tutustua vielä hieman syvemmin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ensimmäisen työn voisi toteuttaa samalla tavalla kuin MPC, koska se oli heti alkuun haastava.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <!-- STUDENT RESPONSES -->
+       <br/>
+       <br/>
+      </form>
+      <br/>
+      <br/>
+     </div>
+     <div id="footer">
+      <span class="about" id="footerInfoLink">
+       Tietoa sovelluksesta
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div aria-describedby="footerInfobox" aria-labelledby="ui-id-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable" role="dialog" style="display: none; position: absolute;" tabindex="-1">
+   <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+    <span class="ui-dialog-title" id="ui-id-1">
+    </span>
+    <button aria-disabled="false" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="close">
+     <span class="ui-button-icon-primary ui-icon ui-icon-closethick">
+     </span>
+     <span class="ui-button-text">
+      close
+     </span>
+    </button>
+   </div>
+   <div class="ui-dialog-content ui-widget-content" id="footerInfobox">
+    Kaiku - Tampereen yliopisto
+			Sovelluksen versio: 1.15.0 (10.3.2020)
+   </div>
+   <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;">
+   </div>
+  </div>
+ </body>
+</html>

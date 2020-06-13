@@ -1,0 +1,2470 @@
+<html lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Kaiku
+  </title>
+  <link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css"/>
+  <script src="/kaiku/javascript/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/kaiku.js" type="text/javascript">
+  </script>
+  <link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css"/>
+  <link href="/kaiku/style/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="hidden" id="pop-up">
+   <img alt="hourclass" src="/kaiku/images/hourglass_small.png"/>
+   <br/>
+   Raportti latautuu...
+  </div>
+  <div id="outer">
+   <div id="page">
+    <div id="banner">
+     <img alt="Kaiku" src="/kaiku/images/Logo_TAU_FI.png" style="height: 50px;"/>
+     <span class="page_name">
+      Kaiku
+      <br/>
+     </span>
+     <div id="banner_inner_right">
+      <nobr>
+       <a href="https://www.tut.fi/pop">
+        POP
+       </a>
+       |
+       <a href="https://www.tut.fi/tutka">
+        TUTKA
+       </a>
+      </nobr>
+      <span class="user_name">
+       Jere Laine
+       <br/>
+      </span>
+      <br/>
+      <a href="/kaiku/logOut/logOut">
+       Kirjaudu ulos
+      </a>
+     </div>
+    </div>
+    <div id="menu" style="min-height: 15px;">
+     <nobr>
+      <a href="/kaiku/kaiku/mainpage">
+       Etusivu
+      </a>
+      <a href="/kaiku/studentMainPageSearch/feedback">
+       Anna Palautetta
+      </a>
+      <a class="selected" href="/kaiku/examineFeedbackPage/feedback">
+       Palautteet
+      </a>
+      <a href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf" style="font-size: 12px;">
+       ?
+      </a>
+      <a href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&amp;PREVIOUS_VIEW=feedbackSummaryCourseQueryResults" style="font-size: 10px;">
+       in English
+      </a>
+     </nobr>
+    </div>
+    <div id="content">
+     <div id="inner_content">
+      <style>
+       button {
+		white-space: nowrap;
+	}
+      </style>
+      <br/>
+      <form action="/kaiku/examineFeedbackPage/feedback" id="pageInformation" method="post">
+       <table>
+        <tbody>
+         <tr>
+          <td colspan="3">
+           <a href="/kaiku/examineFeedbackPage/feedback?action=landingPageLink">
+            Opintojaksojen palautteet
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=depOrCoursegroupLink&amp;depOrCoursegroupId=">
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=courseImplementationLink&amp;chosenCourseCode=FYS-1251">
+            FYS-1251
+				Laaja fysiikka II Aaltoliikeoppi ja sähkömagnetismi
+           </a>
+           →
+		
+			Kysely 28.04.18-11.06.18
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           <br/>
+           <h2>
+            <nobr>
+             FYS-1251
+				
+					Laaja fysiikka II Aaltoliikeoppi ja sähkömagnetismi
+					
+					(
+             <a href="https://www.tut.fi/opinto-opas/wwwoppaat/opas2017-2018/perus/aineryhmat/Fysiikka/FYS-1251.html" target="plain">
+              Opinto-opas
+             </a>
+             )
+            </nobr>
+           </h2>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Lukuvuosi 2017 - 2018,
+					Periodit III-IV
+           <br/>
+           Kysely 28.04.18-11.06.18
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Vastanneita yhteensä: 47
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           En anna palautetta vastanneita yhteensä: 10
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- The analysis part -->
+       <!-- ***************** -->
+       <table class="common">
+        <tbody>
+         <tr>
+          <th colspan="2" style="font-size: 13px;">
+           Opettajan vastaus opiskelijoiden antamaan toteutuskertapalautteeseen
+          </th>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <b>
+            Nykyinen vastaus
+           </b>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span class="prebr">
+            Kiitos kaikille palautetta antaneille! Paljon tuli positiivista palautetta luennoista ja laskuharjoituksista, ja koitamme jatkossa pitää kiinni sanallisessa palautteessa esiin nousseista hyväksi koetuista asioista. Lisäksi palautteessa oli paljon myös rakentavia parannusehdotuksia, jotka pyrimme huomioimaan tulevissa kursseissa ja tulevassa opetuksessa.
+
+Terveisin,
+Heino Kuuluvainen
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- <table>
+			<tr><td><div class="line" ></div></td></tr>
+			<tr><td>Kyselyn tulosten julkisuus</td></tr>
+			<tr><td><div class="line" ></div></td></tr>
+		</table>-->
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th style="font-size: 13px;">
+           Kysymyskohtaiset palautteet
+          </th>
+         </tr>
+        </tbody>
+       </table>
+       <h1>
+        Monivalintakysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <table class="common">
+        <!-- NORMAL OBLIGATORY CHOICE QUESTIONS -->
+        <tbody>
+         <tr>
+          <th colspan="4" width="90%">
+           Yleisarvosana opintojaksolle ja sen toteutukselle.
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           3.98
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           0.82
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           4.26
+          </td>
+          <td>
+           4.26
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           10.0
+          </td>
+          <td>
+           21.28
+          </td>
+          <td>
+           25.53
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           21.0
+          </td>
+          <td>
+           44.68
+          </td>
+          <td>
+           70.21
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           13.0
+          </td>
+          <td>
+           27.66
+          </td>
+          <td>
+           97.87
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           2.13
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           47.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista?
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4.1
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           0.73
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           9.0
+          </td>
+          <td>
+           21.43
+          </td>
+          <td>
+           21.43
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           18.0
+          </td>
+          <td>
+           42.86
+          </td>
+          <td>
+           64.29
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           13.0
+          </td>
+          <td>
+           30.95
+          </td>
+          <td>
+           95.24
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           4.76
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           42.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin.
+          </th>
+          <td class="empty" rowspan="9" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2.24
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           0.53
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä vähäinen opintopisteisiin nähden. (1)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           4.88
+          </td>
+          <td>
+           4.88
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Työmäärä sopiva opintopisteisiin nähden. (2)
+          </td>
+          <td>
+           27.0
+          </td>
+          <td>
+           65.85
+          </td>
+          <td>
+           70.73
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä liian suuri opintopisteisiin nähden. (3)
+          </td>
+          <td>
+           12.0
+          </td>
+          <td>
+           29.27
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           41.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- USER DEFINED CHOICE QUESTIONS -->
+       <br/>
+       <span class="header">
+        Omat kysymykset
+       </span>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th colspan="4" width="90%">
+           Kurssin vaikeustaso on
+          </th>
+          <td class="empty" rowspan="12" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2.5
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           2.5
+          </td>
+          <td>
+           0.5
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           aivan liian vaikea (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           hiukan liian vaikea (2)
+          </td>
+          <td>
+           21.0
+          </td>
+          <td>
+           50.0
+          </td>
+          <td>
+           50.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           sopiva (3)
+          </td>
+          <td>
+           21.0
+          </td>
+          <td>
+           50.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           hiukan liian helppo (4)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           aivan liian helppo (5)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           42.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Osallistumiseni luennoille
+          </th>
+          <td class="empty" rowspan="12" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           3.81
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           1.45
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           En osallistunut (1)
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           11.9
+          </td>
+          <td>
+           11.9
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Muutamalle (2)
+          </td>
+          <td>
+           6.0
+          </td>
+          <td>
+           14.29
+          </td>
+          <td>
+           26.19
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Noin puolelle (3)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           2.38
+          </td>
+          <td>
+           28.57
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Suurimmalle osalle (4)
+          </td>
+          <td>
+           10.0
+          </td>
+          <td>
+           23.81
+          </td>
+          <td>
+           52.38
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Kaikille tai lähes kaikille (5)
+          </td>
+          <td>
+           20.0
+          </td>
+          <td>
+           47.62
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           42.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Arvosana kurssin ensimmäisen puoliskon luennoille (luennoitsija Jorma Keskinen).
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4.54
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           0.59
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           4.76
+          </td>
+          <td>
+           4.76
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           14.0
+          </td>
+          <td>
+           33.33
+          </td>
+          <td>
+           38.1
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           23.0
+          </td>
+          <td>
+           54.76
+          </td>
+          <td>
+           92.86
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           7.14
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           42.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Arvosana kurssin jälkimmäisen puoliskon luennoille (luennoitsija Heino Kuuluvainen).
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           3.97
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           0.87
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           7.14
+          </td>
+          <td>
+           7.14
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           6.0
+          </td>
+          <td>
+           14.29
+          </td>
+          <td>
+           21.43
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           18.0
+          </td>
+          <td>
+           42.86
+          </td>
+          <td>
+           64.29
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           11.0
+          </td>
+          <td>
+           26.19
+          </td>
+          <td>
+           90.48
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           9.52
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           42.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Arvosana laskuharjoitusten pitäjille.
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4.5
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           5.0
+          </td>
+          <td>
+           0.6
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           4.76
+          </td>
+          <td>
+           4.76
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           15.0
+          </td>
+          <td>
+           35.71
+          </td>
+          <td>
+           40.48
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           21.0
+          </td>
+          <td>
+           50.0
+          </td>
+          <td>
+           90.48
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           9.52
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           42.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- OPEN QUESTIONS !!! -->
+       <br/>
+       <h1>
+        Avoimet kysymykset
+       </h1>
+       <!-- USER DEFINED OPEN QUESTIONS -->
+       <span class="header">
+       </span>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Opintojaksolla oli kaksi vastuuluennoitsijaa. Miten tämä mielestäsi toimi?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Kuuluvainen, Heino,
+									02.07.2018
+           </span>
+           <br/>
+           Ei sillä ole mitään erityistä merkitystä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hybon
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ihan ok.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennoissa ei moitittavaa. Koe jälkimmäisellä puoliskolla huomattavasti vaikeampi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jorma ehdottomasti ammattitaitoisempi ja siksi ero korostui. Muuten ok.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jako vastuuhenkilöiden välillä oli selkeä ja oli hyvä, että asiasta tiedotettiin jo kurssin alussa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Toimi hyvin ja siirtymä oli luonteva. Luennointityyli toki vaihtui mutta molemmat olivat selkeitä ja hyviä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Toimi, vaihtaminen oli sulavaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hieman hassua se oli, mutta kyllä se onnistui
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennoistijan vaihtuminen kesken kurssin oli hieman outoa, mutta se toimi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Todella hyvin, koska molemmat olivat erinomaisia ja se toi hieman vaihtelua opiskeluun
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           En käynyt säännöllisesti luennoilla, mutta esimerkiksi opetuksen sisältö oli melko identtinen luennoitsijan vaihtumisesta huolimatta. Ei negatiivista sanomista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ei tuottanut ongelmia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssi toimi hyvin, vaikka olikin kaksi vastuuluennoitsijaa. Itse pääsin ainoastaan alkupuolen luennoille, mutta loput katsoin videolta. Tallenteista taas iso kiitos, helpottaa ristiinopiskelijoita paljon.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssi toimi hyvin kahdellakin luennoitsijalla
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennoitsijoiden jako oli selkeä fifti fifti ja materiaalit olivat johdonmukaisesti jatkuvat aikaisemmin hyviksi todetut
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ei itselleni aiheuttanut mitään ongelmia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielestäni toimii hyvin. Olisi huonompi jos välillä olisi toinen luennoitsija ja välillä toinen. Tulee olla pitkä periodi saman luennoitsijan kanssa niinkuin olikin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielestäni tämä ei haitannut juurikaan. Molemmilla luenntoisijalla oli samanlainen tyyli pitää luentoja.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jako toimi yllättävän hyvin, varsinkin, kun alue oli jaettu selkeästi kahteen osaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvin, molemmat opettivat selkeästi ja kattavasti. Tenttiviikon jälkeinen vaihdos oli luonteva.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tästä ei aiheutunut onglemaa opetukselle. Luennoitsijan vaihto tapahtui sujuvasti periodien välillä ja luennoitsijoiden tyylit vastasivat hyvin toisiaan, joten hämmennystä ei aiheutunut.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Alussa se ei kuulostanut lainkaan hyvältä idealta, mutta loppujen lopuksi sillä ei ollut mitään väliä. Molemmat kuitenkin ehtivät pitämään luentoja sen verran paljon, että ei asiaa oikeastaan edes muista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ihan hyvin. Jorman luentoja olisin kuunnellut mielelläni enemmänkin, mutta molemmat selittivät opetettavan asian hyvin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Toimi hyvin. Käyttivät samoja materiaaleja niin olivat kuin kaksi marjaa tai rypälettä (mutta eri vuosikertaa).
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Palaute opintojakson ensimmäisen puoliskon vastuuluennoitsijalle (Jorma Keskinen).
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Kuuluvainen, Heino,
+									02.07.2018
+           </span>
+           <br/>
+           Loistava
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvä opettaja.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mukava ja innostava asenne ja opetustyyli!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvät luennot, sopivasti esimerkkejä ja teoriaa. Luennot mielenkiintoisia ja helppoja seurata. Konkreettiset esimerkit ja havainnollistavat selitykset olivat hyvä lisä tässä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Toimi hyvin kuin LaFy 1:lläkin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jorma on oikein hyvä luennoitsija, hauska ja selkeä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvää opetusta ja luennointia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Erittäin opiskelijan huomioonottava ja ammattitaitoinen luennoitsija. Ennemminkin opettamista kuin luennointia. Asiat helppo ymmärtää.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Välillä oli turhankin kova tahti.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mukava ja hyvä luennoitsija ja on mielenkiintoista seurata luentoja. Selkeää ja johdonmukaista (kuten aiemmallakin kurssilla).
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot eivät olleet liian totisia
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennoitsijoiden Jimi Hendrix. Et siinä että kuolisit barbituraattien yliannostukseen, vaan että performanssiesi päättyminen omalta osaltani jättää aukon sydämeeni. Kiitos loistavista luennoista ja elämää ohjeistavista viisauksista!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lahjakas ja innostava luennoitsija.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Näin jälkikäteen ymmärsin täysin miksi maxwellin yhtälöt tulivat kurssin loppupuolella eikä alussa (niinkuin suunnitelma sanoo). Luennot olivat hyviä, sillä siellä käytiin asiat sopivan nopeasti läpi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat erittäin havainnollistavia ja selkeitä. Luennoilla oli aina helppo pysyä mukana ja seurata opetusta. Yliopistoissa opettaa erittäin vaihtelevan tasoista henkilökuntaa, mutta Keskinen on ehdottomasti yksi parhaista luennoitsijoista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Loistavaa luennointia! Asiat ymmärsi hyvin ja otit myös hyvin kontaktia opiskelijoihin. Mielenkiinto pysyi helposti yllä ja laskuesimerkit tukivat oppimista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot ovat olleet hyviä ja hyödyllisiä kaikin puolin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Toivoisin pientä rauhallisuutta opetukseen, välillä kiirehdittiin niin kovaa tahtia eteenpäin. Muuten luennot olivat mielenkiintoisia ja näkee, että nautit luentojen pitämisestä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Keskinen osallistaa opiskelijoita erinomaisesti keskustelemalla luennoilla ja huomioimalla eri tasoiset opiskelijat. Lisäksi koskaan ei tunnu ole liian kiire käsitellä jotain asiaa vielä hetki, jos se jää osalle epäselväksi. Toisaalta jokin asia voidaan ohittaa nopeammin, jos se on jo opiskelijoille selvää.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Palaute opintojakson jälkimmäisen puoliskon vastuuluennoitsijalle (Heino Kuuluvainen).
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Kuuluvainen, Heino,
+									02.07.2018
+           </span>
+           <br/>
+           Todella hyvä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Heino, kun tuli opettamaan, niin kirjoitettiin enemmän muistiinpanoja. Itselleni tämä toimii paremmin. Mutta jäin kaipaamaan Jorman vitsikkäitä luentoja.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Leppoisa ja osaava asenne. Perusteellinen opetus.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat hyvät. Asiat esitettiin riittävän selkeästi ja sopivassa tahdissa. Vain yksittäisillä luennoilla tuntui, että tuli liikaa ns. uutta asiaa ja liian nopeasti. Pääosin siis uusi asia sai riittävästi selitystä ja täydennystä myös diojen ulkopuolelta ja käytännöstä. Esimerkkejä oli sopivasti.
+Lisäksi kertausluento oli erittäin hyödyllinen ja se auttoi havaitsemaan itselle selkeästi heikommalle pohjalle jääneet asiat.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvin valmistellut luennot, mikä oli hyvä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvin sujui luennot jälkimmäiselläkin puoliskolla
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jälkimmäisen puolen luennoitsija onnistui hyvin. Ainoastaan jotkin hankalat kysymykset saattoivat kysymyshetkellä jäädä vastaamatta, mutta käsittääkseni lähes kaikkiin kysymyksiin saatiin lopulta vastaukset.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luentosi olivat luentomaisia. Jos haluat myös opettaa niin sitä pitää kehtittää. Voisit esim. kannustaa enemmän vastaamaan, kuten kehumalla oikein vastannutta, ja kysymään. Ja jos kysytään niin pyri vastaamaan kysyttäessä tai pidä huoli, että vastaat myöhemmin vaikka mainitsemalla tämän olevan jonkun kysymys. Nyt sanoit "palaan asiaan myöhemmin", kun kysyttiin jotain ja asis unohtui vähän kaikilta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Joskus mentiin turhan hitaasti.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kuuluvainen kävi asioita läpi yksityiskohtaisesti, mikä mielestäni sopii hyvin tälle kurssille joka on haastava. Turha kertaus ei omalta osaltani ole ikinä turhaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tiesi hyvin mitkä asiat oltiin käyty Jorman kanssa
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Arvosanasi viisi, jos Jormalla menisi yli asteikon. Luentojen konsepti ja taulujen käyttö loistavaa. Sait luennot tuntumaan rauhallisilta, melkein pelotti että tuleeko loppukurssista kiire, muttei tullut. Tämä oli hyvä asia, koska vaikeaksi varoitellut aiheet tuntuivat selkeiltä ja niitä oli aikaa pohtia. Lisäksi kertomasi suulliset havainnollistavat/mielenkiintoiset esimerkit sitoivat aiheita konkreettisiin asioihin ja saivat fysiikkaviisarit väpättämään. Juuri nämä olivat mielestäni Jorman luentojen suola, ja niitä saa kertoa mielestäni vielä lisää.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Enemmän integrointilaskuesimerkkejä luennoille, kiitos
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Lahjakas ja selkeä luennoitsija. Helppo pysyä perässä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Todella rauhallinen ja hyvä tempo opetuksessa. Heino mielestäni opettaa paremmin, kuin monet tietämäni "kokeneet" lehtorit.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Alun epävarmuuden jälkeen luennointi alkoi sujua hyvin. Välillä olisin kaivannut enemmän joidenkin vaikeiden asioiden selittämistä esimerkiksi toisella tavalla, koska välillä jotkin asiat jäivät vähän hämäriksi. Mutta kaiken kaikkiaan luennointityyli oli havainnollinen ja yleensä helppo seurata.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Suoriuduit työstäsi todella hyvin, vaikkei kokemusta ehkä olekaan vielä kertynyt niin paljoa. Opetus oli selkeää ja johdonmukaista ja pyrit aktivoimaan opiskelijoita sopivasti.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat hyviä. Opetustyyli ja muistiinpanot olivat hyödyllisiä ja helppoja seurata. Oli myös hyvä, että mikäli johonkin kysymykseen ei heti ollut vastausta, otti luennoitsija siitä selvää seuraavalle luennolle.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Myös jälkimmäisen puoliskon luennot olivat hyviä, vaikka Jorman alkuvuoden jälkeen oli luennoitsijan vaihto pettymys. Eipä enää parin viikon jälkeen haitannut! Aina joskus luentojen alussa oli noin vartti kertausta edellisen viikon asioista, mikä oli erittäin hyödyllistä. Niistä en luopuisi, ja niitä voisi ehkä korostaa enemmän (että myös uneliaampi tajuaisi keskittyä edes sen ensimmäisen vartin kunnolla). Myös kertausluento oli erittäin hyvä, vaikka sen sisältö olikin yllättävä. Ainut negatiivinen asia on, että viikkokokeiden tuloksia saa kytätä ja odottaa, tulosten tuleminen meni välillä turhan lähelle seuraavaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opetustahti oli rauhallinen, mutta välillä kiinnitettiin mielestäni liikaa huomiota asioihin, jotka ovat meille itsestäänselviä. Näytä innostuksesi asiaan enemmän kun luennoit, se tarttuu opiskelijoihinkin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Myös Kuuluvaisen luennoilla keskustellaan opiskelijoita aktivoivasti. Jos häneltä kysyy jotain, mihin hän ei osaa heti vastata, niin hän ei koskaan unohda selvittää asiaa seuraavalle luennolle. Luennot ovat itseasiassa hyvin saman kaltaisia Keskisen kanssa, mikä on vain positiivista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Kerro mielipiteesi tämän opintojakson laskuharjoituksista. Palaute yksittäisille assistenteille.
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Kuuluvainen, Heino,
+									02.07.2018
+           </span>
+           <br/>
+           Laskuharjoitukset olivat hyviä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvät.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Laskuharjoitukset olivat monipuolisia ja selkeyttivät hyvin opittua teoriaa. Assistenteilta sai riittävästi selvennystä epäselviksi jääneisiin kohtiin ja teoriaan tehtävien taustalta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvää avustusta ja oivaltamaan auttamista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Laskuharjoitustilaisuudet toimivia ja apua saa sopivilla vihjeillä tehtäviin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hieman vaihtelevaa mutta suuremmaksi osaksi sopivan vaikeaa, itse en täysin ymmärrä miksi kaikkia mallivastauksia ei laiteta nettiin. Joskus vastauksien tulossa kesti hitusen liian kauan
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyviä. Hyvää opetusta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Assistentit voisivat auttaa enemmän laskuharjoituksissa, koska ei ole mitään järkeä kysyä samaan tehtävään apua 5 kertaa putkeen eikä silti pääse tehtävässä eteenpäin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Laskuhsrjoitukset yleisesti ottaen hyviä ja hyödyllisiä. Hyvä, että oli sekä perustehtäviä että syvällisempää ymmärtämistä vaativia tehtäviä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Laskarit toimivat, kuten yleensäkin, hyvin. Ei kommentoitavaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kaikilta assareilta sai hyvin apua ja laskareissa oli rento meininki. Paavolle plussaa vipan laskareitten karkeista:)
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kaikki assistentit pelasivat loistavasti yhteen, ja heidän välinen yhteishenki, yksilöllisyys ja tuttavallisuus tekivät fysiikan laskareista parhaat laskarit.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvä kun ongelmiin ei tule suoria vastauksia, vaan meidät pistetään itse ajattelemaan ja ymmärtämään. Virheiden tekeminen laskuharjoituksissa ei tuo juurikaan noloja tilanteita.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Laskuharjoitukset olivat sopivan hankalia. Suurin osa assistenteista oli ystävällisiä ja neuvoivat aina tarvittaessa selkeästi. Laura Salo oli asiallinen, mutta itse jäin kaipaamaan ehkä hieman myönteisempää ja rennompaa asennetta laskuharjoituksissa hänen osaltaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Erityismaininta kurssin onnistumisesta kuuluu assareille laskarien vetämisestä ja tehtävien laatijoille hyvin suunnitelluista tehtävistä! Kaikki assistentit hoitivat hommansa todella hyvin ja heiltä pystyi aina kysymään jos jokin oli epäselvää. Assistentit selittivät kärsivällisesti pidempäänkin, eivätkä turhautuneet useista avunpyynnöistä. Haluan nostaa esiin assareista vielä erikseen Paavon sekä Miikan, jotka mielestäni onnistuivat työssään erinomaisesti. Kiitos kärsivällisyydestänne!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Laskuharjoitukset olivat monipuolisia ja haasteellisia. Assistenteilta sai sopivasti apua.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Laskuharjoituksissa on aina positiivinen tunnelma. Ei ole mikään ongelma kysyä samaan tehtävään apua kymmenettä kertaa ja assistentit vääntävät kyllä aina juuri niin paksusta rautalangasta kuin on tarve. Ainut negatiivinen asia on, että samanlaiset toroidi tehtävät, samalla kuvalla, alkavat pikku hiljaa tulla korvista. Ja olisi kiva, että vastaukset tulisivat näkyviin jo pari päivää ennen kuin sähköisesti palautettavat pitää palauttaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Välillä todella vaikeita, välillä niistä selvittiin vähemmällä. Assareille iso kiitos ymmärtäväisyydestä ja että jaksoitte selittää uudelleen ja uudelleen saman asian, kun en vain tajunnut. Yksin en tehtävistä olisi osannut välillä yhtäkään ja luennoilla ei oltu aina käyty samoja asioita.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kaikilta assistenteilta on helppo pyytää apua ja he tarjoavat sitä sopivissa määrin; minkään yksittäisen tehtävän kanssa ei joudu jumittamaan koko laskareita, mutta he eivät ohjaa kerralla liian pitkälle vaan juuri sopivasti, jotta tehtävän saisi vielä oivaltaa itse.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Muita kommentteja tai kehitysehdotuksia (esim. käytännön järjestelyt, ymmärtämättä jääneet asiat,...)
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Kuuluvainen, Heino,
+									02.07.2018
+           </span>
+           <br/>
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luentotallenteet olivat hyödylliset. Niiden avulla oli hyvä kerrata kokeisiin ja tarkistaa epäselviksi jääneitä kohtia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Omasta mielestäni fysiikan kurssit saisi joko jakaa kahteen erikurssiin, molemmat 5op, tai korottaa yhden kurssin op kymmeneen. Koska verrattuna esim matikkaan työmäärä on suunnilleen sama yhdessä fysiikan kurssissa (ellei peräti raskaampi ainakin omalta osaltani sillä matikka sujuu paremmin) kuin kahdessa matikan kurssissa. Mutta kuulemma jotain tälläistä kaavaillaankin, sääli vain että ei ole vielä käytössä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luentokalvoissa voisi olla tulevaisuudessa enemmän asiaa, esimerkiksi kaavanjohtamista ja sanallisia kommentteja. Näin olisi helpompi luentokalvojen avulla kerrata kurssin aihepiirejä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Erittäin iso plussa ideasta pitää viikkokokeita. Vaikka ei olisikaan päässyt kaikista niistä läpi, se rytmitti hyvin kurssia ja pystyi hyvin aina treenaamaan edelliset kaksi viikkoa perusteellisesti. Tätä toivoisin muillekin kursseille, tosin järjestelyt vaativat varmaan enemmän työtä. Tällä kurssilla paljon asiaa, mutta paketti pysyi kasassa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Henkilökohtaisesti pidän konetalon luentosaleista enemmän kun tietotalon, eli sinne kaikki luennot. Mutta tietenkään tämäkään ei ole niin yksinkertainen asia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kaavakokoelmaa voisi laajentaa. Esimerkiksi sähköiseen potentiaaliin liittyvät kaavat puuttuvat.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Viikkokokeet olivat erittäin hyvä systeemi! 
+
+Voisiko muutaman matikan luennoitsijan istuttaa ensi vuonna LaFy luennoille? Heille voisi tehdä ihan hyvää seurata muutama luento, joilla ei ole jatkuvaa nukahtamisvaara, vaikka käsiteltävä asia onkin vaikea. xD
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Viikkotenttisysteemi oli ajatuksena hyvä, mutta tentit olivat välillä todella vaikeita. Mietittiinkin, että kuinka suuri hyöty niistä lopulta oli, kovin moni ei niillä läpi ainakaan päässyt. Ne jotka pääsivät, selviävät. Varmasti myös tentistä kunnialla läpi. Ne kyllä auttoivat kertaamaan asioita jo kurssin aikana.
+Kurssin asiat olivat välillä vaikeita ymmärtää, varsinkin, kun oma pohja oli täysi nolla. Toivoisin enemmän painotusta myös niihin perusasioihin, eikä vain toteamista että nämä on varmaan tuttuja lukiosta (koska kaikki eivät lukion fysiikkaa ole käyneet).
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Työmäärästä opintopisteisiin nähden: se tuntuu suuremmalta kaikkiin muihin ensimmäisen vuoden aikana käymiini kursseihin verrattuna. Jos vertaa esimerkiksi laajaan kemiaan, tulee kevään aikana opintopisteitä yksi vähemmän, luentoja on viikossa yksi enemmän ja laskuharjoitusten tekeminen kestää melkein tunnin pidempään. Tentiin lukeminenkin on aika erilainen savotta, kun samassa ajassa fysiikasta kertyi 12 A4-aukeamaa muistiinpanoja (ilman esimerkkejä) kuin kemiasta 5 aukeamaa.
+
+Samaan aikaan tuntuu kuitenkin siltä, että sisällöstä kaikki oli oleellista ja laskarit olivat lähes joka viikko monipuolisia. Jos asiaa siis ratkotaan jotenkin, niin ennemmin lisäämällä 1-3 opintopistettä kurssiin kuin karsimalla sisältöä. Tai ehkä kurssin jakaminen kahteen 4 tai 5 op:n kurssiin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <!-- STUDENT RESPONSES -->
+       <br/>
+       <br/>
+      </form>
+      <br/>
+      <br/>
+     </div>
+     <div id="footer">
+      <span class="about" id="footerInfoLink">
+       Tietoa sovelluksesta
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div aria-describedby="footerInfobox" aria-labelledby="ui-id-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable" role="dialog" style="display: none; position: absolute;" tabindex="-1">
+   <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+    <span class="ui-dialog-title" id="ui-id-1">
+    </span>
+    <button aria-disabled="false" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="close">
+     <span class="ui-button-icon-primary ui-icon ui-icon-closethick">
+     </span>
+     <span class="ui-button-text">
+      close
+     </span>
+    </button>
+   </div>
+   <div class="ui-dialog-content ui-widget-content" id="footerInfobox">
+    Kaiku - Tampereen yliopisto
+			Sovelluksen versio: 1.15.0 (10.3.2020)
+   </div>
+   <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;">
+   </div>
+  </div>
+ </body>
+</html>

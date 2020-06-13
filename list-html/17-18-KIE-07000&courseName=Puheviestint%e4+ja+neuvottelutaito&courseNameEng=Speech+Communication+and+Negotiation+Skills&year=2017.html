@@ -1,0 +1,947 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Kaiku
+  </title>
+  <link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css"/>
+  <script src="/kaiku/javascript/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/kaiku.js" type="text/javascript">
+  </script>
+  <link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css"/>
+  <link href="/kaiku/style/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="hidden" id="pop-up">
+   <img alt="hourclass" src="/kaiku/images/hourglass_small.png"/>
+   <br/>
+   Raportti latautuu...
+  </div>
+  <div id="outer">
+   <div id="page">
+    <div id="banner">
+     <img alt="Kaiku" src="/kaiku/images/Logo_TAU_FI.png" style="height: 50px;"/>
+     <span class="page_name">
+      Kaiku
+      <br/>
+     </span>
+     <div id="banner_inner_right">
+      <nobr>
+       <a href="https://www.tut.fi/pop">
+        POP
+       </a>
+       |
+       <a href="https://www.tut.fi/tutka">
+        TUTKA
+       </a>
+      </nobr>
+      <span class="user_name">
+       Jere Laine
+       <br/>
+      </span>
+      <br/>
+      <a href="/kaiku/logOut/logOut">
+       Kirjaudu ulos
+      </a>
+     </div>
+    </div>
+    <div id="menu" style="min-height: 15px;">
+     <nobr>
+      <a href="/kaiku/kaiku/mainpage">
+       Etusivu
+      </a>
+      <a href="/kaiku/studentMainPageSearch/feedback">
+       Anna Palautetta
+      </a>
+      <a class="selected" href="/kaiku/examineFeedbackPage/feedback">
+       Palautteet
+      </a>
+      <a href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf" style="font-size: 12px;">
+       ?
+      </a>
+      <a href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&amp;PREVIOUS_VIEW=feedbackSummaryCourseQueriesResults" style="font-size: 10px;">
+       in English
+      </a>
+     </nobr>
+    </div>
+    <div id="content">
+     <div id="inner_content">
+      <form action="/kaiku/examineFeedbackPage/feedback" id="pageInformation" method="post">
+       <p>
+        <a href="/kaiku/examineFeedbackPage/feedback?action=landingPageLink">
+         Opintojaksojen palautteet
+        </a>
+        →
+        <a href="/kaiku/examineFeedbackPage/feedback?action=depOrCoursegroupLink&amp;depOrCoursegroupId=">
+        </a>
+        → KIE-07000 Puheviestintä ja neuvottelutaito
+       </p>
+       <h1>
+        Opintojakson kyselyiden tulokset
+       </h1>
+       KIE-07000   Puheviestintä ja neuvottelutaito
+       <table>
+        <tr>
+         <td>
+          Lukuvuosi
+         </td>
+         <td>
+          <select id="searchForm2.chosenAcademicYear" name="searchForm2.chosenAcademicYear">
+           <option value="2019">
+            2019-2020
+           </option>
+           <option value="2018">
+            2018-2019
+           </option>
+           <option value="2017">
+            2017-2018
+           </option>
+           <option selected="selected" value="2016">
+            2016-2017
+           </option>
+           <option value="2015">
+            2015-2016
+           </option>
+           <option value="2014">
+            2014-2015
+           </option>
+           <option value="2013">
+            2013-2014
+           </option>
+           <option value="2012">
+            2012-2013
+           </option>
+           <option value="2011">
+            2011-2012
+           </option>
+           <option value="0">
+            Kaikki/All
+           </option>
+          </select>
+         </td>
+         <td>
+          <input name="BUTTON_CHOOSE" type="submit" value="Valitse"/>
+         </td>
+        </tr>
+       </table>
+       <p>
+        Kyselyn tulokset eivät ole automaattisesti kaikkien nähtävillä, vaan toteutuskertavastaavan tulee julkaista tulokset.
+       </p>
+       <p>
+        Yleisarvosana: 0% / 1% / 2% / 3% / 4% / 5% / En osaa sanoa%
+        <br/>
+        Yleisarvosana opintojaksolle ja sen toteutukselle. (Yleisarvosanan antaminen perustuu omaan henkilökohtaiseen kokemukseesi opintojaksosta (sis. opetus, tilat, oppimateriaalit, viestintä, opetusajankohdat sekä muut opetusjärjestelyt). Onnistuiko tämä opintojakso sinulle tärkeissä asioissa? )
+       </p>
+       <p>
+        Osaamistavoitteet: 0% / 1% / 2% / 3% / 4% / 5% / En osaa sanoa%
+        <br/>
+        Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista? (Opintojakson osaamistavoitteet näkyvät 'osaamistavoitteiden' -linkistä. Arvioi, kuinka hyvin opintojakso mielestäsi tuki osaamistavoitteiden saavuttamista.)
+       </p>
+       <p>
+        Arvioitu työmäärä: Työmäärä vähäinen opintopisteisiin nähden.% / Työmäärä sopiva opintopisteisiin nähden.% / Työmäärä liian suuri opintopisteisiin nähden.%
+        <br/>
+        Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin. ()
+       </p>
+       <table class="common">
+        <tr>
+         <th>
+          Kysely
+         </th>
+         <th>
+          Yleisarvosana
+         </th>
+         <th>
+          Osaamistavoitteet
+         </th>
+         <th>
+          Arvioitu työmäärä
+         </th>
+         <th>
+          Vastaajia (N)
+         </th>
+         <th>
+          En anna palautetta vastanneet (N)
+         </th>
+         <th style="width: 125px;">
+          Opettaja vastannut
+         </th>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit I  Kurssiin kuuluu luennot, luentotentti ja harjoitukset. Harjoituksissa edellytetään kokoaikaista läsnäoloa. Kuhunkin harjoitusryhmään otetaan maksimissaan 20 opiskelijaa. Ryhmiin tulee opiskelijoita, joille kurssi on a) pakollinen (tuotantotalous, tietojohtaminen), b) valinnainen pakollinen tai c) vapaaehtoinen. Ryhmiin valitaan edellä kuvatussa järjestyksessä. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=33021">
+           Toteutuskertakysely 14.10.17-17.10.17
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 0 / 0 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 0 / 0 / 0
+         </td>
+         <td>
+          0 / 0 / 0
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          1
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=32985">
+           Toteutuskertakysely 18.10.17-15.12.17
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 17 / 50 / 33 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 9 / 55 / 36 / 0
+         </td>
+         <td>
+          0 / 91 / 9
+         </td>
+         <td>
+          12
+         </td>
+         <td>
+          1
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit II  Osittaisena Moodle-kurssina suoritettavaan Puheviestintä ja neuvottelutaito -kurssitoteutukseen integroidaan luennot ja kurssilla käytetään oppimispäiväkirjatyöskentelyä. Näin ollen tähän toteutukseen ilmoittautuvien ei tarvitse käydä luennoilla eikä tentissä. Tässäkin toteutuksessa on 20 lähiopetustuntia ja muu työskentely tapahtuu itsenäisesti, ryhmissä ja verkossa. Harjoitukset edellyttävät kokoaikaista läsnäoloa. Harjoitusosuuden kaikki valmistelua edellyttävät tehtävät kuuluvat kokonaisuuteen (valmisteltu puhe-esitys, neuvotteluharjoitus ja kokousharjoitus sekä kurssin kirjalliset tehtävät, poissaolotilanteessa korvauksesta voidaan neuvotella). Ryhmäkoko Moodle-kurssilla on 20 opiskelijaa. Moodle-ryhmään tulee opiskelijoita, joille kurssi on a) pakollinen (tuotantotalous, tietojohtaminen), b) valinnainen pakollinen tai c) vapaaehtoinen. Ryhmään valitaan edellä kuvatussa järjestyksessä. Moodle-kurssitoteutuksia on yksi syksyllä ja yksi keväällä. Jos ja kun ryhmässä on tilaa, paikat täytetään ilmoittautumisleiman perusteella. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille. Moodle-kurssin ryhmään päässeille annetaan erikseen avain Moodle-alustalle.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=34337">
+           Toteutuskertakysely 09.12.17-22.01.18
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 33 / 67 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 10 / 50 / 40 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          12
+         </td>
+         <td>
+          2
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit III  Kurssiin kuuluu luennot, valinnan mukaan luentotentti/tenttiessee ja harjoitukset. Harjoituksissa edellytetään kokoaikaista läsnäoloa. Ryhmiin tulee opiskelijoita, joille kurssi on a) pakollinen (tuotantotalous, tietojohtaminen), b) valinnainen pakollinen tai c) vapaaehtoinen. Ryhmiin valitaan edellä kuvatussa järjestyksessä. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=35342">
+           Toteutuskertakysely 24.02.18-09.04.18
+          </a>
+         </td>
+         <td>
+          0 / 8 / 0 / 0 / 77 / 15 / 0
+         </td>
+         <td>
+          0 / 8 / 0 / 8 / 77 / 8 / 0
+         </td>
+         <td>
+          0 / 62 / 38
+         </td>
+         <td>
+          13
+         </td>
+         <td>
+          1
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit III  Kurssiin kuuluu luennot, valinnan mukaan luentotentti/tenttiessee ja harjoitukset. Harjoituksissa edellytetään kokoaikaista läsnäoloa. Ryhmiin tulee opiskelijoita, joille kurssi on a) pakollinen (tuotantotalous, tietojohtaminen), b) valinnainen pakollinen tai c) vapaaehtoinen. Ryhmiin valitaan edellä kuvatussa järjestyksessä. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=35343">
+           Toteutuskertakysely 24.02.18-09.04.18
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 0 / 100 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 33 / 67 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          9
+         </td>
+         <td>
+          4
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit III  Kurssiin kuuluu luennot, valinnan mukaan luentotentti/tenttiessee ja harjoitukset. Harjoituksissa edellytetään kokoaikaista läsnäoloa. Ryhmiin tulee opiskelijoita, joille kurssi on a) pakollinen (tuotantotalous, tietojohtaminen), b) valinnainen pakollinen tai c) vapaaehtoinen. Ryhmiin valitaan edellä kuvatussa järjestyksessä. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=35344">
+           Toteutuskertakysely 24.02.18-09.04.18
+          </a>
+         </td>
+         <td>
+          0 / 0 / 8 / 0 / 50 / 42 / 0
+         </td>
+         <td>
+          0 / 0 / 8 / 8 / 67 / 17 / 0
+         </td>
+         <td>
+          0 / 73 / 27
+         </td>
+         <td>
+          12
+         </td>
+         <td>
+          1
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit III  Kurssiin kuuluu luennot, valinnan mukaan luentotentti/tenttiessee ja harjoitukset. Harjoituksissa edellytetään kokoaikaista läsnäoloa. Ryhmiin tulee opiskelijoita, joille kurssi on a) pakollinen (tuotantotalous, tietojohtaminen), b) valinnainen pakollinen tai c) vapaaehtoinen. Ryhmiin valitaan edellä kuvatussa järjestyksessä. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=35387">
+           Toteutuskertakysely 24.02.18-09.04.18
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 67 / 33 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 20 / 40 / 40 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          6
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit III  Kurssiin kuuluu luennot, valinnan mukaan luentotentti/tenttiessee ja harjoitukset. Harjoituksissa edellytetään kokoaikaista läsnäoloa. Ryhmiin tulee opiskelijoita, joille kurssi on a) pakollinen (tuotantotalous, tietojohtaminen), b) valinnainen pakollinen tai c) vapaaehtoinen. Ryhmiin valitaan edellä kuvatussa järjestyksessä. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=35388">
+           Toteutuskertakysely 24.02.18-09.04.18
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 45 / 55 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 20 / 50 / 30 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          11
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit III-IV  Kurssiin kuuluu luentosarja tammikuussa 4x2h, valinnan mukaan luentotentti/tenttiessee sekä harjoitukset. Harjoituksissa edellytetään kokoaikaista läsnäoloa. Ryhmiin tulee opiskelijoita, joille kurssi on a) pakollinen (tuotantotalous, tietojohtaminen), b) valinnainen pakollinen tai c) vapaaehtoinen. Ryhmiin valitaan edellä kuvatussa järjestyksessä. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=36547">
+           Toteutuskertakysely 28.04.18-18.06.18
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 8 / 50 / 42 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 8 / 58 / 33 / 0
+         </td>
+         <td>
+          0 / 92 / 8
+         </td>
+         <td>
+          12
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit III-IV  Kurssiin kuuluu luentosarja tammikuussa 4x2h, valinnan mukaan luentotentti/tenttiessee sekä harjoitukset. Harjoituksissa edellytetään kokoaikaista läsnäoloa. Ryhmiin tulee opiskelijoita, joille kurssi on a) pakollinen (tuotantotalous, tietojohtaminen), b) valinnainen pakollinen tai c) vapaaehtoinen. Ryhmiin valitaan edellä kuvatussa järjestyksessä. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=36548">
+           Toteutuskertakysely 28.04.18-18.06.18
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 56 / 44 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 44 / 56 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          9
+         </td>
+         <td>
+          1
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit III-IV  Kurssiin kuuluu luentosarja tammikuussa 4x2h, valinnan mukaan luentotentti/tenttiessee sekä harjoitukset. Harjoituksissa edellytetään kokoaikaista läsnäoloa. Ryhmiin tulee opiskelijoita, joille kurssi on a) pakollinen (tuotantotalous, tietojohtaminen), b) valinnainen pakollinen tai c) vapaaehtoinen. Ryhmiin valitaan edellä kuvatussa järjestyksessä. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=36073">
+           Toteutuskertakysely 18.04.18-11.06.18
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 18 / 55 / 27 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 22 / 67 / 11 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          11
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit III-IV  Kurssiin kuuluu luentosarja tammikuussa 4x2h, valinnan mukaan luentotentti/tenttiessee sekä harjoitukset. Harjoituksissa edellytetään kokoaikaista läsnäoloa. Ryhmiin tulee opiskelijoita, joille kurssi on a) pakollinen (tuotantotalous, tietojohtaminen), b) valinnainen pakollinen tai c) vapaaehtoinen. Ryhmiin valitaan edellä kuvatussa järjestyksessä. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=36074">
+           Toteutuskertakysely 26.04.18-11.06.18
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 25 / 50 / 25
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 0 / 100 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          4
+         </td>
+         <td>
+          1
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit I  Kurssiin kuuluu luennot, luentotentti ja harjoitukset. Harjoituksissa edellytetään kokoaikaista läsnäoloa. Kuhunkin harjoitusryhmään otetaan maksimissaan 20 opiskelijaa. Ryhmiin tulee opiskelijoita, joille kurssi on a) pakollinen (tuotantotalous, tietojohtaminen), b) valinnainen pakollinen tai c) vapaaehtoinen. Ryhmiin valitaan edellä kuvatussa järjestyksessä. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=33022">
+           Toteutuskertakysely 14.10.17-17.10.17
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 100 / 0 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 0 / 100 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          1
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=32987">
+           Toteutuskertakysely 18.10.17-15.12.17
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 64 / 36 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 9 / 36 / 45 / 9
+         </td>
+         <td>
+          9 / 91 / 0
+         </td>
+         <td>
+          11
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit IV  Osittaisena Moodle-kurssina suoritettavaan Puheviestintä ja neuvottelutaito -kurssitoteutukseen integroidaan luennot ja kurssilla käytetään oppimispäiväkirjatyöskentelyä. Näin ollen tähän toteutukseen ilmoittautuvien ei tarvitse käydä luennoilla eikä tentissä. Tässäkin toteutuksessa on 20 lähiopetustuntia ja muu työskentely tapahtuu itsenäisesti, ryhmissä ja verkossa. Harjoitukset edellyttävät kokoaikaista läsnäoloa. Harjoitusosuuden kaikki valmistelua edellyttävät tehtävät kuuluvat kokonaisuuteen (valmisteltu puhe-esitys, neuvotteluharjoitus ja kokousharjoitus sekä kurssin kirjalliset tehtävät, poissaolotilanteessa korvauksesta voidaan neuvotella). Moodle-ryhmään tulee opiskelijoita, joille kurssi on a) pakollinen (tuotantotalous, tietojohtaminen), b) valinnainen pakollinen tai c) vapaaehtoinen. Ryhmään valitaan edellä kuvatussa järjestyksessä. Moodle-kurssitoteutuksia on yksi syksyllä ja yksi keväällä. Jos ja kun ryhmässä on tilaa, paikat täytetään ilmoittautumisleiman perusteella. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille. Moodle-kurssin ryhmään päässeille annetaan erikseen avain Moodle-alustalle.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=36549">
+           Toteutuskertakysely 28.04.18-18.06.18
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 33 / 58 / 8 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 25 / 42 / 33 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          12
+         </td>
+         <td>
+          2
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit III-V  Kurssiin kuuluu luentosarja tammikuussa 4x2h, valinnan mukaan luentotentti/tenttiessee sekä harjoitukset. Harjoituksissa edellytetään kokoaikaista läsnäoloa. Ryhmiin tulee opiskelijoita, joille kurssi on a) pakollinen (tuotantotalous, tietojohtaminen), b) valinnainen pakollinen tai c) vapaaehtoinen. Ryhmiin valitaan edellä kuvatussa järjestyksessä. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          Ei kyselyitä
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit I  Kurssiin kuuluu luennot, luentotentti ja harjoitukset. Harjoituksissa on kokoaikainen läsnäolo välttämätön. Kuhunkin harjoitusryhmään otetaan 20 opiskelijaa. Toteutuskerralle tulee opiskelijoita, joille kurssi on a) pakollinen, b) valinnainen pakollinen tai c) vapaaehtoinen. Toteutuskerralle valitaan siten, että etusijalla ovat ne, joille kurssi on pakollinen osa opintoja (tuotantotalous, tietojohtaminen). Jos ja kun toteutuskerralla on tilaa, paikat täytetään ilmoittautumisleiman perusteella. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille, jos paikkoja on vapaana.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=33023">
+           Toteutuskertakysely 14.10.17-17.10.17
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 50 / 50 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 50 / 50 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          2
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=32988">
+           Toteutuskertakysely 18.10.17-15.12.17
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 15 / 38 / 46 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 18 / 27 / 55 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          13
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit I  Kurssiin kuuluu luennot, luentotentti ja harjoitukset. Harjoituksissa edellytetään kokoaikaista läsnäoloa. Kuhunkin harjoitusryhmään otetaan maksimissaan 20 opiskelijaa. Ryhmiin tulee opiskelijoita, joille kurssi on a) pakollinen (tuotantotalous, tietojohtaminen), b) valinnainen pakollinen tai c) vapaaehtoinen. Ryhmiin valitaan edellä kuvatussa järjestyksessä. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=33024">
+           Toteutuskertakysely 14.10.17-25.10.17
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 100 / 0 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 100 / 0 / 0
+         </td>
+         <td>
+          50 / 50 / 0
+         </td>
+         <td>
+          3
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=34993">
+           Toteutuskertakysely 17.01.18-30.03.18
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 50 / 50 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 50 / 50 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          2
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=33322">
+           Toteutuskertakysely 26.10.17-27.11.17
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 100 / 0 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 0 / 100 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          1
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit I  Kurssiin kuuluu luennot, luentotentti ja harjoitukset. Harjoituksissa edellytetään kokoaikaista läsnäoloa. Kuhunkin harjoitusryhmään otetaan maksimissaan 20 opiskelijaa. Ryhmiin tulee opiskelijoita, joille kurssi on a) pakollinen (tuotantotalous, tietojohtaminen), b) valinnainen pakollinen tai c) vapaaehtoinen. Ryhmiin valitaan edellä kuvatussa järjestyksessä. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=33025">
+           Toteutuskertakysely 14.10.17-25.10.17
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 100 / 0 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 100 / 0 / 0
+         </td>
+         <td>
+          50 / 50 / 0
+         </td>
+         <td>
+          2
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=34994">
+           Toteutuskertakysely 17.01.18-30.03.18
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 0 / 100 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 0 / 100 / 0
+         </td>
+         <td>
+          100 / 0 / 0
+         </td>
+         <td>
+          1
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=33323">
+           Toteutuskertakysely 26.10.17-27.11.17
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 100 / 0 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 100 / 0 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          2
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit I-II  Kurssiin kuuluu luennot, luentotentti ja harjoitukset. Harjoituksissa edellytetään kokoaikaista läsnäoloa. Kuhunkin harjoitusryhmään otetaan maksimissaan 20 opiskelijaa. Ryhmiin tulee opiskelijoita, joille kurssi on a) pakollinen (tuotantotalous, tietojohtaminen), b) valinnainen pakollinen tai c) vapaaehtoinen. Ryhmiin valitaan edellä kuvatussa järjestyksessä. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=34335">
+           Toteutuskertakysely 09.12.17-22.01.18
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 29 / 43 / 29 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 29 / 43 / 29 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          7
+         </td>
+         <td>
+          1
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td colspan="7">
+          Lukuvuosi 2017 - 2018,  Periodit I-II  Kurssiin kuuluu luennot, luentotentti ja harjoitukset. Harjoituksissa edellytetään kokoaikaista läsnäoloa. Kuhunkin harjoitusryhmään otetaan maksimissaan 20 opiskelijaa. Ryhmiin tulee opiskelijoita, joille kurssi on a) pakollinen (tuotantotalous, tietojohtaminen), b) valinnainen pakollinen tai c) vapaaehtoinen. Ryhmiin valitaan edellä kuvatussa järjestyksessä. Lähtökohtaisesti kaikkien opinto-ohjelmien opiskelijat ovat tervetulleita kurssille.
+         </td>
+        </tr>
+        <tr class="odd" onmouseout="this.style.background='#f7f8f9';" onmouseover="this.style.background='#d8d8d8';">
+         <td style="padding-left: 15px;">
+          <a href="/kaiku/examineFeedbackPage/feedback?action=resultsForCourseQuery&amp;queryId=34336">
+           Toteutuskertakysely 09.12.17-22.01.18
+          </a>
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 100 / 0 / 0
+         </td>
+         <td>
+          0 / 0 / 0 / 0 / 67 / 33 / 0
+         </td>
+         <td>
+          0 / 100 / 0
+         </td>
+         <td>
+          10
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          <img alt="Kysely sisältää julkaistuja opettajan vastauksia" src="/kaiku/images/check.gif" title="Kysely sisältää julkaistuja opettajan vastauksia"/>
+         </td>
+        </tr>
+        <tr class="even" onmouseout="this.style.background='#ebecec';" onmouseover="this.style.background='#d8d8d8';">
+         <td>
+          Yhteensä
+         </td>
+         <td>
+          0 / 0 / 0 / 16 / 43 / 41 / 0
+         </td>
+         <td>
+          0 / 0 / 3 / 14 / 44 / 39 / 0
+         </td>
+         <td>
+          8 / 81 / 11
+         </td>
+         <td>
+          37
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+         </td>
+        </tr>
+       </table>
+      </form>
+      <br/>
+      <br/>
+     </div>
+     <div id="footerInfobox">
+      Kaiku - Tampereen yliopisto Sovelluksen versio: 1.15.0 (10.3.2020)
+     </div>
+     <div id="footer">
+      <span class="about" id="footerInfoLink">
+       Tietoa sovelluksesta
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

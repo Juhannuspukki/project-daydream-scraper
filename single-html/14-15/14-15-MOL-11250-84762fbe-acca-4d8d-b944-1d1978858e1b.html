@@ -1,0 +1,2120 @@
+<html lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Kaiku
+  </title>
+  <link href="/kaiku/javascript/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet" type="text/css"/>
+  <script src="/kaiku/javascript/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="/kaiku/javascript/kaiku.js" type="text/javascript">
+  </script>
+  <link href="/kaiku/style/kaiku_style.css" rel="stylesheet" type="text/css"/>
+  <link href="/kaiku/style/style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="hidden" id="pop-up">
+   <img alt="hourclass" src="/kaiku/images/hourglass_small.png"/>
+   <br/>
+   Raportti latautuu...
+  </div>
+  <div id="outer">
+   <div id="page">
+    <div id="banner">
+     <img alt="Kaiku" src="/kaiku/images/Logo_TAU_FI.png" style="height: 50px;"/>
+     <span class="page_name">
+      Kaiku
+      <br/>
+     </span>
+     <div id="banner_inner_right">
+      <nobr>
+       <a href="https://www.tut.fi/pop">
+        POP
+       </a>
+       |
+       <a href="https://www.tut.fi/tutka">
+        TUTKA
+       </a>
+      </nobr>
+      <span class="user_name">
+       Jere Laine
+       <br/>
+      </span>
+      <br/>
+      <a href="/kaiku/logOut/logOut">
+       Kirjaudu ulos
+      </a>
+     </div>
+    </div>
+    <div id="menu" style="min-height: 15px;">
+     <nobr>
+      <a href="/kaiku/kaiku/mainpage">
+       Etusivu
+      </a>
+      <a href="/kaiku/studentMainPageSearch/feedback">
+       Anna Palautetta
+      </a>
+      <a class="selected" href="/kaiku/examineFeedbackPage/feedback">
+       Palautteet
+      </a>
+      <a href="https://tutfi.sharepoint.com/sites/intra-fi/koulutus/koulutuksen-tietojarjestelmat/kaiku/Documents/KAIKU-k%C3%A4ytt%C3%B6ohje.pdf" style="font-size: 12px;">
+       ?
+      </a>
+      <a href="/kaiku/examineFeedbackPage/feedback?LANGUAGE_CHOICE=LANGUAGE_ENGLISH&amp;PREVIOUS_VIEW=feedbackSummaryCourseQueryResults" style="font-size: 10px;">
+       in English
+      </a>
+     </nobr>
+    </div>
+    <div id="content">
+     <div id="inner_content">
+      <style>
+       button {
+		white-space: nowrap;
+	}
+      </style>
+      <br/>
+      <form action="/kaiku/examineFeedbackPage/feedback" id="pageInformation" method="post">
+       <table>
+        <tbody>
+         <tr>
+          <td colspan="3">
+           <a href="/kaiku/examineFeedbackPage/feedback?action=landingPageLink">
+            Opintojaksojen palautteet
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=depOrCoursegroupLink&amp;depOrCoursegroupId=10603">
+            Materiaalitiede ja ympäristötekniikka
+           </a>
+           →
+           <a href="/kaiku/examineFeedbackPage/feedback?action=courseImplementationLink&amp;chosenCourseCode=MOL-11250">
+            MOL-11250
+				Materiaalien mekaaninen käyttäytyminen
+           </a>
+           →
+		
+			Kysely 06.12.14-19.01.15
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           <br/>
+           <h2>
+            <nobr>
+             MOL-11250
+				
+					Materiaalien mekaaninen käyttäytyminen
+					
+					(
+             <a href="https://www.tut.fi//wwwoppaat/opas2014-2015/perus/aineryhmat/Materiaalioppi/MOL-11250.html" target="plain">
+              Opinto-opas
+             </a>
+             )
+            </nobr>
+           </h2>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Lukuvuosi 2014 - 2015,
+					Periodit I-II
+           <br/>
+           Kysely 06.12.14-19.01.15
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           Vastanneita yhteensä: 51
+          </td>
+         </tr>
+         <tr>
+          <td colspan="3">
+           En anna palautetta vastanneita yhteensä: 0
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- The analysis part -->
+       <!-- ***************** -->
+       <table class="common">
+        <tbody>
+         <tr>
+          <th colspan="2" style="font-size: 13px;">
+           Opettajan vastaus opiskelijoiden antamaan toteutuskertapalautteeseen
+          </th>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <b>
+            Nykyinen vastaus
+           </b>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span class="prebr">
+            Kiitos kaikille palautteen antajille. Opettajien näkökulmasta toteutus sujui käytännössä hyvin, mutta muutamia selkeitä puutteita oli kuitenkin havaittavissa. Erityisesti vapaaehtoisiin demonstraatioihin osallistuminen oli kovin niukkaa, mikä ei ollut mitenkään toivottavaa. Myös palautteessa tätä asiaa oli kommentoitu ja ilmeisesti vapaaehtoinen oli tulkittu siten, että se on jotain ylimääräistä, mitä ei tarvitse osata. Kuitenkin, kurssi alunperin on rakennettu siten, että koulutusohjelma määrittelee kurssille tietyt osaamistavoitteet, joiden perusteella suunnitellaan tenttitehtävät. Tämän perusteella tietenkin suunnitellaan oppimistapahtumat, luennot, harjoitukset, demot yms. siten, että opiskelijoilla on hyvät mahdollisuudet oppia tentissä kysyttävät asiat. Ilmeisesti vapaaehtoista oppimistapahtumaa ei kuitenkaan koeta tarpeeksi hyödylliseksi tai asia oli virheellisesti ymmärretty niin, että kurssin demot eivät kuulu tämän kurssin tenttimateriaaliin. Näin oli aikaisemmin myös laskuharjoitusten osalta, kunnes otimme käyttöön pakollisen laskuharjoitustentin. Kysyimme palautekyselyssä myös erityisesti sitä, että mikä tekee tästä kurssista vaikean. Vastauksista voi päätellä hieman samaa kuin tenttituloksista. Osa kokee kurssin helpoksi, johdonmukaiseksi, ja hyväksi kokonaisuudeksi. Toiset taas kokevat, että kurssilla on liikaa asiaa joka opetetaan liian nopeasti. Asian määrään emme kovin helposti voi koskea, sillä se määritellään osana koko tutkintoa. Opetusmenetelmiin sen sijaan pystymme vaikuttamaan ja ensi vuodelle pyrimme tuomaan seuraavia muutoksia; lisää laskuharjoituksia, laskuharjoituksen pituus 2h, demonstraatiot pakollisiksi ja laskuharjoitustentin arvosteluun selkeämmät perusteet. Nämä ovat kuitenkin pyrkimyksiä ja toteutus riippuu ensi syksynä käytössä olevista resursseista.
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- <table>
+			<tr><td><div class="line" ></div></td></tr>
+			<tr><td>Kyselyn tulosten julkisuus</td></tr>
+			<tr><td><div class="line" ></div></td></tr>
+		</table>-->
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th style="font-size: 13px;">
+           Kysymyskohtaiset palautteet
+          </th>
+         </tr>
+        </tbody>
+       </table>
+       <h1>
+        Monivalintakysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <table class="common">
+        <!-- NORMAL OBLIGATORY CHOICE QUESTIONS -->
+        <tbody>
+         <tr>
+          <th colspan="4" width="90%">
+           Yleisarvosana opintojaksolle ja sen toteutukselle.
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           3.52
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           3.5
+          </td>
+          <td>
+           1.0
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           3.92
+          </td>
+          <td>
+           3.92
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           7.84
+          </td>
+          <td>
+           11.76
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           19.0
+          </td>
+          <td>
+           37.25
+          </td>
+          <td>
+           49.02
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           16.0
+          </td>
+          <td>
+           31.37
+          </td>
+          <td>
+           80.39
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           9.0
+          </td>
+          <td>
+           17.65
+          </td>
+          <td>
+           98.04
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           1.96
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           51.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Kuinka hyvin opintojakso tuki osaamistavoitteiden saavuttamista?
+          </th>
+          <td class="empty" rowspan="13" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           3.51
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           1.03
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           0 (0)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           1 (1)
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           6.12
+          </td>
+          <td>
+           6.12
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2 (2)
+          </td>
+          <td>
+           4.0
+          </td>
+          <td>
+           8.16
+          </td>
+          <td>
+           14.29
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           3 (3)
+          </td>
+          <td>
+           12.0
+          </td>
+          <td>
+           24.49
+          </td>
+          <td>
+           38.78
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           4 (4)
+          </td>
+          <td>
+           22.0
+          </td>
+          <td>
+           44.9
+          </td>
+          <td>
+           83.67
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           5 (5)
+          </td>
+          <td>
+           6.0
+          </td>
+          <td>
+           12.24
+          </td>
+          <td>
+           95.92
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           4.08
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           49.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Arvioi opintojakson työmäärä suhteutettuna opintopisteisiin.
+          </th>
+          <td class="empty" rowspan="9" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2.12
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           0.44
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä vähäinen opintopisteisiin nähden. (1)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           4.17
+          </td>
+          <td>
+           4.17
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Työmäärä sopiva opintopisteisiin nähden. (2)
+          </td>
+          <td>
+           38.0
+          </td>
+          <td>
+           79.17
+          </td>
+          <td>
+           83.33
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Työmäärä liian suuri opintopisteisiin nähden. (3)
+          </td>
+          <td>
+           8.0
+          </td>
+          <td>
+           16.67
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           48.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- NORMAL OFFICIAL CHOICE QUESTIONS -->
+       <br/>
+       <span class="header">
+        Opiskelijan aktiivisuus
+       </span>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th colspan="4" width="90%">
+           Käytin aikaa itsenäiseen työskentelyyn.
+          </th>
+          <td class="empty" rowspan="11" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2.86
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           0.86
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Erittäin vähän (1)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           4.08
+          </td>
+          <td>
+           4.08
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Vähän (2)
+          </td>
+          <td>
+           13.0
+          </td>
+          <td>
+           26.53
+          </td>
+          <td>
+           30.61
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Paljon (3)
+          </td>
+          <td>
+           16.0
+          </td>
+          <td>
+           32.65
+          </td>
+          <td>
+           63.27
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Erittäin paljon (4)
+          </td>
+          <td>
+           11.0
+          </td>
+          <td>
+           22.45
+          </td>
+          <td>
+           85.71
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           7.0
+          </td>
+          <td>
+           14.29
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           49.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <span class="header">
+        Oppiminen
+       </span>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th colspan="4" width="90%">
+           Muodostin selkeän kokonaiskuvan opetetusta aiheesta.
+          </th>
+          <td class="empty" rowspan="11" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2.9
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           0.67
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Täysin eri mieltä (1)
+          </td>
+          <td>
+           1.0
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           2.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Jokseenkin eri mieltä (2)
+          </td>
+          <td>
+           11.0
+          </td>
+          <td>
+           22.0
+          </td>
+          <td>
+           24.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Jokseenkin samaa mieltä (3)
+          </td>
+          <td>
+           30.0
+          </td>
+          <td>
+           60.0
+          </td>
+          <td>
+           84.0
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Täysin samaa mieltä (4)
+          </td>
+          <td>
+           8.0
+          </td>
+          <td>
+           16.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           0.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           50.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4" width="90%">
+           Mielenkiintoni opetettuun aiheeseen lisääntyi opintojakson aikana.
+          </th>
+          <td class="empty" rowspan="11" style="vertical-align: top;">
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           keskiarvo(
+           <span style="text-decoration: overline">
+            X
+           </span>
+           )
+          </td>
+          <td>
+           moodi(Mo)
+          </td>
+          <td>
+           mediaani(Md)
+          </td>
+          <td>
+           keskihajonta(s)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           2.91
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           0.96
+          </td>
+         </tr>
+         <tr>
+          <th colspan="4">
+          </th>
+         </tr>
+         <tr class="even">
+          <td>
+          </td>
+          <td>
+           frekvenssi(f)
+          </td>
+          <td>
+           prosenttiosuus(%)
+          </td>
+          <td>
+           kumulatiivinen prosenttiosuus(%)
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Täysin eri mieltä (1)
+          </td>
+          <td>
+           7.0
+          </td>
+          <td>
+           14.29
+          </td>
+          <td>
+           14.29
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Jokseenkin eri mieltä (2)
+          </td>
+          <td>
+           3.0
+          </td>
+          <td>
+           6.12
+          </td>
+          <td>
+           20.41
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           Jokseenkin samaa mieltä (3)
+          </td>
+          <td>
+           24.0
+          </td>
+          <td>
+           48.98
+          </td>
+          <td>
+           69.39
+          </td>
+         </tr>
+         <tr class="even">
+          <td>
+           Täysin samaa mieltä (4)
+          </td>
+          <td>
+           13.0
+          </td>
+          <td>
+           26.53
+          </td>
+          <td>
+           95.92
+          </td>
+         </tr>
+         <tr class="odd">
+          <td>
+           En osaa sanoa (-1)
+          </td>
+          <td>
+           2.0
+          </td>
+          <td>
+           4.08
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Yht.
+          </td>
+          <td>
+           49.0
+          </td>
+          <td>
+           100.0
+          </td>
+          <td>
+           100.0
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+         <tr>
+          <td class="empty" colspan="5">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- OPEN QUESTIONS !!! -->
+       <br/>
+       <h1>
+        Avoimet kysymykset
+       </h1>
+       <span class="header">
+        Vakiokysymykset
+       </span>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Mikä onnistui opintojaksolla hyvin?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Hokka, Mikko,
+									26.01.2015
+           </span>
+           <br/>
+           Luennot olivat ihan hyviä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot, harjoitukset, demot, tenttijärjestely.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opetus oli hyvää. Jos jokin asia jäi epäselväksi siihen panostettiin seuraavalla kerralla enemmän.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Annettiin hyvin mahdollisuuksia suorittaa kurssi paloissa ja välitenteillä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat mielenkiintoisia ja hyvin pidettyjä. Opetus oli laadultaan hyvää ja mukaansatempaavaa. Tietoa koetuloksista ym. oli hyvin ja riittävästi. Kaikista opintojaksoista ei tule minkäänlaisia tenttipisteitä, vain kokonaisarvosana poppiin, mitä pidän kurjana. Minimisuoritusvaatimus tuntuu sopivalta, koska jotain kai täällä on tarkoitus oppiakin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoituksissa käytiin yksityiskohtaisesti tehtävien suoritus.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot ja demot olivat hyviä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat hyviä, paljon lisämateriaalia opiskeluun
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennoitsija on hyvä ! Laskarien pitäjät olivat hyviä !
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitukset tukivat hyvin opetusta. Hyvä pruju. Demot oli kanssa hyvä lisä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -Laskuharjoitukset hyviä
+-demot mukava lisä
+-hyvin jaettu osiin ettei vain yhtä tenttiä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Hyvät luennot, laskuharjoitukset, tietokoneharkat ja demot. Laskuharjoitustentti oli todella hyvä, sillä muuten ei laskuja välttämättä tarvitse osata ollenkaan jos tentissä sopivat tentit valitsee. Tentti- ja laskuharjoituskysymykset vastasivat hyvin luennoilla ja harjoituksissa käytyä asiaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat selkeitä, ja esimerkit hyviä. Harjoitukset tukivat luentojen asiaa ja helpottivat ymmärtämistä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat hyviä. Assarit esittivät tehtävien vastaukset selkeästi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Vaikea on aihealue mutta parhaasi teit.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opetustapahtumat olivat mielenkiintoisia ja innostavia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennointi oli hyvää ja kiinnostavaa. Harjoituksetkin olivat hyviä ja opettavaisia ja juuri sopivia vaikeustasoltaan. Erityisesti pidin siitä, että kurssilla keskityttiin tärkeiden asioiden ymmärtämiseen eikä pikkutarkkaan kaavan johtamiseen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Demot: muodonmuutoksen mittaus, vetokoe-demo, atk-harkat! Luennot erittäin selkeitä ja myös aiheet kiinnostavia. Luennoitsija on opiskeluaikanani yksi parhaita (nimenomaan selkeyden, havainnollistamisen, esimerkkien jne vuoksi). Viikoittaiset laskuharjoitukset sujuivat myös selkeästi ja hyvin joka kerta (sekä Isakovin että Nyyssösen ryhmissä). Laskuharjoituksista tuli myös hyvät ratkaisut Moodleen, joista omia laskelmia pystyi jälkeenpäin vielä tarkastelemaan ja täsmentämään.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot hyviä, laskuharjoituksissa avattiin tehtävät ja teoria niiden taustalla myös ihan hyvin. Laskaritentti ja teoriatentti erikseen hyvä. Opiskelijat yritettiin ottaa huomioon, välillä ehkä liikaakin höösäystä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           - Luentojen aiheet käsitellään sopivassa järjestyksessä sekä luennot olivat opettavaisia
+-Jatkossa vastaavat tenttitärpit kertausluennolta ovat hyviä, muutenkin eri termien kertaaminen kurssin aikana tukisi oppimista
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot ja harkat ovat tarpeellisia opintojakson asioiden ymmärtämiseen.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Asiat selitettiin hyvin ja perusteellisesti luennoilla niin, että ennalta vaikealta tuntuva asia muuttuikin melko selkeäksi. Vapaaehtoiset lisäharjoitukset ja demot ovat hyvä juttu.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Todella hyvä luennoitsija näin vaikealle kurssille! Välikokeet ja laskuharjoitustentti erikseen on todella hyvä idea ja toteutuskin toimi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opetus oli opintojaksolla hyvää, samoin kuin harjoitusten toteuttaminen. Rakenne oli selkeää luentojen edetessä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitukset olivat selkeitä ja asiat käytiin luennoilla selkeästi läpi
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennoitsija oli mielestäni erinomainen. Piste. Harmi etten ehtinyt kaikille luennoille, olisin oppinut siellä varmasti paremmin kuin pelkällä kyseisten aihealueiden itseopiskelulla. Tenttikysymykset olivat kurssin keskeisintä asiaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           luennot olivat kiinnostavia ja harjoitukset tavallisen hyviä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Laskuharjoitukset olivat mielenkiintoisia ja ne käytiin hyvin läpi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat selkeitä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat valaisevia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot olivat mielestäni hyödyllisiä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitukset olivat todella hyviä ja harjoitusten vetäjät pätevän oloisia. Lisäksi kaikki vapaaehtoiset demot/atk-harjoitukset olivat todella hyviä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luennot
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Sopiva työmäärä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Miten kehittäisit opintojaksoa?
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Hokka, Mikko,
+									26.01.2015
+           </span>
+           <br/>
+           Luentokalvoilla/prujussa voitaisiin selittää asioita paremmin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luentokalvot ovat kehnohkot. Uudet (muokatut) kalvot olisi hyvä saada aina ennen luentoja.
+
+ATK-harjoitusten kesto ja ajankohta. Olisi ollut mukava käsitellä koedataa enemänkin, mutta lyhyessä ajassa ei ehtinyt. Toiseen toteutuskertaan en päässyt, koska toteutusajankohtia oli vain yksi.
+
+Harjoitustehtäviä / laskuesimerkkejä voisi olla enemmän
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           On mielestäni kohtuutonta että jokaisessa tenttitehtävässä pitää näyttää vaadittu minimiosaaminen. Toiseksi, miksi laskuharjoitustenteissä painotetaan tulosten tulkintaa, kun laskuharjoituksissa sitä ei painoteta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tuo "minimioppimistavoitteisiin" tuijottaminen on aivan syvältä, koska eihän se nyt niin voi mennä että tentti on 90 % oikein ja joku yksi asia on väärin, joka muka ei täytä näitä opsin mukaisia oppimistavoitteita, niin silloin koko suoritus hylätään. Miksiköhän KAIKISSA muissa aineissa läpipääsyraja on 50 % pisteistä, eikä sillä ole mitään väliä vaikka yksi osa-alue kurssista olisi aivan hämärän peitossa. Kannattaisi varmaan miettiä hieman missä kiikastaa jos laskaritenteissäkin ja ekassa välikokeessa keskimäärin puolet opiskelijoista ei päässyt läpi. Syy ei voi olla pelkästään opiskelijoissa, ei myöskään silloin jos noin puolet ymmärtää tehtävänannon tentissä väärin. Eikä mene tulokset nyt ihan Gaussin käyrän mukaisesti.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Voisi lisätä jotain pieniä kideopin tapaisia moodletehtäviä. Mutta ei niin laajoja kuin kideopissa. Se pakottaisi paneutumaan asioihin ja lisäisi motivaatiota oppia uusia asioita, kun tietää jotain aiheesta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           En oikein ymmäränyt tätä laskuharjoitustentin tarkoitusta, miksei tentissä voinut olla laskuja... Nyt opiskelu ainakin itseni kohdalla meni niin, etten kiinnittänyt juurikaan huomiota laskuihin ensimmäisessä välikokeessa. Koen laskuharjoitustentit myös vaikeiksi ja minimisuoritusvaatimukset huomioiden haastaviksi. Koska harjoitukset olivat erittäin lyhyet, niissä ei mielestäni keritty tarpeeksi kattavasti käymään tehtäviä läpi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tentistä ei kuulu saada hylättyä, jos ei osaa jotain yksittäistä asiaa tai satu muistamaan. Jotain inhimillisen erehdyksen varaa täytyy olla.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pruju hieman sekava varsinkin loppua kohden mentäessä. Laskuharjoitustentti on syvältä ! Integroisin laskut ehdottomasti normi tentin yhteyteen. Muutenkin laskuharjoitustentti on liian vaikea verrattuna edellisten vuosien tenttien ja välikokeiden laskuihin. Laskuja (+vastaukset) pitäisi ainakin olla lisää esim. moodlessa, jotta voisi niitä harjoitella itsenäisesti.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tenttikysymyksistä osa muotoiltu sillä tavalla, ettei oikein tiedä mitä kysymyksellä haetaan. Polymeeriasiat oli todella huonosti lätkästy mukaan, ne saisi jotenkin paremmin yhdistää ja selittää.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jatkaisin samaan malliin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoitukset voisivat olla pidempiä. Alkukurssista tuntui, että harjoituksissa oli aina kiire, eikä asioita kerennyt miettiä kunnolla eikä assari kerennyt selittää asioita kunnolla. Loppukurssista tehtävät helpottuivat ja silloin tunnin harjoitusaika oli sopiva.
+Luentokalvoihin voisi lisätä enemmän tekstiä, vaikka sitä ei käytettäisikään luennoilla. Tämä helpottaisi asioiden itsenäistä opiskelua, jos ei ole päässyt luennoille, sillä kaikkea luennoilla käytävää asiaa ei ollut prujussa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harkoissa voisi olla yksi pakollinen tehtävä (välikoehto). Tentin laskuharjoitustentissä ei mainittu että pitikö vastata vain kahteen. Toivottavasti piti, sillä muuten järjestely olisi epäreilu toisen periodin huonojen lh-tentti/herkkojen aikojen takia. Laskuharjoitustentistä pitäisi olla paremmat ohjeet. Voiko tentistä päästä läpi, jos lh-tentistä ei pääse. Lisäksi osallistumista voisi rajoittaa.Nythän laskuharjoitustenttiin pääsee periaatteessa kuusi kertaa!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harkkoihin jonkinlaisia selitä-tyyppisiä tehtäviä laskujen lisäksi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Järjestelisin kaavakokoelman siistimmän näköiseksi. Mallia voisi ottaa vaikkapa fysikaalisen kemian kaavakokoelmasta. Lisäksi materiaaleihin (pruju, luentokalvot ja muut) voisi rakentaa asiasana listauksen. Asiasanat voisivat toimia hypelinkkijoukkona prujun sivuille, kalvoille tai vaikka opetusvideoihin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jokin "hankaloiden" asioiden kanssa painiva harkkatyö voisi olla kätevä, jos vaikka sillä saisi stimuloitua itseään ymmärtämään ja selkeyttämään asioita.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ehkä vielä hieman lisää tekstiä olisi kiva saada luentokalvoihin. 
+
+Lisäksi tenttitehtävät olivat laajuudeltaan hyvin vaihtelevia, mikä voitaisiin yrittää korjata. Esim jos verrataan kysymystä LCF/HCF-väsymisestä sekä amorfisten polymeerien muodonmuutoksesta, on mielestäni hieman väärin, että LCF/HCF-kysymykseen saa kaiken opetetun tiedon mahtumaan puolelle sivulle, kun taas polymeerikysymys veisi ainakin kaksi sivua.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssilla esitettyjä asioita olisi ollut mukava nähdä itse mikroskoopin läpi tai mahdollisesti kuvatuilta videoilta (mikäli sellaisia on). Tarkoitan nyt esimerkiksi dislokaatioita, harsoontumista, liukunauhoittumista jne... Toki luentokalvoilla oli näistä kuvia, mutta erikseen olisi voinut mahdollisuuksien mukaan olla demo, jossa näitä olisi esitetty mikroskoopin läpi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Turhaa spämmiä tuli välillä aika paljon. Laskarit vaikeita aloittaa mutta helppoja kun näkee miten tehdään -&gt; vaikea tehdä kotona mutta vain itse tekemällä oppii. Ehkä yhdet pidemmät laskarit viikossa jossa lasketaan tehtäviä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           - Luentokalvoihin enemmän selittäviä tekstejä -&gt; hankalat aiheet/ei löydy prujusta
+
+- Prujuun sisällysluettelo ja sanan ”edullisuus” asiayhteys jäi monesti epäselväksi prujussa
+
+- Laskuharjoitustenttien 100% oikea lasku plus tulkinta on mielestäni ylitse pelkän läpipääsyn vaatimusten
+
+- Laskuharjoitukset ok, helpompia tehtäviä kaipasin, myös  enemmän aikaa laskuharjoituksille
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Todella paljon asiaa ja luennoilla melkoinen kiire.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Vaikeimpiin aiheisiin olisi hyvä panosqa hiukan enemmän kuin helpompiin käytetyn tuntimäärän suhteen. Kalvoihin kaipailin lisää tekstiä, pelkistä kuvista on vaikea saada olennaisimpia asioita irti.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opintojaksolla on todella paljon asiaa, jota käydään todella tiukalla tahdilla. Itse en oikein pysynyt perässä aina, kun yritti kirjoittaa muistiinpanoja ylös, koska tärkeää asiaa tuli koko ajan lisää. Lisäksi kurssikirjan saatavuus olisi hyvä olla esillä jossain, sillä nyt sitä ei löydy muualta kuin kirjastosta, josta sieltäkin kurssikirjaa (se joka ei oo soveltuvin osin, kirjoista eka mainittu luentokalvoissa) löytyy toista vain 2 kpl, ja yhtä näistä vaan voi lainata kotiin luettavaksi. Jos kurssille saisi luennot videoituna, se olisi opiskelijoiden oppimisen kannalta varmasti erittäin mainio juttu, sillä nytkään vielä luentokalvot tuo pakolla esille kaikkea tärkeää tietoa ja kurssikirjoja on huonosti saatavilla. Näiden lisäksi kurssin pruju ei sisällä kaikkea kurssin asiaa, jolloin videoidut luennot kattaisivat senkin aineiston. Itselleni nämä aiheuttivat vaikeuksia oppimisessa, sillä tieto ei  vaan jää päähän nopean puheen kuuntelulla. Laskutentin osalta oli hyvä, että se muokattiin helpommaksi, mutta itse en ainakaan päässyt viimeiseen tenttiin. Toivottavasti taso ei siis vaihtele myöhemmin järjestettävillä laskutenteillä tai tentin laskuosiossa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Asiat ovat melko vaikeaselkoisia ja yksityiskohtaisia opetuksessa voisi vielä tarkemmin kohdentaa tenttiin luettavat asiat.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielestäni ilmoille heitetty idea videoluennoista olisi hieno kokeilu tämän kurssin kohdalla. Joskus asiat jumittavat päässä aika pahasti kun kotona opiskelun tueksi ei ole muuta kuin pruju ja kaveri, joka osaa selittää asiat kymmenesosalla siitä osaamisesta mitä luennoitsijalla on.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssin tavoitteet selkeämmin esille ja kysymykset mittaamaan sitä. Nykyinen toiminta oli lähinnä kiusantekoa, epäselvästi esitetty viivoittimen ja sormenpään vertailu ja ylipäätään kutsuminen materiaaliteknisiksi mittausmenetelmiksi ja siksi outo kysymys mittaamaan ihmisten osaamista. Tiedotus oli kiitettävän laajaa, mutta siitä oli aistittavissa jatkuva aiheeton kettuilu opiskelijoita kohtaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Asiaa on todella paljon ja opintomateriaalia liikaa. Sisäistäminen olisi helpompaa jos sisältöä selkeyttäisi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoituksissa voisi olla paljon enemmän tehtäviä, jolloin asiat tulisivat käsiteltyä laajemmin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Harjoituksissa pitäisi olla enemmän aikaa itsenäiselle työskentelylle, ennen kuin opettaja paljastaa vastaukset. Tehtävissä oli myös hiukan liian usein puutteita tai epäselvyyksiä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Pruju on vaikealukuinen. Yhtenäistä tekstiä olisi helpompi lukea kuin ranskalaisia viivoja. Asiat eivät myöskään selvinneet prujun avulla täysin (vaikeaa kieltä, huonoja lauseita). Toki pruju on ehdottomasti parempi kuin ei mitään.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Luentomoniste, luennot, opiskelijaystävällisyys
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Prujuun enemmän polymeeritietoutta
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Assarit voisivat käydä laskuharjoituksien laskut hieman tarkemmin läpi ja ehkäpä lisätä hieman enemmän aikaa laskareihin kuin yhden tunnin/kerta. 
+Luentomoniste aika onneton.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Oppimateriaaleissa on parantamisen varaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tentti ja laskut vähän liian hankalia. Eli niihin lisää panostusta ja helpottasin tentistä läpipääsyä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <!-- USER DEFINED OPEN QUESTIONS -->
+       <span class="header">
+       </span>
+       <table class="common">
+        <tbody>
+         <tr>
+          <!--<th width="90%">-->
+          <th>
+           Kurssi mielletään yleisesti vaikeaksi; mistä tämä mielestäsi johtuu? Liikaa asiaa, vaikeaa asiaa, sekavaa asiaa, liian vähän opetusta, liian vähän pakollisia tehtäviä jne.
+          </th>
+          <td class="empty" rowspan="2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="common">
+        <tbody>
+         <tr>
+          <th width="45%">
+           Julkaistu palaute
+          </th>
+          <th>
+           <!--<th width="45%">-->
+           <!--Opettajan vastaus-->
+          </th>
+          <td class="empty" style="width: 185px;">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <span style="font-weight: bold">
+            Palautteen julkaisi:
+									Hokka, Mikko,
+									26.01.2015
+           </span>
+           <br/>
+           Kurssi oli mielestäni vaikea, koska asiaa oli paljon ja opetettava asia ei ollut aina kovin helppoa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Vaikeaa asiaa. Välillä luennolla asiat käytiin melko nopeasti eikä ymmärrys välttämättä pysynyt mukana. Luennoilla olisi hyvä pitää 15 min tauko.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Aika paljon asiaa tällä kurssilla.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Vaikea tentti.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Liikaa asiaa, liian vaikeaa asiaa, luennoilla asioita ei avata tarpeeksi, sillä luennoitsija pitää asioita itsestään selvinä ja varmaan helppoina, joka näkyy opetustyylissä siten, että opiskelijat eivät ymmärrä asiaa. Näin olen monien kanssaopiskelijoiden kanssa puhunut. Laskareiden tehtävät ovat liian vaikeita ja ne eivät ole tasoltaan kuitenkaan samanlaisia kun laskaritentissä. Myöskin VAPAAEHTOISISTA labroista/demoista on tullut tenttikysymyksiä, joita ei ole mainittu tenttimateriaaleiksi. Jos jatkossa aiotaan kysyä näihin aiheisiin liittyen tentissä, kannattaa varmaan laittaa demotkin pakollisiksi. Plus ei moni varmasti pääse edes tentistä läpi kun ei täytä näitä minimioppimistavoitteita!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Muiden kurssien työmäärä pakotti vähentämään ajankäyttöä tähän. Asiat menevät helposti sekaisin ja osa asiasta myös vaikeata.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielestäni opetuksessa ainakaan ei ole vikaa, vaan asiat on luennoilla selittetty erittäin käytännönläheisesti ja mielenkiintoa asiaan herättäen. Käytin opiskelun apuna sekä kirjaa että prujua, ja mielestäni riittävällä panostuksella asia ei voi olla mahdotonta kenellekään. Mielestäni harjoutusten tulisi olla parituntisia, sillä asiaa kerittiin mielestäni todella vähän avaamaan itse harjoituksissa, ja harvoin harjoitustilanteen ulkopuolella kerkeää niin paljon panostamaan. Tai sitten selkeästi harkat pitäisi olla tehtynä ennen tilaisuuteen tuloa, miten ainakaan omalla kohdalla asia ei ollut.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssi ei tuntunut liian vaikealta
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Liikaa asiaa ja liian kattavasti täytyy osata asiat tentissä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Asiaa on paljon
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ehkäpä vaikeasti miellettävää asiaa, mutta mielestäni se vaatii vain hieman enemmän omaa panostusta
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Laskuharjoituksia saisi olla lisää ja niihin varata aikaa tunnin sijaan kaksi tuntia. (lopettaa voi aiemmin jos hommat saadaan tehtyä), mutta 45 min on liian lyhyt aika. Lisäksi harkoissa läsnäolosta voisi saada tenttiin esim. yhden lisäpisteen tms.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Asia sekavaa. Lähinnä huonosti jäsennelty ja opiskelijalta vaaditaan todella paljon itsenäistä ajattelua ja asioiden yhdistelyä. Huomasin myös, että kunnen itse luennoille osallistunut kurssin loppuvaiheessa (polymeeriasiat) niin näihin asioihin en löytänyt mistään kunnon tietoa ja vieläkin on epäselvää, mitä esimerkiksi polymeerien muodonmuutosmekanismeilla tarkoitetaan. Opiskelijalta vaaditaan ehkä hieman liikaa sellaista asioiden syvempää ymmärtämistä, mitään asiaa ei oikein voi vain ulkoa opetella. Ja materiaalia syvällisemmän ymmärtämisen pohjalle ei annettu kaikissa asioissa tarpeeksi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ei mitenkään vaikea kurssi, selvää asiaa ja hyvää opetusta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           -
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielestäni kurssi ei ollut liian vaikea. Todennäköisesti tämä mielletään vaikeaksi suuren asiamäärän vuoksi. Asiaa käydään myös melko nopealla tahdilla.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Asiaa on paljon. Paljon suureita. Suureet sekoittuvat keskenään. Jos alkukurssista jokin asia jää epäselväksi, niin se vaikeuttaa loppukurssin ymmärtämistä. Tällaisella kurssilla saisi olla jotain pakollista, mikä pakottaisi perehtymään asioihin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Tenteissä asia on osattava selittää sanallisesti. Harkoissa on lähes pelkkiä laskutehtäviä, jotka eivät varsinaisesti auta ymmärtämään laskujen taustalla olevia ilmiöitä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Näin materiaalitekniikkaan juuri siirtyneenä pohjaa ei ole yhtään aihealueeseen (poislukien yksi kurssi AMKssa jossa sivuttiin hieman aihetta).
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           paljon asiaa ja tietyn asian löytäminen materiaalin joukosta hankalahkoa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssilla oli paljon asiaa, joka oli kuitenkin periaatteessa helppoa. Vaikeaksi sisällön hahmottamisen teki useat erilaiset tarkasteluperspektiivit ja kömmähdysvaarat. Itselle jäi ainakin vähän hataralle pohjalle ymmärrys eri kiderakenteiden eroavaisuuksista.w
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Ihmiset menevät liian helposti sekaisin, kun täytyy pitää monta asiaa samaan aikaan mielessä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielestäni kurssi ei ollut vaikea, vaikka toki asiaa oli hyvin paljon. Mielestäni asiat oli jäsennelty hyvin omiksi kokonaisuuksiksiin, mikä helpotti opiskelua paljon (hyvä pruju, hyvät luennot, hyvät harkat + demot). Mielestäni laskuharkkoja oli sopiva määrä (osallistuin jokaiseen harkkaan) ja suosittelisin, että jatkossa laskuharjoituksiin tulisi osallistua pakollisesti enemmän, esimerkiksi 80% kaikista laskuharkoista. Tämä auttaisi paljo niitä opiskelijoita, jotka nyt syystä tai toisesta käyvät vain minimimäärän harkkoja eivätkä täten opi kaikkea tarvittavaa laskuharkkatenttiä varten. Eli enemmän pakollisuutta!!
+Jos luennoilla kävi joka kerta, harkoissa joka kerta ja kaikissa demoissa, niin kurssin läpäisyyn hyvin arvosanoin ei pitäisi olla minkäänlaista ongelmaa (se riippuu vaan opiskelijan omasta mielenkiinnosta ja halusta osallistua kurssin aktiviteetteihin). Kurssihenkilökunnan, harkkojen, luentojen ja demojen järjestäminen ja sisällöt tukevat täysin kurssin oppimistavoitteita, eikä niiden sisällöissä tai laajuuksissa ole mitään moitittavaa tai korjattavaa. Lisäksi kaikki aktiviteetit toteutettiin täysin opiskelijoita ajatellen. Paras kurssi tähän asti opintojani Polymeerifysiikan lisäksi!
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           IFY:stä ja oikeista laskutehtävistä vain liikaa aikaa. Myös laiskuus usein valtaa kolmantena vuonna jolloin kurssi suoritetaan. Kurssin sisältö itsessään ei liian haastavaa, vaatii tosin melko paljon soveltamista.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           - Asiaa on kurssilla hyvin paljon, kaikki ei edes kytkeydy toisiinsa vaan pitää sisäistää ja lopulta opetella ulkoa useita asioita ilman ymmärrystä. Asioita käydään liian nopeasti läpi jotta kokonaisuus/asioiden eroavaisuus tulisi kerralla ymmärretyksi. Jatkossa voisi luennon lopussa olla tiivistettynä opitut asiat, ns. lyhyet vastaukset luentoon johdattaviin kysymyksiin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Asia on todella vaikeaa ja se tekee sen vaikeaksi sisäistää. Luennoilla asia käydään myös melko nopeaa läpi, itse en ehdi edes ajatella vielä, mitä en ymmärrä ja kysyä asiaa.Tenteissä minun onglemani on ollut selkeästi se, etten vain ymmärrä kysymystä ja osaa yhdistää asioita oikein.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Jokseenkin vaikeaa asiaa ja vaatii paljon itsenäistä työskentelyä ja motivaatiota. Itseltäni tätä on puuttunut jo useammalla suorituskerralla, syystä tai toisesta.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssin vaikeus on aika monen asian summa mielestäni. Kurssiin on ympätty niin paljon asiaa, että aiheiden ymmärtämiseen ja sisäistämiseen ei meinaa jäädä tarpeeksi aikaa. Luennoitsija ja muutkin opettajat ovat hyviä ja opettavat todella taitavasti, mutta kun aiheita on vaikea ymmärtää ja sisäistää niin luennolla kun opetetaan kerralla niin paljon ja luennoitsija puhuu paljon niin aiheista ei ehdi tehdä kunnolla muistiinpanojakaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Liikaa asiaa, huonohkosti tarjolla materiaalia opiskelun tueksi. Itsellä ei myöskään ole ehkä tarpeeksi pohjatietoa, joten koen kurssin asiat suhteellisen vaikeiksi.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Osatentit ovat hyvin vaikeita ja pakollinen minimitavoitteiden saavuttaminen tekee niistä osittain arpapeliä
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Mielestäni tämä johtuu täysin siitä, että kurssilla käsitellään niin paljon erilaisia mikrotason ilmiöitä ja pyritään selittämään hyvin laajalti niiden ilmeneminen makrotasolla. Yksinkertaisesti se vain vaatii paljon ajattelutyötä; täytyy antaa aivoille runsaasti aikaa sisäistää tällaista asiaa, mitä ei varmasti tule vastaan missään arkipäiväisessä toiminnassa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssilla on paljon erillisiä asioita, jotka muistuttavat paljon toisiaan.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssi on hyvin vaativa, mutta opetushenkilöstön pitäisi ymmärtää että kyseessä on kandikurssi eli suurin osa opiskelijoista ei tule suuntaamaan opintojaan materiaalitutkimuksen parin. Peruskurssiin nähden mielestäni liian paljon asiaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Opetus voisi olla intensiivisempää ja toisaalta koska kurssi oikeasti on todella vaikea, voisi pyrkiä olemaan hankaloittamatta läpipääsyä lisää. Selkeyttä tentteihin, tehtävänantoihin ja läpäisyvaatimuksiin.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Kurssissa on paljon asiaa ja suurin osa kurssista käsittelee metalleja, muiden materiaalien, esim. muovien, lukijoilla oli motivaatio vaikeuksia.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Itse en ainakaan ymmärtänyt kuinka pikkutarkkaan koko pruju olisi pitänyt opetella. Laskuharjoituksissa voisi olla selkeämmät tehtävät.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Asiaa on paljon, osa myös vaikeaa. On vaikeaa muodostaa selkeää kokonaiskuvaa. En myöskään pidä ollenkaan tentin arvostelutavasta. Yksi huonosti mennyt tehtävä ei mielestäni saisi pilata koko tenttiä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Liian vähän opetusta
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Liikaa asiaa, vaikeaa asiaa, sekavaa asiaa... kyllä kaikkia näitä.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Vaikka asia on tärkeää, on se myös todella vaikeaa. Myös tenttikysymykset välillä hämmentävät. esim prujussa ei ole mainittu miten monikiteinen käytös eroaa kiteisen käytöstä tietyllä alueella. Myös erot pkk ja tkk käytöksen kesken on hieman sekavaa.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Sekavaa asiaa, luentomonistetta myöden. Laskaritunnit liian lyhyet ja laskujen läpikäynti hyvin pintaraapaisua.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Vaikeaa asiaa, minkä lisäksi vaaditaan kaiken täydellistä sisäistämistä. Oppimateriaaleista ei löydy kaikkea mikä pitäisi tentissä osata, mikä on ongelmallista, koska tieto menee sitten kokonaan ohi jos ei pääse juuri sille luennolle missä asiasta kerrotaan ja osaa tehdä itse laajoja muistiinpanoja. Moni ei ole sellainen oppija, että kokonaiskuvat muodostuvat ja asiat vaan jäävät poikkeuksetta päähän kun ne kertaalleen luennolla kuulee.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           Asiaa on liikaa ja aihe liian laaja. Eli liikaa muistettavaa. Kurssi pitäisi olla tiiviimpi eikä 1 luento/viikko.
+          </td>
+          <td class="empty">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <table class="common">
+       </table>
+       <br/>
+       <div class="line">
+       </div>
+       <!-- STUDENT RESPONSES -->
+       <br/>
+       <br/>
+      </form>
+      <br/>
+      <br/>
+     </div>
+     <div id="footer">
+      <span class="about" id="footerInfoLink">
+       Tietoa sovelluksesta
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div aria-describedby="footerInfobox" aria-labelledby="ui-id-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable" role="dialog" style="display: none; position: absolute;" tabindex="-1">
+   <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+    <span class="ui-dialog-title" id="ui-id-1">
+    </span>
+    <button aria-disabled="false" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="close">
+     <span class="ui-button-icon-primary ui-icon ui-icon-closethick">
+     </span>
+     <span class="ui-button-text">
+      close
+     </span>
+    </button>
+   </div>
+   <div class="ui-dialog-content ui-widget-content" id="footerInfobox">
+    Kaiku - Tampereen yliopisto
+			Sovelluksen versio: 1.15.0 (10.3.2020)
+   </div>
+   <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;">
+   </div>
+   <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;">
+   </div>
+  </div>
+ </body>
+</html>
