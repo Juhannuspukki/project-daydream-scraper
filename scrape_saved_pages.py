@@ -90,6 +90,10 @@ def scrape_page(year):
                         "sampleDistribution": grade_distribution,
                     }
 
+                    response_element = soup.find("span", {"class": "prebr"})
+                    if response_element is not None:
+                        new_course["response"] = response_element.contents[0].strip()
+
                     courses.append(new_course)
 
                 # print(year + " " + periods + " " + course_code + " " + course_name + " " + str(average) + " " + str(workload))
@@ -112,7 +116,7 @@ def filter_courses(courses):
             reject_list.append(course)
 
         # filter out seminars
-        if "graduate" in course['name'].lower() or "seminar" in course['name'].lower() or "seminaari" in course['name'].lower():
+        if "graduate" in course['name'].lower() or "seminar" in course['name'].lower() or "kandidaatintyö" in course['name'].lower() or "seminaari" in course['name'].lower():
             reject_list.append(course)
 
         # filter out courses with english variants (end with 6 or 7)
@@ -159,6 +163,9 @@ def compile():
             }
             if "letter" in course.keys():
                 instance["letter"] = course["letter"]
+
+            if "response" in course.keys():
+                instance["response"] = course["response"]
 
             if not any(d["id"] == course_id for d in compiled_courses):
                 new_course = {

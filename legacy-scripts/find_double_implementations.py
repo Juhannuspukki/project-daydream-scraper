@@ -1,5 +1,5 @@
 import json
-with open(('kaiku-compiled.json'), 'rb') as file:
+with open(('kaiku.json'), 'rb') as file:
     courses = json.load(file)
 
 ids = []
